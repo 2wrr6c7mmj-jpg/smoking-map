@@ -11,11 +11,18 @@
 
 ## データ
 
-- 喫煙所：[OpenStreetMap](https://www.openstreetmap.org/copyright)（ODbL）を Overpass API から端末が直接取得
+- 喫煙所：[OpenStreetMap](https://www.openstreetmap.org/copyright)（ODbL）
   - 喫煙所 = `amenity=smoking_area`
   - 喫煙可の店 = `smoking` が `yes` / `separated` / `isolated` / `dedicated` / `outside` で `amenity` 付きのもの
   - 加熱式専用 = キー名に `heated` を含み値が `only`、または `smoking=heated_tobacco`（日本での付け方が揃っていないため暫定）
-- 地図の範囲を 0.02度（約2km）四方の格子に分け、格子ごとに IndexedDB に保存。OSM は3日、投稿は10分で取り直す。縮尺 14 未満では取得しない
+- **全国データ**：`public/data/jp/` に 1度四方の区画ごとの JSON（`[緯度, 経度, OSM ID, タグ]` の配列）と `index.json`（更新日時・件数・区画一覧）を置く。アプリは地図の範囲の区画だけを読み込み、Service Worker が端末に保存する（保存分をすぐ表示し、裏で新しい版を取得）
+  - 作り方は2通り。どちらも同じ形式で書き出す
+    - `python3 scripts/extract-pbf.py`：openstreetmap.fr の地方別ファイル（8地方・計約2.7GB）を1つずつダウンロードして抜き出す。Overpass が混んでいても確実に取れる。`pip install osmium` が必要
+    - `node scripts/fetch-japan.mjs`：Overpass API に区画ごとに問い合わせる。軽いが、混雑時は失敗しやすい
+  - 全国データがない配置では、従来どおり端末から Overpass API に直接問い合わせる（格子ごとに IndexedDB に3日保存）
+- **自治体のオープンデータ**：`public/data/gov.json`。`node scripts/fetch-opendata.mjs` で作る。2026-11 時点で喫煙所の位置を公開しているのを確認できたのは江東区（6件）と台東区（27件）で、いずれも CC BY 4.0（e-Gov データポータル・東京都オープンデータカタログ・BODIK を検索）。OSM の喫煙所と 25m 以内で重なるものは自治体データを優先して1つにする。新しい自治体を見つけたらスクリプトの `SOURCES` に足す
+- **ホットペッパーグルメ**：「喫煙可の店」を表示しているとき、地図の中心から半径1km の店を `functions/api/shops.js` 経由で検索し、`non_smoking` が「全面禁煙」「未確認」以外の店を出す。API キー（[リクルートWEBサービス](https://webservice.recruit.co.jp/)で無料登録）を Pages の環境変数 `HOTPEPPER_KEY` に設定すると有効になり、未設定なら表示しない。規約に従い「Powered by ホットペッパーグルメ Webサービス」を表示し、結果は10分だけ一時保存する（全国分を取り込んで配るのはしない）
+- 使わないもの：モットスイタイなどの喫煙所マップサイトは、利用規約上データを取り込めないため使わない
 - 投稿・報告：Cloudflare Pages Functions + D1（`functions/`、`schema.sql`）。IP は日ごとの塩付きハッシュでのみ保存し、1端末1日10件まで
 
 API がない配置（静的ホスティングだけ）でも動き、その場合は投稿ボタンが消える。
@@ -27,7 +34,8 @@ npm install
 npm run vendor     # Leaflet を public/vendor に配置
 npm run db:init    # ローカル D1 にテーブル作成
 npm run dev        # http://localhost:8788
-npm test           # 別ターミナルで。ローカル D1 を空にしてから画面の動作を確認（Overpass は固定データに差し替え）
+npm test           # 別ターミナルで。ローカル D1 を空にしてから画面の動作を確認（全国データ・Overpass は固定データに差し替え）
+STATIC=0 npm test  # 全国データがない配置の動作を確認
 ```
 
 ## 公開（Cloudflare Pages）
@@ -38,10 +46,10 @@ npx wrangler d1 execute kemuri-map --remote --file=schema.sql
 npx wrangler pages deploy
 ```
 
-Pages の環境変数 `HASH_SECRET` に任意の文字列を設定する（IP ハッシュの塩）。
+Pages の環境変数 `HASH_SECRET` に任意の文字列を設定する（IP ハッシュの塩）。ホットペッパーを使うなら `HOTPEPPER_KEY` も設定する（`npx wrangler pages secret put HOTPEPPER_KEY`）。
 
 ## 未対応・注意
 
-- Overpass API は公共の無料サービスで、混雑時は取得に失敗することがある。利用者が増えたら自前のデータ配信（定期的に日本全体を抽出して静的ファイル化）に切り替える
+- 全国データは自動では更新されない。定期的に `scripts/extract-pbf.py` を実行してコミットする（GitHub Actions で自動化する場合は時間枠に注意）
 - 投稿のモデレーション画面はない。不適切な投稿は D1 の `spots.hidden` を 1 にして隠す
 - 投稿内容は OpenStreetMap には反映されない

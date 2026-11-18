@@ -1,6 +1,6 @@
 import { json, inJapan, clientHash } from '../_lib/util.js';
 
-// POST /api/reports  {ref: 'osm:node/123' | 'user:45', lat, lng, reason: 'closed' | 'wrong'}
+// POST /api/reports  {ref: 'osm:node/123' | 'user:45' | 'gov:taito-3', lat, lng, reason: 'closed' | 'wrong'}
 // 同じ端末（日ごとのハッシュ）から同じ地点への報告は1件として数える
 export async function onRequestPost({ request, env }) {
   let body;
@@ -10,7 +10,7 @@ export async function onRequestPost({ request, env }) {
     return json({ error: 'JSON を送ってください' }, 400);
   }
   const ref = String(body.ref || '');
-  if (!/^(osm:(node|way|relation)\/\d{1,12}|user:\d{1,10})$/.test(ref)) {
+  if (!/^(osm:(node|way|relation)\/\d{1,12}|user:\d{1,10}|gov:[a-z]{2,20}(-[a-z]{2,20})?-\d{1,6})$/.test(ref)) {
     return json({ error: '報告する地点が不正です' }, 400);
   }
   if (!['closed', 'wrong'].includes(body.reason)) return json({ error: '理由を選んでください' }, 400);

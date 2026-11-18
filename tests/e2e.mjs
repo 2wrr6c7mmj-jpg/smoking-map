@@ -19,6 +19,17 @@ const overpass = {
   ],
 };
 
+// 自治体データ：OSM の node 102（名前なし）と同じ場所に台東区の喫煙所を置き、重複が1つにまとまるか確かめる
+const gov = {
+  updated: '2026-11-18T00:00:00Z',
+  sources: [{ id: 'taito', city: '台東区', license: 'CC BY 4.0', page: 'https://catalog.data.metro.tokyo.lg.jp/dataset/t131067d0000000110', count: 1 }],
+  spots: [[35.67952, 139.76902, 'taito-1', { name: '区設置 公衆喫煙所テスト', hours: '24時間', address: '台東区テスト1-1' }]],
+};
+const hotpepper = {
+  shops: [{ id: 'J000001', name: '喫煙可の居酒屋テスト', lat: 35.6822, lng: 139.7660, smoking: '一部禁煙', genre: '居酒屋', address: '千代田区丸の内', open: '17:00〜', url: 'https://www.hotpepper.jp/strJ000001/' }],
+  credit: 'Powered by ホットペッパーグルメ Webサービス',
+};
+
 const browser = await chromium.launch();
 const errors = [];
 
@@ -26,6 +37,14 @@ async function session(colorScheme) {
   const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, geolocation: ME, permissions: ['geolocation'], locale: 'ja-JP', colorScheme });
   ctx.calls = 0;
   await ctx.route(/overpass/, (r) => { ctx.calls++; return r.fulfill({ json: overpass }); });
+  await ctx.route(/\/data\/gov\.json/, (r) => r.fulfill({ json: gov }));
+  await ctx.route(/\/api\/shops/, (r) => r.fulfill({ json: hotpepper }));
+  // 全国データは固定データから作る（STATIC=0 のときは全国データなしの動作を確かめる）
+  await ctx.route(/\/data\/jp\//, (r) => {
+    if (process.env.STATIC === '0') return r.fulfill({ status: 404, body: 'not found' });
+    if (r.request().url().endsWith('index.json')) return r.fulfill({ json: { updated: '2026-11-18T00:00:00Z', total: overpass.elements.length, cells: { '35_139': overpass.elements.length } } });
+    return r.fulfill({ json: overpass.elements.map((e) => [e.lat ?? e.center.lat, e.lon ?? e.center.lon, `${e.type[0]}${e.id}`, e.tags]) });
+  });
   if (!process.env.REAL_TILES) await ctx.route(/tile\.openstreetmap\.org/, (r) => r.fulfill({ status: 200, contentType: 'image/png', body: Buffer.alloc(0) }));
   const page = await ctx.newPage();
   page.on('pageerror', (e) => errors.push(e.message));
@@ -41,20 +60,24 @@ await page.goto(BASE);
 await page.waitForFunction(() => !document.querySelector('#hero').hidden && document.querySelector('#c-area').textContent !== '0', null, { timeout: 15000 });
 assert.equal(await heroName(), '丸の内北口 喫煙所', '現在地から最も近い喫煙所が大きく出る');
 assert.match(await page.textContent('#hero'), /いちばん近い/);
-assert.equal(await count('#c-area'), 4);
+assert.equal(await count('#c-area'), 4, 'OSM と自治体の重複は1つに数える');
 assert.equal(await count('#c-shop'), 1, '禁煙の店は数えない');
 await page.click('#more');
 let names = await listNames();
 assert.equal(names.length, 3, '初期表示は喫煙所のみ');
+assert.ok(names.includes('区設置 公衆喫煙所テスト'), '自治体データを表示する');
+assert.ok(!names.includes('南東の喫煙所'), '自治体と重なる OSM の地点は隠す');
 assert.ok(!names.includes('喫茶テスト'));
 if (process.env.REAL_TILES) await page.waitForTimeout(2500);
 await page.screenshot({ path: `${SHOTS}/list-dark.png` });
 
 await page.click('label:has(#f-shop)');
-await page.waitForFunction(() => document.querySelectorAll('#list li').length === 4);
+await page.waitForFunction(() => document.querySelectorAll('#list li').length === 5);
 assert.ok((await listNames()).includes('喫茶テスト'), '喫煙可の店を表示できる');
+assert.ok((await listNames()).includes('喫煙可の居酒屋テスト'), 'ホットペッパーの店を表示できる');
+assert.match(await page.textContent('#status'), /Powered by ホットペッパーグルメ Webサービス/);
 await page.click('label:has(#f-heated)');
-await page.waitForFunction(() => document.querySelectorAll('#list li').length === 3);
+await page.waitForFunction(() => document.querySelectorAll('#list li').length === 4);
 assert.ok(!(await listNames()).includes('加熱式専用ブース'), '加熱式専用を隠せる');
 await page.click('label:has(#f-heated)');
 await page.click('label:has(#f-shop)');
@@ -66,6 +89,14 @@ assert.match(await page.getAttribute('#detail a.btn-ember', 'href'), /google\.co
 assert.match(await page.textContent('#detail .tags'), /屋根あり/);
 assert.match(await page.textContent('#detail .tags'), /24時間/);
 await page.screenshot({ path: `${SHOTS}/detail-dark.png` });
+
+// 自治体データの詳細には出典を出す
+await page.click('#detail-back');
+await page.click('#list .item:has-text("区設置 公衆喫煙所テスト")');
+assert.match(await page.textContent('#detail'), /台東区のオープンデータ（CC BY 4\.0）/);
+assert.match(await page.textContent('#detail .tags'), /24時間/);
+await page.click('#detail-back');
+await page.click('#hero [data-open]');
 
 // 閉鎖の報告：報告のある地点は後ろへ回る
 await page.click('#detail [data-report="closed"]');
@@ -92,7 +123,8 @@ await ctx.setOffline(true);
 await page.reload();
 await page.waitForFunction(() => !document.querySelector('#hero').hidden, null, { timeout: 15000 });
 assert.equal(await page.isVisible('#net'), true, 'オフライン表示');
-assert.equal(ctx.calls, before, 'オフライン時は取得しない');
+assert.equal(ctx.calls, before, 'オフライン時は Overpass に問い合わせない');
+if (process.env.STATIC !== '0') assert.equal(ctx.calls, 0, '全国データがあれば Overpass を使わない');
 await ctx.setOffline(false);
 
 // 明るい配色

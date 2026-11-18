@@ -15,6 +15,10 @@ const $ = (id) => document.getElementById(id);
 const icon = (name) => `<svg aria-hidden="true"><use href="#i-${name}"/></svg>`;
 const state = {
   osm: new Map(),       // key -> spot
+  gov: [],              // 自治体のオープンデータ
+  hp: new Map(),        // ホットペッパーの喫煙可の店
+  hpAvailable: true,
+  govSources: [],
   user: new Map(),
   reports: new Map(),   // ref -> {closed:{n,last}, wrong:{n,last}}
   me: null,             // {lat,lng,acc}
@@ -87,6 +91,45 @@ function fromUser(s) {
   };
 }
 
+function fromGov([lat, lng, id, t], src) {
+  return {
+    key: `gov:${id}`,
+    source: 'gov',
+    group: 'area',
+    kind: 'area',
+    lat, lng,
+    name: t.name || '',
+    heatedOnly: false,
+    note: [t.address, t.note].filter(Boolean).join(' / '),
+    hours: t.hours,
+    city: src?.city,
+    page: src?.page,
+    license: src?.license,
+  };
+}
+
+function fromHotpepper(x) {
+  return {
+    key: `hp:${x.id}`,
+    source: 'hp',
+    group: 'shop',
+    kind: 'shop',
+    lat: x.lat, lng: x.lng,
+    name: x.name,
+    heatedOnly: false,
+    smoking: x.smoking,
+    genre: x.genre,
+    note: [x.address, x.open].filter(Boolean).join(' / '),
+    url: x.url,
+  };
+}
+
+// 自治体の喫煙所と同じ場所（25m以内）にある OSM の喫煙所は重複として隠す
+const DUP_M = 25;
+function isDuplicate(s) {
+  return s.source === 'osm' && s.group === 'area' && state.gov.some((g) => Math.abs(g.lat - s.lat) < 0.0005 && distance(g, s) < DUP_M);
+}
+
 // 地点の特徴を短い札にする
 function tagsOf(s) {
   const out = [];
@@ -103,12 +146,18 @@ function tagsOf(s) {
     if (t.level) out.push(`${t.level}階`);
     if (t.opening_hours) out.push(t.opening_hours === '24/7' ? '24時間' : `時間 ${t.opening_hours}`);
     if (t.operator) out.push(t.operator);
+  } else if (s.source === 'hp') {
+    out.push(s.smoking, s.genre);
+  } else if (s.source === 'gov') {
+    out.push(`${s.city}の公衆喫煙所`);
+    if (s.hours) out.push(s.hours);
   } else {
     out.push(KIND_LABEL[s.kind]);
   }
   return out.filter(Boolean);
 }
 const noteOf = (s) => (s.source === 'osm' ? s.tags.description || s.tags.note || '' : s.note || '');
+const SOURCE_LABEL = { osm: 'OpenStreetMap', user: 'みんなの投稿', gov: '自治体データ', hp: 'ホットペッパーグルメ' };
 
 // ---------- 計算 ----------
 function distance(a, b) {
@@ -160,7 +209,8 @@ function render() {
   const f = filters();
   const b = map.getBounds().pad(0.1);
   const origin = state.me || map.getCenter();
-  const inView = [...state.osm.values(), ...state.user.values()].filter((s) => b.contains([s.lat, s.lng]) && (f.heated || !s.heatedOnly));
+  const inView = [...state.gov, ...state.osm.values(), ...state.user.values(), ...state.hp.values()]
+    .filter((s) => b.contains([s.lat, s.lng]) && (f.heated || !s.heatedOnly) && !isDuplicate(s));
   $('c-area').textContent = inView.filter((s) => s.group === 'area').length;
   $('c-shop').textContent = inView.filter((s) => s.group === 'shop').length;
 
@@ -252,21 +302,24 @@ function renderList(spots) {
 
 function renderStatus() {
   const parts = [];
-  if (state.loadedAt) parts.push(`${state.loadedAt} 更新`);
+  if (staticIndex) parts.push(`全国 ${staticIndex.total.toLocaleString('ja-JP')}件 · ${staticIndex.updated.slice(0, 10)} 時点`);
+  else if (state.loadedAt) parts.push(`${state.loadedAt} 更新`);
   parts.push('データ © OpenStreetMap');
+  if (state.hp.size && filters().shop) parts.push('Powered by ホットペッパーグルメ Webサービス');
+  if (state.govSources.length) parts.push(`自治体データ © ${[...new Set(state.govSources.map((g) => g.city))].join('・')}（CC BY 4.0）`);
   $('status').textContent = parts.join(' · ');
 }
 
 function findSpot(key) {
-  return state.osm.get(key) || state.user.get(key);
+  return state.osm.get(key) || state.user.get(key) || state.hp.get(key) || state.gov.find((g) => g.key === key);
 }
 
 function openDetail(key) {
   state.selected = key;
   setMode('detail');
   const s = findSpot(key);
-  if (s) map.panTo([s.lat, s.lng], { animate: true });
   render();
+  if (s) viewVisible(L.latLng(s.lat, s.lng), map.getZoom());
 }
 
 function renderDetail() {
@@ -283,7 +336,8 @@ function renderDetail() {
   const note = noteOf(s);
   const src = s.source === 'user'
     ? `みんなの投稿${s.createdAt ? ` · ${s.createdAt.slice(0, 10)}` : ''}`
-    : 'OpenStreetMap';
+    : s.source === 'gov' ? `${s.city}のオープンデータ（${s.license}）`
+    : s.source === 'hp' ? 'Powered by ホットペッパーグルメ Webサービス' : 'OpenStreetMap';
   el.innerHTML = `
     <div class="detail-head">
       ${picto(s)}
@@ -298,8 +352,10 @@ function renderDetail() {
       <a class="btn btn-ember" href="${routeUrl(s)}" target="_blank" rel="noopener">${icon('walk')}徒歩ルートを開く</a>
     </div>
     <div class="report">
-      ${state.apiAvailable ? 'この情報について<button type="button" data-report="closed">閉鎖を報告</button><button type="button" data-report="wrong">情報が違う</button>' : ''}
+      ${state.apiAvailable && s.source !== 'hp' ? 'この情報について<button type="button" data-report="closed">閉鎖を報告</button><button type="button" data-report="wrong">情報が違う</button>' : ''}
       ${s.source === 'osm' ? `<a href="https://www.openstreetmap.org/${s.key.slice(4)}" target="_blank" rel="noopener">OSMで見る</a>` : ''}
+      ${s.source === 'hp' && s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">ホットペッパーで見る</a>` : ''}
+      ${s.source === 'gov' && s.page ? `<a href="${esc(s.page)}" target="_blank" rel="noopener">出典を見る</a>` : ''}
     </div>`;
   el.querySelectorAll('[data-report]').forEach((b) => b.addEventListener('click', () => report(s, b)));
 }
@@ -382,6 +438,82 @@ async function fetchUser(b) {
   ];
 }
 
+// ---------- 自治体のオープンデータ（scripts/fetch-opendata.mjs で作る、全国で数十件と小さい） ----------
+async function loadGov() {
+  try {
+    const res = await fetch('data/gov.json');
+    if (!res.ok || !(res.headers.get('content-type') || '').includes('json')) return;
+    const j = await res.json();
+    const byId = Object.fromEntries(j.sources.map((x) => [x.id, x]));
+    state.govSources = j.sources;
+    state.gov = j.spots.map((row) => fromGov(row, byId[row[2].replace(/-\d+$/, '')]));
+    render();
+  } catch { /* なくても動く */ }
+}
+
+// ---------- ホットペッパー（喫煙可の店を表示しているときだけ、地図の中心の半径1kmを検索） ----------
+const hpDone = new Set(); // 検索済みの中心（約1km 単位）
+async function loadHotpepper() {
+  if (!state.hpAvailable || !filters().shop || map.getZoom() < 15 || !navigator.onLine) return;
+  const c = map.getCenter();
+  const k = `${Math.round(c.lat * 100)}:${Math.round(c.lng * 100)}`;
+  if (hpDone.has(k)) return;
+  hpDone.add(k);
+  try {
+    const res = await fetch(`api/shops?lat=${c.lat.toFixed(4)}&lng=${c.lng.toFixed(4)}`);
+    if (res.status === 503 || res.status === 404 || !(res.headers.get('content-type') || '').includes('json')) {
+      state.hpAvailable = false; // キーが未設定・API のない配置
+      return;
+    }
+    if (!res.ok) throw new Error();
+    for (const x of (await res.json()).shops) state.hp.set(`hp:${x.id}`, fromHotpepper(x));
+    render();
+  } catch {
+    hpDone.delete(k);
+  }
+}
+
+// ---------- 全国データ（scripts/fetch-japan.mjs で作る 1度四方の区画ファイル） ----------
+let staticIndex;          // undefined: 未確認 / null: 全国データなし / object: index.json
+const staticCells = new Map(); // 区画 -> Promise<spot[]>
+const TYPE = { n: 'node', w: 'way', r: 'relation' };
+
+async function getStaticIndex() {
+  if (staticIndex !== undefined) return staticIndex;
+  try {
+    const res = await fetch('data/jp/index.json');
+    staticIndex = res.ok && (res.headers.get('content-type') || '').includes('json') ? await res.json() : null;
+  } catch {
+    staticIndex = null;
+  }
+  return staticIndex;
+}
+
+function loadStaticCell(k) {
+  if (!staticCells.has(k)) {
+    const p = fetch(`data/jp/${k}.json`)
+      .then((r) => { if (!r.ok) throw new Error(`全国データ ${r.status}`); return r.json(); })
+      .then((list) => list.map(([lat, lon, id, tags]) => fromOverpass({ type: TYPE[id[0]], id: id.slice(1), lat, lon, tags })).filter(Boolean));
+    p.catch(() => staticCells.delete(k)); // 失敗した区画は次の移動で取り直す
+    staticCells.set(k, p);
+  }
+  return staticCells.get(k);
+}
+
+async function loadStatic(bounds) {
+  const keys = [];
+  for (let i = Math.floor(bounds.getSouth()); i <= Math.floor(bounds.getNorth()); i++) {
+    for (let j = Math.floor(bounds.getWest()); j <= Math.floor(bounds.getEast()); j++) {
+      if (staticIndex.cells[`${i}_${j}`]) keys.push(`${i}_${j}`);
+    }
+  }
+  try {
+    return { items: (await Promise.all(keys.slice(0, 6).map(loadStaticCell))).flat() };
+  } catch (error) {
+    return { items: [], error };
+  }
+}
+
 // cells のうち未取得・期限切れのものを、まとめて1回で取得して格子ごとに保存する
 async function loadLayer(name, cells, ttl, fetcher) {
   const cached = await store.getCells(name, cells);
@@ -414,8 +546,10 @@ async function refresh() {
   $('progress').hidden = false;
   try {
     const cells = cellsFor(map.getBounds(), MAX_CELLS);
+    // 全国データがあればそれを使い、なければ Overpass に直接問い合わせる
+    const idx = await getStaticIndex();
     const [osm, user] = await Promise.all([
-      loadLayer('osm', cells, OSM_TTL, fetchOverpass),
+      idx ? loadStatic(map.getBounds()) : loadLayer('osm', cells, OSM_TTL, fetchOverpass),
       state.apiAvailable ? loadLayer('user', cells, USER_TTL, fetchUser) : { items: [] },
     ]);
     for (const s of osm.items) state.osm.set(s.key, s);
@@ -436,6 +570,7 @@ async function refresh() {
     $('progress').hidden = true;
     render();
     if (pending) { pending = false; refresh(); }
+    loadHotpepper();
   }
 }
 
@@ -449,7 +584,7 @@ map.on('moveend', () => {
 for (const id of ['f-area', 'f-shop', 'f-heated']) {
   const v = store.getPref(id);
   if (typeof v === 'boolean') $(id).checked = v;
-  $(id).addEventListener('change', () => { store.setPref(id, $(id).checked); render(); });
+  $(id).addEventListener('change', () => { store.setPref(id, $(id).checked); render(); loadHotpepper(); });
 }
 
 // ---------- 現在地 ----------
@@ -467,7 +602,7 @@ function locate(fly) {
         meCircle.setLatLng(ll).setRadius(state.me.acc);
       }
       $('btn-locate').classList.add('active');
-      if (fly) map.setView(ll, Math.max(map.getZoom(), 16));
+      if (fly) viewVisible(L.latLng(ll), Math.max(map.getZoom(), 16));
       render();
     },
     (err) => {
@@ -485,6 +620,12 @@ function visibleCenter() {
   const wide = r.top > 0 && r.right < innerWidth * 0.6 && r.height < innerHeight * 0.95 && innerWidth >= 760;
   return wide ? L.point((r.right + innerWidth) / 2, innerHeight / 2) : L.point(innerWidth / 2, (top + r.top) / 2 + 24);
 }
+// ll がシートに隠れていない部分の中央に来るように地図を動かす
+function viewVisible(ll, zoom, opts) {
+  const shift = map.getSize().divideBy(2).subtract(visibleCenter());
+  map.setView(map.unproject(map.project(ll, zoom).add(shift), zoom), zoom, opts);
+}
+
 function syncSheetHeight() {
   const root = document.documentElement.style;
   root.setProperty('--sheet-h', `${$('sheet').offsetHeight}px`);
@@ -502,9 +643,7 @@ $('btn-add').addEventListener('click', () => {
   setMode('add');
   $('add-error').hidden = true;
   syncSheetHeight();
-  const zoom = Math.max(map.getZoom(), 18);
-  const shift = map.getSize().divideBy(2).subtract(visibleCenter());
-  map.setView(map.unproject(map.project(before, zoom).add(shift), zoom), zoom, { animate: false });
+  viewVisible(before, Math.max(map.getZoom(), 18), { animate: false });
 });
 $('add-cancel').addEventListener('click', () => { setMode('list'); render(); });
 $('add-form').addEventListener('submit', async (e) => {
@@ -550,6 +689,7 @@ if ('serviceWorker' in navigator && location.protocol !== 'file:') {
 // 起動
 setMode('list');
 syncSheetHeight();
+loadGov();
 refresh();
 locate(!saved);
 

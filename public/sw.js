@@ -1,8 +1,9 @@
 // アプリ本体は端末に保存して電波がなくても起動できるようにし、地図タイルは見た分を一定数まで保存する
-const VERSION = 'v2';
+const VERSION = 'v4';
 const SHELL = `kemuri-shell-${VERSION}`;
 const TILES = 'kemuri-tiles';
 const FONTS = 'kemuri-fonts';
+const DATA = 'kemuri-data';
 const MAX_TILES = 800;
 const SHELL_FILES = ['./', 'index.html', 'style.css', 'app.js', 'cells.js', 'store.js', 'manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png', 'vendor/leaflet/leaflet.js', 'vendor/leaflet/leaflet.css'];
 
@@ -53,6 +54,19 @@ self.addEventListener('fetch', (e) => {
         const res = await fetch(e.request);
         if (res.ok || res.type === 'opaque') await c.put(e.request, res.clone());
         return res;
+      })
+    );
+    return;
+  }
+
+  // 全国データ：保存分をすぐ返し、裏で新しい版を取り直す（区画ファイルは1度四方で小さい）
+  if (url.origin === location.origin && url.pathname.includes('/data/')) {
+    e.respondWith(
+      caches.open(DATA).then(async (c) => {
+        const hit = await c.match(e.request);
+        const net = fetch(e.request).then((res) => { if (res.ok) c.put(e.request, res.clone()); return res; });
+        if (hit) { e.waitUntil(net.catch(() => {})); return hit; }
+        return net;
       })
     );
     return;
