@@ -115,6 +115,7 @@ function fromPlace([lat, lng, id, t], src = {}) {
     note: [t.note, t.address].filter(Boolean).join('\n'),
     hours: t.hours,
     io: t.io,
+    gate: t.gate,
     url: t.url,
     src,
   };
@@ -150,6 +151,7 @@ function tagsOf(s) {
     if (s.hours) out.push(s.hours);
   } else if (s.source === 'place') {
     out.push(s.src.label);
+    if (s.gate) out.push(s.gate === 'in' ? '改札内（乗車券・入場券が必要）' : '改札外');
     if (s.heatedPartial) out.push('加熱式専用の場所あり');
     if (s.hours) out.push(s.hours);
   } else {

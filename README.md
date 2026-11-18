@@ -23,6 +23,7 @@
 - **公開情報（自治体・施設・チェーン店）**：`public/data/places/*.json`（`index.json` で列挙）。情報源ごとのスクリプトで作り、`node scripts/build-places-index.mjs` で一覧を更新する
   - 自治体：`scripts/fetch-opendata.mjs` → `gov.json`。江東区・台東区（CC BY 4.0）。OSM の喫煙所と 25m 以内で重なるものは自治体データを優先
   - 市区の公開ページ：`scripts/sources/municipal.mjs` → `cities.json`。約300市区を調べ、喫煙所の案内があった140市区（大阪市516・港区116・横浜市96 ほか）の名称・住所・目印・利用時間だけを `scripts/data/municipal-spots.json` に記録。位置は ①ページや公開の Google マイマップにある座標 ②住所（国土地理院の住所検索）③目印の駅名など（OpenStreetMap の地名検索）の順で出し、②③で粗いものは詳細に「目安」と表示する。休止・閉鎖中は除く。市が案内する店内の喫煙所（利用者向け）は「喫煙可の店」に入れる。区域図の画像から読み取った市（大分・和歌山・四日市など）は位置が概略
+  - 駅構内：`scripts/sources/stations.mjs` → `stations.json`。JR 各社の公式案内（新幹線駅の喫煙ルームなど）から駅名と構内の場所を `scripts/data/station-spots.json` に記録。位置は駅そのもので、改札内・改札外と構内の場所は文章で示す。JR東日本は公式サイトが自動アクセスを拒否するため、関連会社の記事で確認できた駅だけ
   - 商業施設：`scripts/sources/mitsui.mjs` → `mitsui.json`。ららぽーと・三井アウトレットパーク等の「喫煙室」案内から階と場所
   - チェーン店：`scripts/sources/cunited.mjs`（ベローチェ・珈琲館・カフェ・ド・クリエ等）、`kaikatsu.mjs`（快活CLUB の加熱式たばこ専用エリア）、`hoshino.mjs`（星乃珈琲店）、`ueshima.mjs`（上島珈琲店）、`manekineko.mjs`（カラオケまねきねこの喫煙ブース。ブラウザで「もっとみる」を押して一覧を読む）
   - 取得は `scripts/lib/fetch.mjs` 経由：身元を名乗る User-Agent、1ホスト1秒以上の間隔、robots.txt の Disallow を守る。アクセスを拒否（403 等）されたサイトは回避せず使わない
