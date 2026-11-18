@@ -30,9 +30,19 @@ function kanjiNum(s) {
 }
 const digits = (s) => normalizeAddress(kanjiNum(s)).match(/\d+/g) || [];
 
+// 一致の度合い：banchi（番地・号まで）/ block（号以外の数字が一致＝街区、数十m以内）/ town（町名・丁目まで）
+function levelOf(q, title) {
+  const want = digits(q);
+  const got = digits(title);
+  const same = (n) => want.slice(0, n).every((x, i) => got[i] === x);
+  if (want.length && same(want.length)) return 'banchi';
+  if (want.length >= 2 && got.length >= want.length - 1 && same(want.length - 1)) return 'block';
+  return 'town';
+}
+
 export async function geocode(address) {
   const q = normalizeAddress(address);
-  if (q in cache) return cache[q];
+  if (q in cache) return cache[q] && { ...cache[q], level: levelOf(q, cache[q].title) };
   let hit = null;
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
@@ -43,10 +53,7 @@ export async function geocode(address) {
         const [lng, lat] = list[0].geometry.coordinates;
         const title = list[0].properties.title;
         // 返ってきた住所が、問い合わせの番地の数字まで含んでいれば「番地」精度
-        const want = digits(q);
-        const got = digits(title);
-        const level = want.length && want.every((n, i) => got[i] === n) ? 'banchi' : 'town';
-        hit = { lat, lng, title, level };
+        hit = { lat, lng, title, level: levelOf(q, title) };
       }
       break;
     } catch {

@@ -1,0 +1,461 @@
+{
+ "updated": "2026-11-18T16:26:25.257Z",
+ "sources": [
+  {
+   "id": "hoshino",
+   "type": "chain",
+   "group": "shop",
+   "label": "喫茶店（喫煙ブース等あり）",
+   "name": "星乃珈琲店 店舗一覧",
+   "publisher": "星乃珈琲店（ドトール・日レスホールディングス）",
+   "page": "https://www.hoshinocoffee.com/shop.html",
+   "count": 40
+  }
+ ],
+ "spots": [
+  [
+   35.691788,
+   139.703064,
+   "hoshino-1",
+   {
+    "name": "星乃珈琲店 新宿東口店",
+    "note": "禁煙（喫煙ブースあり）\n新宿ニュー富士ビル3F",
+    "address": "東京都新宿区新宿3-17-5 新宿ニュー富士ビル3F",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.688904,
+   139.697983,
+   "hoshino-2",
+   {
+    "name": "星乃珈琲店 西新宿2号店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "東京都新宿区西新宿1-16-4 井門西新宿ビルB1F",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.713127,
+   139.705811,
+   "hoshino-3",
+   {
+    "name": "星乃珈琲店 高田馬場店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "東京都新宿区高田馬場2-17-15 唐橋ビル2F",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.712212,
+   139.685135,
+   "hoshino-4",
+   {
+    "name": "星乃珈琲店 落合店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "東京都新宿区上落合3-5-25 FLAMP 2F",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.687668,
+   139.72905,
+   "hoshino-5",
+   {
+    "name": "星乃珈琲店 コモレ四谷",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "東京都新宿区四谷1-6 コモレ四谷1F",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.68354,
+   139.702026,
+   "hoshino-6",
+   {
+    "name": "星乃珈琲店 代々木店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "東京都渋谷区代々木1-35-15 tiDOE代々木 2階",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.625801,
+   139.726349,
+   "hoshino-7",
+   {
+    "name": "星乃珈琲店 五反田店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "東京都品川区東五反田1-21-10 2階",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.690987,
+   139.770981,
+   "hoshino-8",
+   {
+    "name": "星乃珈琲店 神田店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "東京都千代田区鍛冶町2-1-3 保志場ビル2階",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.712368,
+   139.79332,
+   "hoshino-9",
+   {
+    "name": "星乃珈琲店 浅草店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "東京都台東区浅草1-23-6浅草関根ビル1F",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.642521,
+   139.670486,
+   "hoshino-10",
+   {
+    "name": "星乃珈琲店 三軒茶屋店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "東京都世田谷区三軒茶屋1-37-3 三軒茶屋山本ビル1F/B1F",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.70401,
+   139.621109,
+   "hoshino-11",
+   {
+    "name": "星乃珈琲店 荻窪店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "東京都杉並区荻窪5-28-13 荻窪駅前ビル2F",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.757969,
+   139.653519,
+   "hoshino-12",
+   {
+    "name": "星乃珈琲店 平和台店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "東京都練馬区早宮2-17-41 やかた平和台2F",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.737068,
+   139.652908,
+   "hoshino-13",
+   {
+    "name": "星乃珈琲店 練馬西口店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "東京都練馬区豊玉北5-19-8 TRI CROSS 2F",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.750111,
+   139.58606,
+   "hoshino-14",
+   {
+    "name": "星乃珈琲店 大泉学園店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "東京都練馬区東大泉1-30-7 瀧島ビル1F",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.749016,
+   139.803711,
+   "hoshino-15",
+   {
+    "name": "星乃珈琲店 北千住店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "東京都足立区千住2-62-9 うな源ビル2F",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.734028,
+   139.739105,
+   "hoshino-16",
+   {
+    "name": "星乃珈琲店 巣鴨店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "東京都豊島区巣鴨2-3-10 森川第一ビルディング2階",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.544559,
+   139.444962,
+   "hoshino-17",
+   {
+    "name": "星乃珈琲店 町田北口店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "東京都町田市森野1-19-20 小田急バス町田ビルディングB1",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   36.072582,
+   140.088776,
+   "hoshino-18",
+   {
+    "name": "星乃珈琲店 つくば店",
+    "note": "禁煙（喫煙ブースあり）\n※地図の位置は住所の町名までの目安",
+    "address": "茨城県つくば市西大橋748-2",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.859062,
+   139.655701,
+   "hoshino-19",
+   {
+    "name": "星乃珈琲店 浦和店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "埼玉県さいたま市浦和区高砂1-13-12 MiRiスクエア1階",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.879444,
+   139.627747,
+   "hoshino-20",
+   {
+    "name": "星乃珈琲店 与野本町店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "埼玉県さいたま市中央区本町東1-1",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.935295,
+   139.390427,
+   "hoshino-21",
+   {
+    "name": "星乃珈琲店 鶴ヶ島店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "埼玉県鶴ヶ島市三ツ木193-3",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.682655,
+   139.915283,
+   "hoshino-22",
+   {
+    "name": "星乃珈琲店 行徳店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "千葉県市川市行徳駅前1-26-13 エンドービル2 1階",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.823074,
+   139.967743,
+   "hoshino-23",
+   {
+    "name": "星乃珈琲店 柏酒井根店",
+    "note": "禁煙（電子タバコのみ喫煙ブースあり）",
+    "address": "千葉県柏市酒井根2-2-2",
+    "url": "https://www.hoshinocoffee.com/shop.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.144997,
+   136.911011,
+   "hoshino-24",
+   {
+    "name": "星乃珈琲店 新堀川店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "愛知県名古屋市中区金山5丁目11-6",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.168854,
+   136.878693,
+   "hoshino-25",
+   {
+    "name": "星乃珈琲店 名駅椿店",
+    "note": "分煙（加熱式たばこのみ可）",
+    "address": "愛知県名古屋市中村区椿町10-5 サン・タウン名駅椿本館1F",
+    "url": "https://www.hoshinocoffee.com/shop.html",
+    "heated": "only"
+   }
+  ],
+  [
+   36.760059,
+   137.016403,
+   "hoshino-26",
+   {
+    "name": "星乃珈琲店 高岡熊野店",
+    "note": "禁煙（喫煙ブースあり）\n※地図の位置は住所の町名までの目安",
+    "address": "富山県高岡市新成町101-1",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   36.682255,
+   137.250015,
+   "hoshino-27",
+   {
+    "name": "星乃珈琲店 富山天正寺店",
+    "note": "禁煙（喫煙ブースあり）\n※地図の位置は住所の町名までの目安",
+    "address": "富山県富山市天正寺1278",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   36.595974,
+   136.623428,
+   "hoshino-28",
+   {
+    "name": "星乃珈琲店 石川県庁前店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "石川県金沢市鞍月4-178",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   36.54533,
+   136.617676,
+   "hoshino-29",
+   {
+    "name": "星乃珈琲店 金沢押野店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "石川県野々市市押野6-6",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   35.009998,
+   135.751389,
+   "hoshino-30",
+   {
+    "name": "星乃珈琲店 河原町店",
+    "note": "禁煙（喫煙ブースあり）\n※地図の位置は住所の町名までの目安",
+    "address": "京都府京都市中京区河原町通蛸薬師下ル塩屋町331 龍善堂河原町ビル",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   34.927052,
+   135.748245,
+   "hoshino-31",
+   {
+    "name": "星乃珈琲店 京都伏見店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "京都府京都市伏見区横大路下三栖城ノ前町22-1",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   34.676788,
+   135.501053,
+   "hoshino-32",
+   {
+    "name": "星乃珈琲店 北心斎橋店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "大阪府大阪市中央区南船場3-10-11 FPG links SHINSAIBASHI2階",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   34.668545,
+   134.965744,
+   "hoshino-33",
+   {
+    "name": "星乃珈琲店 西明石店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "兵庫県明石市野々上3-15-16",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   34.229656,
+   135.197449,
+   "hoshino-34",
+   {
+    "name": "星乃珈琲店 和歌山宮街道店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "和歌山県和歌山市太田3－1－31",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   34.64003,
+   133.808609,
+   "hoshino-35",
+   {
+    "name": "星乃珈琲店 倉敷中庄店",
+    "note": "分煙（加熱式たばこのみ可）\n※地図の位置は住所の町名までの目安",
+    "address": "岡山県倉敷市二子357-4",
+    "url": "https://www.hoshinocoffee.com/shop.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.573666,
+   133.758148,
+   "hoshino-36",
+   {
+    "name": "星乃珈琲店 倉敷堀南店",
+    "note": "分煙（加熱式たばこのみ可）\n※地図の位置は住所の町名までの目安",
+    "address": "岡山県倉敷市堀南797-1",
+    "url": "https://www.hoshinocoffee.com/shop.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.394211,
+   132.454758,
+   "hoshino-37",
+   {
+    "name": "星乃珈琲店 広島大手町店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "広島県広島市中区大手町1丁目7-21",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   34.472099,
+   133.388626,
+   "hoshino-38",
+   {
+    "name": "星乃珈琲店 福山川口店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "広島県福山市川口町1丁目8-8",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   34.543606,
+   133.328339,
+   "hoshino-39",
+   {
+    "name": "星乃珈琲店 福山駅家店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "広島県福山市駅家町倉光21-1",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ],
+  [
+   32.801201,
+   130.708389,
+   "hoshino-40",
+   {
+    "name": "星乃珈琲店 熊本下通店",
+    "note": "禁煙（喫煙ブースあり）",
+    "address": "熊本県熊本市中央区下通1丁目5-15 ソニック下通りビル2F",
+    "url": "https://www.hoshinocoffee.com/shop.html"
+   }
+  ]
+ ]
+}

@@ -1,0 +1,1541 @@
+{
+ "updated": "2026-11-18T16:27:54.595Z",
+ "sources": [
+  {
+   "id": "kaikatsu",
+   "type": "chain",
+   "group": "shop",
+   "label": "ネットカフェ（加熱式たばこ専用エリア）",
+   "name": "快活CLUB 店舗検索",
+   "publisher": "快活フロンティア",
+   "page": "https://www.kaikatsu.jp/shop/",
+   "count": 127
+  }
+ ],
+ "spots": [
+  [
+   43.784996,
+   142.360306,
+   "kaikatsu-20176",
+   {
+    "name": "快活CLUB 旭川大町店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "北海道旭川市大町１条3-14-13",
+    "url": "https://www.kaikatsu.jp/shop/detail/20176.html",
+    "heated": "only"
+   }
+  ],
+  [
+   43.786427,
+   142.409546,
+   "kaikatsu-20105",
+   {
+    "name": "快活CLUB 旭川永山店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "北海道旭川市永山7条4-4-14",
+    "url": "https://www.kaikatsu.jp/shop/detail/20105.html",
+    "heated": "only"
+   }
+  ],
+  [
+   40.526981,
+   141.492996,
+   "kaikatsu-20114",
+   {
+    "name": "快活CLUB 八戸沼館店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "青森県八戸市沼館4-1-39",
+    "url": "https://www.kaikatsu.jp/shop/detail/20114.html",
+    "heated": "only"
+   }
+  ],
+  [
+   40.610607,
+   140.496017,
+   "kaikatsu-20113",
+   {
+    "name": "快活CLUB 弘前店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "青森県弘前市和泉2-7-7",
+    "url": "https://www.kaikatsu.jp/shop/detail/20113.html",
+    "heated": "only"
+   }
+  ],
+  [
+   39.292618,
+   141.107346,
+   "kaikatsu-20122",
+   {
+    "name": "快活CLUB 北上店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "岩手県北上市有田町1-45",
+    "url": "https://www.kaikatsu.jp/shop/detail/20122.html",
+    "heated": "only"
+   }
+  ],
+  [
+   39.153652,
+   141.149368,
+   "kaikatsu-20126",
+   {
+    "name": "快活CLUB 水沢店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "岩手県奥州市水沢佐倉河五反町57",
+    "url": "https://www.kaikatsu.jp/shop/detail/20126.html",
+    "heated": "only"
+   }
+  ],
+  [
+   39.703403,
+   141.145386,
+   "kaikatsu-20127",
+   {
+    "name": "快活CLUB 盛岡大通店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "岩手県盛岡市大通2-6-8<br />セントラルガーデンスクエア1～3F",
+    "url": "https://www.kaikatsu.jp/shop/detail/20127.html",
+    "heated": "only"
+   }
+  ],
+  [
+   38.440994,
+   141.30249,
+   "kaikatsu-20192",
+   {
+    "name": "快活CLUB 石巻中里店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "宮城県石巻市南中里2-9-54",
+    "url": "https://www.kaikatsu.jp/shop/detail/20192.html",
+    "heated": "only"
+   }
+  ],
+  [
+   38.241905,
+   140.9077,
+   "kaikatsu-20132",
+   {
+    "name": "快活CLUB 仙台南小泉店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "宮城県仙台市若林区南小泉2-11-2",
+    "url": "https://www.kaikatsu.jp/shop/detail/20132.html",
+    "heated": "only"
+   }
+  ],
+  [
+   38.282265,
+   140.926971,
+   "kaikatsu-20137",
+   {
+    "name": "快活CLUB 東仙台店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "宮城県仙台市宮城野区小鶴3-8-10",
+    "url": "https://www.kaikatsu.jp/shop/detail/20137.html",
+    "heated": "only"
+   }
+  ],
+  [
+   38.575371,
+   140.970154,
+   "kaikatsu-20136",
+   {
+    "name": "快活CLUB 古川店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "宮城県大崎市古川駅東2-5-15<br>※古川駅東口より徒歩8分",
+    "url": "https://www.kaikatsu.jp/shop/detail/20136.html",
+    "heated": "only"
+   }
+  ],
+  [
+   39.698326,
+   140.113937,
+   "kaikatsu-20142",
+   {
+    "name": "快活CLUB 秋田牛島店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "秋田県秋田市牛島西1-1-18",
+    "url": "https://www.kaikatsu.jp/shop/detail/20142.html",
+    "heated": "only"
+   }
+  ],
+  [
+   38.741589,
+   139.842041,
+   "kaikatsu-20153",
+   {
+    "name": "快活CLUB 鶴岡店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "山形県鶴岡市宝田2-1-55",
+    "url": "https://www.kaikatsu.jp/shop/detail/20153.html",
+    "heated": "only"
+   }
+  ],
+  [
+   38.238789,
+   140.306702,
+   "kaikatsu-20156",
+   {
+    "name": "快活CLUB 山形高堂店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "山形県山形市高堂2-3-11",
+    "url": "https://www.kaikatsu.jp/shop/detail/20156.html",
+    "heated": "only"
+   }
+  ],
+  [
+   37.929722,
+   140.117569,
+   "kaikatsu-20154",
+   {
+    "name": "快活CLUB 米沢店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "山形県米沢市金池8-1-7",
+    "url": "https://www.kaikatsu.jp/shop/detail/20154.html",
+    "heated": "only"
+   }
+  ],
+  [
+   37.515697,
+   139.930649,
+   "kaikatsu-20166",
+   {
+    "name": "快活CLUB 会津インター店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）\n※地図の位置は住所の町名までの目安",
+    "address": "福島県会津若松市町北町上荒久田宮下142",
+    "url": "https://www.kaikatsu.jp/shop/detail/20166.html",
+    "heated": "only"
+   }
+  ],
+  [
+   36.995453,
+   140.907684,
+   "kaikatsu-20170",
+   {
+    "name": "快活CLUB いわき鹿島店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "福島県いわき市鹿島町走熊小神山66-2",
+    "url": "https://www.kaikatsu.jp/shop/detail/20170.html",
+    "heated": "only"
+   }
+  ],
+  [
+   36.101944,
+   140.195541,
+   "kaikatsu-20205",
+   {
+    "name": "快活CLUB 土浦真鍋店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "茨城県土浦市真鍋5-16-21",
+    "url": "https://www.kaikatsu.jp/shop/detail/20205.html",
+    "heated": "only"
+   }
+  ],
+  [
+   36.456142,
+   140.502701,
+   "kaikatsu-20296",
+   {
+    "name": "快活CLUB 那珂店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "茨城県那珂市菅谷5383-4",
+    "url": "https://www.kaikatsu.jp/shop/detail/20296.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.956799,
+   140.644135,
+   "kaikatsu-20293",
+   {
+    "name": "快活CLUB 124号鹿嶋店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "茨城県鹿嶋市鉢形971",
+    "url": "https://www.kaikatsu.jp/shop/detail/20293.html",
+    "heated": "only"
+   }
+  ],
+  [
+   36.347263,
+   140.45343,
+   "kaikatsu-20208",
+   {
+    "name": "快活CLUB 水戸笠原店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "茨城県水戸市笠原町1194-4",
+    "url": "https://www.kaikatsu.jp/shop/detail/20208.html",
+    "heated": "only"
+   }
+  ],
+  [
+   36.304665,
+   139.472061,
+   "kaikatsu-20215",
+   {
+    "name": "快活CLUB 50号足利店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "栃木県足利市福富町1085-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20215.html",
+    "heated": "only"
+   }
+  ],
+  [
+   36.298962,
+   139.812256,
+   "kaikatsu-20211",
+   {
+    "name": "快活CLUB 50号小山店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "栃木県小山市東城南1-3-8",
+    "url": "https://www.kaikatsu.jp/shop/detail/20211.html",
+    "heated": "only"
+   }
+  ],
+  [
+   36.372562,
+   139.059586,
+   "kaikatsu-20228",
+   {
+    "name": "快活CLUB 新前橋店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "群馬県前橋市小相木町558-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20228.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.965622,
+   139.605988,
+   "kaikatsu-20981",
+   {
+    "name": "快活CLUB 上尾日の出店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "埼玉県上尾市日の出3-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20981.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.81078,
+   139.74324,
+   "kaikatsu-20927",
+   {
+    "name": "快活CLUB 川口朝日店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "埼玉県川口市朝日4-13",
+    "url": "https://www.kaikatsu.jp/shop/detail/20927.html",
+    "heated": "only"
+   }
+  ],
+  [
+   36.075592,
+   139.72345,
+   "kaikatsu-20252",
+   {
+    "name": "快活CLUB 幸手店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "埼玉県幸手市中3-19-32",
+    "url": "https://www.kaikatsu.jp/shop/detail/20252.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.830986,
+   139.791031,
+   "kaikatsu-20930",
+   {
+    "name": "快活CLUB 草加店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "埼玉県草加市西町632-5",
+    "url": "https://www.kaikatsu.jp/shop/detail/20930.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.947086,
+   139.395157,
+   "kaikatsu-20239",
+   {
+    "name": "快活CLUB 鶴ヶ島インター店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "埼玉県鶴ヶ島市脚折町4-10-5",
+    "url": "https://www.kaikatsu.jp/shop/detail/20239.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.803253,
+   139.4431,
+   "kaikatsu-20929",
+   {
+    "name": "快活CLUB 所沢小手指店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "埼玉県所沢市上新井4-48-18",
+    "url": "https://www.kaikatsu.jp/shop/detail/20929.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.797813,
+   139.488251,
+   "kaikatsu-20246",
+   {
+    "name": "快活CLUB 所沢バイパス店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "埼玉県所沢市牛沼433",
+    "url": "https://www.kaikatsu.jp/shop/detail/20246.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.816715,
+   139.649475,
+   "kaikatsu-20250",
+   {
+    "name": "快活CLUB 戸田店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "埼玉県戸田市笹目3-8-11",
+    "url": "https://www.kaikatsu.jp/shop/detail/20250.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.988457,
+   139.647995,
+   "kaikatsu-20982",
+   {
+    "name": "快活CLUB 蓮田店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "埼玉県蓮田市関山1-5-8",
+    "url": "https://www.kaikatsu.jp/shop/detail/20982.html",
+    "heated": "only"
+   }
+  ],
+  [
+   36.110615,
+   139.607391,
+   "kaikatsu-20926",
+   {
+    "name": "快活CLUB ビバモール加須店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "埼玉県加須市下高柳1-29",
+    "url": "https://www.kaikatsu.jp/shop/detail/20926.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.877472,
+   139.776611,
+   "kaikatsu-20242",
+   {
+    "name": "快活CLUB 4号越谷店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "埼玉県越谷市七左町6-13-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20242.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.519672,
+   140.105072,
+   "kaikatsu-20286",
+   {
+    "name": "快活CLUB 市原店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "千葉県市原市君塚1-33-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20286.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.372852,
+   139.93425,
+   "kaikatsu-20281",
+   {
+    "name": "快活CLUB 木更津店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "千葉県木更津市請西1-17-8",
+    "url": "https://www.kaikatsu.jp/shop/detail/20281.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.956306,
+   139.877518,
+   "kaikatsu-20268",
+   {
+    "name": "快活CLUB 16号野田店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "千葉県野田市鶴奉34-34",
+    "url": "https://www.kaikatsu.jp/shop/detail/20268.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.635494,
+   140.152176,
+   "kaikatsu-20953",
+   {
+    "name": "快活CLUB 千葉都賀店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "千葉県千葉市若葉区都賀3-24-7",
+    "url": "https://www.kaikatsu.jp/shop/detail/20953.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.616291,
+   140.132507,
+   "kaikatsu-20271",
+   {
+    "name": "快活CLUB 千葉道場店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "千葉県千葉市中央区道場北2-19-16",
+    "url": "https://www.kaikatsu.jp/shop/detail/20271.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.748573,
+   140.309448,
+   "kaikatsu-20954",
+   {
+    "name": "快活CLUB 富里インター店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "千葉県富里市七栄1005-5",
+    "url": "https://www.kaikatsu.jp/shop/detail/20954.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.792488,
+   140.323334,
+   "kaikatsu-20284",
+   {
+    "name": "快活CLUB 成田土屋店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "千葉県成田市ウイング土屋90 <br>※JR成田駅・京成成田駅からバスで15分",
+    "url": "https://www.kaikatsu.jp/shop/detail/20284.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.723305,
+   140.091644,
+   "kaikatsu-20913",
+   {
+    "name": "快活CLUB 八千代店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "千葉県八千代市大和田新田406-5",
+    "url": "https://www.kaikatsu.jp/shop/detail/20913.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.744541,
+   139.421631,
+   "kaikatsu-20307",
+   {
+    "name": "快活CLUB 東大和店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）\n※地図の位置は住所の町名までの目安",
+    "address": "東京都東大和市立野1-2-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20307.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.693176,
+   139.896713,
+   "kaikatsu-20938",
+   {
+    "name": "快活CLUB 瑞江駅前店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "東京都江戸川区瑞江2-1-9<br />キーストンビル4F<br />※瑞江駅北口より徒歩1分",
+    "url": "https://www.kaikatsu.jp/shop/detail/20938.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.461662,
+   139.349289,
+   "kaikatsu-20337",
+   {
+    "name": "快活CLUB 厚木林店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "神奈川県厚木市林5-23-5<br>※コート・ダジュール/AOKI厚木林店 となり",
+    "url": "https://www.kaikatsu.jp/shop/detail/20337.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.451405,
+   139.39238,
+   "kaikatsu-20345",
+   {
+    "name": "快活CLUB 海老名駅前店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "神奈川県海老名市中央1-4-31<br>海老名プラザビル 2F<br>※海老名駅東口より徒歩8分<br>※小田急海老名駅より徒歩3分",
+    "url": "https://www.kaikatsu.jp/shop/detail/20345.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.573883,
+   139.365433,
+   "kaikatsu-20339",
+   {
+    "name": "快活CLUB 相模原中央店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "神奈川県相模原市中央区清新7-1-4 2F",
+    "url": "https://www.kaikatsu.jp/shop/detail/20339.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.507046,
+   139.416672,
+   "kaikatsu-20354",
+   {
+    "name": "快活CLUB 座間店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "神奈川県座間市相模が丘2-1-29",
+    "url": "https://www.kaikatsu.jp/shop/detail/20354.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.558941,
+   139.403107,
+   "kaikatsu-20333",
+   {
+    "name": "快活CLUB 16号相模原大野台店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "神奈川県相模原市南区大野台1-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20333.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.536034,
+   139.633728,
+   "kaikatsu-20347",
+   {
+    "name": "快活CLUB 綱島駅前店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "神奈川県横浜市港北区綱島西2-2-1<br>you&me port 3～5F(受付4F)<br>※綱島駅西口より徒歩1分",
+    "url": "https://www.kaikatsu.jp/shop/detail/20347.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.430347,
+   139.557571,
+   "kaikatsu-20342",
+   {
+    "name": "快活CLUB 東戸塚駅前店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "神奈川県横浜市戸塚区品濃町516-5<br />パラダイスガーデン5F<br>※東戸塚駅東口より徒歩3分",
+    "url": "https://www.kaikatsu.jp/shop/detail/20342.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.46534,
+   139.532211,
+   "kaikatsu-20360",
+   {
+    "name": "快活CLUB 二俣川駅前店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "神奈川県横浜市旭区本村町101-12　2F",
+    "url": "https://www.kaikatsu.jp/shop/detail/20360.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.4576,
+   139.46666,
+   "kaikatsu-20351",
+   {
+    "name": "快活CLUB 大和桜ヶ丘店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "神奈川県大和市福田5683-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20351.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.561794,
+   139.587967,
+   "kaikatsu-20332",
+   {
+    "name": "快活CLUB 横浜北山田店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "神奈川県横浜市都筑区北山田3-1-50<br>快活スクエアビル 1F・2F(受付1F)",
+    "url": "https://www.kaikatsu.jp/shop/detail/20332.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.416225,
+   139.57341,
+   "kaikatsu-20348",
+   {
+    "name": "快活CLUB 横浜芹が谷店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "神奈川県横浜市港南区芹が谷3-34-20",
+    "url": "https://www.kaikatsu.jp/shop/detail/20348.html",
+    "heated": "only"
+   }
+  ],
+  [
+   37.95229,
+   139.295944,
+   "kaikatsu-20363",
+   {
+    "name": "快活CLUB 新発田店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "新潟県新発田市新栄町3-4-40",
+    "url": "https://www.kaikatsu.jp/shop/detail/20363.html",
+    "heated": "only"
+   }
+  ],
+  [
+   37.456951,
+   138.872696,
+   "kaikatsu-20368",
+   {
+    "name": "快活CLUB 長岡川崎店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "新潟県長岡市川崎町862-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20368.html",
+    "heated": "only"
+   }
+  ],
+  [
+   37.871796,
+   139.095139,
+   "kaikatsu-20367",
+   {
+    "name": "快活CLUB 新潟亀田店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "新潟県新潟市江南区亀田四ツ興野2-1-36",
+    "url": "https://www.kaikatsu.jp/shop/detail/20367.html",
+    "heated": "only"
+   }
+  ],
+  [
+   37.784805,
+   139.113129,
+   "kaikatsu-20370",
+   {
+    "name": "快活CLUB 新津程島店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "新潟県新潟市秋葉区程島1876",
+    "url": "https://www.kaikatsu.jp/shop/detail/20370.html",
+    "heated": "only"
+   }
+  ],
+  [
+   36.760952,
+   137.023438,
+   "kaikatsu-20405",
+   {
+    "name": "快活CLUB 高岡店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "富山県高岡市向野町6-18-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20405.html",
+    "heated": "only"
+   }
+  ],
+  [
+   36.667816,
+   137.211349,
+   "kaikatsu-20401",
+   {
+    "name": "快活CLUB 富山掛尾店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "富山県富山市今泉388-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20401.html",
+    "heated": "only"
+   }
+  ],
+  [
+   36.615955,
+   136.683029,
+   "kaikatsu-20412",
+   {
+    "name": "快活CLUB 金沢福久店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "石川県金沢市福久東1-23-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20412.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.933968,
+   136.190079,
+   "kaikatsu-20422",
+   {
+    "name": "快活CLUB 鯖江店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "福井県鯖江市五郎丸町312",
+    "url": "https://www.kaikatsu.jp/shop/detail/20422.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.646046,
+   138.605667,
+   "kaikatsu-20371",
+   {
+    "name": "快活CLUB 甲府上阿原店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "山梨県甲府市上阿原町455-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20371.html",
+    "heated": "only"
+   }
+  ],
+  [
+   36.406311,
+   138.270859,
+   "kaikatsu-20382",
+   {
+    "name": "快活CLUB 上田バイパス店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "長野県上田市住吉242-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20382.html",
+    "heated": "only"
+   }
+  ],
+  [
+   36.603966,
+   138.166946,
+   "kaikatsu-20390",
+   {
+    "name": "快活CLUB 長野南バイパス店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "長野県長野市稲里町中央４丁目９−１０",
+    "url": "https://www.kaikatsu.jp/shop/detail/20390.html",
+    "heated": "only"
+   }
+  ],
+  [
+   36.191963,
+   137.96492,
+   "kaikatsu-20384",
+   {
+    "name": "快活CLUB 松本南店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "長野県松本市平田東2-17-6",
+    "url": "https://www.kaikatsu.jp/shop/detail/20384.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.775513,
+   137.990936,
+   "kaikatsu-20495",
+   {
+    "name": "快活CLUB 掛川店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "静岡県掛川市大池624-3",
+    "url": "https://www.kaikatsu.jp/shop/detail/20495.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.310623,
+   138.925446,
+   "kaikatsu-20448",
+   {
+    "name": "快活CLUB 御殿場店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "静岡県御殿場市茱萸沢95-15",
+    "url": "https://www.kaikatsu.jp/shop/detail/20448.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.837379,
+   138.203812,
+   "kaikatsu-20449",
+   {
+    "name": "快活CLUB 島田店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "静岡県島田市道悦1-15-12<br>※ナビで検索されない場合⇒静岡県島田市道悦1-15-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20449.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.011391,
+   138.473709,
+   "kaikatsu-20492",
+   {
+    "name": "快活CLUB 清水春日店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "静岡県静岡市清水区春日1-5-11",
+    "url": "https://www.kaikatsu.jp/shop/detail/20492.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.854256,
+   138.25412,
+   "kaikatsu-20499",
+   {
+    "name": "快活CLUB 藤枝店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "静岡県藤枝市青木3-6-17",
+    "url": "https://www.kaikatsu.jp/shop/detail/20499.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.285629,
+   136.829651,
+   "kaikatsu-20460",
+   {
+    "name": "快活CLUB 一宮インター店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県一宮市島崎1-2-4",
+    "url": "https://www.kaikatsu.jp/shop/detail/20460.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.981308,
+   137.16011,
+   "kaikatsu-20469",
+   {
+    "name": "快活CLUB 岡崎大樹寺店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県岡崎市大樹寺3-12-5",
+    "url": "https://www.kaikatsu.jp/shop/detail/20469.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.006145,
+   137.002167,
+   "kaikatsu-20465",
+   {
+    "name": "快活CLUB 刈谷店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県刈谷市新富町4-907",
+    "url": "https://www.kaikatsu.jp/shop/detail/20465.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.825161,
+   137.208481,
+   "kaikatsu-20489",
+   {
+    "name": "快活CLUB 蒲郡店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県蒲郡市竹谷町梅薮24-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20489.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.331844,
+   136.86763,
+   "kaikatsu-20468",
+   {
+    "name": "快活CLUB 江南店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県江南市赤童子町桜道23-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20468.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.169071,
+   136.911545,
+   "kaikatsu-20488",
+   {
+    "name": "快活CLUB 栄広小路店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県名古屋市中区栄4-2-8<br>シエルブルー栄広小路ビル2F～7F (受付2F) <br>※栄町駅12番出口より徒歩5分",
+    "url": "https://www.kaikatsu.jp/shop/detail/20488.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.195156,
+   137.029266,
+   "kaikatsu-20456",
+   {
+    "name": "快活CLUB 四軒家店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県名古屋市守山区白山3-503",
+    "url": "https://www.kaikatsu.jp/shop/detail/20456.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.183926,
+   136.824234,
+   "kaikatsu-20467",
+   {
+    "name": "快活CLUB 甚目寺店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県あま市坂牧坂塩17-1<br>※名鉄津島線甚目寺駅徒歩",
+    "url": "https://www.kaikatsu.jp/shop/detail/20467.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.176579,
+   136.730606,
+   "kaikatsu-20773",
+   {
+    "name": "快活CLUB 津島駅前店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県津島市今市場町3-2-3<br>※津島駅より徒歩3分",
+    "url": "https://www.kaikatsu.jp/shop/detail/20773.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.822342,
+   137.405075,
+   "kaikatsu-20485",
+   {
+    "name": "快活CLUB 豊川インター店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県豊川市馬場町薬師85",
+    "url": "https://www.kaikatsu.jp/shop/detail/20485.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.082958,
+   137.143112,
+   "kaikatsu-20771",
+   {
+    "name": "快活CLUB 豊田小坂店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県豊田市小坂町14-2-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20771.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.766895,
+   137.368835,
+   "kaikatsu-20483",
+   {
+    "name": "快活CLUB 豊橋新栄店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県豊橋市新栄町鳥畷4-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20483.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.226475,
+   136.908798,
+   "kaikatsu-20487",
+   {
+    "name": "快活CLUB 名古屋楠インター店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県名古屋市北区玄馬町234-1<br>※MEGAドン・キホーテ名古屋本店さん 2F",
+    "url": "https://www.kaikatsu.jp/shop/detail/20487.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.114304,
+   136.869812,
+   "kaikatsu-20484",
+   {
+    "name": "快活CLUB 名古屋競馬場前店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県名古屋市港区小割通3-8 <br>※港北駅より徒歩10分",
+    "url": "https://www.kaikatsu.jp/shop/detail/20484.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.170017,
+   136.906082,
+   "kaikatsu-20774",
+   {
+    "name": "快活CLUB 名古屋錦店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県名古屋市中区錦3-17-20<br>名古屋Ｂ＆Ｖビル 受付8F (6～11F)<br />※地下鉄栄駅 1番・８番出口すぐ",
+    "url": "https://www.kaikatsu.jp/shop/detail/20774.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.091492,
+   136.99704,
+   "kaikatsu-20462",
+   {
+    "name": "快活CLUB 鳴海徳重店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県名古屋市緑区徳重1-1416",
+    "url": "https://www.kaikatsu.jp/shop/detail/20462.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.065201,
+   136.913376,
+   "kaikatsu-20458",
+   {
+    "name": "快活CLUB 名和店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県東海市名和町二番割上62-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20458.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.253784,
+   136.86644,
+   "kaikatsu-20451",
+   {
+    "name": "快活CLUB 西春店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県北名古屋市弥勒寺西3丁目112<br>※AOKI西春店となり",
+    "url": "https://www.kaikatsu.jp/shop/detail/20451.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.87936,
+   136.916611,
+   "kaikatsu-20459",
+   {
+    "name": "快活CLUB 半田青山駅前店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県半田市青山1-2-5<br>※青山駅西口より徒歩1分",
+    "url": "https://www.kaikatsu.jp/shop/detail/20459.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.970844,
+   137.052139,
+   "kaikatsu-20463",
+   {
+    "name": "快活CLUB 三河安城店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "愛知県安城市緑町1-26-5<br>※三河安城駅南口より徒歩10分",
+    "url": "https://www.kaikatsu.jp/shop/detail/20463.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.082207,
+   136.605743,
+   "kaikatsu-20692",
+   {
+    "name": "快活CLUB 桑名サンシパーク店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "三重県桑名市大仲新田163-1<br>※サンシパーク内",
+    "url": "https://www.kaikatsu.jp/shop/detail/20692.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.074654,
+   136.661102,
+   "kaikatsu-20473",
+   {
+    "name": "快活CLUB 桑名新西方店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "三重県桑名市新西方2-92<br>※AOKI桑名店となり",
+    "url": "https://www.kaikatsu.jp/shop/detail/20473.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.875069,
+   136.554642,
+   "kaikatsu-20475",
+   {
+    "name": "快活CLUB 鈴鹿中央通店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "三重県鈴鹿市三日市3-23-10<br>※AOKI 鈴鹿中央通店となり",
+    "url": "https://www.kaikatsu.jp/shop/detail/20475.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.664722,
+   136.518234,
+   "kaikatsu-20472",
+   {
+    "name": "快活CLUB 23号津南店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）\n※地図の位置は住所の町名までの目安",
+    "address": "三重県津市雲出本郷町松縄1746",
+    "url": "https://www.kaikatsu.jp/shop/detail/20472.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.932129,
+   136.59816,
+   "kaikatsu-20479",
+   {
+    "name": "快活CLUB 四日市追分店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "三重県四日市市小古曽東1-1-2",
+    "url": "https://www.kaikatsu.jp/shop/detail/20479.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.969498,
+   136.623795,
+   "kaikatsu-20694",
+   {
+    "name": "快活CLUB 四日市西新地店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "三重県四日市市西新地17-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20694.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.981709,
+   136.612045,
+   "kaikatsu-20691",
+   {
+    "name": "快活CLUB 四日市野田店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "三重県四日市市野田1-2-33",
+    "url": "https://www.kaikatsu.jp/shop/detail/20691.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.978828,
+   136.151428,
+   "kaikatsu-20508",
+   {
+    "name": "快活CLUB 甲賀水口店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）\n※地図の位置は住所の町名までの目安",
+    "address": "滋賀県甲賀市水口町北脇1772-4",
+    "url": "https://www.kaikatsu.jp/shop/detail/20508.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.24165,
+   136.257553,
+   "kaikatsu-20503",
+   {
+    "name": "快活CLUB 彦根店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "滋賀県彦根市高宮町1600-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20503.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.869568,
+   135.761063,
+   "kaikatsu-20517",
+   {
+    "name": "快活CLUB 宇治大久保店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "京都府宇治市大久保町平盛65-1<br>※AOKI宇治大久保店 2F",
+    "url": "https://www.kaikatsu.jp/shop/detail/20517.html",
+    "heated": "only"
+   }
+  ],
+  [
+   35.003899,
+   135.731628,
+   "kaikatsu-20515",
+   {
+    "name": "快活CLUB 西院駅前店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "京都府京都市右京区西院東淳和院町1-1<br>アフレ西院4F<br>※西院駅北口改札より徒歩3分",
+    "url": "https://www.kaikatsu.jp/shop/detail/20515.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.780178,
+   135.497208,
+   "kaikatsu-20543",
+   {
+    "name": "快活CLUB 千里本店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "大阪府吹田市千里山竹園1-5-1<br>AOKI大阪千里総本店 3F",
+    "url": "https://www.kaikatsu.jp/shop/detail/20543.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.595295,
+   135.613968,
+   "kaikatsu-20550",
+   {
+    "name": "快活CLUB 外環八尾店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "大阪府八尾市弓削町南3-33",
+    "url": "https://www.kaikatsu.jp/shop/detail/20550.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.497185,
+   135.734222,
+   "kaikatsu-20572",
+   {
+    "name": "快活CLUB 大和高田店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "奈良県葛城市東室143-1<br>※ジョリーパスタ 葛城店さん となり",
+    "url": "https://www.kaikatsu.jp/shop/detail/20572.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.233856,
+   135.153564,
+   "kaikatsu-20583",
+   {
+    "name": "快活CLUB 紀ノ川大橋店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "和歌山県和歌山市湊1771-5",
+    "url": "https://www.kaikatsu.jp/shop/detail/20583.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.628674,
+   133.922333,
+   "kaikatsu-20622",
+   {
+    "name": "快活CLUB 岡山青江店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "岡山県岡山市北区青江5-22-24",
+    "url": "https://www.kaikatsu.jp/shop/detail/20622.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.472672,
+   133.819901,
+   "kaikatsu-20625",
+   {
+    "name": "快活CLUB 倉敷児島店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "岡山県倉敷市児島下の町2-1570",
+    "url": "https://www.kaikatsu.jp/shop/detail/20625.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.67289,
+   133.967331,
+   "kaikatsu-20623",
+   {
+    "name": "快活CLUB フレスポ高屋店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "岡山県岡山市中区高屋308-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20623.html",
+    "heated": "only"
+   }
+  ],
+  [
+   33.952847,
+   131.241623,
+   "kaikatsu-20642",
+   {
+    "name": "快活CLUB 宇部中央店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "山口県宇部市中央町3-16-46",
+    "url": "https://www.kaikatsu.jp/shop/detail/20642.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.03434,
+   131.838516,
+   "kaikatsu-20647",
+   {
+    "name": "快活CLUB 周南久米店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "山口県周南市久米中央一丁目14番3号 (旧住所:山口県周南市大字久米2926-1)",
+    "url": "https://www.kaikatsu.jp/shop/detail/20647.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.055763,
+   131.560898,
+   "kaikatsu-20641",
+   {
+    "name": "快活CLUB 防府店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "山口県防府市佐波2-7-15",
+    "url": "https://www.kaikatsu.jp/shop/detail/20641.html",
+    "heated": "only"
+   }
+  ],
+  [
+   34.072075,
+   134.507782,
+   "kaikatsu-20652",
+   {
+    "name": "快活CLUB 徳島蔵本店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "徳島県徳島市南庄町4-57-5",
+    "url": "https://www.kaikatsu.jp/shop/detail/20652.html",
+    "heated": "only"
+   }
+  ],
+  [
+   33.571579,
+   133.520035,
+   "kaikatsu-20681",
+   {
+    "name": "快活CLUB 高知中万々店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "高知県高知市南久万190-4<br>※高知北環状線沿い マクドナルド高知中万々店 さんとなり",
+    "url": "https://www.kaikatsu.jp/shop/detail/20681.html",
+    "heated": "only"
+   }
+  ],
+  [
+   33.877678,
+   130.88739,
+   "kaikatsu-20802",
+   {
+    "name": "快活CLUB 小倉北店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "福岡県北九州市小倉北区中津口2-2-16<br>ASOBOX 2F",
+    "url": "https://www.kaikatsu.jp/shop/detail/20802.html",
+    "heated": "only"
+   }
+  ],
+  [
+   33.897495,
+   130.856277,
+   "kaikatsu-20820",
+   {
+    "name": "快活CLUB 小倉西港店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "福岡県北九州市小倉北区西港町30-18<br />※フェスティバルガーデン西港内<br />※業務スーパー 小倉西港店さん2F",
+    "url": "https://www.kaikatsu.jp/shop/detail/20820.html",
+    "heated": "only"
+   }
+  ],
+  [
+   33.672558,
+   130.45079,
+   "kaikatsu-20812",
+   {
+    "name": "快活CLUB ブランチ福岡下原店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "福岡県福岡市東区下原4-2-1 ２F<br>※ブランチ福岡下原内",
+    "url": "https://www.kaikatsu.jp/shop/detail/20812.html",
+    "heated": "only"
+   }
+  ],
+  [
+   33.240711,
+   130.285217,
+   "kaikatsu-20821",
+   {
+    "name": "快活CLUB 佐賀本庄店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "佐賀県佐賀市本庄町本庄969-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20821.html",
+    "heated": "only"
+   }
+  ],
+  [
+   33.383713,
+   130.511536,
+   "kaikatsu-20822",
+   {
+    "name": "快活CLUB 鳥栖店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "佐賀県鳥栖市鎗田町389-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20822.html",
+    "heated": "only"
+   }
+  ],
+  [
+   33.154449,
+   129.769775,
+   "kaikatsu-20834",
+   {
+    "name": "快活CLUB 佐世保大塔店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "長崎県佐世保市大塔町1861-12",
+    "url": "https://www.kaikatsu.jp/shop/detail/20834.html",
+    "heated": "only"
+   }
+  ],
+  [
+   33.170765,
+   129.721619,
+   "kaikatsu-20833",
+   {
+    "name": "快活CLUB 佐世保四ヶ町店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "長崎県佐世保市本島町3-11",
+    "url": "https://www.kaikatsu.jp/shop/detail/20833.html",
+    "heated": "only"
+   }
+  ],
+  [
+   32.691097,
+   130.67276,
+   "kaikatsu-20850",
+   {
+    "name": "快活CLUB 熊本宇土店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "熊本県宇土市水町50-1",
+    "url": "https://www.kaikatsu.jp/shop/detail/20850.html",
+    "heated": "only"
+   }
+  ],
+  [
+   33.286652,
+   131.504181,
+   "kaikatsu-20851",
+   {
+    "name": "快活CLUB 別府店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "大分県別府市京町8-19",
+    "url": "https://www.kaikatsu.jp/shop/detail/20851.html",
+    "heated": "only"
+   }
+  ],
+  [
+   26.246836,
+   127.737564,
+   "kaikatsu-20887",
+   {
+    "name": "快活CLUB 浦添店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）",
+    "address": "沖縄県浦添市前田3丁目1-5",
+    "url": "https://www.kaikatsu.jp/shop/detail/20887.html",
+    "heated": "only"
+   }
+  ],
+  [
+   26.610247,
+   127.984612,
+   "kaikatsu-20885",
+   {
+    "name": "快活CLUB 名護店",
+    "note": "加熱式たばこ専用エリアあり（店内・利用者向け）\n※地図の位置は住所の町名までの目安",
+    "address": "沖縄県名護市名護4513<br>※ザ・フォレストモール 名護 内",
+    "url": "https://www.kaikatsu.jp/shop/detail/20885.html",
+    "heated": "only"
+   }
+  ]
+ ]
+}
