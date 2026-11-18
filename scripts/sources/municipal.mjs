@@ -9,6 +9,9 @@ import { cleanAddress } from '../lib/places.mjs';
 const SLUG = {
   川崎市: 'kawasaki', 神戸市: 'kobe', 広島市: 'hiroshima', 浜松市: 'hamamatsu', 千葉市: 'chiba', 熊本市: 'kumamoto',
   尼崎市: 'amagasaki', 明石市: 'akashi', 長崎市: 'nagasaki',
+  港区: 'minato', 中央区: 'chuo', 千代田区: 'chiyoda', 渋谷区: 'shibuya', 世田谷区: 'setagaya', 目黒区: 'meguro', 足立区: 'adachi',
+  品川区: 'shinagawa', 墨田区: 'sumida', 大田区: 'ota', 荒川区: 'arakawa', 豊島区: 'toshima', 新宿区: 'shinjuku', 中野区: 'nakano',
+  文京区: 'bunkyo', 板橋区: 'itabashi', 武蔵野市: 'musashino', 府中市: 'fuchu', 三鷹市: 'mitaka', 船橋市: 'funabashi',
 };
 const rows = JSON.parse(readFileSync(new URL('../data/municipal-spots.json', import.meta.url), 'utf8'));
 const byCity = new Map();
@@ -29,7 +32,7 @@ for (const r of rows) {
   c.count++;
   byCity.set(r.city, c);
   spots.push([+lat.toFixed(6), +lng.toFixed(6), `city-${slug}-${c.count}`, Object.fromEntries(Object.entries({
-    name: r.name, address: r.address, hours: r.hours,
+    name: r.name, address: r.address, hours: r.hours, io: r.kind, heated: r.heated,
     note: [r.memo, approx ? '※地図の位置は住所の町名までの目安' : ''].filter(Boolean).join('\n'),
     url: r.page,
   }).filter(([, v]) => v))]);

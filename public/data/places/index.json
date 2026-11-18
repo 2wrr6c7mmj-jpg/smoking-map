@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T22:03:02.074Z",
+ "updated": "2026-11-18T22:08:19.024Z",
  "files": [
   "cities.json",
   "cunited.json",
@@ -11,7 +11,7 @@
   "ueshima.json"
  ],
  "counts": {
-  "cities.json": 64,
+  "cities.json": 536,
   "cunited.json": 323,
   "gov.json": 33,
   "hoshino.json": 40,

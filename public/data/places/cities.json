@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T22:02:52.752Z",
+ "updated": "2026-11-18T22:08:02.229Z",
  "sources": [
   {
    "id": "city-kawasaki",
@@ -90,6 +90,166 @@
    "license": "市の公開ページ",
    "page": "https://www.city.nagasaki.lg.jp/contents/kankyo/kml/haizara.kml",
    "count": 5
+  },
+  {
+   "id": "city-minato",
+   "type": "gov",
+   "group": "area",
+   "city": "港区",
+   "publisher": "港区",
+   "license": "市の公開ページ",
+   "page": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html",
+   "count": 116
+  },
+  {
+   "id": "city-chuo",
+   "type": "gov",
+   "group": "area",
+   "city": "中央区",
+   "publisher": "中央区",
+   "license": "市の公開ページ",
+   "page": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html",
+   "count": 74
+  },
+  {
+   "id": "city-chiyoda",
+   "type": "gov",
+   "group": "area",
+   "city": "千代田区",
+   "publisher": "千代田区",
+   "license": "市の公開ページ",
+   "page": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html",
+   "count": 77
+  },
+  {
+   "id": "city-shibuya",
+   "type": "gov",
+   "group": "area",
+   "city": "渋谷区",
+   "publisher": "渋谷区",
+   "license": "市の公開ページ",
+   "page": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html",
+   "count": 44
+  },
+  {
+   "id": "city-setagaya",
+   "type": "gov",
+   "group": "area",
+   "city": "世田谷区",
+   "publisher": "世田谷区",
+   "license": "市の公開ページ",
+   "page": "https://www.city.setagaya.lg.jp/01101/4805.html",
+   "count": 43
+  },
+  {
+   "id": "city-meguro",
+   "type": "gov",
+   "group": "area",
+   "city": "目黒区",
+   "publisher": "目黒区",
+   "license": "市の公開ページ",
+   "page": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html",
+   "count": 19
+  },
+  {
+   "id": "city-adachi",
+   "type": "gov",
+   "group": "area",
+   "city": "足立区",
+   "publisher": "足立区",
+   "license": "市の公開ページ",
+   "page": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html",
+   "count": 19
+  },
+  {
+   "id": "city-shinagawa",
+   "type": "gov",
+   "group": "area",
+   "city": "品川区",
+   "publisher": "品川区",
+   "license": "市の公開ページ",
+   "page": "https://www.city.shinagawa.tokyo.jp/kankyo/kankyo/1009565/1004247.html",
+   "count": 16
+  },
+  {
+   "id": "city-sumida",
+   "type": "gov",
+   "group": "area",
+   "city": "墨田区",
+   "publisher": "墨田区",
+   "license": "市の公開ページ",
+   "page": "https://www.city.sumida.lg.jp/kurashi/volunteer/rojyou_kinnen/suishintiku.html",
+   "count": 8
+  },
+  {
+   "id": "city-ota",
+   "type": "gov",
+   "group": "area",
+   "city": "大田区",
+   "publisher": "大田区",
+   "license": "市の公開ページ",
+   "page": "https://www.city.ota.tokyo.jp/seikatsu/sumaimachinami/kankyou/bika/kitsuenjoseibi.html",
+   "count": 10
+  },
+  {
+   "id": "city-arakawa",
+   "type": "gov",
+   "group": "area",
+   "city": "荒川区",
+   "publisher": "荒川区",
+   "license": "市の公開ページ",
+   "page": "https://www.city.arakawa.tokyo.jp/a024/kankyou/kankyoubika/shiteikitsuenbasyo.html",
+   "count": 10
+  },
+  {
+   "id": "city-toshima",
+   "type": "gov",
+   "group": "area",
+   "city": "豊島区",
+   "publisher": "豊島区",
+   "license": "市の公開ページ",
+   "page": "https://www.city.toshima.lg.jp/152/machizukuri/sumai/bika/taisaku/025701.html",
+   "count": 8
+  },
+  {
+   "id": "city-shinjuku",
+   "type": "gov",
+   "group": "area",
+   "city": "新宿区",
+   "publisher": "新宿区",
+   "license": "市の公開ページ",
+   "page": "https://www.city.shinjuku.lg.jp/seikatsu/file11_01_00003.html",
+   "count": 11
+  },
+  {
+   "id": "city-nakano",
+   "type": "gov",
+   "group": "area",
+   "city": "中野区",
+   "publisher": "中野区",
+   "license": "市の公開ページ",
+   "page": "https://www.city.tokyo-nakano.lg.jp/kenko_hukushi/kenkodukuri/tabako_alcohol/judoukitsuen_jourei.html",
+   "count": 7
+  },
+  {
+   "id": "city-bunkyo",
+   "type": "gov",
+   "group": "area",
+   "city": "文京区",
+   "publisher": "文京区",
+   "license": "市の公開ページ",
+   "page": "https://www.city.bunkyo.lg.jp/b037/p005115/index.html",
+   "count": 8
+  },
+  {
+   "id": "city-itabashi",
+   "type": "gov",
+   "group": "area",
+   "city": "板橋区",
+   "publisher": "板橋区",
+   "license": "市の公開ページ",
+   "page": "https://www.city.itabashi.tokyo.jp/bousai/kougai/bika/kitsuen/1019824.html",
+   "count": 2
   }
  ],
  "spots": [
@@ -812,6 +972,5855 @@
     "address": "長崎県長崎市",
     "note": "公園内",
     "url": "https://www.city.nagasaki.lg.jp/contents/kankyo/kml/haizara.kml"
+   }
+  ],
+  [
+   35.646549,
+   139.747559,
+   "city-minato-1",
+   {
+    "name": "田町駅西口(1階) 指定喫煙場所",
+    "address": "東京都港区芝5-33",
+    "hours": "5:00〜25:00",
+    "io": "indoor",
+    "note": "コンテナ型",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.646549,
+   139.747559,
+   "city-minato-2",
+   {
+    "name": "田町駅西口(2階) 指定喫煙場所",
+    "address": "東京都港区芝5-33",
+    "io": "outdoor",
+    "heated": "only",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.667439,
+   139.757645,
+   "city-minato-3",
+   {
+    "name": "新橋駅前SL広場 指定喫煙場所",
+    "address": "東京都港区新橋2-7",
+    "hours": "5:00〜25:00",
+    "io": "indoor",
+    "note": "コンテナ型",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.666309,
+   139.757401,
+   "city-minato-4",
+   {
+    "name": "新橋駅烏森口 指定喫煙場所",
+    "address": "東京都港区新橋2-16",
+    "io": "outdoor",
+    "heated": "only",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.666275,
+   139.759567,
+   "city-minato-5",
+   {
+    "name": "新橋2丁目 指定喫煙場所",
+    "address": "東京都港区新橋2-20",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.665482,
+   139.756836,
+   "city-minato-6",
+   {
+    "name": "桜田公園内 指定喫煙場所",
+    "address": "東京都港区新橋3-16-15",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.656849,
+   139.757126,
+   "city-minato-7",
+   {
+    "name": "浜松町駅北口 指定喫煙場所",
+    "address": "東京都港区浜松町1-31",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.657234,
+   139.753311,
+   "city-minato-8",
+   {
+    "name": "大門駅A6出口 指定喫煙場所",
+    "address": "東京都港区芝大門1-13",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.657688,
+   139.750717,
+   "city-minato-9",
+   {
+    "name": "都立芝公園内 指定喫煙場所",
+    "address": "東京都港区芝公園1-4",
+    "hours": "5:00〜25:00",
+    "io": "indoor",
+    "note": "コンテナ型",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.652203,
+   139.725845,
+   "city-minato-10",
+   {
+    "name": "有栖川宮記念公園内 指定喫煙場所",
+    "address": "東京都港区南麻布5-7-29",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.663651,
+   139.732422,
+   "city-minato-11",
+   {
+    "name": "六本木駅6番出口 指定喫煙場所",
+    "address": "東京都港区六本木4-9",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.660206,
+   139.729202,
+   "city-minato-12",
+   {
+    "name": "六本木ヒルズ ヒルサイド2F TOHOシネマズ入口右側 指定喫煙場所",
+    "address": "東京都港区六本木6-10-1",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.658867,
+   139.72995,
+   "city-minato-13",
+   {
+    "name": "六本木ヒルズ イーストコート(六本木けやき坂通り) 指定喫煙場所",
+    "address": "東京都港区六本木6-12-4",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.655628,
+   139.737274,
+   "city-minato-14",
+   {
+    "name": "一の橋公園内 指定喫煙場所",
+    "address": "東京都港区東麻布3-9",
+    "hours": "5:00〜25:00",
+    "io": "indoor",
+    "note": "コンテナ型",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.671108,
+   139.74202,
+   "city-minato-15",
+   {
+    "name": "溜池山王駅9番出口 指定喫煙場所",
+    "address": "東京都港区赤坂2-3",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.675991,
+   139.737518,
+   "city-minato-16",
+   {
+    "name": "赤坂見附駅前 指定喫煙場所",
+    "address": "東京都港区赤坂3-2",
+    "hours": "5:00〜25:00",
+    "io": "indoor",
+    "note": "コンテナ型",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.67326,
+   139.728806,
+   "city-minato-17",
+   {
+    "name": "高橋是清翁記念公園 指定喫煙場所",
+    "address": "東京都港区赤坂7-3-39",
+    "hours": "7:00〜21:00",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.665634,
+   139.712769,
+   "city-minato-18",
+   {
+    "name": "表参道交差点 指定喫煙場所①",
+    "address": "東京都港区北青山3-5",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.665234,
+   139.711334,
+   "city-minato-19",
+   {
+    "name": "表参道交差点 指定喫煙場所②",
+    "address": "東京都港区北青山3-6",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.665234,
+   139.711334,
+   "city-minato-20",
+   {
+    "name": "表参道A1出口前 指定喫煙場所",
+    "address": "東京都港区北青山3-6",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.638596,
+   139.735519,
+   "city-minato-21",
+   {
+    "name": "高輪二丁目東海大学前 指定喫煙場所",
+    "address": "東京都港区高輪2-2",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.643627,
+   139.733444,
+   "city-minato-22",
+   {
+    "name": "白金高輪駅3番出口前 指定喫煙場所",
+    "address": "東京都港区白金1-28-8",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.646198,
+   139.751663,
+   "city-minato-23",
+   {
+    "name": "芝浦1丁目リバーサイド 指定喫煙場所",
+    "address": "東京都港区芝浦1-16",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.644985,
+   139.748886,
+   "city-minato-24",
+   {
+    "name": "田町駅東口デッキ下 指定喫煙場所",
+    "address": "東京都港区芝浦3-1",
+    "hours": "5:00〜25:00",
+    "io": "indoor",
+    "note": "コンテナ型",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.631985,
+   139.743622,
+   "city-minato-25",
+   {
+    "name": "芝浦中央公園A面 指定喫煙場所",
+    "address": "東京都港区港南1-2-28",
+    "hours": "7:00〜17:00（5月〜9月は6:00〜19:00）",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.63068,
+   139.741974,
+   "city-minato-26",
+   {
+    "name": "こうなん星の公園 指定喫煙場所",
+    "address": "東京都港区港南1-9-24",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.628925,
+   139.741486,
+   "city-minato-27",
+   {
+    "name": "品川駅港南口港南ふれあい広場 指定喫煙場所",
+    "address": "東京都港区港南2-14",
+    "hours": "5:00〜25:00",
+    "io": "indoor",
+    "note": "コンテナ型・加熱式エリア有",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.62701,
+   139.77211,
+   "city-minato-28",
+   {
+    "name": "シンボルプロムナード公園内デッキ上 指定喫煙場所①",
+    "address": "東京都港区台場1-8",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.626797,
+   139.774307,
+   "city-minato-29",
+   {
+    "name": "フジテレビ(敷地内)横 指定喫煙場所",
+    "address": "東京都港区台場2-4-8",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.625854,
+   139.772629,
+   "city-minato-30",
+   {
+    "name": "シンボルプロムナード公園内デッキ上 指定喫煙場所②",
+    "address": "東京都港区台場2-5",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.626984,
+   139.770584,
+   "city-minato-31",
+   {
+    "name": "お台場海浜公園内 指定喫煙場所①",
+    "address": "東京都港区台場1-4",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.626984,
+   139.770584,
+   "city-minato-32",
+   {
+    "name": "お台場海浜公園内 指定喫煙場所②",
+    "address": "東京都港区台場1-4",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.626984,
+   139.770584,
+   "city-minato-33",
+   {
+    "name": "お台場海浜公園内 指定喫煙場所③",
+    "address": "東京都港区台場1-4",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.626984,
+   139.770584,
+   "city-minato-34",
+   {
+    "name": "お台場海浜公園内 指定喫煙場所④",
+    "address": "東京都港区台場1-4",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.626984,
+   139.770584,
+   "city-minato-35",
+   {
+    "name": "お台場海浜公園内 指定喫煙場所⑤",
+    "address": "東京都港区台場1-4",
+    "io": "outdoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.6506,
+   139.75473,
+   "city-minato-36",
+   {
+    "name": "芝1丁目ビル1階 指定喫煙場所",
+    "address": "東京都港区芝1-12-7",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "セブン港区芝1丁目店内",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.652126,
+   139.753632,
+   "city-minato-37",
+   {
+    "name": "セブンイレブン芝2丁目金杉橋店内 指定喫煙場所",
+    "address": "東京都港区芝2-3-3",
+    "hours": "7:00〜19:00（土日祝休）",
+    "io": "indoor",
+    "note": "芝2丁目大門ビルディング1階",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.650909,
+   139.753418,
+   "city-minato-38",
+   {
+    "name": "ファミリーマート南山堂第一京浜芝店内 指定喫煙場所",
+    "address": "東京都港区芝2-14-5",
+    "hours": "6:00〜22:00",
+    "io": "indoor",
+    "note": "芝2丁目大広ビル",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.651051,
+   139.747086,
+   "city-minato-39",
+   {
+    "name": "東洋カーマックス芝3丁目第11駐車場内 指定喫煙場所",
+    "address": "東京都港区芝3-31-8",
+    "hours": "9:00〜19:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "note": "トレーラー型",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.648853,
+   139.750259,
+   "city-minato-40",
+   {
+    "name": "ファースト岡田ビル1階 指定喫煙場所",
+    "address": "東京都港区芝4-3-5",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "セブン三田駅北店内",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.649227,
+   139.746216,
+   "city-minato-41",
+   {
+    "name": "芝生花ビル1階 指定喫煙場所",
+    "address": "東京都港区芝5-10-8",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "ファミマ芝五丁目店内",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.648602,
+   139.746796,
+   "city-minato-42",
+   {
+    "name": "ニイハオ田町店内 指定喫煙場所",
+    "address": "東京都港区芝5-17-1",
+    "hours": "11:00〜23:00",
+    "io": "indoor",
+    "note": "ストーリア三田1階",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.648113,
+   139.746445,
+   "city-minato-43",
+   {
+    "name": "セブンイレブン港区芝5丁目東店内 指定喫煙場所",
+    "address": "東京都港区芝5-22-3",
+    "hours": "平日6:00〜20:00、土曜6:00〜16:00（日祝・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.647045,
+   139.74617,
+   "city-minato-44",
+   {
+    "name": "THE TOBACCO TAMACHI KK164 指定喫煙場所",
+    "address": "東京都港区芝5-27-12",
+    "hours": "7:00〜21:00（土日祝休）",
+    "io": "indoor",
+    "note": "金井ビル2階",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.64587,
+   139.746704,
+   "city-minato-45",
+   {
+    "name": "セブンイレブン田町駅前店店内 指定喫煙場所",
+    "address": "東京都港区芝5-34-7",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "田町センタービル1階",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.657593,
+   139.752365,
+   "city-minato-46",
+   {
+    "name": "paspa芝公園 指定喫煙場所",
+    "address": "東京都港区芝公園1-7-8",
+    "hours": "7:00〜20:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.656849,
+   139.759186,
+   "city-minato-47",
+   {
+    "name": "汐留ビルディング1階 指定喫煙場所",
+    "address": "東京都港区海岸1-2-20",
+    "hours": "平日7:00〜23:00、土日祝7:00〜19:00",
+    "io": "indoor",
+    "note": "セブン汐留ビルディング店内",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.664555,
+   139.762268,
+   "city-minato-48",
+   {
+    "name": "THE TOBACCO SHIODOME 指定喫煙場所",
+    "address": "東京都港区東新橋1-8-2",
+    "hours": "7:00〜24:00",
+    "io": "indoor",
+    "note": "カレッタ汐留地下2階",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.6679,
+   139.759171,
+   "city-minato-49",
+   {
+    "name": "エコロパーク新橋第7駐車場内 指定喫煙場所",
+    "address": "東京都港区新橋1-4-3",
+    "hours": "9:00〜19:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "note": "トレーラー型",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.667854,
+   139.758102,
+   "city-minato-50",
+   {
+    "name": "セブンイレブン新橋駅前店内 指定喫煙場所",
+    "address": "東京都港区新橋1-13-7",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.666443,
+   139.756134,
+   "city-minato-51",
+   {
+    "name": "エスプラザ弥生ビルII2階 指定喫煙場所",
+    "address": "東京都港区新橋2-15-9",
+    "io": "indoor",
+    "note": "ファミマ新橋駅西店内",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.666309,
+   139.757401,
+   "city-minato-52",
+   {
+    "name": "ニュー新橋ビル3階THE CAFE内 指定喫煙場所",
+    "address": "東京都港区新橋2-16-1",
+    "hours": "9:00〜22:00（休館日休）",
+    "io": "indoor",
+    "note": "3階301区画",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.664021,
+   139.75325,
+   "city-minato-53",
+   {
+    "name": "ファミリーマート新橋日比谷通り店内 指定喫煙場所",
+    "address": "東京都港区新橋5-2-10",
+    "io": "indoor",
+    "note": "銀泉新橋ビル1階",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.662094,
+   139.752335,
+   "city-minato-54",
+   {
+    "name": "御成門BNビル1階 指定喫煙場所",
+    "address": "東京都港区新橋6-16-10",
+    "io": "indoor",
+    "note": "セブン御成門駅北店内",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.661442,
+   139.752014,
+   "city-minato-55",
+   {
+    "name": "ファミリーマート+ミヤモトドラッグ御成門店内 指定喫煙場所",
+    "address": "東京都港区新橋6-17-15",
+    "io": "indoor",
+    "note": "菱進御成門ビル",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.669243,
+   139.753525,
+   "city-minato-56",
+   {
+    "name": "ファミリーマート西新橋一丁目店内 指定喫煙場所",
+    "address": "東京都港区西新橋1-5-11",
+    "io": "indoor",
+    "note": "11東洋海事ビル",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.668568,
+   139.746826,
+   "city-minato-57",
+   {
+    "name": "THE TOBACCO TORANOMON 指定喫煙場所",
+    "address": "東京都港区虎ノ門2-3-17",
+    "hours": "8:00〜23:00（年末年始・お盆休）",
+    "io": "indoor",
+    "note": "虎ノ門2丁目タワー1階",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.666035,
+   139.746826,
+   "city-minato-58",
+   {
+    "name": "paspa虎ノ門3丁目 指定喫煙場所",
+    "address": "東京都港区虎ノ門3-4-7",
+    "hours": "7:00〜21:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "note": "虎ノ門36森ビル地下1階",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.664059,
+   139.746368,
+   "city-minato-59",
+   {
+    "name": "TOKYU REIT虎ノ門ビル1階",
+    "address": "東京都港区虎ノ門3-17-1",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "セブン神谷町駅東店内",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.662563,
+   139.744431,
+   "city-minato-60",
+   {
+    "name": "タマガワヤ2階 指定喫煙場所",
+    "address": "東京都港区虎ノ門5-2-6",
+    "hours": "7:30〜19:30（土日祝・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.663265,
+   139.744553,
+   "city-minato-61",
+   {
+    "name": "THE TOBACCO KAMIYACHO SECOND 指定喫煙場所",
+    "address": "東京都港区虎ノ門5-3-2",
+    "hours": "7:00〜20:00（年末年始休）",
+    "io": "indoor",
+    "note": "神谷町アネックス1階",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.659809,
+   139.756317,
+   "city-minato-62",
+   {
+    "name": "No.R浜松町1階 指定喫煙場所",
+    "address": "東京都港区浜松町1-2-1",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "セブン浜松町1丁目北店内",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.654194,
+   139.756317,
+   "city-minato-63",
+   {
+    "name": "paspa浜松町 指定喫煙場所",
+    "address": "東京都港区浜松町2-5-2",
+    "hours": "7:00〜20:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.653973,
+   139.756271,
+   "city-minato-64",
+   {
+    "name": "ファミリーマート浜松町駅南店内 指定喫煙場所",
+    "address": "東京都港区浜松町2-9-3",
+    "hours": "5:00〜20:00",
+    "io": "indoor",
+    "note": "NBC浜松町ビル",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.664398,
+   139.743912,
+   "city-minato-65",
+   {
+    "name": "THE TOBACCO ROPPONGI-ITCHOME 指定喫煙場所",
+    "address": "東京都港区虎ノ門4-3-1",
+    "hours": "11:00〜22:00（年末年始休）",
+    "io": "indoor",
+    "note": "城山トラストタワー3階",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.663464,
+   139.741165,
+   "city-minato-66",
+   {
+    "name": "六本木ファーストビル1階 指定喫煙場所",
+    "address": "東京都港区六本木1-9-9",
+    "hours": "7:00〜2:00（日祝休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.662449,
+   139.731354,
+   "city-minato-67",
+   {
+    "name": "ラピロス六本木地下1階 指定喫煙場所",
+    "address": "東京都港区六本木6-1-24",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "ファミマ六本木駅店内",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.665989,
+   139.727921,
+   "city-minato-68",
+   {
+    "name": "六本木インターナショナルビル1階 指定喫煙場所",
+    "address": "東京都港区六本木7-3-12",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "セブン港区乃木坂駅南店内",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.654594,
+   139.726471,
+   "city-minato-69",
+   {
+    "name": "ファミリーマート元麻布店 指定喫煙場所",
+    "address": "東京都港区元麻布2-2-12",
+    "hours": "6:00〜20:00",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.669262,
+   139.741714,
+   "city-minato-70",
+   {
+    "name": "キャピタル赤坂1階 指定喫煙場所",
+    "address": "東京都港区赤坂1-7-19",
+    "hours": "8:00〜22:00",
+    "io": "indoor",
+    "note": "ファミマ赤坂一丁目店内",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.670933,
+   139.744003,
+   "city-minato-71",
+   {
+    "name": "paspa溜池 指定喫煙場所",
+    "address": "東京都港区赤坂1-1-16",
+    "hours": "7:00〜21:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "note": "細川ビル地下1階",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.670235,
+   139.741653,
+   "city-minato-72",
+   {
+    "name": "喫煙喫茶オールドルーキーカフェ溜池山王店内 指定喫煙場所",
+    "address": "東京都港区赤坂2-10-1",
+    "hours": "8:00〜19:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "note": "ホテル別館の地下1階",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.670235,
+   139.741653,
+   "city-minato-73",
+   {
+    "name": "フォーシーズ溜池山王ビル2階 指定喫煙場所",
+    "address": "東京都港区赤坂2-10-11",
+    "hours": "平日7:00〜17:00、土日祝7:00〜14:00（年末年始休）",
+    "io": "indoor",
+    "note": "ファミマ溜池山王駅南店内",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.670235,
+   139.741653,
+   "city-minato-74",
+   {
+    "name": "ミカワヤビル1階 指定喫煙場所",
+    "address": "東京都港区赤坂2-10-14",
+    "hours": "8:00〜19:00（土日祝休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.672985,
+   139.73819,
+   "city-minato-75",
+   {
+    "name": "関根ビル1階 指定喫煙場所",
+    "address": "東京都港区赤坂2-13-21",
+    "hours": "8:00〜22:00（土日祝休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.673698,
+   139.737854,
+   "city-minato-76",
+   {
+    "name": "四方ビル2階 指定喫煙場所",
+    "address": "東京都港区赤坂3-12-21",
+    "hours": "平日9:30〜20:00、土日祝11:30〜20:00（1月1日・1月2日休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.674019,
+   139.737152,
+   "city-minato-77",
+   {
+    "name": "paspa赤坂 指定喫煙場所",
+    "address": "東京都港区赤坂3-14-2",
+    "hours": "7:00〜22:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "note": "ドルミ赤坂103号室",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.661098,
+   139.713745,
+   "city-minato-78",
+   {
+    "name": "KDX南青山ビル1階 指定喫煙場所",
+    "address": "東京都港区南青山5-13-3",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "セブン南青山5丁目店内",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.626263,
+   139.737625,
+   "city-minato-79",
+   {
+    "name": "加藤たばこ店内 指定喫煙場所",
+    "address": "東京都港区高輪4-23-3",
+    "hours": "7:00〜19:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.633656,
+   139.731461,
+   "city-minato-80",
+   {
+    "name": "ローソン高輪三丁目店内 指定喫煙場所",
+    "address": "東京都港区高輪3-5-23",
+    "hours": "6:00〜20:00",
+    "io": "indoor",
+    "note": "KDX高輪台ビル",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.646797,
+   139.729843,
+   "city-minato-81",
+   {
+    "name": "e-booth白金 指定喫煙場所",
+    "address": "東京都港区白金3-1-7",
+    "hours": "7:00〜20:00（土日・年末年始休）",
+    "io": "indoor",
+    "heated": "only",
+    "note": "K&Gハウス 1階101",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.649799,
+   139.756607,
+   "city-minato-82",
+   {
+    "name": "シーバンスS館 指定喫煙場所",
+    "address": "東京都港区芝浦1-2-3",
+    "hours": "7:00〜20:00（土日祝休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.643009,
+   139.74881,
+   "city-minato-83",
+   {
+    "name": "芝浦SECビル1階 指定喫煙場所",
+    "address": "東京都港区芝浦3-13-3",
+    "hours": "7:00〜22:00",
+    "io": "indoor",
+    "note": "ファミマ田町東口店内",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.631401,
+   139.743973,
+   "city-minato-84",
+   {
+    "name": "ファミリーマート港南一丁目店内 指定喫煙場所",
+    "address": "東京都港区港南1-7-18",
+    "hours": "7:00〜23:00",
+    "io": "indoor",
+    "note": "A-PLACE品川東 1階",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.625481,
+   139.745316,
+   "city-minato-85",
+   {
+    "name": "イケダヤ品川ビル1階 指定喫煙場所",
+    "address": "東京都港区港南2-12-27",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "セブン港区港南2丁目店内",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.626335,
+   139.742004,
+   "city-minato-86",
+   {
+    "name": "THE TOBACCO SHINAGAWA 指定喫煙場所",
+    "address": "東京都港区港南2-15-2",
+    "hours": "7:00〜23:30（休館日・施設点検日休）",
+    "io": "indoor",
+    "note": "インターシティ地下1階",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.626488,
+   139.740677,
+   "city-minato-87",
+   {
+    "name": "NBF品川タワー2階 指定喫煙場所",
+    "address": "東京都港区港南2-16-5",
+    "hours": "7:00〜22:00",
+    "io": "indoor",
+    "note": "2階のファミマ店内",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.629063,
+   139.775894,
+   "city-minato-88",
+   {
+    "name": "デックス東京ビーチ1階 指定喫煙場所",
+    "address": "東京都港区台場1-6-1",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "ファミマお台場東京ビーチ店内",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.646549,
+   139.747559,
+   "city-minato-89",
+   {
+    "name": "田町タワー1階 指定喫煙場所",
+    "address": "東京都港区芝5-33-11",
+    "hours": "6:30〜23:30",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.665302,
+   139.753677,
+   "city-minato-90",
+   {
+    "name": "新虎通りCORE2階喫煙室",
+    "address": "東京都港区新橋4-1-1",
+    "hours": "平日7:30〜23:00、土曜8:30〜23:00、日曜・祝日11:00〜23:00",
+    "io": "indoor",
+    "note": "区指定外・一般開放",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.670135,
+   139.752808,
+   "city-minato-91",
+   {
+    "name": "日比谷フォートタワー1階 指定喫煙場所",
+    "address": "東京都港区西新橋1-1-1",
+    "hours": "7:00〜24:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.670135,
+   139.752808,
+   "city-minato-92",
+   {
+    "name": "日比谷フォートタワー2階 指定喫煙場所",
+    "address": "東京都港区西新橋1-1-1",
+    "hours": "4:50〜24:50（年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.670135,
+   139.752808,
+   "city-minato-93",
+   {
+    "name": "日比谷フォートタワー11階 指定喫煙場所",
+    "address": "東京都港区西新橋1-1-1",
+    "hours": "4:50〜24:50（年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.665077,
+   139.754318,
+   "city-minato-94",
+   {
+    "name": "新虎安田ビル1階 指定喫煙場所",
+    "address": "東京都港区新橋4-3-1",
+    "hours": "7:30〜19:30（日祝休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.65564,
+   139.755569,
+   "city-minato-95",
+   {
+    "name": "浜松町二丁目地区施設建築物2階 指定喫煙場所",
+    "address": "東京都港区浜松町2-3-9",
+    "hours": "8:00〜19:00",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.654381,
+   139.755508,
+   "city-minato-96",
+   {
+    "name": "浜松町エクセレントビル2階 指定喫煙場所",
+    "address": "東京都港区浜松町2-6-5",
+    "hours": "11:00〜22:00（土日祝休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.670292,
+   139.750565,
+   "city-minato-97",
+   {
+    "name": "ヒューリック虎ノ門ビル1階喫煙室",
+    "address": "東京都港区虎ノ門1-1-8",
+    "hours": "8:00〜19:00（土日祝休）",
+    "io": "indoor",
+    "note": "区指定外・一般開放",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.654438,
+   139.76181,
+   "city-minato-98",
+   {
+    "name": "鈴与竹芝ビル1階 指定喫煙場所",
+    "address": "東京都港区海岸1-13-3",
+    "hours": "8:00〜20:00",
+    "io": "indoor",
+    "note": "ファミマ南山堂竹芝駅前店内",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.657009,
+   139.761902,
+   "city-minato-99",
+   {
+    "name": "ウォーターズ竹芝 シアター棟1F 指定喫煙場所",
+    "address": "東京都港区海岸1-10-45",
+    "hours": "11:00〜23:00",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.657009,
+   139.761902,
+   "city-minato-100",
+   {
+    "name": "ウォーターズ竹芝 シアター棟2F 指定喫煙場所",
+    "address": "東京都港区海岸1-10-45",
+    "hours": "11:00〜23:00",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.65538,
+   139.761673,
+   "city-minato-101",
+   {
+    "name": "東京ポートシティ竹芝1階 指定喫煙場所",
+    "address": "東京都港区海岸1-20-9",
+    "hours": "6:00〜24:00",
+    "io": "indoor",
+    "note": "※地図の位置は住所の町名までの目安",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.668217,
+   139.715881,
+   "city-minato-102",
+   {
+    "name": "PASONA SQUARE 指定喫煙場所",
+    "address": "東京都港区南青山3-1-30",
+    "hours": "8:00〜20:00（土日祝・お盆・年末年始休）",
+    "io": "indoor",
+    "note": "1階",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.669521,
+   139.715851,
+   "city-minato-103",
+   {
+    "name": "the ARGYLE aoyamaビル2階 指定喫煙場所",
+    "address": "東京都港区北青山2-14-4",
+    "hours": "11:00〜20:00",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.67297,
+   139.739365,
+   "city-minato-104",
+   {
+    "name": "ヒューリックJP赤坂ビル1階 指定喫煙場所",
+    "address": "東京都港区赤坂2-5-8",
+    "hours": "7:30〜21:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.670219,
+   139.738419,
+   "city-minato-105",
+   {
+    "name": "東京ワールドゲート赤坂喫煙室",
+    "address": "東京都港区赤坂2-17-22",
+    "hours": "7:00〜24:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "note": "区指定外・一般開放",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.635559,
+   139.739594,
+   "city-minato-106",
+   {
+    "name": "THE LINKPILLAR 1 SOUTH 1階 指定喫煙場所",
+    "address": "東京都港区高輪2-21-2",
+    "hours": "8:00〜20:00",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.635559,
+   139.739594,
+   "city-minato-107",
+   {
+    "name": "THE LINKPILLAR 1 NORTH 6階 指定喫煙場所",
+    "address": "東京都港区高輪2-21-1",
+    "hours": "8:00〜20:00",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.638,
+   139.741013,
+   "city-minato-108",
+   {
+    "name": "THE LINKPILLAR 2 地下1階 指定喫煙場所",
+    "address": "東京都港区高輪2-22-1",
+    "hours": "8:00〜23:00（休館日・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.638,
+   139.741013,
+   "city-minato-109",
+   {
+    "name": "THE LINKPILLAR 2 3階 指定喫煙場所",
+    "address": "東京都港区高輪2-22-1",
+    "hours": "11:00〜23:00（休館日・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.638,
+   139.741013,
+   "city-minato-110",
+   {
+    "name": "THE LINKPILLAR 2 4階 指定喫煙場所",
+    "address": "東京都港区高輪2-22-1",
+    "hours": "7:00〜23:00（休館日・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.651527,
+   139.757477,
+   "city-minato-111",
+   {
+    "name": "ブルーフロント芝浦S棟1階GREEN DINING HALL内 指定喫煙場所",
+    "address": "東京都港区芝浦1-1-1",
+    "hours": "平日7:00〜23:00、土曜9:00〜23:00（日祝・休館日休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.644985,
+   139.748886,
+   "city-minato-112",
+   {
+    "name": "msb Tamachi田町ステーションタワーS 1階 指定喫煙場所",
+    "address": "東京都港区芝浦3-1-21",
+    "hours": "7:00〜23:30",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.644985,
+   139.748886,
+   "city-minato-113",
+   {
+    "name": "msb Tamachi田町ステーションタワーS 2階 指定喫煙場所",
+    "address": "東京都港区芝浦3-1-21",
+    "hours": "7:00〜23:30",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.644985,
+   139.748886,
+   "city-minato-114",
+   {
+    "name": "msb Tamachi田町ステーションタワーN ① 指定喫煙場所",
+    "address": "東京都港区芝浦3-1-1",
+    "hours": "7:00〜23:30",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.644985,
+   139.748886,
+   "city-minato-115",
+   {
+    "name": "msb Tamachi田町ステーションタワーN ② 指定喫煙場所",
+    "address": "東京都港区芝浦3-1-1",
+    "hours": "7:00〜23:30",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.628567,
+   139.756729,
+   "city-minato-116",
+   {
+    "name": "FORECAST品川@LABO1階 指定喫煙場所",
+    "address": "東京都港区港南5-5-6",
+    "hours": "9:00〜18:00（土日祝休）",
+    "io": "indoor",
+    "url": "https://www.city.minato.tokyo.jp/kankyouseisaku/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.677975,
+   139.77446,
+   "city-chuo-1",
+   {
+    "name": "楓川久安橋公園 指定喫煙場所",
+    "address": "東京都中央区京橋1-19-13",
+    "hours": "0:00〜24:00",
+    "io": "outdoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.675079,
+   139.768295,
+   "city-chuo-2",
+   {
+    "name": "城辺橋際緑地帯 指定喫煙場所",
+    "address": "東京都中央区銀座1-2",
+    "hours": "0:00〜24:00",
+    "io": "outdoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.672726,
+   139.762512,
+   "city-chuo-3",
+   {
+    "name": "数寄屋橋公園 指定喫煙場所",
+    "address": "東京都中央区銀座5-1-1",
+    "hours": "7:00〜22:30",
+    "io": "outdoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.672245,
+   139.772385,
+   "city-chuo-4",
+   {
+    "name": "楓川新富橋公園 指定喫煙場所",
+    "address": "東京都中央区新富2-1-14",
+    "hours": "0:00〜24:00",
+    "io": "outdoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.668274,
+   139.775558,
+   "city-chuo-5",
+   {
+    "name": "築地川公園 指定喫煙場所",
+    "address": "東京都中央区明石町10-2",
+    "hours": "7:00〜20:00",
+    "io": "outdoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.670601,
+   139.772018,
+   "city-chuo-6",
+   {
+    "name": "中央区役所前 指定喫煙場所",
+    "address": "東京都中央区築地1-1",
+    "hours": "7:00〜19:00",
+    "io": "outdoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.6702,
+   139.771179,
+   "city-chuo-7",
+   {
+    "name": "築地川亀井橋公園 指定喫煙場所",
+    "address": "東京都中央区築地1-6-1",
+    "hours": "0:00〜24:00",
+    "io": "outdoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.668304,
+   139.768967,
+   "city-chuo-8",
+   {
+    "name": "築地川銀座公園 指定喫煙場所",
+    "address": "東京都中央区築地1-13-20",
+    "hours": "0:00〜24:00",
+    "io": "outdoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.665504,
+   139.766815,
+   "city-chuo-9",
+   {
+    "name": "築地川千代橋公園(東側) 指定喫煙場所",
+    "address": "東京都中央区築地5-1-1",
+    "hours": "0:00〜24:00",
+    "io": "outdoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.665504,
+   139.766815,
+   "city-chuo-10",
+   {
+    "name": "築地川千代橋公園(西側) 指定喫煙場所",
+    "address": "東京都中央区築地5-1-1",
+    "hours": "0:00〜24:00",
+    "io": "outdoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.675076,
+   139.773346,
+   "city-chuo-11",
+   {
+    "name": "楓川弾正橋公園 指定喫煙場所",
+    "address": "東京都中央区八丁堀3-2",
+    "hours": "0:00〜24:00",
+    "io": "outdoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.69062,
+   139.774857,
+   "city-chuo-12",
+   {
+    "name": "地蔵橋公園 指定喫煙場所",
+    "address": "東京都中央区日本橋本町4-5-11",
+    "hours": "7:00〜20:00",
+    "io": "outdoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.683006,
+   139.787018,
+   "city-chuo-13",
+   {
+    "name": "蛎殻町公園 指定喫煙場所",
+    "address": "東京都中央区日本橋蛎殻町2-10-6",
+    "hours": "7:00〜20:00",
+    "io": "outdoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.686813,
+   139.789062,
+   "city-chuo-14",
+   {
+    "name": "浜町公園 指定喫煙場所",
+    "address": "東京都中央区日本橋浜町2-59-1",
+    "hours": "7:00〜20:00",
+    "io": "outdoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.670395,
+   139.784622,
+   "city-chuo-15",
+   {
+    "name": "佃公園 指定喫煙場所",
+    "address": "東京都中央区佃1-11-4",
+    "hours": "0:00〜24:00",
+    "io": "outdoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.670967,
+   139.786224,
+   "city-chuo-16",
+   {
+    "name": "石川島公園(中央大橋側) 指定喫煙場所",
+    "address": "東京都中央区佃2-1-5",
+    "hours": "7:00〜19:00",
+    "io": "outdoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.670967,
+   139.786224,
+   "city-chuo-17",
+   {
+    "name": "石川島公園(相生橋側) 指定喫煙場所",
+    "address": "東京都中央区佃2-1-5",
+    "hours": "0:00〜24:00",
+    "io": "outdoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.659302,
+   139.786102,
+   "city-chuo-18",
+   {
+    "name": "新月島公園 指定喫煙場所",
+    "address": "東京都中央区晴海1-3-29",
+    "hours": "7:00〜19:00",
+    "io": "outdoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.679859,
+   139.769608,
+   "city-chuo-19",
+   {
+    "name": "八重洲地下街(サウステラス)",
+    "address": "東京都中央区八重洲2-1",
+    "hours": "6:00〜23:00",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.679859,
+   139.769608,
+   "city-chuo-20",
+   {
+    "name": "八重洲地下街(イーストテラス)",
+    "address": "東京都中央区八重洲2-1",
+    "hours": "6:00〜23:00",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.679859,
+   139.769608,
+   "city-chuo-21",
+   {
+    "name": "八重洲地下街(ノーステラス)",
+    "address": "東京都中央区八重洲2-1",
+    "hours": "6:00〜23:00",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.679695,
+   139.769165,
+   "city-chuo-22",
+   {
+    "name": "東京ミッドタウン八重洲 八重洲セントラルタワー 地下1階",
+    "address": "東京都中央区八重洲2-2-1",
+    "hours": "7:00〜23:00（元日・休館日休）",
+    "io": "indoor",
+    "note": "地下1階",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.679695,
+   139.769165,
+   "city-chuo-23",
+   {
+    "name": "東京ミッドタウン八重洲 八重洲セントラルタワー 2階",
+    "address": "東京都中央区八重洲2-2-1",
+    "hours": "7:00〜21:00（土日祝休）",
+    "io": "indoor",
+    "note": "2階",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.679264,
+   139.770218,
+   "city-chuo-24",
+   {
+    "name": "THE TOBACCO YAESU",
+    "address": "東京都中央区京橋1-2-1",
+    "hours": "7:00〜21:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.679047,
+   139.771744,
+   "city-chuo-25",
+   {
+    "name": "TODA BUILDING喫煙所",
+    "address": "東京都中央区京橋1-7-1",
+    "hours": "7:00〜23:00（年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.677139,
+   139.772583,
+   "city-chuo-26",
+   {
+    "name": "THE TOBACCO KYOBASHI",
+    "address": "東京都中央区京橋1-14-6",
+    "hours": "7:00〜20:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "note": "ガーデニアビル2階",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.66938,
+   139.766327,
+   "city-chuo-27",
+   {
+    "name": "GSパーク銀座5丁目駐車場内 昭和通り側喫煙所",
+    "address": "東京都中央区銀座5-12",
+    "hours": "9:00〜19:00（土日祝・年末年始休）",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.67152,
+   139.766785,
+   "city-chuo-28",
+   {
+    "name": "paspa銀座トレーラー",
+    "address": "東京都中央区銀座3-7-13",
+    "hours": "7:00〜21:00（年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.672138,
+   139.764725,
+   "city-chuo-29",
+   {
+    "name": "GINZA Smoking Room Pocket of Time",
+    "address": "東京都中央区銀座4-4-13",
+    "hours": "11:00〜19:00（年末年始休）",
+    "io": "indoor",
+    "note": "銀座琉映ビル3階",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.669304,
+   139.767654,
+   "city-chuo-30",
+   {
+    "name": "GINZA KABUKIZA 地下2階 「木挽町広場」喫煙室",
+    "address": "東京都中央区銀座4-12-15",
+    "hours": "8:00〜21:00",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.672646,
+   139.762756,
+   "city-chuo-31",
+   {
+    "name": "GinzaNovo",
+    "address": "東京都中央区銀座5-2-1",
+    "hours": "11:00〜21:00",
+    "io": "indoor",
+    "note": "地下2階",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.66938,
+   139.766327,
+   "city-chuo-32",
+   {
+    "name": "GSパーク銀座5丁目駐車場内 三原橋側喫煙所",
+    "address": "東京都中央区銀座5-12",
+    "hours": "9:00〜19:00（土日祝・年末年始休）",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.670086,
+   139.763626,
+   "city-chuo-33",
+   {
+    "name": "ギンザコマツ西館",
+    "address": "東京都中央区銀座6-9-5",
+    "hours": "11:00〜20:00（年末年始休）",
+    "io": "indoor",
+    "note": "7階",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.669445,
+   139.763351,
+   "city-chuo-34",
+   {
+    "name": "ギンザシックス",
+    "address": "東京都中央区銀座6-10-1",
+    "hours": "9:00〜21:00",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.671516,
+   139.775162,
+   "city-chuo-35",
+   {
+    "name": "TTS(田中たばこ店)",
+    "address": "東京都中央区新富2-15-1",
+    "hours": "8:30〜18:30（土日祝・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.671452,
+   139.776337,
+   "city-chuo-36",
+   {
+    "name": "ドルチェ銀座東弐番館",
+    "address": "東京都中央区入船2-2-7",
+    "hours": "8:00〜16:00（土日休）",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.668953,
+   139.773926,
+   "city-chuo-37",
+   {
+    "name": "グランメゾンフヂノ",
+    "address": "東京都中央区築地3-3-9",
+    "hours": "8:00〜20:00（土日祝休）",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.668278,
+   139.774551,
+   "city-chuo-38",
+   {
+    "name": "ホテル京阪築地銀座グランデ",
+    "address": "東京都中央区築地3-5-4",
+    "hours": "7:30〜17:00",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.664619,
+   139.771912,
+   "city-chuo-39",
+   {
+    "name": "築六喫煙所",
+    "address": "東京都中央区築地6-21-8",
+    "hours": "月火木金7:00〜19:00、水土7:00〜15:00（日祝休）",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.678852,
+   139.781876,
+   "city-chuo-40",
+   {
+    "name": "paspa茅場町",
+    "address": "東京都中央区新川1-3-2",
+    "hours": "7:00〜20:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.677147,
+   139.784012,
+   "city-chuo-41",
+   {
+    "name": "paspa新川",
+    "address": "東京都中央区新川1-16-7",
+    "hours": "7:00〜20:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.68708,
+   139.770172,
+   "city-chuo-42",
+   {
+    "name": "paspa日本橋トレーラー",
+    "address": "東京都中央区日本橋本石町3-1-3",
+    "hours": "7:00〜20:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.687244,
+   139.773712,
+   "city-chuo-43",
+   {
+    "name": "THE TOBACCO MITSUKOSHIMAE",
+    "address": "東京都中央区日本橋室町2-4-3",
+    "hours": "7:00〜23:00（年始・休館日休）",
+    "io": "indoor",
+    "note": "YUITO地下1階",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.687458,
+   139.77272,
+   "city-chuo-44",
+   {
+    "name": "日本橋室町三井タワー",
+    "address": "東京都中央区日本橋室町3-2-1",
+    "hours": "7:00〜23:00（休館日休）",
+    "io": "indoor",
+    "note": "地下1階 定員10名",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.690033,
+   139.772552,
+   "city-chuo-45",
+   {
+    "name": "東山ビルディング",
+    "address": "東京都中央区日本橋本町4-4-2",
+    "hours": "9:00〜17:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.687073,
+   139.777359,
+   "city-chuo-46",
+   {
+    "name": "paspa小舟町",
+    "address": "東京都中央区日本橋小舟町3-5",
+    "hours": "7:00〜20:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "heated": "only",
+    "note": "紙巻きは利用休止中",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.691734,
+   139.779922,
+   "city-chuo-47",
+   {
+    "name": "THE TOBACCO KODEMMACHO",
+    "address": "東京都中央区日本橋小伝馬町15-18",
+    "hours": "7:00〜21:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "note": "EDGE小伝馬町1階",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.687721,
+   139.781998,
+   "city-chuo-48",
+   {
+    "name": "ファミリーマート堀留町二丁目店",
+    "address": "東京都中央区日本橋堀留町2-10-12",
+    "hours": "6:00〜23:00",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.686817,
+   139.784378,
+   "city-chuo-49",
+   {
+    "name": "paspa人形町2丁目",
+    "address": "東京都中央区日本橋人形町2-24-5",
+    "hours": "7:00〜20:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "note": "2階",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.686329,
+   139.781448,
+   "city-chuo-50",
+   {
+    "name": "paspa人形町",
+    "address": "東京都中央区日本橋人形町3-4-11",
+    "hours": "7:00〜20:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.680706,
+   139.785034,
+   "city-chuo-51",
+   {
+    "name": "MIYATA",
+    "address": "東京都中央区日本橋箱崎町3-4",
+    "hours": "平日9:00〜18:30、土曜9:00〜17:00（日曜・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.692551,
+   139.782898,
+   "city-chuo-52",
+   {
+    "name": "オールドルーキーカフェ日本橋馬喰横山店",
+    "address": "東京都中央区日本橋横山町6-17",
+    "hours": "7:00〜23:00（年末年始休）",
+    "io": "indoor",
+    "note": "杉本ビル2階",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.682152,
+   139.772812,
+   "city-chuo-53",
+   {
+    "name": "THE TOBACCO NIHOMBASHI SECOND",
+    "address": "東京都中央区日本橋2-1-14",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "ローソン中央通り店喫煙室",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.681751,
+   139.773468,
+   "city-chuo-54",
+   {
+    "name": "日本橋髙島屋三井ビルディング",
+    "address": "東京都中央区日本橋2-5-1",
+    "hours": "7:30〜19:30（年末年始・休館日休）",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.67907,
+   139.772751,
+   "city-chuo-55",
+   {
+    "name": "THE TOBACCO NIHOMBASHI MK-238",
+    "address": "東京都中央区日本橋3-5-12",
+    "hours": "8:00〜21:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "note": "駅前ビルの地下1階",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.680183,
+   139.7724,
+   "city-chuo-56",
+   {
+    "name": "ディーアイシービル",
+    "address": "東京都中央区日本橋3-7-20",
+    "hours": "9:00〜17:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.679375,
+   139.774033,
+   "city-chuo-57",
+   {
+    "name": "オンワードパークビルディング",
+    "address": "東京都中央区日本橋3-10-5",
+    "hours": "9:00〜18:00（土日祝休）",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.678268,
+   139.778259,
+   "city-chuo-58",
+   {
+    "name": "赤札屋 田村商店",
+    "address": "東京都中央区日本橋茅場町3-5-8",
+    "hours": "6:30〜15:30（土日祝・年末年始休）",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.677929,
+   139.779358,
+   "city-chuo-59",
+   {
+    "name": "ファミリーマート日本橋茅場町店",
+    "address": "東京都中央区日本橋茅場町3-12-2",
+    "hours": "6:00〜20:00",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.681747,
+   139.778351,
+   "city-chuo-60",
+   {
+    "name": "KABUTO ONE",
+    "address": "東京都中央区日本橋兜町7-1",
+    "hours": "8:00〜23:00（休館日休）",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.663776,
+   139.781967,
+   "city-chuo-61",
+   {
+    "name": "MID TOWER GRAND",
+    "address": "東京都中央区月島1-22-1",
+    "hours": "0:00〜24:00",
+    "io": "indoor",
+    "note": "定員4名",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.663174,
+   139.780045,
+   "city-chuo-62",
+   {
+    "name": "グランドシティタワー月島",
+    "address": "東京都中央区月島3-18-1",
+    "hours": "9:00〜22:00",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.662552,
+   139.778091,
+   "city-chuo-63",
+   {
+    "name": "月島荘",
+    "address": "東京都中央区月島3-26-4",
+    "hours": "9:00〜21:00",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.657429,
+   139.777695,
+   "city-chuo-64",
+   {
+    "name": "GRAND MARINA TOKYO パークタワー勝どきミッド",
+    "address": "東京都中央区勝どき4-6-2",
+    "hours": "7:00〜24:00",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.655834,
+   139.780869,
+   "city-chuo-65",
+   {
+    "name": "HARUMI WAVE GARDEN喫煙所",
+    "address": "東京都中央区晴海3-2-4",
+    "hours": "7:00〜20:00（土日祝・年末年始休）",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.650803,
+   139.774704,
+   "city-chuo-66",
+   {
+    "name": "三井ショッピングパーク ららテラス HARUMI FLAG",
+    "address": "東京都中央区晴海5-2-31",
+    "hours": "7:00〜23:00",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.652325,
+   139.777878,
+   "city-chuo-67",
+   {
+    "name": "HARUMI FLAG PORT VILLAGE A棟",
+    "address": "東京都中央区晴海5-3-1",
+    "hours": "9:30〜17:30",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.649467,
+   139.777649,
+   "city-chuo-68",
+   {
+    "name": "TOBACCO SPOT",
+    "address": "東京都中央区晴海5-5-7",
+    "hours": "9:30〜17:30",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.648766,
+   139.776001,
+   "city-chuo-69",
+   {
+    "name": "HARUMI FLAG PARK VILLAGE C棟 FLAG CORE",
+    "address": "東京都中央区晴海5-6-3",
+    "hours": "9:00〜21:00",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.648075,
+   139.773697,
+   "city-chuo-70",
+   {
+    "name": "東京消防庁臨港消防署",
+    "address": "東京都中央区晴海5-8-20",
+    "hours": "0:00〜24:00",
+    "io": "outdoor",
+    "note": "11/27正午から再開予定",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.687943,
+   139.776825,
+   "city-chuo-71",
+   {
+    "name": "ファミリーマート日本橋本町2丁目店",
+    "address": "東京都中央区日本橋本町2-6-7",
+    "hours": "6:00〜20:00",
+    "io": "indoor",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.681679,
+   139.770248,
+   "city-chuo-72",
+   {
+    "name": "TOFROM YAESU TOWER",
+    "address": "東京都中央区八重洲1-6-1",
+    "hours": "7:00〜24:00（元日休）",
+    "io": "indoor",
+    "note": "2階・3階",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.647984,
+   139.77417,
+   "city-chuo-73",
+   {
+    "name": "晴海客船ターミナル",
+    "address": "東京都中央区晴海5-7-1",
+    "hours": "7:30〜19:00（年末年始休）",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.664581,
+   139.771729,
+   "city-chuo-74",
+   {
+    "name": "Kビル喫煙所",
+    "address": "東京都中央区築地6-24-2",
+    "hours": "7:00〜20:00（土日祝・年末年始休）",
+    "io": "indoor",
+    "note": "Kビル1階",
+    "url": "https://www.city.chuo.lg.jp/a0030/kenkouiryou/kenkou/tobacco/kitsuenbasho/kitsuenichiran.html"
+   }
+  ],
+  [
+   35.701504,
+   139.769882,
+   "city-chiyoda-1",
+   {
+    "name": "芳林公園喫煙所",
+    "address": "東京都千代田区外神田3-5-18",
+    "hours": "7:00〜19:00",
+    "note": "芳林公園内",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.698158,
+   139.770325,
+   "city-chiyoda-2",
+   {
+    "name": "Smoking Place 木倉食品",
+    "address": "東京都千代田区外神田1-3-9",
+    "hours": "8:30〜20:00",
+    "io": "indoor",
+    "note": "木倉ビル1階 水休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.697304,
+   139.773041,
+   "city-chiyoda-3",
+   {
+    "name": "ミマツたばこ",
+    "address": "東京都千代田区神田佐久間町1-7-3",
+    "hours": "8:00〜20:00",
+    "io": "indoor",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.698639,
+   139.774612,
+   "city-chiyoda-4",
+   {
+    "name": "オアシス@akiba",
+    "address": "東京都千代田区神田花岡町1",
+    "hours": "7:00〜22:00",
+    "note": "駅東側の交通広場内",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.698036,
+   139.77565,
+   "city-chiyoda-5",
+   {
+    "name": "秋葉原昭和通り口喫煙所",
+    "address": "東京都千代田区神田平河町",
+    "hours": "24時間",
+    "note": "高架下\n※地図の位置は住所の町名までの目安",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.699192,
+   139.77597,
+   "city-chiyoda-6",
+   {
+    "name": "スモーキングスペース サンディベル",
+    "address": "東京都千代田区神田和泉町1-5-1",
+    "hours": "7:00〜19:00",
+    "io": "indoor",
+    "note": "日祝休\n※地図の位置は住所の町名までの目安",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.699192,
+   139.77597,
+   "city-chiyoda-7",
+   {
+    "name": "Smoking Space SHIOTANI",
+    "address": "東京都千代田区神田和泉町1-12-1",
+    "hours": "7:30〜20:30",
+    "io": "indoor",
+    "note": "塩谷ビル1階\n※地図の位置は住所の町名までの目安",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.698589,
+   139.770828,
+   "city-chiyoda-8",
+   {
+    "name": "paspa秋葉原高架下",
+    "address": "東京都千代田区外神田1-4-11",
+    "hours": "7:00〜24:00",
+    "io": "indoor",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.698578,
+   139.778412,
+   "city-chiyoda-9",
+   {
+    "name": "paspa神田佐久間町",
+    "address": "東京都千代田区神田佐久間町3-32",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.695335,
+   139.77327,
+   "city-chiyoda-10",
+   {
+    "name": "IPPUKU秋葉原店",
+    "address": "東京都千代田区神田須田町2-6-15",
+    "hours": "9:00〜19:00",
+    "io": "indoor",
+    "note": "神田アイリスビル1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.695335,
+   139.77327,
+   "city-chiyoda-11",
+   {
+    "name": "IPPUKU秋葉原店 2号店",
+    "address": "東京都千代田区神田須田町2-6-15",
+    "hours": "9:00〜19:00",
+    "io": "indoor",
+    "note": "神田アイリスビル2階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.703503,
+   139.772583,
+   "city-chiyoda-12",
+   {
+    "name": "AKIBA BREATH",
+    "address": "東京都千代田区外神田5-6-4",
+    "hours": "8:00〜18:00",
+    "io": "indoor",
+    "note": "メトロビル2階",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.693642,
+   139.77066,
+   "city-chiyoda-13",
+   {
+    "name": "KISUKE SMOKING SPACE",
+    "address": "東京都千代田区神田鍛冶町3-3-9",
+    "hours": "10:00〜18:00",
+    "io": "indoor",
+    "note": "土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.692566,
+   139.769516,
+   "city-chiyoda-14",
+   {
+    "name": "スモーキングプレイス・マツイ",
+    "address": "東京都千代田区内神田3-23-5",
+    "hours": "6:30〜16:00",
+    "io": "indoor",
+    "note": "土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.692577,
+   139.769943,
+   "city-chiyoda-15",
+   {
+    "name": "paspa内神田",
+    "address": "東京都千代田区内神田3-22-5",
+    "hours": "7:00〜23:00",
+    "io": "indoor",
+    "note": "土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.69265,
+   139.771942,
+   "city-chiyoda-16",
+   {
+    "name": "smoking room ohira",
+    "address": "東京都千代田区鍛冶町2-7-10",
+    "hours": "8:00〜16:00",
+    "io": "indoor",
+    "note": "中西ビル1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.692867,
+   139.773773,
+   "city-chiyoda-17",
+   {
+    "name": "Smoking Space Konyacho",
+    "address": "東京都千代田区神田紺屋町37",
+    "hours": "8:15〜16:15",
+    "io": "indoor",
+    "note": "土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.690853,
+   139.766937,
+   "city-chiyoda-18",
+   {
+    "name": "大賀商店 喫煙所",
+    "address": "東京都千代田区内神田1-9-10",
+    "hours": "9:00〜17:00",
+    "io": "indoor",
+    "note": "土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.691261,
+   139.768021,
+   "city-chiyoda-19",
+   {
+    "name": "神田駅西口商店街喫煙所",
+    "address": "東京都千代田区内神田2-12-1",
+    "hours": "9:00〜17:00",
+    "io": "indoor",
+    "note": "土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.691158,
+   139.768463,
+   "city-chiyoda-20",
+   {
+    "name": "セブン-イレブン神田駅西口通り店内喫煙所",
+    "address": "東京都千代田区内神田2-9-9",
+    "hours": "7:00〜22:00",
+    "io": "indoor",
+    "note": "神田西口ビル",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.691467,
+   139.769119,
+   "city-chiyoda-21",
+   {
+    "name": "スモーキングスペース TeeTime",
+    "address": "東京都千代田区内神田3-10-5",
+    "hours": "9:00〜17:00",
+    "io": "indoor",
+    "note": "満留賀ビル2階A号室 土日休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.690533,
+   139.773285,
+   "city-chiyoda-22",
+   {
+    "name": "paspa鍛冶町",
+    "address": "東京都千代田区鍛冶町1-10-7",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "KT鍛冶町 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.69352,
+   139.778992,
+   "city-chiyoda-23",
+   {
+    "name": "paspa小伝馬町",
+    "address": "東京都千代田区岩本町1-13-5",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "TRUST VALUE 1階",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.694992,
+   139.777512,
+   "city-chiyoda-24",
+   {
+    "name": "THE TOBACCO IWAMOTOCHO",
+    "address": "東京都千代田区岩本町3-5-14",
+    "hours": "7:00〜19:00",
+    "io": "indoor",
+    "note": "リベラ岩本町1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.69519,
+   139.780182,
+   "city-chiyoda-25",
+   {
+    "name": "paspa東神田",
+    "address": "東京都千代田区東神田1-11-5",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "石田ビル東神田1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.692032,
+   139.773712,
+   "city-chiyoda-26",
+   {
+    "name": "THE TOBACCO KANDA SECOND",
+    "address": "東京都千代田区神田紺屋町21",
+    "hours": "9:00〜21:00",
+    "io": "indoor",
+    "note": "土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.694565,
+   139.772324,
+   "city-chiyoda-27",
+   {
+    "name": "paspa神田高架下",
+    "address": "東京都千代田区神田東松下町49",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "東松下町橋新幹線高架下",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.693966,
+   139.768631,
+   "city-chiyoda-28",
+   {
+    "name": "THE TOBACCO KANDA THIRD",
+    "address": "東京都千代田区神田多町2-9-14",
+    "hours": "7:00〜19:00",
+    "io": "indoor",
+    "note": "神田MICビル 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.693031,
+   139.773285,
+   "city-chiyoda-29",
+   {
+    "name": "喫煙喫茶オールドルーキーカフェ神田東口店公衆喫煙所",
+    "address": "東京都千代田区神田紺屋町47",
+    "hours": "8:00〜19:00",
+    "io": "indoor",
+    "note": "新広栄ビル1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.689926,
+   139.769196,
+   "city-chiyoda-30",
+   {
+    "name": "朝陽ビル無料公衆喫煙所",
+    "address": "東京都千代田区内神田3-4-14",
+    "hours": "9:00〜21:00",
+    "io": "indoor",
+    "note": "朝陽ビル 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.690922,
+   139.757507,
+   "city-chiyoda-31",
+   {
+    "name": "THE TOBACCO TAKEBASHI SECOND",
+    "address": "東京都千代田区一ツ橋1-1-1",
+    "hours": "8:00〜22:00",
+    "io": "indoor",
+    "note": "パレスサイドビル1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.690922,
+   139.757507,
+   "city-chiyoda-32",
+   {
+    "name": "THE TOBACCO TAKEBASHI THIRD",
+    "address": "東京都千代田区一ツ橋1-1-1",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "パレスサイドビル1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.695312,
+   139.751785,
+   "city-chiyoda-33",
+   {
+    "name": "ヒライ商会",
+    "address": "東京都千代田区九段南1-5-9",
+    "hours": "8:00〜18:00",
+    "io": "indoor",
+    "note": "土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.695702,
+   139.755798,
+   "city-chiyoda-34",
+   {
+    "name": "paspa神保町",
+    "address": "東京都千代田区神田神保町2-7-17",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "昭和ビル1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.697495,
+   139.753006,
+   "city-chiyoda-35",
+   {
+    "name": "Smo9 o2",
+    "address": "東京都千代田区西神田3-3-12",
+    "hours": "9:00〜18:00",
+    "io": "indoor",
+    "note": "西神田YSビル1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.695652,
+   139.754379,
+   "city-chiyoda-36",
+   {
+    "name": "Berry SMOKING ROOM",
+    "address": "東京都千代田区神田神保町3-3-14",
+    "hours": "8:30〜17:00",
+    "io": "indoor",
+    "note": "土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.697357,
+   139.751495,
+   "city-chiyoda-37",
+   {
+    "name": "Smoking Room 九段北店",
+    "address": "東京都千代田区九段北1-8-4",
+    "hours": "7:30〜18:00",
+    "io": "indoor",
+    "note": "市橋ビル1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.696373,
+   139.760117,
+   "city-chiyoda-38",
+   {
+    "name": "paspa神田神保町一丁目",
+    "address": "東京都千代田区神田神保町1-2-6",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.69471,
+   139.751511,
+   "city-chiyoda-39",
+   {
+    "name": "九段会館テラス地下1階喫煙所",
+    "address": "東京都千代田区九段南1-6-5",
+    "hours": "7:00〜22:00",
+    "io": "indoor",
+    "note": "九段会館テラス地下1階",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.698837,
+   139.745682,
+   "city-chiyoda-40",
+   {
+    "name": "paspa飯田橋西口",
+    "address": "東京都千代田区富士見1-7-7",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "女部田ビル1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.699478,
+   139.748596,
+   "city-chiyoda-41",
+   {
+    "name": "paspa飯田橋東口",
+    "address": "東京都千代田区飯田橋1-8-10",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "クリエイトビル1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.698795,
+   139.750076,
+   "city-chiyoda-42",
+   {
+    "name": "ピュアウッドガーデン",
+    "address": "東京都千代田区飯田橋2-14-5",
+    "hours": "9:00〜14:00",
+    "io": "indoor",
+    "note": "土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.70171,
+   139.745712,
+   "city-chiyoda-43",
+   {
+    "name": "THE TOBACCO IIDABASHI",
+    "address": "東京都千代田区飯田橋4-9-11",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.685215,
+   139.733078,
+   "city-chiyoda-44",
+   {
+    "name": "喫煙所 ジョリー1階・2階",
+    "address": "東京都千代田区麹町6-2-3",
+    "hours": "8:00〜16:00",
+    "io": "indoor",
+    "note": "土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.683769,
+   139.738632,
+   "city-chiyoda-45",
+   {
+    "name": "Smo9 o2 麹町3丁目店",
+    "address": "東京都千代田区麹町3-3-8",
+    "hours": "8:00〜19:00",
+    "io": "indoor",
+    "note": "丸増麹町ビル 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.687626,
+   139.735382,
+   "city-chiyoda-46",
+   {
+    "name": "スモーカーズ六番町",
+    "address": "東京都千代田区六番町1-2",
+    "hours": "8:00〜18:00",
+    "io": "indoor",
+    "note": "ビリジアン六番町1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.685486,
+   139.741196,
+   "city-chiyoda-47",
+   {
+    "name": "安田ビル地下1階無料喫煙所",
+    "address": "東京都千代田区麹町2-14-1",
+    "hours": "10:00〜18:00",
+    "io": "indoor",
+    "note": "安田ビル地下1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.685287,
+   139.740524,
+   "city-chiyoda-48",
+   {
+    "name": "paspa麹町",
+    "address": "東京都千代田区麹町2-10-2",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "麹町パーソナルハウス1階",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.681667,
+   139.741318,
+   "city-chiyoda-49",
+   {
+    "name": "一服(Ippuku)平河町店",
+    "address": "東京都千代田区平河町2-2-1",
+    "hours": "9:00〜19:00",
+    "io": "indoor",
+    "note": "山口ビル1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.680645,
+   139.741837,
+   "city-chiyoda-50",
+   {
+    "name": "paspa 永田町",
+    "address": "東京都千代田区平河町2-12-2",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "ニュー福井ビル 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.680222,
+   139.740143,
+   "city-chiyoda-51",
+   {
+    "name": "THE TOBACCO NAGATACHO",
+    "address": "東京都千代田区平河町2-7-2",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "栄ビル1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.680222,
+   139.740143,
+   "city-chiyoda-52",
+   {
+    "name": "THE TOBACCO NAGATACHO SECOND",
+    "address": "東京都千代田区平河町2-7-2",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "栄ビル2階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.671925,
+   139.745682,
+   "city-chiyoda-53",
+   {
+    "name": "三久ビル喫煙所",
+    "address": "東京都千代田区霞が関3-6-14",
+    "hours": "9:00〜17:00",
+    "io": "indoor",
+    "note": "三久ビル1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.679543,
+   139.765945,
+   "city-chiyoda-54",
+   {
+    "name": "はとバス東京営業所 喫煙所",
+    "address": "東京都千代田区丸の内1-10-18",
+    "hours": "8:00〜21:00",
+    "io": "indoor",
+    "note": "JR高架下",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.674484,
+   139.760544,
+   "city-chiyoda-55",
+   {
+    "name": "銀座インズ1、2喫煙ブース",
+    "address": "東京都千代田区有楽町",
+    "hours": "10:30〜23:15",
+    "io": "indoor",
+    "note": "銀座インズ内\n※地図の位置は住所の町名までの目安",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.677055,
+   139.765076,
+   "city-chiyoda-56",
+   {
+    "name": "THE TABACCO 2:50.76",
+    "address": "東京都千代田区丸の内3-7-15",
+    "hours": "9:00〜21:00",
+    "io": "indoor",
+    "note": "土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.671925,
+   139.745682,
+   "city-chiyoda-57",
+   {
+    "name": "paspa霞が関",
+    "address": "東京都千代田区霞が関3-6-14",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "三久ビル1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.66959,
+   139.758957,
+   "city-chiyoda-58",
+   {
+    "name": "THE TOBACCO HIBIYA",
+    "address": "東京都千代田区内幸町1-7-1",
+    "hours": "9:00〜21:00",
+    "io": "indoor",
+    "note": "日比谷OKUROJI 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.686779,
+   139.767426,
+   "city-chiyoda-59",
+   {
+    "name": "スモーカーズカフェ・ブリケ内喫煙所",
+    "address": "東京都千代田区大手町2-3-1",
+    "hours": "7:30〜20:00",
+    "io": "indoor",
+    "note": "ウエストタワー2階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.677563,
+   139.76265,
+   "city-chiyoda-60",
+   {
+    "name": "THE TOBACCO MARUNOUCHI SECOND",
+    "address": "東京都千代田区丸の内3-3-1",
+    "hours": "6:00〜翌0:30",
+    "io": "indoor",
+    "note": "新東京ビル地下1階",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.691502,
+   139.738312,
+   "city-chiyoda-61",
+   {
+    "name": "paspa市ヶ谷",
+    "address": "東京都千代田区九段南4-8-30",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "藤山ビル1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.694458,
+   139.762344,
+   "city-chiyoda-62",
+   {
+    "name": "華商ビル スモーキングスペース",
+    "address": "東京都千代田区神田小川町3-1",
+    "hours": "8:00〜17:00",
+    "io": "indoor",
+    "note": "華商ビル1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.697632,
+   139.766876,
+   "city-chiyoda-63",
+   {
+    "name": "ワテラスモール喫煙室",
+    "address": "東京都千代田区神田淡路町2-101",
+    "hours": "11:00〜23:00",
+    "io": "indoor",
+    "note": "ワテラスアネックス2階",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.691463,
+   139.761719,
+   "city-chiyoda-64",
+   {
+    "name": "喫煙トレーラー",
+    "address": "東京都千代田区神田錦町3-21",
+    "hours": "9:00〜19:00",
+    "io": "indoor",
+    "note": "プラットフォームスクウェア敷地",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.693901,
+   139.763351,
+   "city-chiyoda-65",
+   {
+    "name": "リラックスエリア バウンスバック",
+    "address": "東京都千代田区神田錦町2-4-1",
+    "hours": "9:30〜17:00",
+    "io": "indoor",
+    "note": "土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.699448,
+   139.767609,
+   "city-chiyoda-66",
+   {
+    "name": "喜助お茶の水ビル喫煙所",
+    "address": "東京都千代田区外神田2-2-17",
+    "hours": "10:00〜18:00",
+    "io": "indoor",
+    "note": "喜助お茶の水ビル地下1階",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.696655,
+   139.761047,
+   "city-chiyoda-67",
+   {
+    "name": "小川町SMOKING AREA",
+    "address": "東京都千代田区神田小川町3-20",
+    "hours": "7:00〜16:00",
+    "io": "indoor",
+    "note": "日比ビル地下1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.694706,
+   139.764847,
+   "city-chiyoda-68",
+   {
+    "name": "レインボービル喫煙所",
+    "address": "東京都千代田区神田小川町2-2-7",
+    "hours": "8:00〜16:30",
+    "io": "indoor",
+    "note": "レインボービル1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.695511,
+   139.767044,
+   "city-chiyoda-69",
+   {
+    "name": "一服(Ippuku)",
+    "address": "東京都千代田区神田淡路町1-1-2",
+    "hours": "9:00〜19:00",
+    "io": "indoor",
+    "note": "土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.695232,
+   139.763931,
+   "city-chiyoda-70",
+   {
+    "name": "Smoking Spot 三恵ビル 2階",
+    "address": "東京都千代田区神田小川町2-8-16",
+    "hours": "8:00〜18:00",
+    "io": "indoor",
+    "note": "土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.693138,
+   139.766541,
+   "city-chiyoda-71",
+   {
+    "name": "THE TOBACCO AWAJICHO",
+    "address": "東京都千代田区神田司町2-19-8",
+    "hours": "7:00〜19:00",
+    "io": "indoor",
+    "note": "上田ビル1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.690884,
+   139.763687,
+   "city-chiyoda-72",
+   {
+    "name": "THE TOBACCO OTEMACHI THIRD",
+    "address": "東京都千代田区神田錦町1-23-7",
+    "hours": "9:00〜21:00",
+    "io": "indoor",
+    "note": "icomfort神田橋ビル1階",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.699539,
+   139.758209,
+   "city-chiyoda-73",
+   {
+    "name": "和み",
+    "address": "東京都千代田区神田猿楽町2-3-2",
+    "hours": "10:00〜18:00",
+    "io": "indoor",
+    "note": "1階 日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.699539,
+   139.758209,
+   "city-chiyoda-74",
+   {
+    "name": "和み 2階",
+    "address": "東京都千代田区神田猿楽町2-3-2",
+    "hours": "10:00〜18:00",
+    "io": "indoor",
+    "note": "2階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.698929,
+   139.756012,
+   "city-chiyoda-75",
+   {
+    "name": "paspa西神田",
+    "address": "東京都千代田区西神田2-1-8",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "フルールセゾン神保町1階",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.699371,
+   139.753082,
+   "city-chiyoda-76",
+   {
+    "name": "THE TOBACCO SUIDOBASHI",
+    "address": "東京都千代田区神田三崎町3-1-18",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "MH水道橋BLDG.地下1階",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.700706,
+   139.753754,
+   "city-chiyoda-77",
+   {
+    "name": "THE TOBACCO SUIDOBASHI SECOND",
+    "address": "東京都千代田区神田三崎町2-12-9",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "地下1階 土日祝休",
+    "url": "https://www.city.chiyoda.lg.jp/koho/machizukuri/sekatsu/jore/muryokitsuenjo.html"
+   }
+  ],
+  [
+   35.658241,
+   139.70108,
+   "city-shibuya-1",
+   {
+    "name": "渋谷駅モヤイ像喫煙所",
+    "address": "東京都渋谷区道玄坂1-1",
+    "hours": "24時間",
+    "io": "outdoor",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.659264,
+   139.700027,
+   "city-shibuya-2",
+   {
+    "name": "渋谷駅前スクランブル交差点喫煙所",
+    "address": "東京都渋谷区道玄坂2-3-1",
+    "hours": "24時間",
+    "io": "outdoor",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.660255,
+   139.702026,
+   "city-shibuya-3",
+   {
+    "name": "宮益坂下交差点喫煙所",
+    "address": "東京都渋谷区渋谷1-24",
+    "hours": "24時間",
+    "io": "outdoor",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.654621,
+   139.705368,
+   "city-shibuya-4",
+   {
+    "name": "渋谷駅新南口喫煙所",
+    "address": "東京都渋谷区渋谷3-26",
+    "hours": "24時間",
+    "io": "outdoor",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.647175,
+   139.709671,
+   "city-shibuya-5",
+   {
+    "name": "恵比寿駅西口喫煙所",
+    "address": "東京都渋谷区恵比寿南1-5",
+    "hours": "24時間",
+    "io": "outdoor",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.644524,
+   139.711487,
+   "city-shibuya-6",
+   {
+    "name": "恵比寿駅東口喫煙所",
+    "address": "東京都渋谷区恵比寿4-1",
+    "hours": "24時間",
+    "io": "outdoor",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.671253,
+   139.702789,
+   "city-shibuya-7",
+   {
+    "name": "原宿竹下口喫煙所",
+    "address": "東京都渋谷区神宮前1-18",
+    "hours": "24時間",
+    "io": "outdoor",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.68153,
+   139.711487,
+   "city-shibuya-8",
+   {
+    "name": "千駄ヶ谷駅前喫煙所",
+    "address": "東京都渋谷区千駄ヶ谷1-35",
+    "hours": "24時間",
+    "io": "outdoor",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.683426,
+   139.703171,
+   "city-shibuya-9",
+   {
+    "name": "代々木駅東口喫煙所",
+    "address": "東京都渋谷区千駄ヶ谷5-20-17",
+    "hours": "7:00〜20:00",
+    "note": "土曜は17時まで",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.68269,
+   139.702118,
+   "city-shibuya-10",
+   {
+    "name": "代々木駅西口喫煙所",
+    "address": "東京都渋谷区代々木1-32-13",
+    "hours": "7:00〜21:00",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.687126,
+   139.696045,
+   "city-shibuya-11",
+   {
+    "name": "代々木二丁目あおい公園喫煙所",
+    "address": "東京都渋谷区代々木2-13-3",
+    "hours": "24時間",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.662716,
+   139.700653,
+   "city-shibuya-12",
+   {
+    "name": "神南1丁目香取屋ビル西側喫煙所",
+    "address": "東京都渋谷区神南1-12-15",
+    "hours": "8:00〜17:30",
+    "note": "平日のみ",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.659843,
+   139.703537,
+   "city-shibuya-13",
+   {
+    "name": "paspa宮益坂",
+    "address": "東京都渋谷区渋谷1-13-7",
+    "hours": "7:00〜22:00",
+    "io": "indoor",
+    "note": "1階加熱式・2階紙巻き",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.660149,
+   139.69873,
+   "city-shibuya-14",
+   {
+    "name": "クランクストリート加熱式たばこ喫煙所",
+    "address": "東京都渋谷区宇田川町26-7",
+    "hours": "12:00〜20:00",
+    "io": "indoor",
+    "heated": "only",
+    "note": "AN宇田川町",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.662212,
+   139.699203,
+   "city-shibuya-15",
+   {
+    "name": "THE TOBACCO SHIBUYA SECOND",
+    "address": "東京都渋谷区宇田川町15-1",
+    "hours": "11:30〜翌5:00",
+    "io": "indoor",
+    "note": "渋谷パルコ地下1階",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.659229,
+   139.698807,
+   "city-shibuya-16",
+   {
+    "name": "THE TOBACCO DOGENZAKA",
+    "address": "東京都渋谷区道玄坂2-6-17",
+    "hours": "7:30〜22:00",
+    "io": "indoor",
+    "note": "渋東シネタワー別館",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.657848,
+   139.699356,
+   "city-shibuya-17",
+   {
+    "name": "THE TOBACCO DOGENZAKA SECOND",
+    "address": "東京都渋谷区道玄坂1-6-3",
+    "hours": "8:00〜21:00",
+    "io": "indoor",
+    "note": "山路ビル地下1階 土日祝休",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.662743,
+   139.709671,
+   "city-shibuya-18",
+   {
+    "name": "THE TOBACCO AOYAMA",
+    "address": "東京都渋谷区神宮前5-51-8",
+    "hours": "11:00〜20:00",
+    "io": "indoor",
+    "note": "ラ・ポルト青山地下1階",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.670517,
+   139.713623,
+   "city-shibuya-19",
+   {
+    "name": "ファミリーマート神宮前三丁目店喫煙所",
+    "address": "東京都渋谷区神宮前3-7-7",
+    "hours": "24時間",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.682758,
+   139.684555,
+   "city-shibuya-20",
+   {
+    "name": "もこのたばこ(旧瀧島たばこ店)喫煙所",
+    "address": "東京都渋谷区本町1-52-1",
+    "hours": "10:00〜21:00",
+    "note": "火曜は中休みあり",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.650204,
+   139.721588,
+   "city-shibuya-21",
+   {
+    "name": "日の丸パチンコ広尾店喫煙所",
+    "address": "東京都渋谷区広尾5-14-28",
+    "hours": "10:00〜22:40",
+    "io": "indoor",
+    "note": "ニキビル1階",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.674931,
+   139.675125,
+   "city-shibuya-22",
+   {
+    "name": "THE TOBACCO HATAGAYA",
+    "address": "東京都渋谷区幡ヶ谷1-30-5",
+    "hours": "6:00〜22:00",
+    "io": "indoor",
+    "note": "ローソン渋谷幡ヶ谷一丁目店",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.662682,
+   139.702423,
+   "city-shibuya-23",
+   {
+    "name": "渋谷キャスト",
+    "address": "東京都渋谷区渋谷1-23-21",
+    "hours": "7:00〜23:00",
+    "io": "indoor",
+    "note": "地下1階",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.657471,
+   139.70285,
+   "city-shibuya-24",
+   {
+    "name": "渋谷ストリーム",
+    "address": "東京都渋谷区渋谷3-21-3",
+    "hours": "6:15〜24:00",
+    "io": "indoor",
+    "note": "1〜4階(3階は時間短い)",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.65659,
+   139.69693,
+   "city-shibuya-25",
+   {
+    "name": "渋谷ソラスタ",
+    "address": "東京都渋谷区道玄坂1-21-1",
+    "hours": "8:00〜20:00",
+    "io": "indoor",
+    "note": "1、2階",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.662331,
+   139.696075,
+   "city-shibuya-26",
+   {
+    "name": "ラ・トゥール渋谷宇田川Abema Towers",
+    "address": "東京都渋谷区宇田川町40-1",
+    "hours": "9:00〜21:00",
+    "io": "indoor",
+    "note": "1階",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.662212,
+   139.699203,
+   "city-shibuya-27",
+   {
+    "name": "渋谷パルコ",
+    "address": "東京都渋谷区宇田川町15-1",
+    "hours": "11:00〜21:00",
+    "io": "indoor",
+    "note": "1階",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.657677,
+   139.700531,
+   "city-shibuya-28",
+   {
+    "name": "渋谷フクラス",
+    "address": "東京都渋谷区道玄坂1-2-3",
+    "hours": "11:00〜23:00",
+    "io": "indoor",
+    "note": "5、6階",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.661621,
+   139.702072,
+   "city-shibuya-29",
+   {
+    "name": "MIYASHITA PARK",
+    "address": "東京都渋谷区渋谷1-26-5",
+    "hours": "11:00〜23:00",
+    "io": "indoor",
+    "note": "1、3階(2か所)",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.660221,
+   139.697479,
+   "city-shibuya-30",
+   {
+    "name": "道玄坂通 dogenzaka-dori",
+    "address": "東京都渋谷区道玄坂2-25-12",
+    "hours": "7:00〜23:00",
+    "io": "indoor",
+    "note": "3階",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.657352,
+   139.701874,
+   "city-shibuya-31",
+   {
+    "name": "Shibuya Sakura Stage",
+    "address": "東京都渋谷区桜丘町1-1",
+    "hours": "8:00〜22:00",
+    "io": "indoor",
+    "note": "地下1階",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.65947,
+   139.705032,
+   "city-shibuya-32",
+   {
+    "name": "渋谷アクシュ",
+    "address": "東京都渋谷区渋谷2-17-1",
+    "hours": "5:00〜翌1:00",
+    "io": "indoor",
+    "note": "1階・3階",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.654518,
+   139.705124,
+   "city-shibuya-33",
+   {
+    "name": "関電不動産渋谷ビル",
+    "address": "東京都渋谷区渋谷3-26-20",
+    "hours": "9:00〜18:00",
+    "io": "indoor",
+    "note": "1階 平日のみ",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.663395,
+   139.695557,
+   "city-shibuya-34",
+   {
+    "name": "BASE 1",
+    "address": "東京都渋谷区宇田川町41-1",
+    "hours": "9:00〜18:00",
+    "io": "indoor",
+    "note": "1階 平日のみ",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.667229,
+   139.708557,
+   "city-shibuya-35",
+   {
+    "name": "表参道ヒルズ",
+    "address": "東京都渋谷区神宮前4-12-10",
+    "hours": "11:00〜23:00",
+    "io": "indoor",
+    "note": "地下3階",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.670567,
+   139.702988,
+   "city-shibuya-36",
+   {
+    "name": "WITH HARAJUKU",
+    "address": "東京都渋谷区神宮前1-14-30",
+    "hours": "11:00〜20:00",
+    "io": "indoor",
+    "note": "地下1階",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.668522,
+   139.704971,
+   "city-shibuya-37",
+   {
+    "name": "東急プラザ原宿「ハラカド」",
+    "address": "東京都渋谷区神宮前6-31-21",
+    "hours": "11:00〜21:00",
+    "io": "indoor",
+    "note": "G階",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.689526,
+   139.683548,
+   "city-shibuya-38",
+   {
+    "name": "アパホテル&リゾート西新宿五丁目タワー",
+    "address": "東京都渋谷区本町3-14-1",
+    "hours": "7:00〜翌2:00",
+    "io": "indoor",
+    "note": "1階",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.684647,
+   139.703354,
+   "city-shibuya-39",
+   {
+    "name": "タイムズスクエアビル",
+    "address": "東京都渋谷区千駄ヶ谷5-24-2",
+    "hours": "10:00〜20:00",
+    "io": "indoor",
+    "note": "5・13・14階",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.686501,
+   139.703094,
+   "city-shibuya-40",
+   {
+    "name": "リンクスクエア新宿",
+    "address": "東京都渋谷区千駄ヶ谷5-27-5",
+    "hours": "7:00〜23:00",
+    "io": "indoor",
+    "note": "1、3階",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.686897,
+   139.703552,
+   "city-shibuya-41",
+   {
+    "name": "住友不動産新宿南口ビル",
+    "address": "東京都渋谷区千駄ヶ谷5-31-11",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "1階 夕方に一時利用不可",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.679974,
+   139.71106,
+   "city-shibuya-42",
+   {
+    "name": "ヒューリック将棋会館千駄ヶ谷ビル",
+    "address": "東京都渋谷区千駄ヶ谷1-18-5",
+    "hours": "8:30〜19:00",
+    "io": "indoor",
+    "note": "1階 土日祝休",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.660557,
+   139.698547,
+   "city-shibuya-43",
+   {
+    "name": "Ploom LOUNGE 渋谷",
+    "address": "東京都渋谷区宇田川町29-2",
+    "hours": "12:00〜21:00",
+    "io": "indoor",
+    "note": "キラクビル1階 要身分証",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.66917,
+   139.70166,
+   "city-shibuya-44",
+   {
+    "name": "代々木公園喫煙所",
+    "address": "東京都渋谷区代々木神園町2-1",
+    "hours": "24時間",
+    "io": "outdoor",
+    "note": "都立代々木公園A地区",
+    "url": "https://www.city.shibuya.tokyo.jp/kankyo/machi-seiso/kitsuen/smokingplace.html"
+   }
+  ],
+  [
+   35.643925,
+   139.67012,
+   "city-setagaya-1",
+   {
+    "name": "三軒茶屋指定喫煙場所",
+    "address": "東京都世田谷区太子堂4-22",
+    "hours": "24時間",
+    "io": "outdoor",
+    "note": "三軒茶屋駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.643364,
+   139.680664,
+   "city-setagaya-2",
+   {
+    "name": "世田谷公園指定喫煙場所",
+    "address": "東京都世田谷区池尻1-5-27",
+    "hours": "24時間",
+    "io": "outdoor",
+    "note": "世田谷公園",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.651287,
+   139.635895,
+   "city-setagaya-3",
+   {
+    "name": "経堂駅指定喫煙場所",
+    "address": "東京都世田谷区経堂2-1",
+    "hours": "6:00〜翌1:00",
+    "io": "outdoor",
+    "note": "経堂駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.660851,
+   139.667068,
+   "city-setagaya-4",
+   {
+    "name": "下北沢駅トレーラーハウス1号指定喫煙場所",
+    "address": "東京都世田谷区北沢2-20",
+    "hours": "5:00〜翌1:00",
+    "io": "indoor",
+    "note": "下北沢駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.66259,
+   139.668625,
+   "city-setagaya-5",
+   {
+    "name": "下北沢駅トレーラーハウス2号指定喫煙場所",
+    "address": "東京都世田谷区北沢2-32",
+    "hours": "5:00〜翌1:00",
+    "io": "indoor",
+    "note": "下北沢駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.612335,
+   139.627228,
+   "city-setagaya-6",
+   {
+    "name": "二子玉川駅前玉川通り沿い指定喫煙場所",
+    "address": "東京都世田谷区玉川2-22-13",
+    "hours": "24時間",
+    "note": "二子玉川駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.611366,
+   139.628525,
+   "city-setagaya-7",
+   {
+    "name": "二子玉川駅南側指定喫煙場所",
+    "address": "東京都世田谷区玉川2-21-1",
+    "hours": "24時間",
+    "note": "二子玉川駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.610046,
+   139.63002,
+   "city-setagaya-8",
+   {
+    "name": "二子玉川東第二地区指定喫煙場所",
+    "address": "東京都世田谷区玉川1-14-1",
+    "hours": "24時間",
+    "note": "二子玉川駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.605839,
+   139.641632,
+   "city-setagaya-9",
+   {
+    "name": "玉川野毛町公園指定喫煙場所",
+    "address": "東京都世田谷区野毛1-25-1",
+    "hours": "24時間",
+    "io": "outdoor",
+    "note": "令和8年度に撤去予定",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.606216,
+   139.668579,
+   "city-setagaya-10",
+   {
+    "name": "自由が丘駅南口(九品仏川緑道)指定喫煙場所",
+    "address": "東京都世田谷区奥沢5-27",
+    "hours": "24時間",
+    "io": "outdoor",
+    "note": "自由が丘駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.65802,
+   139.618393,
+   "city-setagaya-11",
+   {
+    "name": "千歳温水プール指定喫煙場所",
+    "address": "東京都世田谷区船橋7-9-1",
+    "hours": "9:00〜21:00",
+    "io": "outdoor",
+    "note": "施設休館日は不可",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.628792,
+   139.61441,
+   "city-setagaya-12",
+   {
+    "name": "プール棟西側2階バルコニー指定喫煙場所",
+    "address": "東京都世田谷区大蔵4-6-1",
+    "io": "outdoor",
+    "note": "施設休館日は不可",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.628792,
+   139.61441,
+   "city-setagaya-13",
+   {
+    "name": "プール棟東側1階通路上指定喫煙場所",
+    "address": "東京都世田谷区大蔵4-6-1",
+    "hours": "24時間",
+    "io": "outdoor",
+    "note": "大蔵運動公園",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.628792,
+   139.61441,
+   "city-setagaya-14",
+   {
+    "name": "体育館地下1階ドライエリア指定喫煙場所",
+    "address": "東京都世田谷区大蔵4-6-1",
+    "io": "outdoor",
+    "note": "施設休館日は不可",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.628792,
+   139.61441,
+   "city-setagaya-15",
+   {
+    "name": "テニスコート横指定喫煙場所",
+    "address": "東京都世田谷区大蔵4-6-1",
+    "hours": "24時間",
+    "io": "outdoor",
+    "note": "大蔵運動公園",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.630001,
+   139.614807,
+   "city-setagaya-16",
+   {
+    "name": "体育館テニスコート通用路横指定喫煙場所",
+    "address": "東京都世田谷区大蔵4-7-1",
+    "io": "outdoor",
+    "note": "施設の営業時間内",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.630001,
+   139.614807,
+   "city-setagaya-17",
+   {
+    "name": "ゴルフ練習場2階階段付近指定喫煙場所",
+    "address": "東京都世田谷区大蔵4-7-1",
+    "io": "outdoor",
+    "note": "施設の営業時間内",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.630001,
+   139.614807,
+   "city-setagaya-18",
+   {
+    "name": "プール棟2階テラス席指定喫煙場所",
+    "address": "東京都世田谷区大蔵4-7-1",
+    "io": "outdoor",
+    "note": "屋外プール営業期のみ",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.615536,
+   139.61705,
+   "city-setagaya-19",
+   {
+    "name": "第一駐車場付近指定喫煙場所",
+    "address": "東京都世田谷区鎌田1丁目",
+    "hours": "24時間",
+    "io": "outdoor",
+    "note": "多摩川二子橋公園\n※地図の位置は住所の町名までの目安",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.615536,
+   139.61705,
+   "city-setagaya-20",
+   {
+    "name": "渡河橋付近指定喫煙場所",
+    "address": "東京都世田谷区鎌田1丁目",
+    "hours": "24時間",
+    "io": "outdoor",
+    "note": "多摩川二子橋公園\n※地図の位置は住所の町名までの目安",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.618141,
+   139.611038,
+   "city-setagaya-21",
+   {
+    "name": "球技場横付近指定喫煙場所",
+    "address": "東京都世田谷区鎌田2丁目",
+    "hours": "24時間",
+    "io": "outdoor",
+    "note": "宇奈根公園\n※地図の位置は住所の町名までの目安",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.636887,
+   139.587021,
+   "city-setagaya-22",
+   {
+    "name": "喜多見駅北口指定喫煙場所",
+    "address": "東京都世田谷区喜多見9-2",
+    "hours": "6:00〜23:00",
+    "io": "outdoor",
+    "note": "喜多見駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.66872,
+   139.600876,
+   "city-setagaya-23",
+   {
+    "name": "烏山区民センター指定喫煙場所",
+    "address": "東京都世田谷区南烏山6-2-19",
+    "hours": "24時間",
+    "note": "千歳烏山駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.669216,
+   139.617523,
+   "city-setagaya-24",
+   {
+    "name": "八幡山駅・都立松沢病院西側指定喫煙場所",
+    "address": "東京都世田谷区上北沢2-1-1",
+    "hours": "6:00〜24:00",
+    "note": "八幡山駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.656097,
+   139.599625,
+   "city-setagaya-25",
+   {
+    "name": "祖師谷公園指定喫煙場所",
+    "address": "東京都世田谷区上祖師谷3-22-19",
+    "hours": "24時間",
+    "io": "outdoor",
+    "note": "祖師谷公園",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.626083,
+   139.657501,
+   "city-setagaya-26",
+   {
+    "name": "駒沢オリンピック公園指定喫煙場所",
+    "address": "東京都世田谷区駒沢公園1-1",
+    "hours": "10:00〜16:30",
+    "io": "outdoor",
+    "note": "駒沢オリンピック公園",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.644165,
+   139.668518,
+   "city-setagaya-27",
+   {
+    "name": "ファミリーマート三軒茶屋駅前店指定喫煙場所",
+    "address": "東京都世田谷区太子堂4-20-10",
+    "hours": "6:00〜翌1:00",
+    "note": "三軒茶屋駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.643127,
+   139.670914,
+   "city-setagaya-28",
+   {
+    "name": "西沢商店指定喫煙場所",
+    "address": "東京都世田谷区三軒茶屋1-37-9",
+    "hours": "10:00〜18:00",
+    "note": "三軒茶屋駅周辺 土曜休",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.644371,
+   139.672577,
+   "city-setagaya-29",
+   {
+    "name": "株式会社PWL指定喫煙場所",
+    "address": "東京都世田谷区太子堂2-14-3",
+    "hours": "11:00〜19:00",
+    "io": "indoor",
+    "note": "シャルムイシクラ501",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.644363,
+   139.655502,
+   "city-setagaya-30",
+   {
+    "name": "ファミリーマート松陰神社駅前店指定喫煙場所",
+    "address": "東京都世田谷区若林4-25-14",
+    "hours": "24時間",
+    "note": "松陰神社前駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.646255,
+   139.660782,
+   "city-setagaya-31",
+   {
+    "name": "ファミリーマート世田谷若林一丁目店指定喫煙場所",
+    "address": "東京都世田谷区若林1-26-8",
+    "hours": "24時間",
+    "note": "若林駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.631355,
+   139.657135,
+   "city-setagaya-32",
+   {
+    "name": "ヒノマルパチンコ駒沢店1階指定喫煙場所",
+    "address": "東京都世田谷区駒沢2-17-2",
+    "hours": "10:30〜22:00",
+    "io": "indoor",
+    "note": "駒沢ビル",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.619411,
+   139.662888,
+   "city-setagaya-33",
+   {
+    "name": "ファミリーマート深沢二丁目店指定喫煙場所",
+    "address": "東京都世田谷区深沢2-7-3",
+    "hours": "5:00〜24:00",
+    "note": "深沢二丁目",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.609035,
+   139.647522,
+   "city-setagaya-34",
+   {
+    "name": "石川屋鈴木商店指定喫煙場所",
+    "address": "東京都世田谷区等々力3-5-8",
+    "hours": "24時間",
+    "note": "等々力駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.62727,
+   139.635025,
+   "city-setagaya-35",
+   {
+    "name": "ヒノマルパチンコ用賀店1階指定喫煙場所",
+    "address": "東京都世田谷区用賀4-3-1",
+    "hours": "10:30〜22:00",
+    "io": "indoor",
+    "note": "用賀4丁目ビル",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.62727,
+   139.635025,
+   "city-setagaya-36",
+   {
+    "name": "ヒノマルパチンコ用賀店2階指定喫煙場所",
+    "address": "東京都世田谷区用賀4-3-1",
+    "hours": "10:30〜22:00",
+    "io": "indoor",
+    "note": "用賀4丁目ビル",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.623394,
+   139.638733,
+   "city-setagaya-37",
+   {
+    "name": "ファミリーマート用賀の杜店指定喫煙場所",
+    "address": "東京都世田谷区用賀1-10-8",
+    "hours": "24時間",
+    "note": "用賀駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.668659,
+   139.64978,
+   "city-setagaya-38",
+   {
+    "name": "メガガイア明大前1階指定喫煙場所",
+    "address": "東京都世田谷区松原2-45-12",
+    "hours": "10:00〜22:40",
+    "io": "indoor",
+    "note": "明大前駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.668659,
+   139.64978,
+   "city-setagaya-39",
+   {
+    "name": "メガガイア明大前2階指定喫煙場所",
+    "address": "東京都世田谷区松原2-45-12",
+    "hours": "10:00〜22:40",
+    "io": "indoor",
+    "note": "明大前駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.668659,
+   139.64978,
+   "city-setagaya-40",
+   {
+    "name": "メガガイア明大前3階指定喫煙場所",
+    "address": "東京都世田谷区松原2-45-12",
+    "hours": "10:00〜22:40",
+    "io": "indoor",
+    "note": "明大前駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.659698,
+   139.659882,
+   "city-setagaya-41",
+   {
+    "name": "ポプラ代田店指定喫煙場所",
+    "address": "東京都世田谷区代田4-5-11",
+    "hours": "8:00〜20:00",
+    "note": "世田谷代田駅周辺 日祝休",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.66114,
+   139.668686,
+   "city-setagaya-42",
+   {
+    "name": "ミカン下北指定喫煙場所",
+    "address": "東京都世田谷区北沢2-11-15",
+    "hours": "6:30〜24:00",
+    "note": "下北沢駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.662991,
+   139.667267,
+   "city-setagaya-43",
+   {
+    "name": "しもきた喫煙所指定喫煙場所",
+    "address": "東京都世田谷区北沢2-30",
+    "hours": "24時間",
+    "io": "outdoor",
+    "note": "下北沢駅周辺",
+    "url": "https://www.city.setagaya.lg.jp/01101/4805.html"
+   }
+  ],
+  [
+   35.647636,
+   139.693542,
+   "city-meguro-1",
+   {
+    "name": "ファミリーマート目黒東山1丁目店",
+    "address": "東京都目黒区東山1-2-7",
+    "hours": "24時間",
+    "heated": "only",
+    "note": "コンビニ店舗",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.64225,
+   139.693436,
+   "city-meguro-2",
+   {
+    "name": "山﨑商会",
+    "address": "東京都目黒区上目黒3-42-32",
+    "hours": "24時間",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.645107,
+   139.698318,
+   "city-meguro-3",
+   {
+    "name": "ヒノマルパチンコ中目黒店",
+    "address": "東京都目黒区上目黒1-19-8",
+    "hours": "10:00〜22:40",
+    "note": "パチンコ店",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.644192,
+   139.698013,
+   "city-meguro-4",
+   {
+    "name": "マツヤ本店",
+    "address": "東京都目黒区上目黒3-7-11",
+    "hours": "10:00〜23:00",
+    "note": "大晦日は20時まで",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.643791,
+   139.700409,
+   "city-meguro-5",
+   {
+    "name": "中目黒駅東側公衆喫煙所",
+    "address": "東京都目黒区上目黒1-26",
+    "hours": "6:00〜24:00",
+    "note": "中目黒駅の東側",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.635216,
+   139.712555,
+   "city-meguro-6",
+   {
+    "name": "目黒権之助坂公衆喫煙所",
+    "address": "東京都目黒区目黒1-5",
+    "hours": "6:00〜24:00",
+    "note": "権之助坂沿い",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.633121,
+   139.70787,
+   "city-meguro-7",
+   {
+    "name": "ローソン目黒大鳥神社前",
+    "address": "東京都目黒区目黒3-9-1",
+    "hours": "24時間",
+    "heated": "only",
+    "note": "コンビニ店舗",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.637421,
+   139.690689,
+   "city-meguro-8",
+   {
+    "name": "ローソン祐天寺駅前",
+    "address": "東京都目黒区五本木1-31-9",
+    "hours": "24時間",
+    "heated": "only",
+    "note": "コンビニ店舗",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.634846,
+   139.691391,
+   "city-meguro-9",
+   {
+    "name": "並木商店",
+    "address": "東京都目黒区五本木2-16-4",
+    "hours": "9:00〜20:00",
+    "note": "年末年始休み",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.624378,
+   139.686829,
+   "city-meguro-10",
+   {
+    "name": "セブン-イレブン目黒鷹番1丁目店",
+    "address": "東京都目黒区鷹番1-11-8",
+    "hours": "24時間",
+    "note": "コンビニ店舗",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.628838,
+   139.685287,
+   "city-meguro-11",
+   {
+    "name": "学芸大学駅西口公衆喫煙所",
+    "address": "東京都目黒区鷹番3-2-1",
+    "hours": "7:00〜23:00",
+    "note": "学芸大学駅西口",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.629005,
+   139.685745,
+   "city-meguro-12",
+   {
+    "name": "学芸大学駅東口公衆喫煙所",
+    "address": "東京都目黒区鷹番3-3-19",
+    "hours": "9:00〜21:00",
+    "note": "学芸大学駅東口",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.616058,
+   139.698425,
+   "city-meguro-13",
+   {
+    "name": "クラフトビレッジ西小山",
+    "address": "東京都目黒区原町1-7-8",
+    "hours": "11:00〜23:00",
+    "note": "月曜・年末年始休み",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.62278,
+   139.684647,
+   "city-meguro-14",
+   {
+    "name": "イオンスタイル碑文谷7階",
+    "address": "東京都目黒区碑文谷4-1-1",
+    "hours": "9:00〜22:00",
+    "io": "indoor",
+    "note": "商業施設の7階",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.617657,
+   139.67601,
+   "city-meguro-15",
+   {
+    "name": "ヒノマルパチンコ都立大店",
+    "address": "東京都目黒区中根1-3-5",
+    "hours": "10:00〜22:40",
+    "note": "パチンコ店",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.608276,
+   139.669922,
+   "city-meguro-16",
+   {
+    "name": "プレゴ自由が丘店",
+    "address": "東京都目黒区自由が丘1-13-11",
+    "hours": "10:00〜23:00",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.608917,
+   139.670441,
+   "city-meguro-17",
+   {
+    "name": "オリエンタルパサージュ",
+    "address": "東京都目黒区自由が丘1-14-7",
+    "hours": "10:00〜23:00",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.608524,
+   139.669067,
+   "city-meguro-18",
+   {
+    "name": "THE TOBACCO JIYUGAOKA",
+    "address": "東京都目黒区自由が丘1-29-1",
+    "hours": "8:00〜22:00",
+    "io": "indoor",
+    "note": "ミューズスクエア4階",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.607723,
+   139.666977,
+   "city-meguro-19",
+   {
+    "name": "自由が丘しらかば通り公衆喫煙所",
+    "address": "東京都目黒区自由が丘2-11-16",
+    "hours": "10:00〜22:00",
+    "note": "しらかば通り沿い",
+    "url": "https://www.city.meguro.tokyo.jp/kankyouhozen/kurashi/kankyou/rojyokitsuentaisaku5.html"
+   }
+  ],
+  [
+   35.770618,
+   139.798141,
+   "city-adachi-1",
+   {
+    "name": "梅島駅公衆喫煙所",
+    "address": "東京都足立区梅田7-33",
+    "io": "indoor",
+    "note": "エルソフィア前交差点そば",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.750271,
+   139.803406,
+   "city-adachi-2",
+   {
+    "name": "北千住駅西口公衆喫煙所（ペデストリアンデッキ上）",
+    "address": "東京都足立区千住2-59",
+    "io": "outdoor",
+    "note": "西口デッキの上",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.770523,
+   139.810852,
+   "city-adachi-3",
+   {
+    "name": "五反野駅公衆喫煙所（四家交差点）",
+    "address": "東京都足立区弘道1-30",
+    "io": "outdoor",
+    "note": "四家交差点",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.794411,
+   139.791092,
+   "city-adachi-4",
+   {
+    "name": "竹ノ塚駅東口公衆喫煙所",
+    "address": "東京都足立区竹の塚6-6",
+    "io": "indoor",
+    "note": "東口交通広場内",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.750271,
+   139.803406,
+   "city-adachi-5",
+   {
+    "name": "北千住駅西口公衆喫煙所（ペデストリアンデッキ下）",
+    "address": "東京都足立区千住2-59",
+    "io": "outdoor",
+    "heated": "only",
+    "note": "西口デッキの下",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.744453,
+   139.810898,
+   "city-adachi-6",
+   {
+    "name": "牛田駅／京成関屋駅公衆喫煙所",
+    "address": "東京都足立区千住曙町1",
+    "io": "indoor",
+    "note": "関屋の里プチテラス内",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.784779,
+   139.821289,
+   "city-adachi-7",
+   {
+    "name": "六町駅公衆喫煙所",
+    "address": "東京都足立区六町4-1",
+    "io": "outdoor",
+    "note": "六町駅交通広場内",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.761658,
+   139.823822,
+   "city-adachi-8",
+   {
+    "name": "綾瀬駅西口公衆喫煙所",
+    "address": "東京都足立区綾瀬1-39",
+    "io": "outdoor",
+    "note": "綾瀬駅交通広場内",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.777912,
+   139.790466,
+   "city-adachi-9",
+   {
+    "name": "西新井駅東口公衆喫煙所",
+    "address": "東京都足立区梅島3-32",
+    "io": "indoor",
+    "note": "環七の側道沿い",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.74847,
+   139.806992,
+   "city-adachi-10",
+   {
+    "name": "北千住駅東口公衆喫煙所",
+    "address": "東京都足立区千住旭町4",
+    "io": "indoor",
+    "note": "東口交通広場",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.762974,
+   139.82756,
+   "city-adachi-11",
+   {
+    "name": "綾瀬駅東口公衆喫煙所",
+    "address": "東京都足立区綾瀬3-10",
+    "io": "indoor",
+    "note": "東綾瀬公園ハト広場内",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.773937,
+   139.765991,
+   "city-adachi-12",
+   {
+    "name": "江北地区公衆喫煙所",
+    "address": "東京都足立区江北4-22",
+    "io": "indoor",
+    "note": "東京女子医大通り",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.776241,
+   139.790375,
+   "city-adachi-13",
+   {
+    "name": "西新井駅西口公衆喫煙所",
+    "address": "東京都足立区西新井栄町2-2",
+    "note": "暫定型",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.778904,
+   139.780746,
+   "city-adachi-14",
+   {
+    "name": "大師前駅公衆喫煙所",
+    "address": "東京都足立区西新井1-4",
+    "io": "indoor",
+    "note": "西新井センター前",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.776375,
+   139.830704,
+   "city-adachi-15",
+   {
+    "name": "北綾瀬駅前公衆喫煙所",
+    "address": "東京都足立区谷中2-4",
+    "io": "indoor",
+    "note": "しょうぶ沼公園内",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.773746,
+   139.770599,
+   "city-adachi-16",
+   {
+    "name": "江北駅公衆喫煙所",
+    "address": "東京都足立区西新井本町2-32",
+    "io": "indoor",
+    "note": "江北駅交通広場内",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.814411,
+   139.770157,
+   "city-adachi-17",
+   {
+    "name": "見沼代親水公園駅公衆喫煙所",
+    "address": "東京都足立区舎人5-29",
+    "io": "indoor",
+    "note": "駅交通広場内",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.740192,
+   139.797806,
+   "city-adachi-18",
+   {
+    "name": "千住大橋駅公衆喫煙所",
+    "address": "東京都足立区千住橋戸町17",
+    "io": "indoor",
+    "note": "駅交通広場内\n※地図の位置は住所の町名までの目安",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.794968,
+   139.790497,
+   "city-adachi-19",
+   {
+    "name": "竹ノ塚駅西口公衆喫煙所",
+    "address": "東京都足立区西竹の塚2-1",
+    "io": "outdoor",
+    "note": "西口交通広場内",
+    "url": "https://www.city.adachi.tokyo.jp/chiiki/kituenjo-seibi.html"
+   }
+  ],
+  [
+   35.62537,
+   139.720673,
+   "city-shinagawa-1",
+   {
+    "name": "五反田駅西口本村橋 公衆喫煙場所",
+    "address": "東京都品川区西五反田2-22",
+    "io": "outdoor",
+    "heated": "only",
+    "note": "本村橋の路上",
+    "url": "https://www.city.shinagawa.tokyo.jp/kankyo/kankyo/1009565/1004247.html"
+   }
+  ],
+  [
+   35.628201,
+   139.722595,
+   "city-shinagawa-2",
+   {
+    "name": "五反田駅東口花房山通り 公衆喫煙場所",
+    "address": "東京都品川区東五反田5-22",
+    "io": "outdoor",
+    "note": "花房山通り沿い",
+    "url": "https://www.city.shinagawa.tokyo.jp/kankyo/kankyo/1009565/1004247.html"
+   }
+  ],
+  [
+   35.606621,
+   139.734848,
+   "city-shinagawa-3",
+   {
+    "name": "大井町駅西口JR踏切横 公衆喫煙場所",
+    "address": "東京都品川区大井1-2",
+    "io": "outdoor",
+    "note": "踏切横の歩道橋下",
+    "url": "https://www.city.shinagawa.tokyo.jp/kankyo/kankyo/1009565/1004247.html"
+   }
+  ],
+  [
+   35.605762,
+   139.735046,
+   "city-shinagawa-4",
+   {
+    "name": "大井町駅東口ペデストリアンデッキ下 公衆喫煙場所",
+    "address": "東京都品川区東大井5-20",
+    "hours": "5:00〜翌1:00",
+    "io": "outdoor",
+    "note": "東口デッキの下",
+    "url": "https://www.city.shinagawa.tokyo.jp/kankyo/kankyo/1009565/1004247.html"
+   }
+  ],
+  [
+   35.617943,
+   139.728897,
+   "city-shinagawa-5",
+   {
+    "name": "大崎駅西口バスロータリー 公衆喫煙場所",
+    "address": "東京都品川区大崎2-10-10",
+    "hours": "5:00〜24:00",
+    "io": "outdoor",
+    "note": "西口バスロータリー",
+    "url": "https://www.city.shinagawa.tokyo.jp/kankyo/kankyo/1009565/1004247.html"
+   }
+  ],
+  [
+   35.619011,
+   139.728806,
+   "city-shinagawa-6",
+   {
+    "name": "大崎駅西口線路脇 公衆喫煙場所",
+    "address": "東京都品川区大崎1-21",
+    "io": "outdoor",
+    "heated": "only",
+    "note": "新西口歩道橋の下",
+    "url": "https://www.city.shinagawa.tokyo.jp/kankyo/kankyo/1009565/1004247.html"
+   }
+  ],
+  [
+   35.621101,
+   139.727478,
+   "city-shinagawa-7",
+   {
+    "name": "大崎駅東口コンテナ型喫煙所",
+    "address": "東京都品川区大崎1-4",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "コンテナ型",
+    "url": "https://www.city.shinagawa.tokyo.jp/kankyo/kankyo/1009565/1004247.html"
+   }
+  ],
+  [
+   35.60173,
+   139.721924,
+   "city-shinagawa-8",
+   {
+    "name": "西大井駅前 公衆喫煙場所",
+    "address": "東京都品川区西大井1-3",
+    "io": "outdoor",
+    "note": "西大井駅前",
+    "url": "https://www.city.shinagawa.tokyo.jp/kankyo/kankyo/1009565/1004247.html"
+   }
+  ],
+  [
+   35.623024,
+   139.722321,
+   "city-shinagawa-9",
+   {
+    "name": "五反田JPビルディング 1階",
+    "address": "東京都品川区西五反田8-4-13",
+    "hours": "7:00〜23:00",
+    "io": "indoor",
+    "note": "ビル1階",
+    "url": "https://www.city.shinagawa.tokyo.jp/kankyo/kankyo/1009565/1004247.html"
+   }
+  ],
+  [
+   35.627571,
+   139.724579,
+   "city-shinagawa-10",
+   {
+    "name": "ファミリーマート東五反田桜田通り店 地下1階",
+    "address": "東京都品川区東五反田5-25-18",
+    "hours": "7:00〜23:00",
+    "io": "indoor",
+    "note": "ENZO五反田ビル地下1階",
+    "url": "https://www.city.shinagawa.tokyo.jp/kankyo/kankyo/1009565/1004247.html"
+   }
+  ],
+  [
+   35.62571,
+   139.724762,
+   "city-shinagawa-11",
+   {
+    "name": "THE TOBACCO GOTANDA",
+    "address": "東京都品川区東五反田2-1-4",
+    "hours": "11:00〜23:00",
+    "io": "indoor",
+    "note": "五反田東急スクエア8階",
+    "url": "https://www.city.shinagawa.tokyo.jp/kankyo/kankyo/1009565/1004247.html"
+   }
+  ],
+  [
+   35.615654,
+   139.715012,
+   "city-shinagawa-12",
+   {
+    "name": "THE TOBACCO TOGOSHIGINZA",
+    "address": "東京都品川区平塚1-5-9",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "駅前ビル2階・土日祝休み",
+    "url": "https://www.city.shinagawa.tokyo.jp/kankyo/kankyo/1009565/1004247.html"
+   }
+  ],
+  [
+   35.605019,
+   139.703766,
+   "city-shinagawa-13",
+   {
+    "name": "ファミリーマート旗の台駅前店",
+    "address": "東京都品川区旗の台3-12-3",
+    "hours": "6:00〜22:00",
+    "note": "コンビニ店舗",
+    "url": "https://www.city.shinagawa.tokyo.jp/kankyo/kankyo/1009565/1004247.html"
+   }
+  ],
+  [
+   35.611206,
+   139.720428,
+   "city-shinagawa-14",
+   {
+    "name": "品川区立文庫の森公園 コンテナ型喫煙所",
+    "address": "東京都品川区豊町1-16-23",
+    "hours": "8:30〜19:30",
+    "io": "indoor",
+    "note": "公園内のコンテナ型",
+    "url": "https://www.city.shinagawa.tokyo.jp/kankyo/kankyo/1009565/1004247.html"
+   }
+  ],
+  [
+   35.592381,
+   139.749512,
+   "city-shinagawa-15",
+   {
+    "name": "大井ふ頭中央海浜公園なぎさの森 しおじ磯喫煙所",
+    "address": "東京都品川区八潮4-2",
+    "io": "outdoor",
+    "note": "都立公園内",
+    "url": "https://www.city.shinagawa.tokyo.jp/kankyo/kankyo/1009565/1004247.html"
+   }
+  ],
+  [
+   35.596432,
+   139.763,
+   "city-shinagawa-16",
+   {
+    "name": "みなとが丘ふ頭公園喫煙所",
+    "address": "東京都品川区八潮3-1",
+    "io": "outdoor",
+    "note": "都立公園内",
+    "url": "https://www.city.shinagawa.tokyo.jp/kankyo/kankyo/1009565/1004247.html"
+   }
+  ],
+  [
+   35.695862,
+   139.813797,
+   "city-sumida-1",
+   {
+    "name": "錦糸町駅南口喫煙所",
+    "address": "東京都墨田区江東橋3-13",
+    "note": "錦糸町駅南口",
+    "url": "https://www.city.sumida.lg.jp/kurashi/volunteer/rojyou_kinnen/suishintiku.html"
+   }
+  ],
+  [
+   35.698555,
+   139.815033,
+   "city-sumida-2",
+   {
+    "name": "錦糸公園内喫煙所",
+    "address": "東京都墨田区錦糸4-15",
+    "note": "錦糸公園の中",
+    "url": "https://www.city.sumida.lg.jp/kurashi/volunteer/rojyou_kinnen/suishintiku.html"
+   }
+  ],
+  [
+   35.696156,
+   139.791718,
+   "city-sumida-3",
+   {
+    "name": "両国駅西口喫煙所",
+    "address": "東京都墨田区横網1-3",
+    "note": "両国駅西口",
+    "url": "https://www.city.sumida.lg.jp/kurashi/volunteer/rojyou_kinnen/suishintiku.html"
+   }
+  ],
+  [
+   35.718033,
+   139.818741,
+   "city-sumida-4",
+   {
+    "name": "曳舟文化センター前喫煙所",
+    "address": "東京都墨田区京島1-38",
+    "io": "indoor",
+    "note": "コンテナ型",
+    "url": "https://www.city.sumida.lg.jp/kurashi/volunteer/rojyou_kinnen/suishintiku.html"
+   }
+  ],
+  [
+   35.710342,
+   139.811203,
+   "city-sumida-5",
+   {
+    "name": "押上駅前喫煙所",
+    "address": "東京都墨田区押上1-1",
+    "note": "押上駅前",
+    "url": "https://www.city.sumida.lg.jp/kurashi/volunteer/rojyou_kinnen/suishintiku.html"
+   }
+  ],
+  [
+   35.70985,
+   139.807755,
+   "city-sumida-6",
+   {
+    "name": "東武橋喫煙所",
+    "address": "東京都墨田区向島1-32",
+    "note": "東武橋付近",
+    "url": "https://www.city.sumida.lg.jp/kurashi/volunteer/rojyou_kinnen/suishintiku.html"
+   }
+  ],
+  [
+   35.710056,
+   139.801102,
+   "city-sumida-7",
+   {
+    "name": "吾妻橋地区喫煙所",
+    "address": "東京都墨田区吾妻橋1-23",
+    "note": "うるおい広場内",
+    "url": "https://www.city.sumida.lg.jp/kurashi/volunteer/rojyou_kinnen/suishintiku.html"
+   }
+  ],
+  [
+   35.712276,
+   139.803864,
+   "city-sumida-8",
+   {
+    "name": "隅田公園内喫煙所",
+    "address": "東京都墨田区向島1-3",
+    "note": "隅田公園の中",
+    "url": "https://www.city.sumida.lg.jp/kurashi/volunteer/rojyou_kinnen/suishintiku.html"
+   }
+  ],
+  [
+   35.562088,
+   139.716721,
+   "city-ota-1",
+   {
+    "name": "蒲田駅東口駅前仮設公衆喫煙所",
+    "address": "東京都大田区蒲田5-14",
+    "note": "蒲田駅東口",
+    "url": "https://www.city.ota.tokyo.jp/seikatsu/sumaimachinami/kankyou/bika/kitsuenjoseibi.html"
+   }
+  ],
+  [
+   35.562431,
+   139.715424,
+   "city-ota-2",
+   {
+    "name": "蒲田駅西口駅前公衆喫煙所",
+    "address": "東京都大田区西蒲田7-68",
+    "note": "蒲田駅西口",
+    "url": "https://www.city.ota.tokyo.jp/seikatsu/sumaimachinami/kankyou/bika/kitsuenjoseibi.html"
+   }
+  ],
+  [
+   35.560791,
+   139.71907,
+   "city-ota-3",
+   {
+    "name": "蒲田五丁目公衆喫煙所",
+    "address": "東京都大田区蒲田5-32-1",
+    "note": "蒲田駅周辺",
+    "url": "https://www.city.ota.tokyo.jp/seikatsu/sumaimachinami/kankyou/bika/kitsuenjoseibi.html"
+   }
+  ],
+  [
+   35.587265,
+   139.727844,
+   "city-ota-4",
+   {
+    "name": "大森駅東口三角広場公衆喫煙所",
+    "address": "東京都大田区大森北1-5",
+    "note": "東口三角広場",
+    "url": "https://www.city.ota.tokyo.jp/seikatsu/sumaimachinami/kankyou/bika/kitsuenjoseibi.html"
+   }
+  ],
+  [
+   35.549747,
+   139.715729,
+   "city-ota-5",
+   {
+    "name": "雑色駅前公衆喫煙所",
+    "address": "東京都大田区仲六郷2-42",
+    "hours": "4:30〜翌1:00",
+    "note": "雑色駅前",
+    "url": "https://www.city.ota.tokyo.jp/seikatsu/sumaimachinami/kankyou/bika/kitsuenjoseibi.html"
+   }
+  ],
+  [
+   35.541283,
+   139.708832,
+   "city-ota-6",
+   {
+    "name": "六郷土手駅前公衆喫煙所",
+    "address": "東京都大田区仲六郷4-31",
+    "hours": "6:30〜21:00",
+    "note": "六郷土手駅前",
+    "url": "https://www.city.ota.tokyo.jp/seikatsu/sumaimachinami/kankyou/bika/kitsuenjoseibi.html"
+   }
+  ],
+  [
+   35.607712,
+   139.686844,
+   "city-ota-7",
+   {
+    "name": "大岡山駅前公衆喫煙所",
+    "address": "東京都大田区北千束3-27",
+    "note": "大岡山駅前",
+    "url": "https://www.city.ota.tokyo.jp/seikatsu/sumaimachinami/kankyou/bika/kitsuenjoseibi.html"
+   }
+  ],
+  [
+   35.584396,
+   139.740753,
+   "city-ota-8",
+   {
+    "name": "ボートレース平和島前広場公衆喫煙所",
+    "address": "東京都大田区平和島1-1-1",
+    "hours": "9:00〜21:00",
+    "io": "outdoor",
+    "note": "ボートレース場前の広場",
+    "url": "https://www.city.ota.tokyo.jp/seikatsu/sumaimachinami/kankyou/bika/kitsuenjoseibi.html"
+   }
+  ],
+  [
+   35.584396,
+   139.740753,
+   "city-ota-9",
+   {
+    "name": "BIG FUN 平和島公衆喫煙所",
+    "address": "東京都大田区平和島1-1-1",
+    "io": "outdoor",
+    "note": "2階デッキ",
+    "url": "https://www.city.ota.tokyo.jp/seikatsu/sumaimachinami/kankyou/bika/kitsuenjoseibi.html"
+   }
+  ],
+  [
+   35.580963,
+   139.74826,
+   "city-ota-10",
+   {
+    "name": "THE TOBACCO RYUTSU CENTER 公衆喫煙所",
+    "address": "東京都大田区平和島6-1-1",
+    "hours": "8:00〜20:00",
+    "io": "indoor",
+    "note": "TRCセンタービル2階・日曜休",
+    "url": "https://www.city.ota.tokyo.jp/seikatsu/sumaimachinami/kankyou/bika/kitsuenjoseibi.html"
+   }
+  ],
+  [
+   35.732895,
+   139.802719,
+   "city-arakawa-1",
+   {
+    "name": "南千住駅東口指定喫煙場所",
+    "address": "東京都荒川区南千住4-1-2",
+    "hours": "6:00〜21:00",
+    "note": "区営",
+    "url": "https://www.city.arakawa.tokyo.jp/a024/kankyou/kankyoubika/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.73513,
+   139.783615,
+   "city-arakawa-2",
+   {
+    "name": "荒川公園内喫煙所",
+    "address": "東京都荒川区荒川2-2-3",
+    "hours": "7:00〜19:00",
+    "note": "区営・荒川公園内",
+    "url": "https://www.city.arakawa.tokyo.jp/a024/kankyou/kankyoubika/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.742722,
+   139.780869,
+   "city-arakawa-3",
+   {
+    "name": "センターまちや喫煙所",
+    "address": "東京都荒川区荒川7-50-9",
+    "hours": "8:00〜23:00",
+    "note": "民間指定",
+    "url": "https://www.city.arakawa.tokyo.jp/a024/kankyou/kankyoubika/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.744796,
+   139.762173,
+   "city-arakawa-4",
+   {
+    "name": "ファミリーマート荒川西尾久一丁目店喫煙スペース",
+    "address": "東京都荒川区西尾久1-25-5",
+    "hours": "8:00〜20:00",
+    "note": "民間指定・コンビニ",
+    "url": "https://www.city.arakawa.tokyo.jp/a024/kankyou/kankyoubika/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.727827,
+   139.771777,
+   "city-arakawa-5",
+   {
+    "name": "日暮里駅南口指定喫煙場所",
+    "address": "東京都荒川区西日暮里2-19-10",
+    "hours": "6:00〜21:00",
+    "note": "区営・空調あり",
+    "url": "https://www.city.arakawa.tokyo.jp/a024/kankyou/kankyoubika/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.752287,
+   139.757236,
+   "city-arakawa-6",
+   {
+    "name": "あらかわ遊園内喫煙所",
+    "address": "東京都荒川区西尾久8-10-1",
+    "hours": "7:30〜21:00",
+    "note": "区営・遊園地内",
+    "url": "https://www.city.arakawa.tokyo.jp/a024/kankyou/kankyoubika/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.733414,
+   139.779351,
+   "city-arakawa-7",
+   {
+    "name": "桝屋喫煙スペース",
+    "address": "東京都荒川区荒川3-61-6",
+    "hours": "平日9:00〜21:00／土・祝11:00〜20:00",
+    "note": "民間指定・日曜休み",
+    "url": "https://www.city.arakawa.tokyo.jp/a024/kankyou/kankyoubika/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.731266,
+   139.764343,
+   "city-arakawa-8",
+   {
+    "name": "西宮・中里商店喫煙スペース",
+    "address": "東京都荒川区西日暮里4-22-3",
+    "hours": "8:00〜20:00",
+    "note": "日曜休み・昼に休憩あり",
+    "url": "https://www.city.arakawa.tokyo.jp/a024/kankyou/kankyoubika/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.750641,
+   139.768723,
+   "city-arakawa-9",
+   {
+    "name": "鈴木商店",
+    "address": "東京都荒川区東尾久8-17-4",
+    "hours": "6:00〜22:00",
+    "note": "民間指定・年中無休",
+    "url": "https://www.city.arakawa.tokyo.jp/a024/kankyou/kankyoubika/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.733257,
+   139.78421,
+   "city-arakawa-10",
+   {
+    "name": "小沢商店",
+    "address": "東京都荒川区荒川3-4-7",
+    "hours": "24時間",
+    "note": "民間指定・年中無休",
+    "url": "https://www.city.arakawa.tokyo.jp/a024/kankyou/kankyoubika/shiteikitsuenbasyo.html"
+   }
+  ],
+  [
+   35.730278,
+   139.712662,
+   "city-toshima-1",
+   {
+    "name": "池袋駅東口喫煙所",
+    "address": "東京都豊島区南池袋1-29",
+    "hours": "24時間",
+    "note": "区営",
+    "url": "https://www.city.toshima.lg.jp/152/machizukuri/sumai/bika/taisaku/025701.html"
+   }
+  ],
+  [
+   35.729939,
+   139.71051,
+   "city-toshima-2",
+   {
+    "name": "池袋駅北口喫煙所",
+    "address": "東京都豊島区西池袋1-1",
+    "hours": "24時間",
+    "note": "区営",
+    "url": "https://www.city.toshima.lg.jp/152/machizukuri/sumai/bika/taisaku/025701.html"
+   }
+  ],
+  [
+   35.729572,
+   139.707474,
+   "city-toshima-3",
+   {
+    "name": "池袋駅西口東京芸術劇場前喫煙所",
+    "address": "東京都豊島区西池袋1-8-9",
+    "hours": "7:00〜24:00",
+    "io": "indoor",
+    "note": "区営・コンテナ型",
+    "url": "https://www.city.toshima.lg.jp/152/machizukuri/sumai/bika/taisaku/025701.html"
+   }
+  ],
+  [
+   35.731373,
+   139.714584,
+   "city-toshima-4",
+   {
+    "name": "THE TOBACCO IKEBUKURO",
+    "address": "東京都豊島区東池袋1-8-1",
+    "hours": "10:00〜23:00",
+    "io": "indoor",
+    "note": "WACCA池袋5階",
+    "url": "https://www.city.toshima.lg.jp/152/machizukuri/sumai/bika/taisaku/025701.html"
+   }
+  ],
+  [
+   35.731209,
+   139.706192,
+   "city-toshima-5",
+   {
+    "name": "ファミリーマート立教通り店",
+    "address": "東京都豊島区西池袋3-29-7",
+    "hours": "6:00〜20:00",
+    "note": "コンビニ店舗",
+    "url": "https://www.city.toshima.lg.jp/152/machizukuri/sumai/bika/taisaku/025701.html"
+   }
+  ],
+  [
+   35.727123,
+   139.710342,
+   "city-toshima-6",
+   {
+    "name": "THE TOBACCO IKEBUKURO SECOND",
+    "address": "東京都豊島区南池袋1-28-2",
+    "hours": "11:00〜21:00",
+    "io": "indoor",
+    "note": "池袋パルコ8階",
+    "url": "https://www.city.toshima.lg.jp/152/machizukuri/sumai/bika/taisaku/025701.html"
+   }
+  ],
+  [
+   35.730633,
+   139.729553,
+   "city-toshima-7",
+   {
+    "name": "大塚駅南口喫煙所",
+    "address": "東京都豊島区南大塚2-45",
+    "hours": "24時間",
+    "note": "区営",
+    "url": "https://www.city.toshima.lg.jp/152/machizukuri/sumai/bika/taisaku/025701.html"
+   }
+  ],
+  [
+   35.731953,
+   139.728271,
+   "city-toshima-8",
+   {
+    "name": "大塚駅前音楽館 Smoking Room",
+    "address": "東京都豊島区北大塚2-2-2",
+    "hours": "13:00〜22:00",
+    "io": "indoor",
+    "note": "ba06ビル8階",
+    "url": "https://www.city.toshima.lg.jp/152/machizukuri/sumai/bika/taisaku/025701.html"
+   }
+  ],
+  [
+   35.693012,
+   139.700073,
+   "city-shinjuku-1",
+   {
+    "name": "新宿駅東口公衆喫煙所",
+    "address": "東京都新宿区新宿3-38",
+    "io": "outdoor",
+    "note": "東口広場",
+    "url": "https://www.city.shinjuku.lg.jp/seikatsu/file11_01_00003.html"
+   }
+  ],
+  [
+   35.68858,
+   139.699432,
+   "city-shinjuku-2",
+   {
+    "name": "新宿駅西口公衆喫煙所",
+    "address": "東京都新宿区西新宿1-1",
+    "io": "outdoor",
+    "note": "西口地上ロータリー内",
+    "url": "https://www.city.shinjuku.lg.jp/seikatsu/file11_01_00003.html"
+   }
+  ],
+  [
+   35.695972,
+   139.699722,
+   "city-shinjuku-3",
+   {
+    "name": "西武新宿駅前公衆喫煙所",
+    "address": "東京都新宿区歌舞伎町1-30",
+    "io": "outdoor",
+    "note": "靖国通り大ガード横",
+    "url": "https://www.city.shinjuku.lg.jp/seikatsu/file11_01_00003.html"
+   }
+  ],
+  [
+   35.690186,
+   139.701462,
+   "city-shinjuku-4",
+   {
+    "name": "新宿駅東南口高架下公衆喫煙所",
+    "address": "東京都新宿区新宿3-37",
+    "io": "outdoor",
+    "note": "東南口広場横の高架下",
+    "url": "https://www.city.shinjuku.lg.jp/seikatsu/file11_01_00003.html"
+   }
+  ],
+  [
+   35.712494,
+   139.703873,
+   "city-shinjuku-5",
+   {
+    "name": "高田馬場駅前公衆喫煙所",
+    "address": "東京都新宿区高田馬場1-35",
+    "io": "outdoor",
+    "note": "駅前広場",
+    "url": "https://www.city.shinjuku.lg.jp/seikatsu/file11_01_00003.html"
+   }
+  ],
+  [
+   35.68074,
+   139.71962,
+   "city-shinjuku-6",
+   {
+    "name": "信濃町駅公衆喫煙所",
+    "address": "東京都新宿区信濃町34",
+    "io": "outdoor",
+    "note": "駅南側の駐輪場前",
+    "url": "https://www.city.shinjuku.lg.jp/seikatsu/file11_01_00003.html"
+   }
+  ],
+  [
+   35.701775,
+   139.697144,
+   "city-shinjuku-7",
+   {
+    "name": "マルタイタバコ店",
+    "address": "東京都新宿区百人町2-21-4",
+    "hours": "8:30〜17:30",
+    "note": "日曜休み",
+    "url": "https://www.city.shinjuku.lg.jp/kenkou/eisei01_000001_00005.html"
+   }
+  ],
+  [
+   35.686508,
+   139.728195,
+   "city-shinjuku-8",
+   {
+    "name": "paspa四谷公衆喫煙所",
+    "address": "東京都新宿区四谷1-19-16",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "第一上野ビル・土日祝休み",
+    "url": "https://www.city.shinjuku.lg.jp/kenkou/eisei01_000001_00005.html"
+   }
+  ],
+  [
+   35.69054,
+   139.709946,
+   "city-shinjuku-9",
+   {
+    "name": "paspa御苑前",
+    "address": "東京都新宿区新宿2-15-29",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "Jackビル2の1階・土日祝休",
+    "url": "https://www.city.shinjuku.lg.jp/kenkou/eisei01_000001_00005.html"
+   }
+  ],
+  [
+   35.692776,
+   139.696732,
+   "city-shinjuku-10",
+   {
+    "name": "THE TOBACCO NISHISHINJUKU",
+    "address": "東京都新宿区西新宿1-26-2",
+    "hours": "8:00〜24:00",
+    "io": "indoor",
+    "note": "新宿野村ビル地下2階",
+    "url": "https://www.city.shinjuku.lg.jp/kenkou/eisei01_000001_00005.html"
+   }
+  ],
+  [
+   35.688148,
+   139.693329,
+   "city-shinjuku-11",
+   {
+    "name": "THE TOBACCO TOCHOMAE",
+    "address": "東京都新宿区西新宿2-4-1",
+    "hours": "8:00〜23:00",
+    "io": "indoor",
+    "note": "新宿NSビル29階",
+    "url": "https://www.city.shinjuku.lg.jp/kenkou/eisei01_000001_00005.html"
+   }
+  ],
+  [
+   35.707039,
+   139.66304,
+   "city-nakano-1",
+   {
+    "name": "中野駅北口東西連絡路下喫煙所",
+    "address": "東京都中野区中野4-9",
+    "hours": "6:00〜23:00",
+    "note": "北口の連絡路の下",
+    "url": "https://www.city.tokyo-nakano.lg.jp/kenko_hukushi/kenkodukuri/tabako_alcohol/judoukitsuen_jourei.html"
+   }
+  ],
+  [
+   35.707039,
+   139.66304,
+   "city-nakano-2",
+   {
+    "name": "中野駅北口加熱式たばこ専用喫煙所",
+    "address": "東京都中野区中野4-9",
+    "hours": "24時間",
+    "heated": "only",
+    "note": "中野駅北口",
+    "url": "https://www.city.tokyo-nakano.lg.jp/kenko_hukushi/kenkodukuri/tabako_alcohol/judoukitsuen_jourei.html"
+   }
+  ],
+  [
+   35.707893,
+   139.661087,
+   "city-nakano-3",
+   {
+    "name": "トレーラーハウス型喫煙所",
+    "address": "東京都中野区中野4-13",
+    "hours": "7:00〜21:00",
+    "io": "indoor",
+    "note": "トレーラーハウス型",
+    "url": "https://www.city.tokyo-nakano.lg.jp/kenko_hukushi/kenkodukuri/tabako_alcohol/judoukitsuen_jourei.html"
+   }
+  ],
+  [
+   35.706215,
+   139.662613,
+   "city-nakano-4",
+   {
+    "name": "THE TOBACCO NAKANO SECOND",
+    "address": "東京都中野区中野4-14-1",
+    "hours": "9:30〜23:00",
+    "io": "indoor",
+    "heated": "only",
+    "note": "中野M-SQUARE 2階",
+    "url": "https://www.city.tokyo-nakano.lg.jp/kenko_hukushi/kenkodukuri/tabako_alcohol/judoukitsuen_jourei.html"
+   }
+  ],
+  [
+   35.72216,
+   139.673813,
+   "city-nakano-5",
+   {
+    "name": "哲学堂公園（分煙化実施公園）",
+    "address": "東京都中野区松が丘1-34",
+    "io": "outdoor",
+    "note": "公園内の喫煙場所",
+    "url": "https://www.city.tokyo-nakano.lg.jp/kenko_hukushi/kenkodukuri/tabako_alcohol/judoukitsuen_jourei.html"
+   }
+  ],
+  [
+   35.715572,
+   139.662277,
+   "city-nakano-6",
+   {
+    "name": "平和の森公園（分煙化実施公園）",
+    "address": "東京都中野区新井3-37",
+    "io": "outdoor",
+    "note": "公園内の喫煙場所",
+    "url": "https://www.city.tokyo-nakano.lg.jp/kenko_hukushi/kenkodukuri/tabako_alcohol/judoukitsuen_jourei.html"
+   }
+  ],
+  [
+   35.727409,
+   139.665497,
+   "city-nakano-7",
+   {
+    "name": "江古田の森公園（分煙化実施公園）",
+    "address": "東京都中野区江古田3-14",
+    "io": "outdoor",
+    "note": "公園内の喫煙場所",
+    "url": "https://www.city.tokyo-nakano.lg.jp/kenko_hukushi/kenkodukuri/tabako_alcohol/judoukitsuen_jourei.html"
+   }
+  ],
+  [
+   35.708336,
+   139.752411,
+   "city-bunkyo-1",
+   {
+    "name": "シビックセンター1階屋外指定喫煙場所",
+    "address": "東京都文京区春日1-16-21",
+    "io": "outdoor",
+    "note": "シビックセンター1階の外",
+    "url": "https://www.city.bunkyo.lg.jp/b037/p005115/index.html"
+   }
+  ],
+  [
+   35.7015,
+   139.764297,
+   "city-bunkyo-2",
+   {
+    "name": "御茶の水橋際公衆便所横指定喫煙場所",
+    "address": "東京都文京区湯島1-5",
+    "io": "outdoor",
+    "note": "御茶の水橋そばトイレ横",
+    "url": "https://www.city.bunkyo.lg.jp/b037/p005115/index.html"
+   }
+  ],
+  [
+   35.705002,
+   139.769714,
+   "city-bunkyo-3",
+   {
+    "name": "セブン-イレブン文京湯島3丁目店",
+    "address": "東京都文京区湯島3-14-9",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "年中無休",
+    "url": "https://www.city.bunkyo.lg.jp/b037/p005122.html"
+   }
+  ],
+  [
+   35.72303,
+   139.754288,
+   "city-bunkyo-4",
+   {
+    "name": "長寿庵",
+    "address": "東京都文京区向丘2-29-5",
+    "hours": "11:00〜15:00／17:00〜22:30",
+    "io": "indoor",
+    "note": "水曜休み",
+    "url": "https://www.city.bunkyo.lg.jp/b037/p005122.html"
+   }
+  ],
+  [
+   35.705455,
+   139.753555,
+   "city-bunkyo-5",
+   {
+    "name": "THE TOBACCO KORAKUEN",
+    "address": "東京都文京区後楽1-3-61",
+    "hours": "10:00〜20:00",
+    "io": "indoor",
+    "note": "ジオポリス1階",
+    "url": "https://www.city.bunkyo.lg.jp/b037/p005122.html"
+   }
+  ],
+  [
+   35.706917,
+   139.744223,
+   "city-bunkyo-6",
+   {
+    "name": "THE TOBACCO IIDABASHI SECOND",
+    "address": "東京都文京区後楽2-22-2",
+    "hours": "10:00〜22:00",
+    "io": "indoor",
+    "note": "飲食店内・平日のみ",
+    "url": "https://www.city.bunkyo.lg.jp/b037/p005122.html"
+   }
+  ],
+  [
+   35.717613,
+   139.736407,
+   "city-bunkyo-7",
+   {
+    "name": "セブン-イレブン 茗荷谷駅前店",
+    "address": "東京都文京区大塚1-4-10",
+    "hours": "24時間",
+    "io": "indoor",
+    "note": "銀嶺ビル1階",
+    "url": "https://www.city.bunkyo.lg.jp/b037/p005122.html"
+   }
+  ],
+  [
+   35.707226,
+   139.751724,
+   "city-bunkyo-8",
+   {
+    "name": "THE TOBACCO KORAKUEN SECOND",
+    "address": "東京都文京区春日1-2-3",
+    "hours": "11:00〜23:00",
+    "io": "indoor",
+    "note": "メトロ・エム後楽園5階",
+    "url": "https://www.city.bunkyo.lg.jp/b037/p005122.html"
+   }
+  ],
+  [
+   35.788773,
+   139.661575,
+   "city-itabashi-1",
+   {
+    "name": "高島平公衆喫煙所",
+    "address": "東京都板橋区高島平8-2",
+    "hours": "7:00〜20:00",
+    "io": "indoor",
+    "note": "屋外設置のコンテナ型",
+    "url": "https://www.city.itabashi.tokyo.jp/bousai/kougai/bika/kitsuen/1019824.html"
+   }
+  ],
+  [
+   35.77697,
+   139.633026,
+   "city-itabashi-2",
+   {
+    "name": "成増駅南口前の公衆喫煙所",
+    "address": "東京都板橋区成増2-12",
+    "hours": "10:00〜22:30",
+    "io": "indoor",
+    "note": "スロット店EXA FIRST内",
+    "url": "https://www.city.itabashi.tokyo.jp/bousai/kougai/bika/kitsuen/1019824.html"
    }
   ]
  ]

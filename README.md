@@ -22,8 +22,9 @@
   - 全国データがない配置では、従来どおり端末から Overpass API に直接問い合わせる（格子ごとに IndexedDB に3日保存）
 - **公開情報（自治体・施設・チェーン店）**：`public/data/places/*.json`（`index.json` で列挙）。情報源ごとのスクリプトで作り、`node scripts/build-places-index.mjs` で一覧を更新する
   - 自治体：`scripts/fetch-opendata.mjs` → `gov.json`。江東区・台東区（CC BY 4.0）。OSM の喫煙所と 25m 以内で重なるものは自治体データを優先
+  - 市区の公開ページ：`scripts/sources/municipal.mjs` → `cities.json`。東京16区（港・中央・千代田・渋谷・世田谷ほか）と9市（川崎・神戸・熊本ほか）の一覧ページから、名称・住所・利用時間だけを `scripts/data/municipal-spots.json` に記録し、住所を緯度経度に変換（2026-11 調査。約120市区を調べ、住所つきの一覧があったのはこの25市区と武蔵野・府中・三鷹・船橋）。休止・閉鎖中は除く。位置は住所の街区までなので、実際の場所と数十mずれることがある
   - 商業施設：`scripts/sources/mitsui.mjs` → `mitsui.json`。ららぽーと・三井アウトレットパーク等の「喫煙室」案内から階と場所
-  - チェーン店：`scripts/sources/cunited.mjs`（ベローチェ・珈琲館・カフェ・ド・クリエ等）、`kaikatsu.mjs`（快活CLUB の加熱式たばこ専用エリア）、`hoshino.mjs`（星乃珈琲店）
+  - チェーン店：`scripts/sources/cunited.mjs`（ベローチェ・珈琲館・カフェ・ド・クリエ等）、`kaikatsu.mjs`（快活CLUB の加熱式たばこ専用エリア）、`hoshino.mjs`（星乃珈琲店）、`ueshima.mjs`（上島珈琲店）、`manekineko.mjs`（カラオケまねきねこの喫煙ブース。ブラウザで「もっとみる」を押して一覧を読む）
   - 取得は `scripts/lib/fetch.mjs` 経由：身元を名乗る User-Agent、1ホスト1秒以上の間隔、robots.txt の Disallow を守る。アクセスを拒否（403 等）されたサイトは回避せず使わない
   - 住所しかない店舗は `scripts/lib/geocode.mjs`（国土地理院の住所検索、結果は `scripts/cache/geocode.json` に保存）で緯度経度にする。番地・街区まで一致しなかったものは詳細に「町名までの目安」と表示
   - 規約で転載・再利用を禁止している運営者は使わない（ドトール・エクセルシオール・タリーズ・コメダ・カラオケ館・鳥貴族・ダイナム・ルノアール・プロント、NEXCO 各社、空港各社など。2026-11 調査）

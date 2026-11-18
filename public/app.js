@@ -108,6 +108,7 @@ function fromPlace([lat, lng, id, t], src = {}) {
     heatedPartial: t.heated === 'partial',
     note: [t.note, t.address].filter(Boolean).join('\n'),
     hours: t.hours,
+    io: t.io,
     url: t.url,
     src,
   };
@@ -138,6 +139,7 @@ function tagsOf(s) {
     if (t.operator) out.push(t.operator);
   } else if (s.source === 'gov') {
     out.push(`${s.src.city}の公衆喫煙所`);
+    if (s.io) out.push(s.io === 'indoor' ? '屋内' : '屋外');
     if (s.hours) out.push(s.hours);
   } else if (s.source === 'place') {
     out.push(s.src.label);
@@ -294,7 +296,7 @@ function renderList(spots) {
 
 function renderStatus() {
   const parts = [];
-  if (staticIndex) parts.push(`全国 ${staticIndex.total.toLocaleString('ja-JP')}件 · ${staticIndex.updated.slice(0, 10)} 時点`);
+  if (staticIndex) parts.push(`全国 ${(staticIndex.total + state.places.length).toLocaleString('ja-JP')}件 · ${staticIndex.updated.slice(0, 10)} 時点`);
   else if (state.loadedAt) parts.push(`${state.loadedAt} 更新`);
   parts.push('データ © OpenStreetMap');
   const gov = state.placeSources.filter((x) => x.type === 'gov');
