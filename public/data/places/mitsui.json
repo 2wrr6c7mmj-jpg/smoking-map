@@ -1,0 +1,320 @@
+{
+ "updated": "2026-11-18T16:23:09.873Z",
+ "sources": [
+  {
+   "id": "mitsui",
+   "type": "facility",
+   "group": "area",
+   "label": "商業施設の喫煙室",
+   "name": "三井ショッピングパーク 各施設の喫煙室案内",
+   "publisher": "三井不動産商業マネジメント",
+   "page": "https://mitsui-shopping-park.com",
+   "terms": "施設の公開ページから場所の事実のみを抜き出し（文章は転載せず要約）",
+   "count": 25
+  }
+ ],
+ "spots": [
+  [
+   35.615612,
+   139.379501,
+   "mitsui-mop-tama",
+   {
+    "name": "三井アウトレットパーク 多摩南大沢 喫煙室",
+    "note": "ファクトリーアウトレッツ Villa1F「タリーズコーヒー」奥にございます。 / 観光バスの乗り入れのご案内 / ●繁忙期はご来場をご遠慮いただくことがございます。 / ●その他、ご不明な点はお電話にてご連絡ください。TEL：042-670-6080（防災センター） / 三井アウトレットパーク 多摩南大沢周辺の施設情報は「南大沢駅前マップ」をご覧ください。",
+    "address": "東京都八王子市南大沢1-600",
+    "url": "https://mitsui-shopping-park.com/mop/tama/info/others_info.html",
+    "facility": true
+   }
+  ],
+  [
+   35.649021,
+   140.043198,
+   "mitsui-mop-makuhari",
+   {
+    "name": "三井アウトレットパーク 幕張 喫煙室",
+    "note": "",
+    "address": "千葉県千葉市美浜区ひび野1-9",
+    "url": "https://mitsui-shopping-park.com/mop/makuhari/info/others_info.html",
+    "facility": true
+   }
+  ],
+  [
+   35.029049,
+   136.729919,
+   "mitsui-mop-nagashima",
+   {
+    "name": "三井アウトレットパーク ジャズドリーム長島 喫煙室",
+    "note": "サウスエリア 1F「ジェラート ピケ カフェ クレープリー」横、 / サウスエリア 2F「オロビアンコ」奥、 / ノースエリア 1F「ドルチェ アンド ガッバーナ」横、 / ノースエリア 1F センタープラザ「総合案内所」横にございます。 / ●お願い● / ポップジェット / ～お子様に大人気のポップジェット～ / 音楽にあわせてリズミカルな水の演出！夜にはライトアップもされます。",
+    "address": "三重県桑名市長島町浦安368",
+    "url": "https://mitsui-shopping-park.com/mop/nagashima/info/others_info.html",
+    "facility": true
+   }
+  ],
+  [
+   35.811531,
+   139.379013,
+   "mitsui-mop-iruma",
+   {
+    "name": "三井アウトレットパーク 入間 喫煙室",
+    "note": "イーストプラザ 1F トイレ横 / イーストプラザ 2F トイレ横 / フォレストキッチン裏トイレ横",
+    "address": "埼玉県入間市宮寺3169-1",
+    "url": "https://mitsui-shopping-park.com/mop/iruma/info/others_info.html",
+    "facility": true
+   }
+  ],
+  [
+   38.272797,
+   140.987885,
+   "mitsui-mop-sendai",
+   {
+    "name": "三井アウトレットパーク 仙台港 喫煙室",
+    "note": "2F 「クリア」横 / 建物の外につきましては、灰皿のある所定の場所でお願いします。",
+    "address": "宮城県仙台市宮城野区中野3-7-2",
+    "url": "https://mitsui-shopping-park.com/mop/sendai/info/others_info.html",
+    "facility": true
+   }
+  ],
+  [
+   42.970982,
+   141.471268,
+   "mitsui-mop-sapporo",
+   {
+    "name": "三井アウトレットパーク 札幌北広島 喫煙室",
+    "note": "館内喫煙所の一部を閉鎖しております。 / ご利用の際は、以下の喫煙所をご利用ください。 / 【クローバー・モール１F】 / ・北海道ロコファームビレッジ裏 / ・LUPICIA Bon Marche裏 / 【クローバー・モール２F】 / ・TULLY‘S COFFEE横 / 【メープル・モール】 / ・レイバン裏",
+    "address": "北海道北広島市大曲幸町3丁目7-6",
+    "url": "https://mitsui-shopping-park.com/mop/sapporo/info/others_info.html",
+    "facility": true
+   }
+  ],
+  [
+   35.066269,
+   136.111084,
+   "mitsui-mop-shiga",
+   {
+    "name": "三井アウトレットパーク 滋賀竜王 喫煙室",
+    "note": "喫煙室：南モール 1F 150区画「マイケルコース」横、ガレリア内 308区画「ファミリーマート」横 / 南モール 2F 252区画「タリーズ」横 / 北モール 3F 中央 / 加熱式たばこ専用喫煙室：竜王ダイニング南側出入口付近 / 喫煙は、三井アウトレットパーク滋賀竜王内の指定の喫煙室でお願いいたします。",
+    "address": "滋賀県蒲生郡竜王町大字薬師字砂山1178-694",
+    "url": "https://mitsui-shopping-park.com/mop/shiga/info/others_info.html",
+    "facility": true,
+    "heated": "partial"
+   }
+  ],
+  [
+   34.603951,
+   133.761246,
+   "mitsui-mop-kurashiki",
+   {
+    "name": "三井アウトレットパーク 倉敷 喫煙室",
+    "note": "",
+    "address": "岡山県倉敷市寿町12-3",
+    "url": "https://mitsui-shopping-park.com/mop/kurashiki/info/others_info.html",
+    "facility": true
+   }
+  ],
+  [
+   35.435112,
+   139.934372,
+   "mitsui-mop-kisarazu",
+   {
+    "name": "三井アウトレットパーク 木更津 喫煙室",
+    "note": "新型コロナウィルス感染予防対策として、施設内（屋内）喫煙所は閉鎖させていただいております。 / 屋外の喫煙所をご利用いただきますようお願いいたします。",
+    "address": "千葉県木更津市金田東3-1-1",
+    "url": "https://mitsui-shopping-park.com/mop/kisarazu/info/others_info.html",
+    "facility": true
+   }
+  ],
+  [
+   36.687923,
+   136.878403,
+   "mitsui-mop-oyabe",
+   {
+    "name": "三井アウトレットパーク 北陸小矢部 喫煙室",
+    "note": "1F 北口付近トイレ横、2F 中央トイレ横、2F フードコート内にございます。",
+    "address": "富山県小矢部市西中野972-1",
+    "url": "https://mitsui-shopping-park.com/mop/oyabe/info/others_info.html",
+    "facility": true
+   }
+  ],
+  [
+   35.531395,
+   139.695801,
+   "mitsui-mitsui-shopping-park.com-lazona-kawasaki",
+   {
+    "name": "ラゾーナ川崎プラザ 喫煙室",
+    "note": "1F 屋外 南側出入口前喫煙所 / 2F 屋外 大階段上喫煙所",
+    "address": "神奈川県川崎市幸区堀川町72-1",
+    "url": "https://mitsui-shopping-park.com/lazona-kawasaki/service/smoking.html",
+    "facility": true
+   }
+  ],
+  [
+   35.625084,
+   139.774078,
+   "mitsui-mitsui-shopping-park.com-divercity-tokyo",
+   {
+    "name": "ダイバーシティ東京 プラザ 喫煙室",
+    "note": "2F、3F、4F、5F、6Fの各階にございます。",
+    "address": "東京都江東区青海1-1-10",
+    "url": "https://mitsui-shopping-park.com/divercity-tokyo/service/smoking.html",
+    "facility": true
+   }
+  ],
+  [
+   34.435585,
+   135.448669,
+   "mitsui-lalaport-izumi",
+   {
+    "name": "ららぽーと和泉 喫煙室",
+    "note": "2F：A・Bエスカレーター側\n3F：A・Bエスカレーター側 / フードコート横\n4F：A・Bエスカレーター側",
+    "address": "大阪府和泉市あゆみ野4-4-7",
+    "url": "https://mitsui-shopping-park.com/lalaport/izumi/service/smoking.html",
+    "facility": true
+   }
+  ],
+  [
+   35.858746,
+   139.547913,
+   "mitsui-lalaport-fujimi",
+   {
+    "name": "ららぽーと富士見 喫煙室",
+    "note": "1F：南側トイレ前 / 北側トイレ横 / Cエレベーター前\n2F：南側トイレ横 / 北側トイレ横\n3F：南側トイレ横 / Cエレベーター前",
+    "address": "埼玉県富士見市山室1-1313",
+    "url": "https://mitsui-shopping-park.com/lalaport/fujimi/service/smoking.html",
+    "facility": true
+   }
+  ],
+  [
+   35.45557,
+   139.388977,
+   "mitsui-lalaport-ebina",
+   {
+    "name": "ららぽーと海老名 喫煙室",
+    "note": "1F：Cエレベーター奥 / 無印良品横（加熱式・電子タバコ専用）\n2F：Cエレベーター前\n3F：フードコート「EVVIVA!（エヴィーバ）」内\n4F：レストランゾーン内トイレ横 / Cエレベーター前",
+    "address": "神奈川県海老名市扇町13-1",
+    "url": "https://mitsui-shopping-park.com/lalaport/ebina/service/smoking.html",
+    "facility": true,
+    "heated": "partial"
+   }
+  ],
+  [
+   34.805485,
+   135.53392,
+   "mitsui-lalaport-expocity",
+   {
+    "name": "ららぽーとEXPOCITY 喫煙室",
+    "note": "1F：オレンジサイド トイレ横 / グリーンサイド トイレ横\n2F：オレンジサイド トイレ横 / グリーンサイド トイレ横\n3F：オレンジサイド トイレ横 / グリーンサイド トイレ横",
+    "address": "大阪府吹田市千里万博公園2-1",
+    "url": "https://mitsui-shopping-park.com/lalaport/expocity/service/smoking.html",
+    "facility": true
+   }
+  ],
+  [
+   35.714058,
+   139.411499,
+   "mitsui-lalaport-tachikawa",
+   {
+    "name": "ららぽーと立川立飛 喫煙室",
+    "note": "1F：北エレベーター奥\n2F：北エレベーター奥\n3F：北エレベーター横",
+    "address": "東京都立川市泉町935番地の1",
+    "url": "https://mitsui-shopping-park.com/lalaport/tachikawa/service/smoking.html",
+    "facility": true
+   }
+  ],
+  [
+   35.33651,
+   139.352646,
+   "mitsui-lalaport-hiratsuka",
+   {
+    "name": "ららぽーと湘南平塚 喫煙室",
+    "note": "※新型コロナウィルス拡大防止のため、現在ご利用を一時中止しております。\n1F：総合案内所裏 / 東エントランス\n2F：東エントランス\n3F：東エントランス / YAMA西連絡ブリッジ横",
+    "address": "神奈川県平塚市天沼10-1",
+    "url": "https://mitsui-shopping-park.com/lalaport/hiratsuka/service/smoking.html",
+    "facility": true
+   }
+  ],
+  [
+   35.109234,
+   136.885025,
+   "mitsui-lalaport-minatoaquls",
+   {
+    "name": "ららぽーと名古屋みなとアクルス 喫煙室",
+    "note": "1F：GARDEN SIDE KITCHEN（レストラン街）横 / 中央トイレ付近\n2F：GU横\n3F：LaLa Kitchen（フードコート）横",
+    "address": "愛知県名古屋市港区港明2丁目3番2号",
+    "url": "https://mitsui-shopping-park.com/lalaport/minatoaquls/service/smoking.html",
+    "facility": true
+   }
+  ],
+  [
+   35.128609,
+   138.837143,
+   "mitsui-lalaport-numazu",
+   {
+    "name": "ららぽーと沼津 喫煙室",
+    "note": "(1F) / やま側トイレ付近、うみ側トイレ付近 / (2F) / うみ側トイレ付近 / (3F) / やま側トイレ付近、うみ側トイレ付近",
+    "address": "静岡県沼津市東椎路字東荒301番地3",
+    "url": "https://mitsui-shopping-park.com/lalaport/numazu/service/smoking.html",
+    "facility": true
+   }
+  ],
+  [
+   35.096897,
+   137.052643,
+   "mitsui-lalaport-togo",
+   {
+    "name": "ららぽーと愛知東郷 喫煙室",
+    "note": "1F：メインスクエア東側トイレ付近 / 北西エレベーターホール付近\n2F：北西エレベーターホール付近 / 南東エレベーターホール付近\n3F：北西エレベーターホール付近 / 南東エレベーターホール付近",
+    "address": "愛知県愛知郡東郷町",
+    "url": "https://mitsui-shopping-park.com/lalaport/togo/service/smoking.html",
+    "facility": true
+   }
+  ],
+  [
+   33.564976,
+   130.43869,
+   "mitsui-lalaport-fukuoka",
+   {
+    "name": "ららぽーと福岡 喫煙室",
+    "note": "1F：モール棟 総合案内所横トイレ付近 / オーバル棟 バスターミナル横\n2F：モール棟 北エレベーター付近\n3F：モール棟 南エスカレーター付近 / モール棟 アグリパーク内\n4F：モール棟 北エスカレーター付近",
+    "address": "福岡県福岡市博多区那珂6丁目23-1",
+    "url": "https://mitsui-shopping-park.com/lalaport/fukuoka/service/smoking.html",
+    "facility": true
+   }
+  ],
+  [
+   34.542019,
+   135.55838,
+   "mitsui-lalaport-sakai",
+   {
+    "name": "ららぽーと堺 喫煙室",
+    "note": "1F：北トイレ付近\n2F：南トイレ付近\n3F：南トイレ付近",
+    "address": "大阪府堺市美原区黒山22番1",
+    "url": "https://mitsui-shopping-park.com/lalaport/sakai/service/smoking.html",
+    "facility": true
+   }
+  ],
+  [
+   34.733517,
+   135.582626,
+   "mitsui-lalaport-kadoma",
+   {
+    "name": "ららぽーと門真 喫煙室",
+    "note": "1F：北トイレ横\n2F：北トイレ横\n3F：南トイレ横",
+    "address": "大阪府門真市松生町1番11号",
+    "url": "https://mitsui-shopping-park.com/lalaport/kadoma/service/smoking.html",
+    "facility": true
+   }
+  ],
+  [
+   34.965435,
+   137.082703,
+   "mitsui-lalaport-anjo",
+   {
+    "name": "ららぽーと安城 喫煙室",
+    "note": "RFを除く、各階の西トイレ付近にございます。",
+    "address": "愛知県安城市大東町9-30",
+    "url": "https://mitsui-shopping-park.com/lalaport/anjo/service/smoking.html",
+    "facility": true
+   }
+  ]
+ ]
+}

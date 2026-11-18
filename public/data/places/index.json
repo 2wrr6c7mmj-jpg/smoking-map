@@ -1,0 +1,11 @@
+{
+ "updated": "2026-11-18T16:23:09.921Z",
+ "files": [
+  "gov.json",
+  "mitsui.json"
+ ],
+ "counts": {
+  "gov.json": 33,
+  "mitsui.json": 25
+ }
+}

@@ -88,11 +88,11 @@ for (const src of SOURCES) {
     list.forEach((s, i) => spots.push([+s.lat.toFixed(6), +s.lng.toFixed(6), `${src.id}-${i + 1}`, {
       name: s.name, ...(s.address && { address: s.address }), ...(s.note && { note: s.note }), ...(s.hours && { hours: s.hours }),
     }]));
-    sources.push({ id: src.id, city: src.city, license: src.license, page: src.page, count: list.length });
+    sources.push({ id: src.id, type: 'gov', group: 'area', city: src.city, publisher: src.city, license: src.license, page: src.page, count: list.length });
     console.log(`${src.city}（${src.id}）: ${list.length}件`);
   } catch (e) {
     throw new Error(`${src.city}（${src.id}）を取得できませんでした: ${e.message}`);
   }
 }
-writeFileSync(new URL('../public/data/gov.json', import.meta.url), JSON.stringify({ updated: new Date().toISOString(), sources, spots }, null, 1));
+writeFileSync(new URL('../public/data/places/gov.json', import.meta.url), JSON.stringify({ updated: new Date().toISOString(), sources, spots }, null, 1));
 console.log(`書き出し: ${spots.length}件`);

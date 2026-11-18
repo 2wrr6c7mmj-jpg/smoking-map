@@ -6,21 +6,30 @@
    "city": "江東区",
    "license": "CC BY 4.0",
    "page": "https://catalog.data.metro.tokyo.lg.jp/dataset/t131083d0000000061",
-   "count": 3
+   "count": 3,
+   "type": "gov",
+   "group": "area",
+   "publisher": "江東区"
   },
   {
    "id": "koto-park",
    "city": "江東区",
    "license": "CC BY 4.0",
    "page": "https://catalog.data.metro.tokyo.lg.jp/dataset/t131083d0000000061",
-   "count": 3
+   "count": 3,
+   "type": "gov",
+   "group": "area",
+   "publisher": "江東区"
   },
   {
    "id": "taito",
    "city": "台東区",
    "license": "CC BY 4.0",
    "page": "https://catalog.data.metro.tokyo.lg.jp/dataset/t131067d0000000110",
-   "count": 27
+   "count": 27,
+   "type": "gov",
+   "group": "area",
+   "publisher": "台東区"
   }
  ],
  "spots": [

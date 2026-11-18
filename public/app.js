@@ -15,8 +15,8 @@ const $ = (id) => document.getElementById(id);
 const icon = (name) => `<svg aria-hidden="true"><use href="#i-${name}"/></svg>`;
 const state = {
   osm: new Map(),       // key -> spot
-  gov: [],              // 自治体のオープンデータ
-  govSources: [],
+  places: [],           // 自治体・施設・チェーンの公開情報（public/data/places/*.json）
+  placeSources: [],
   user: new Map(),
   reports: new Map(),   // ref -> {closed:{n,last}, wrong:{n,last}}
   me: null,             // {lat,lng,acc}
@@ -93,27 +93,30 @@ function fromUser(s) {
   };
 }
 
-function fromGov([lat, lng, id, t], src) {
+// 公開情報の1地点。src.type は gov（自治体）/ facility（商業施設など）/ chain（チェーン店）
+function fromPlace([lat, lng, id, t], src = {}) {
+  const gov = src.type === 'gov';
+  const group = t.group || src.group || 'area';
   return {
-    key: `gov:${id}`,
-    source: 'gov',
-    group: 'area',
-    kind: 'area',
+    key: `${gov ? 'gov' : 'place'}:${id}`,
+    source: gov ? 'gov' : 'place',
+    group,
+    kind: group === 'shop' ? 'shop' : 'area',
     lat, lng,
     name: t.name || '',
-    heatedOnly: false,
-    note: [t.address, t.note].filter(Boolean).join(' / '),
+    heatedOnly: t.heated === 'only',
+    heatedPartial: t.heated === 'partial',
+    note: [t.note, t.address].filter(Boolean).join('\n'),
     hours: t.hours,
-    city: src?.city,
-    page: src?.page,
-    license: src?.license,
+    url: t.url,
+    src,
   };
 }
 
 // 自治体の喫煙所と同じ場所（25m以内）にある OSM の喫煙所は重複として隠す
 const DUP_M = 25;
 function isDuplicate(s) {
-  return s.source === 'osm' && s.group === 'area' && state.gov.some((g) => Math.abs(g.lat - s.lat) < 0.0005 && distance(g, s) < DUP_M);
+  return s.source === 'osm' && s.group === 'area' && state.places.some((g) => g.source === 'gov' && Math.abs(g.lat - s.lat) < 0.0005 && distance(g, s) < DUP_M);
 }
 
 // 地点の特徴を短い札にする
@@ -134,7 +137,11 @@ function tagsOf(s) {
     if (t.opening_hours) out.push(t.opening_hours === '24/7' ? '24時間' : `時間 ${t.opening_hours}`);
     if (t.operator) out.push(t.operator);
   } else if (s.source === 'gov') {
-    out.push(`${s.city}の公衆喫煙所`);
+    out.push(`${s.src.city}の公衆喫煙所`);
+    if (s.hours) out.push(s.hours);
+  } else if (s.source === 'place') {
+    out.push(s.src.label);
+    if (s.heatedPartial) out.push('加熱式専用の場所あり');
     if (s.hours) out.push(s.hours);
   } else {
     out.push(KIND_LABEL[s.kind]);
@@ -142,7 +149,7 @@ function tagsOf(s) {
   return out.filter(Boolean);
 }
 const noteOf = (s) => (s.source === 'osm' ? s.tags.description || s.tags.note || '' : s.note || '');
-const SOURCE_LABEL = { osm: 'OpenStreetMap', user: 'みんなの投稿', gov: '自治体データ'};
+const SOURCE_LABEL = { osm: 'OpenStreetMap', user: 'みんなの投稿', gov: '自治体データ', place: '施設の公開情報' };
 
 // ---------- 計算 ----------
 function distance(a, b) {
@@ -194,7 +201,7 @@ function render() {
   const f = filters();
   const b = map.getBounds().pad(0.1);
   const origin = state.me || map.getCenter();
-  const inView = [...state.gov, ...state.osm.values(), ...state.user.values()]
+  const inView = [...state.places, ...state.osm.values(), ...state.user.values()]
     .filter((s) => b.contains([s.lat, s.lng]) && (f.heated || !s.heatedOnly) && !isDuplicate(s));
   $('c-area').textContent = inView.filter((s) => s.group === 'area').length;
   $('c-shop').textContent = inView.filter((s) => s.group === 'shop').length;
@@ -290,12 +297,14 @@ function renderStatus() {
   if (staticIndex) parts.push(`全国 ${staticIndex.total.toLocaleString('ja-JP')}件 · ${staticIndex.updated.slice(0, 10)} 時点`);
   else if (state.loadedAt) parts.push(`${state.loadedAt} 更新`);
   parts.push('データ © OpenStreetMap');
-  if (state.govSources.length) parts.push(`自治体データ © ${[...new Set(state.govSources.map((g) => g.city))].join('・')}（CC BY 4.0）`);
+  const govCities = [...new Set(state.placeSources.filter((x) => x.type === 'gov').map((x) => x.city))];
+  if (govCities.length) parts.push(`自治体データ © ${govCities.join('・')}（CC BY 4.0）`);
+  if (state.placeSources.some((x) => x.type !== 'gov')) parts.push('施設情報は各運営者の公開ページより');
   $('status').textContent = parts.join(' · ');
 }
 
 function findSpot(key) {
-  return state.osm.get(key) || state.user.get(key) || state.gov.find((g) => g.key === key);
+  return state.osm.get(key) || state.user.get(key) || state.places.find((g) => g.key === key);
 }
 
 function openDetail(key) {
@@ -320,7 +329,8 @@ function renderDetail() {
   const note = noteOf(s);
   const src = s.source === 'user'
     ? `みんなの投稿${s.createdAt ? ` · ${s.createdAt.slice(0, 10)}` : ''}`
-    : s.source === 'gov' ? `${s.city}のオープンデータ（${s.license}）` : 'OpenStreetMap';
+    : s.source === 'gov' ? `${s.src.city}のオープンデータ（${s.src.license}）`
+    : s.source === 'place' ? `${s.src.publisher}の公開情報（${s.src.updated?.slice(0, 10) || ''} 時点）` : 'OpenStreetMap';
   el.innerHTML = `
     <div class="detail-head">
       ${picto(s)}
@@ -337,7 +347,7 @@ function renderDetail() {
     <div class="report">
       ${state.apiAvailable ? 'この情報について<button type="button" data-report="closed">閉鎖を報告</button><button type="button" data-report="wrong">情報が違う</button>' : ''}
       ${s.source === 'osm' ? `<a href="https://www.openstreetmap.org/${s.key.slice(4)}" target="_blank" rel="noopener">OSMで見る</a>` : ''}
-      ${s.source === 'gov' && s.page ? `<a href="${esc(s.page)}" target="_blank" rel="noopener">出典を見る</a>` : ''}
+      ${(s.url || s.src?.page) ? `<a href="${esc(s.url || s.src.page)}" target="_blank" rel="noopener">出典を見る</a>` : ''}
     </div>`;
   el.querySelectorAll('[data-report]').forEach((b) => b.addEventListener('click', () => report(s, b)));
 }
@@ -420,15 +430,27 @@ async function fetchUser(b) {
   ];
 }
 
-// ---------- 自治体のオープンデータ（scripts/fetch-opendata.mjs で作る、全国で数十件と小さい） ----------
-async function loadGov() {
+// ---------- 公開情報（自治体・施設・チェーン）。public/data/places/index.json に並んだファイルを読む ----------
+async function loadPlaces() {
+  const getJson = async (u) => {
+    const res = await fetch(u);
+    return res.ok && (res.headers.get('content-type') || '').includes('json') ? res.json() : null;
+  };
   try {
-    const res = await fetch('data/gov.json');
-    if (!res.ok || !(res.headers.get('content-type') || '').includes('json')) return;
-    const j = await res.json();
-    const byId = Object.fromEntries(j.sources.map((x) => [x.id, x]));
-    state.govSources = j.sources;
-    state.gov = j.spots.map((row) => fromGov(row, byId[row[2].replace(/-\d+$/, '')]));
+    const idx = await getJson('data/places/index.json');
+    const files = idx?.files || ['gov.json'];
+    const all = await Promise.all(files.map((f) => getJson(`data/places/${f}`).catch(() => null)));
+    const places = [];
+    const sources = [];
+    for (const j of all.filter(Boolean)) {
+      const srcs = j.sources.map((x) => ({ ...x, updated: x.updated || j.updated }));
+      sources.push(...srcs);
+      // 地点の ID は「情報源の ID-…」。いちばん長く一致する情報源を使う
+      const byLen = [...srcs].sort((a, b) => b.id.length - a.id.length);
+      for (const row of j.spots) places.push(fromPlace(row, byLen.find((x) => row[2].startsWith(`${x.id}-`)) || srcs[0]));
+    }
+    state.places = places;
+    state.placeSources = sources;
     render();
   } catch { /* なくても動く */ }
 }
@@ -648,7 +670,7 @@ if ('serviceWorker' in navigator && location.protocol !== 'file:') {
 // 起動
 setMode('list');
 syncSheetHeight();
-loadGov();
+loadPlaces();
 refresh();
 locate(!saved);
 

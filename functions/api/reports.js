@@ -15,7 +15,7 @@ async function post({ request, env }) {
     return json({ error: 'JSON を送ってください' }, 400);
   }
   const ref = String(body.ref || '');
-  if (!/^(osm:(node|way|relation)\/\d{1,12}|user:\d{1,10}|gov:[a-z]{2,20}(-[a-z]{2,20})?-\d{1,6})$/.test(ref)) {
+  if (!/^(osm:(node|way|relation)\/\d{1,12}|user:\d{1,10}|gov:[a-z]{2,20}(-[a-z]{2,20})?-\d{1,6}|place:[a-z0-9][a-z0-9-]{2,80})$/.test(ref)) {
     return json({ error: '報告する地点が不正です' }, 400);
   }
   if (!['closed', 'wrong'].includes(body.reason)) return json({ error: '理由を選んでください' }, 400);

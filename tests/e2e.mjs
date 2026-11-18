@@ -23,8 +23,15 @@ const overpass = {
 // 自治体データ：OSM の node 102（名前なし）と同じ場所に台東区の喫煙所を置き、重複が1つにまとまるか確かめる
 const gov = {
   updated: '2026-11-18T00:00:00Z',
-  sources: [{ id: 'taito', city: '台東区', license: 'CC BY 4.0', page: 'https://catalog.data.metro.tokyo.lg.jp/dataset/t131067d0000000110', count: 1 }],
+  sources: [{ id: 'taito', type: 'gov', group: 'area', publisher: '台東区', city: '台東区', license: 'CC BY 4.0', page: 'https://catalog.data.metro.tokyo.lg.jp/dataset/t131067d0000000110', count: 1 }],
   spots: [[35.67952, 139.76902, 'taito-1', { name: '区設置 公衆喫煙所テスト', hours: '24時間', address: '台東区テスト1-1' }]],
+};
+
+// 施設の公開情報：東京駅から少し離れた所に商業施設の喫煙室を1件置く
+const mitsui = {
+  updated: '2026-11-18T00:00:00Z',
+  sources: [{ id: 'mitsui', type: 'facility', group: 'area', label: '商業施設の喫煙室', publisher: '三井不動産商業マネジメント', page: 'https://mitsui-shopping-park.com/' }],
+  spots: [[35.6830, 139.7700, 'mitsui-lalaport-test', { name: 'ららぽーとテスト 喫煙室', note: '1F：Cエレベーター奥', url: 'https://mitsui-shopping-park.com/lalaport/test/service/smoking.html' }]],
 };
 
 const browser = await chromium.launch();
@@ -34,7 +41,9 @@ async function session(colorScheme) {
   const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, geolocation: ME, permissions: ['geolocation'], locale: 'ja-JP', colorScheme });
   ctx.calls = 0;
   await ctx.route(/overpass/, (r) => { ctx.calls++; return r.fulfill({ json: overpass }); });
-  await ctx.route(/\/data\/gov\.json/, (r) => r.fulfill({ json: gov }));
+  await ctx.route(/\/data\/places\/index\.json/, (r) => r.fulfill({ json: { files: ['gov.json', 'mitsui.json'] } }));
+  await ctx.route(/\/data\/places\/gov\.json/, (r) => r.fulfill({ json: gov }));
+  await ctx.route(/\/data\/places\/mitsui\.json/, (r) => r.fulfill({ json: mitsui }));
   // 全国データは固定データから作る（STATIC=0 のときは全国データなしの動作を確かめる）
   await ctx.route(/\/data\/jp\//, (r) => {
     if (process.env.STATIC === '0') return r.fulfill({ status: 404, body: 'not found' });
@@ -56,11 +65,12 @@ await page.goto(BASE);
 await page.waitForFunction(() => !document.querySelector('#hero').hidden && document.querySelector('#c-area').textContent !== '0', null, { timeout: 15000 });
 assert.equal(await heroName(), '丸の内北口 喫煙所', '現在地から最も近い喫煙所が大きく出る');
 assert.match(await page.textContent('#hero'), /いちばん近い/);
-assert.equal(await count('#c-area'), 4, 'OSM と自治体の重複は1つに数える');
+assert.equal(await count('#c-area'), 5, 'OSM と自治体の重複は1つに数え、施設の喫煙室を足す');
 assert.equal(await count('#c-shop'), 2, '禁煙の店は数えない');
 await page.click('#more');
 let names = await listNames();
-assert.equal(names.length, 3, '初期表示は喫煙所のみ');
+assert.equal(names.length, 4, '初期表示は喫煙所のみ');
+assert.ok(names.includes('ららぽーとテスト 喫煙室'), '施設の喫煙室を表示する');
 assert.ok(names.includes('区設置 公衆喫煙所テスト'), '自治体データを表示する');
 assert.ok(!names.includes('南東の喫煙所'), '自治体と重なる OSM の地点は隠す');
 assert.ok(!names.includes('喫茶テスト'));
@@ -68,11 +78,11 @@ if (process.env.REAL_TILES) await page.waitForTimeout(2500);
 await page.screenshot({ path: `${SHOTS}/list-dark.png` });
 
 await page.click('label:has(#f-shop)');
-await page.waitForFunction(() => document.querySelectorAll('#list li').length === 5);
+await page.waitForFunction(() => document.querySelectorAll('#list li').length === 6);
 assert.ok((await listNames()).includes('喫茶テスト'), '喫煙可の店を表示できる');
 assert.match(await page.textContent('#list'), /店の外で喫煙可（灰皿） · コンビニ/, 'コンビニの店外灰皿');
 await page.click('label:has(#f-heated)');
-await page.waitForFunction(() => document.querySelectorAll('#list li').length === 4);
+await page.waitForFunction(() => document.querySelectorAll('#list li').length === 5);
 assert.ok(!(await listNames()).includes('加熱式専用ブース'), '加熱式専用を隠せる');
 await page.click('label:has(#f-heated)');
 await page.click('label:has(#f-shop)');
@@ -84,6 +94,14 @@ assert.match(await page.getAttribute('#detail a.btn-ember', 'href'), /google\.co
 assert.match(await page.textContent('#detail .tags'), /屋根あり/);
 assert.match(await page.textContent('#detail .tags'), /24時間/);
 await page.screenshot({ path: `${SHOTS}/detail-dark.png` });
+
+// 施設の喫煙室の詳細には場所と出典を出す
+await page.click('#detail-back');
+await page.click('#list .item:has-text("ららぽーとテスト 喫煙室")');
+assert.match(await page.textContent('#detail'), /三井不動産商業マネジメントの公開情報/);
+assert.match(await page.textContent('#detail .note'), /Cエレベーター奥/);
+await page.click('#detail-back');
+await page.click('#hero [data-open]');
 
 // 自治体データの詳細には出典を出す
 await page.click('#detail-back');
