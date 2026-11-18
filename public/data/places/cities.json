@@ -1,0 +1,818 @@
+{
+ "updated": "2026-11-18T22:02:52.752Z",
+ "sources": [
+  {
+   "id": "city-kawasaki",
+   "type": "gov",
+   "group": "area",
+   "city": "川崎市",
+   "publisher": "川崎市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.kawasaki.jp/kurashi/category/262-2-4-0-0-0-0-0-0-0.html",
+   "count": 12
+  },
+  {
+   "id": "city-kobe",
+   "type": "gov",
+   "group": "area",
+   "city": "神戸市",
+   "publisher": "神戸市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.kobe.lg.jp/a84526/kurashi/activate/project/eco/area.html",
+   "count": 16
+  },
+  {
+   "id": "city-hiroshima",
+   "type": "gov",
+   "group": "area",
+   "city": "広島市",
+   "publisher": "広島市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021281/1037470/1024206.html",
+   "count": 6
+  },
+  {
+   "id": "city-hamamatsu",
+   "type": "gov",
+   "group": "area",
+   "city": "浜松市",
+   "publisher": "浜松市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.hamamatsu.shizuoka.jp/kankyou/kaiteki_jorei/index.html",
+   "count": 2
+  },
+  {
+   "id": "city-chiba",
+   "type": "gov",
+   "group": "area",
+   "city": "千葉市",
+   "publisher": "千葉市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.chiba.jp/kankyo/junkan/haikibutsu/rojoukituenpoisue-boushi.html",
+   "count": 1
+  },
+  {
+   "id": "city-kumamoto",
+   "type": "gov",
+   "group": "area",
+   "city": "熊本市",
+   "publisher": "熊本市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.kumamoto.jp/kiji00351655/index.html",
+   "count": 10
+  },
+  {
+   "id": "city-amagasaki",
+   "type": "gov",
+   "group": "area",
+   "city": "尼崎市",
+   "publisher": "尼崎市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.amagasaki.hyogo.jp/kurashi/kenko/kenko_joho/1011882/1039707.html",
+   "count": 7
+  },
+  {
+   "id": "city-akashi",
+   "type": "gov",
+   "group": "area",
+   "city": "明石市",
+   "publisher": "明石市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.akashi.lg.jp/kankyou/kankyou_soumu_ka/kurashi/seisaku/new_sumiyoikankyo.html",
+   "count": 5
+  },
+  {
+   "id": "city-nagasaki",
+   "type": "gov",
+   "group": "area",
+   "city": "長崎市",
+   "publisher": "長崎市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.nagasaki.lg.jp/contents/kankyo/kml/haizara.kml",
+   "count": 5
+  }
+ ],
+ "spots": [
+  [
+   35.530125,
+   139.697968,
+   "city-kawasaki-1",
+   {
+    "name": "川崎駅第1指定喫煙場所",
+    "address": "神奈川県川崎市川崎区駅前本町26-1",
+    "note": "アゼリアS-13階段そば",
+    "url": "https://www.city.kawasaki.jp/kurashi/category/262-2-4-0-0-0-0-0-0-0.html"
+   }
+  ],
+  [
+   35.530125,
+   139.697968,
+   "city-kawasaki-2",
+   {
+    "name": "川崎駅第2指定喫煙場所",
+    "address": "神奈川県川崎市川崎区駅前本町26-1",
+    "note": "ルフロン前・地下駐車場入口",
+    "url": "https://www.city.kawasaki.jp/kurashi/category/262-2-4-0-0-0-0-0-0-0.html"
+   }
+  ],
+  [
+   35.532433,
+   139.6996,
+   "city-kawasaki-3",
+   {
+    "name": "川崎駅第3指定喫煙場所",
+    "address": "神奈川県川崎市川崎区駅前本町9-1",
+    "note": "ダイス前・S-31階段そば\n※地図の位置は住所の町名までの目安",
+    "url": "https://www.city.kawasaki.jp/kurashi/category/262-2-4-0-0-0-0-0-0-0.html"
+   }
+  ],
+  [
+   35.531395,
+   139.695801,
+   "city-kawasaki-4",
+   {
+    "name": "川崎駅第4指定喫煙場所",
+    "address": "神奈川県川崎市幸区堀川町72-2",
+    "note": "西口ラゾーナ前",
+    "url": "https://www.city.kawasaki.jp/kurashi/category/262-2-4-0-0-0-0-0-0-0.html"
+   }
+  ],
+  [
+   35.551094,
+   139.673203,
+   "city-kawasaki-5",
+   {
+    "name": "新川崎駅指定喫煙場所",
+    "address": "神奈川県川崎市幸区鹿島田1丁目",
+    "note": "新川崎駅前\n※地図の位置は住所の町名までの目安",
+    "url": "https://www.city.kawasaki.jp/kurashi/category/262-2-4-0-0-0-0-0-0-0.html"
+   }
+  ],
+  [
+   35.579357,
+   139.6586,
+   "city-kawasaki-6",
+   {
+    "name": "武蔵小杉駅第1指定喫煙場所",
+    "address": "神奈川県川崎市中原区小杉町403",
+    "note": "北口広場\n※地図の位置は住所の町名までの目安",
+    "url": "https://www.city.kawasaki.jp/kurashi/category/262-2-4-0-0-0-0-0-0-0.html"
+   }
+  ],
+  [
+   35.574726,
+   139.661194,
+   "city-kawasaki-7",
+   {
+    "name": "武蔵小杉駅第2指定喫煙場所",
+    "address": "神奈川県川崎市中原区新丸子東3丁目",
+    "note": "横須賀線口の駅前広場\n※地図の位置は住所の町名までの目安",
+    "url": "https://www.city.kawasaki.jp/kurashi/category/262-2-4-0-0-0-0-0-0-0.html"
+   }
+  ],
+  [
+   35.574726,
+   139.661194,
+   "city-kawasaki-8",
+   {
+    "name": "武蔵小杉駅第3指定喫煙場所",
+    "address": "神奈川県川崎市中原区新丸子東3丁目",
+    "note": "東口の駅前広場\n※地図の位置は住所の町名までの目安",
+    "url": "https://www.city.kawasaki.jp/kurashi/category/262-2-4-0-0-0-0-0-0-0.html"
+   }
+  ],
+  [
+   35.599476,
+   139.611313,
+   "city-kawasaki-9",
+   {
+    "name": "武蔵溝ノ口駅第1指定喫煙場所",
+    "address": "神奈川県川崎市高津区溝口1丁目2",
+    "note": "デッキ下",
+    "url": "https://www.city.kawasaki.jp/kurashi/category/262-2-4-0-0-0-0-0-0-0.html"
+   }
+  ],
+  [
+   35.599209,
+   139.609543,
+   "city-kawasaki-10",
+   {
+    "name": "武蔵溝ノ口駅第3指定喫煙場所",
+    "address": "神奈川県川崎市高津区久本1丁目1",
+    "note": "溝口駅南口広場",
+    "url": "https://www.city.kawasaki.jp/kurashi/category/262-2-4-0-0-0-0-0-0-0.html"
+   }
+  ],
+  [
+   35.617123,
+   139.564804,
+   "city-kawasaki-11",
+   {
+    "name": "向ヶ丘遊園駅第1指定喫煙場所",
+    "address": "神奈川県川崎市多摩区登戸2739",
+    "note": "南口の駅前広場",
+    "url": "https://www.city.kawasaki.jp/kurashi/category/262-2-4-0-0-0-0-0-0-0.html"
+   }
+  ],
+  [
+   35.603111,
+   139.507904,
+   "city-kawasaki-12",
+   {
+    "name": "新百合ヶ丘駅第1指定喫煙場所",
+    "address": "神奈川県川崎市麻生区上麻生1丁目21",
+    "note": "デッキ下",
+    "url": "https://www.city.kawasaki.jp/kurashi/category/262-2-4-0-0-0-0-0-0-0.html"
+   }
+  ],
+  [
+   34.689651,
+   135.187856,
+   "city-kobe-1",
+   {
+    "name": "元町駅前喫煙所",
+    "address": "兵庫県神戸市中央区元町通1丁目13",
+    "note": "市設置",
+    "url": "https://www.city.kobe.lg.jp/a84526/kurashi/activate/project/eco/area.html"
+   }
+  ],
+  [
+   34.688629,
+   135.19558,
+   "city-kobe-2",
+   {
+    "name": "三宮駐車場喫煙所",
+    "address": "兵庫県神戸市中央区加納町6丁目",
+    "hours": "7:00〜19:00",
+    "note": "市設置",
+    "url": "https://www.city.kobe.lg.jp/a84526/kurashi/activate/project/eco/area.html"
+   }
+  ],
+  [
+   34.695278,
+   135.195693,
+   "city-kobe-3",
+   {
+    "name": "カフェサンタマリア横フリー喫煙所",
+    "address": "兵庫県神戸市中央区琴ノ緒町5丁目1-301",
+    "hours": "7:30〜19:30",
+    "note": "民間",
+    "url": "https://www.city.kobe.lg.jp/a84526/kurashi/activate/project/eco/area.html"
+   }
+  ],
+  [
+   34.694716,
+   135.190724,
+   "city-kobe-4",
+   {
+    "name": "生田神社喫煙所",
+    "address": "兵庫県神戸市中央区下山手通1丁目2-1",
+    "note": "民間・座標は神社の位置",
+    "url": "https://www.city.kobe.lg.jp/a84526/kurashi/activate/project/eco/area.html"
+   }
+  ],
+  [
+   34.693775,
+   135.192911,
+   "city-kobe-5",
+   {
+    "name": "THE TOBACCO SANNOMIYA",
+    "address": "兵庫県神戸市中央区北長狭通1丁目2-7",
+    "hours": "7:00〜22:00",
+    "note": "民間・プラチナビル地下1階",
+    "url": "https://www.city.kobe.lg.jp/a84526/kurashi/activate/project/eco/area.html"
+   }
+  ],
+  [
+   34.692815,
+   135.194085,
+   "city-kobe-6",
+   {
+    "name": "ファミリーマート三宮店地下1階喫煙所",
+    "address": "兵庫県神戸市中央区三宮町1丁目7-19",
+    "hours": "9:00〜20:00",
+    "note": "民間・店舗の地下1階",
+    "url": "https://www.city.kobe.lg.jp/a84526/kurashi/activate/project/eco/area.html"
+   }
+  ],
+  [
+   34.688599,
+   135.192749,
+   "city-kobe-7",
+   {
+    "name": "YOKOZUNA STAND SMOKING ROOM",
+    "address": "兵庫県神戸市中央区浪花町64",
+    "hours": "11:00〜20:00",
+    "note": "民間・三宮電電ビル1階",
+    "url": "https://www.city.kobe.lg.jp/a84526/kurashi/activate/project/eco/area.html"
+   }
+  ],
+  [
+   34.695198,
+   135.19526,
+   "city-kobe-8",
+   {
+    "name": "扇港商会 店舗喫煙所",
+    "address": "兵庫県神戸市中央区琴ノ緒町5丁目1-410",
+    "hours": "8:15〜19:00",
+    "note": "民間",
+    "url": "https://www.city.kobe.lg.jp/a84526/kurashi/activate/project/eco/area.html"
+   }
+  ],
+  [
+   34.692504,
+   135.193514,
+   "city-kobe-9",
+   {
+    "name": "アクセス三宮店喫煙所",
+    "address": "兵庫県神戸市中央区三宮町1丁目8-1-101",
+    "hours": "10:00〜23:00",
+    "note": "民間",
+    "url": "https://www.city.kobe.lg.jp/a84526/kurashi/activate/project/eco/area.html"
+   }
+  ],
+  [
+   34.695571,
+   135.196394,
+   "city-kobe-10",
+   {
+    "name": "ミクちゃんガイア三宮店喫煙所",
+    "address": "兵庫県神戸市中央区旭通5丁目3-2",
+    "hours": "10:00〜22:00",
+    "note": "民間",
+    "url": "https://www.city.kobe.lg.jp/a84526/kurashi/activate/project/eco/area.html"
+   }
+  ],
+  [
+   34.692403,
+   135.192162,
+   "city-kobe-11",
+   {
+    "name": "スモーカーズプレイス ブリケコンフォール ピアザ1店",
+    "address": "兵庫県神戸市中央区北長狭通1丁目30",
+    "hours": "7:00〜22:00",
+    "note": "民間・ピアザ1の8番",
+    "url": "https://www.city.kobe.lg.jp/a84526/kurashi/activate/project/eco/area.html"
+   }
+  ],
+  [
+   34.690766,
+   135.189532,
+   "city-kobe-12",
+   {
+    "name": "三宮高架下商店街西南 Area Smoking Room",
+    "address": "兵庫県神戸市中央区北長狭通3丁目30-79",
+    "hours": "9:00〜18:00",
+    "note": "民間・高架下No.67",
+    "url": "https://www.city.kobe.lg.jp/a84526/kurashi/activate/project/eco/area.html"
+   }
+  ],
+  [
+   34.692146,
+   135.193344,
+   "city-kobe-13",
+   {
+    "name": "フリースモーキングルーム136",
+    "address": "兵庫県神戸市中央区三宮町1丁目8-1",
+    "hours": "9:00〜20:00",
+    "note": "民間・センタープラザ1階",
+    "url": "https://www.city.kobe.lg.jp/a84526/kurashi/activate/project/eco/area.html"
+   }
+  ],
+  [
+   34.712757,
+   135.239609,
+   "city-kobe-14",
+   {
+    "name": "ウェルブ六甲道3番街喫煙所",
+    "address": "兵庫県神戸市灘区桜口町4丁目4-3",
+    "hours": "7:00〜21:00",
+    "note": "1番館2階",
+    "url": "https://www.city.kobe.lg.jp/a84526/kurashi/activate/project/eco/area.html"
+   }
+  ],
+  [
+   34.718685,
+   135.261491,
+   "city-kobe-15",
+   {
+    "name": "ミクちゃんガイア住吉店喫煙所",
+    "address": "兵庫県神戸市東灘区住吉宮町4丁目4-1-001",
+    "hours": "10:00〜22:00",
+    "note": "禁止地区外・JR住吉駅周辺",
+    "url": "https://www.city.kobe.lg.jp/a84526/kurashi/activate/project/eco/area.html"
+   }
+  ],
+  [
+   34.678386,
+   135.178502,
+   "city-kobe-16",
+   {
+    "name": "JR神戸駅南側喫煙所",
+    "address": "兵庫県神戸市中央区東川崎町1丁目2",
+    "note": "禁止地区外",
+    "url": "https://www.city.kobe.lg.jp/a84526/kurashi/activate/project/eco/area.html"
+   }
+  ],
+  [
+   34.400051,
+   132.453751,
+   "city-hiroshima-1",
+   {
+    "name": "喫煙ブース（ひろしまゲートパークプラザ南側）",
+    "address": "広島県広島市中区基町5",
+    "note": "ゲートパークプラザ南",
+    "url": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021281/1037470/1024206.html"
+   }
+  ],
+  [
+   34.396999,
+   132.462738,
+   "city-hiroshima-2",
+   {
+    "name": "喫煙ブース（京口門公園）",
+    "address": "広島県広島市中区八丁堀3",
+    "note": "公園内",
+    "url": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021281/1037470/1024206.html"
+   }
+  ],
+  [
+   34.391064,
+   132.460571,
+   "city-hiroshima-3",
+   {
+    "name": "喫煙ブース（袋町公園）",
+    "address": "広島県広島市中区袋町9",
+    "note": "公園内",
+    "url": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021281/1037470/1024206.html"
+   }
+  ],
+  [
+   34.385159,
+   132.456741,
+   "city-hiroshima-4",
+   {
+    "name": "喫煙ブース（国泰寺公園）",
+    "address": "広島県広島市中区国泰寺町1丁目7",
+    "note": "公園内",
+    "url": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021281/1037470/1024206.html"
+   }
+  ],
+  [
+   34.39854,
+   132.46019,
+   "city-hiroshima-5",
+   {
+    "name": "喫煙ブース（広島市翔洋テニスコート北側）",
+    "address": "広島県広島市中区基町2",
+    "note": "テニスコート北",
+    "url": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021281/1037470/1024206.html"
+   }
+  ],
+  [
+   34.390076,
+   132.452087,
+   "city-hiroshima-6",
+   {
+    "name": "喫煙ブース（平和記念公園南側緑地）",
+    "address": "広島県広島市中区中島町4丁目",
+    "note": "公園南の緑地\n※地図の位置は住所の町名までの目安",
+    "url": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021281/1037470/1024206.html"
+   }
+  ],
+  [
+   34.70503,
+   137.734022,
+   "city-hamamatsu-1",
+   {
+    "name": "JR浜松駅北口地下喫煙室",
+    "address": "静岡県浜松市中央区旭町13",
+    "note": "北口の地下",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/kankyou/kaiteki_jorei/index.html"
+   }
+  ],
+  [
+   34.703495,
+   137.735614,
+   "city-hamamatsu-2",
+   {
+    "name": "JR浜松駅南口広場屋外公衆喫煙所",
+    "address": "静岡県浜松市中央区砂山町325-16付近",
+    "note": "南口広場・屋外",
+    "url": "https://www.city.hamamatsu.shizuoka.jp/kankyou/kaiteki_jorei/index.html"
+   }
+  ],
+  [
+   35.648197,
+   140.041092,
+   "city-chiba-1",
+   {
+    "name": "JR海浜幕張駅高架下喫煙所",
+    "address": "千葉県千葉市美浜区ひび野2丁目112-1",
+    "note": "高架下の公衆トイレ脇",
+    "url": "https://www.city.chiba.jp/kankyo/junkan/haikibutsu/rojoukituenpoisue-boushi.html"
+   }
+  ],
+  [
+   32.801167,
+   130.711319,
+   "city-kumamoto-1",
+   {
+    "name": "安政町フォディアビル",
+    "address": "熊本県熊本市中央区安政町7-28",
+    "hours": "9:00〜18:00",
+    "note": "民間・助成施設",
+    "url": "https://www.city.kumamoto.jp/kiji00351655/index.html"
+   }
+  ],
+  [
+   32.80003,
+   130.708603,
+   "city-kumamoto-2",
+   {
+    "name": "SHIMOTORI SMOKING SPACE（熊本立体駐車場）",
+    "address": "熊本県熊本市中央区下通1-12-5",
+    "hours": "24時間",
+    "note": "民間・立体駐車場",
+    "url": "https://www.city.kumamoto.jp/kiji00351655/index.html"
+   }
+  ],
+  [
+   32.803928,
+   130.71376,
+   "city-kumamoto-3",
+   {
+    "name": "パークシティ24h 白川公園",
+    "address": "熊本県熊本市中央区水道町12-1",
+    "hours": "24時間",
+    "note": "民間・助成施設",
+    "url": "https://www.city.kumamoto.jp/kiji00351655/index.html"
+   }
+  ],
+  [
+   32.80386,
+   130.70932,
+   "city-kumamoto-4",
+   {
+    "name": "熊本屋台村",
+    "address": "熊本県熊本市中央区城東町2-22",
+    "hours": "10:00〜24:00",
+    "note": "民間・助成施設",
+    "url": "https://www.city.kumamoto.jp/kiji00351655/index.html"
+   }
+  ],
+  [
+   32.799137,
+   130.706192,
+   "city-kumamoto-5",
+   {
+    "name": "YASUDA.BLDG 喫煙所",
+    "address": "熊本県熊本市中央区新市街4-13",
+    "hours": "7:00〜19:00",
+    "note": "加熱式たばこ専用",
+    "url": "https://www.city.kumamoto.jp/kiji00351655/index.html"
+   }
+  ],
+  [
+   32.802979,
+   130.710022,
+   "city-kumamoto-6",
+   {
+    "name": "Shinsekai下通GATE（HAB@熊本2階）",
+    "address": "熊本県熊本市中央区手取本町5-1",
+    "hours": "10:00〜20:00",
+    "note": "下通アーケード内2階",
+    "url": "https://www.city.kumamoto.jp/kiji00351655/index.html"
+   }
+  ],
+  [
+   32.79985,
+   130.708038,
+   "city-kumamoto-7",
+   {
+    "name": "CORE21下通店",
+    "address": "熊本県熊本市中央区下通1-12-27",
+    "hours": "10:00〜22:50",
+    "note": "協力店舗・下通",
+    "url": "https://www.city.kumamoto.jp/kiji00351655/index.html"
+   }
+  ],
+  [
+   32.798916,
+   130.706558,
+   "city-kumamoto-8",
+   {
+    "name": "123新市街店",
+    "address": "熊本県熊本市中央区新市街9-1",
+    "hours": "10:00〜22:45",
+    "note": "協力店舗・新市街",
+    "url": "https://www.city.kumamoto.jp/kiji00351655/index.html"
+   }
+  ],
+  [
+   32.799232,
+   130.70549,
+   "city-kumamoto-9",
+   {
+    "name": "123ライト新市街店",
+    "address": "熊本県熊本市中央区新市街1-20",
+    "hours": "10:00〜23:00",
+    "note": "協力店舗・新市街",
+    "url": "https://www.city.kumamoto.jp/kiji00351655/index.html"
+   }
+  ],
+  [
+   32.799065,
+   130.705505,
+   "city-kumamoto-10",
+   {
+    "name": "フェイス570新市街店",
+    "address": "熊本県熊本市中央区新市街7-3",
+    "hours": "10:00〜22:45",
+    "note": "協力店舗・新市街",
+    "url": "https://www.city.kumamoto.jp/kiji00351655/index.html"
+   }
+  ],
+  [
+   34.732372,
+   135.432068,
+   "city-amagasaki-1",
+   {
+    "name": "JR尼崎駅北側喫煙所",
+    "address": "兵庫県尼崎市潮江1丁目5-1",
+    "note": "北口広場の配電盤横",
+    "url": "https://www.city.amagasaki.hyogo.jp/kurashi/kenko/kenko_joho/1011882/1039707.html"
+   }
+  ],
+  [
+   34.731483,
+   135.430679,
+   "city-amagasaki-2",
+   {
+    "name": "JR尼崎駅南側喫煙所",
+    "address": "兵庫県尼崎市長洲本通1丁目1-1",
+    "url": "https://www.city.amagasaki.hyogo.jp/kurashi/kenko/kenko_joho/1011882/1039707.html"
+   }
+  ],
+  [
+   34.719448,
+   135.417862,
+   "city-amagasaki-3",
+   {
+    "name": "阪神尼崎駅北側喫煙所",
+    "address": "兵庫県尼崎市神田北通1丁目9",
+    "url": "https://www.city.amagasaki.hyogo.jp/kurashi/kenko/kenko_joho/1011882/1039707.html"
+   }
+  ],
+  [
+   34.751431,
+   135.425827,
+   "city-amagasaki-4",
+   {
+    "name": "JR塚口駅東側喫煙所",
+    "address": "兵庫県尼崎市上坂部1丁目1",
+    "note": "1番地内",
+    "url": "https://www.city.amagasaki.hyogo.jp/kurashi/kenko/kenko_joho/1011882/1039707.html"
+   }
+  ],
+  [
+   34.718193,
+   135.404388,
+   "city-amagasaki-5",
+   {
+    "name": "阪神出屋敷駅南側喫煙所",
+    "address": "兵庫県尼崎市南竹谷町2丁目64",
+    "url": "https://www.city.amagasaki.hyogo.jp/kurashi/kenko/kenko_joho/1011882/1039707.html"
+   }
+  ],
+  [
+   34.737431,
+   135.398056,
+   "city-amagasaki-6",
+   {
+    "name": "JR立花駅南側喫煙所",
+    "address": "兵庫県尼崎市西立花町1丁目2",
+    "note": "道意線の高架下",
+    "url": "https://www.city.amagasaki.hyogo.jp/kurashi/kenko/kenko_joho/1011882/1039707.html"
+   }
+  ],
+  [
+   34.718231,
+   135.395844,
+   "city-amagasaki-7",
+   {
+    "name": "阪神尼崎センタープール前駅北側喫煙所",
+    "address": "兵庫県尼崎市水明町371-4",
+    "url": "https://www.city.amagasaki.hyogo.jp/kurashi/kenko/kenko_joho/1011882/1039707.html"
+   }
+  ],
+  [
+   34.649326,
+   134.992554,
+   "city-akashi-1",
+   {
+    "name": "JR・山陽 明石駅前喫煙所",
+    "address": "兵庫県明石市大明石町1丁目1",
+    "url": "https://www.city.akashi.lg.jp/kankyou/kankyou_soumu_ka/kurashi/seisaku/new_sumiyoikankyo.html"
+   }
+  ],
+  [
+   34.66626,
+   134.960983,
+   "city-akashi-2",
+   {
+    "name": "JR西明石駅前喫煙所",
+    "address": "兵庫県明石市小久保2丁目6",
+    "url": "https://www.city.akashi.lg.jp/kankyou/kankyou_soumu_ka/kurashi/seisaku/new_sumiyoikankyo.html"
+   }
+  ],
+  [
+   34.643131,
+   134.997604,
+   "city-akashi-3",
+   {
+    "name": "JR大久保駅前喫煙所",
+    "address": "兵庫県明石市ゆりのき通1丁目22",
+    "note": "※地図の位置は住所の町名までの目安",
+    "url": "https://www.city.akashi.lg.jp/kankyou/kankyou_soumu_ka/kurashi/seisaku/new_sumiyoikankyo.html"
+   }
+  ],
+  [
+   34.689167,
+   134.909485,
+   "city-akashi-4",
+   {
+    "name": "JR魚住駅前喫煙所",
+    "address": "兵庫県明石市魚住町中尾607-1",
+    "note": "※地図の位置は住所の町名までの目安",
+    "url": "https://www.city.akashi.lg.jp/kankyou/kankyou_soumu_ka/kurashi/seisaku/new_sumiyoikankyo.html"
+   }
+  ],
+  [
+   34.645245,
+   135.018784,
+   "city-akashi-5",
+   {
+    "name": "JR朝霧駅前喫煙所",
+    "address": "兵庫県明石市朝霧南町1丁目238-1",
+    "note": "※地図の位置は住所の町名までの目安",
+    "url": "https://www.city.akashi.lg.jp/kankyou/kankyou_soumu_ka/kurashi/seisaku/new_sumiyoikankyo.html"
+   }
+  ],
+  [
+   32.75404,
+   129.872055,
+   "city-nagasaki-1",
+   {
+    "name": "喫煙場所（西坂公園）",
+    "address": "長崎県長崎市",
+    "note": "公園内",
+    "url": "https://www.city.nagasaki.lg.jp/contents/kankyo/kml/haizara.kml"
+   }
+  ],
+  [
+   32.748,
+   129.881218,
+   "city-nagasaki-2",
+   {
+    "name": "喫煙場所（中島川公園1）",
+    "address": "長崎県長崎市",
+    "note": "公園内",
+    "url": "https://www.city.nagasaki.lg.jp/contents/kankyo/kml/haizara.kml"
+   }
+  ],
+  [
+   32.747794,
+   129.880946,
+   "city-nagasaki-3",
+   {
+    "name": "喫煙場所（中島川公園3）",
+    "address": "長崎県長崎市",
+    "note": "公園内",
+    "url": "https://www.city.nagasaki.lg.jp/contents/kankyo/kml/haizara.kml"
+   }
+  ],
+  [
+   32.747507,
+   129.880428,
+   "city-nagasaki-4",
+   {
+    "name": "喫煙場所（中島川公園4）",
+    "address": "長崎県長崎市",
+    "note": "公園内",
+    "url": "https://www.city.nagasaki.lg.jp/contents/kankyo/kml/haizara.kml"
+   }
+  ],
+  [
+   32.740803,
+   129.874382,
+   "city-nagasaki-5",
+   {
+    "name": "喫煙場所（湊公園）",
+    "address": "長崎県長崎市",
+    "note": "公園内",
+    "url": "https://www.city.nagasaki.lg.jp/contents/kankyo/kml/haizara.kml"
+   }
+  ]
+ ]
+}
