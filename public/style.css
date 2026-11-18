@@ -12,6 +12,7 @@
   --glow: rgb(255 122 47 / 0.45);
   --shop: #8aa4ff;         /* 喫煙可の店 */
   --user: #45d6a2;         /* みんなの投稿 */
+  --tobacco: #c9a36a;      /* たばこ店（灰皿があるかは不確か） */
   --warn: #ff6f6f;
   --glass: rgb(27 32 40 / 0.78);
   --shadow: 0 10px 30px rgb(0 0 0 / 0.45);
@@ -27,7 +28,7 @@
     --night: #e9ecef; --panel: #ffffff; --raise: #f1f3f5; --line: #dde1e6;
     --text: #12151a; --mute: #5d6672;
     --ember: #e8590c; --ember-hi: #ff8f4a; --ember-ink: #ffffff; --glow: rgb(232 89 12 / 0.35);
-    --shop: #3d5bd9; --user: #0e9f6e; --warn: #d63434;
+    --shop: #3d5bd9; --user: #0e9f6e; --tobacco: #8a6a2f; --warn: #d63434;
     --glass: rgb(255 255 255 / 0.82); --shadow: 0 10px 30px rgb(20 30 45 / 0.18);
     --tiles: grayscale(0.55) contrast(0.95) brightness(1.04);
     color-scheme: light;
@@ -37,7 +38,7 @@
   --night: #e9ecef; --panel: #ffffff; --raise: #f1f3f5; --line: #dde1e6;
   --text: #12151a; --mute: #5d6672;
   --ember: #e8590c; --ember-hi: #ff8f4a; --ember-ink: #ffffff; --glow: rgb(232 89 12 / 0.35);
-  --shop: #3d5bd9; --user: #0e9f6e; --warn: #d63434;
+  --shop: #3d5bd9; --user: #0e9f6e; --tobacco: #8a6a2f; --warn: #d63434;
   --glass: rgb(255 255 255 / 0.82); --shadow: 0 10px 30px rgb(20 30 45 / 0.18);
   --tiles: grayscale(0.55) contrast(0.95) brightness(1.04);
   color-scheme: light;
@@ -94,6 +95,9 @@ svg { width: 1em; height: 1em; flex: none; }
 .chip input:checked + span { background: var(--ember); color: var(--ember-ink); border-color: transparent; }
 .chip input:checked + span b { background: rgb(0 0 0 / 0.16); }
 .chip-shop input:checked + span { background: var(--shop); color: var(--night); }
+.chip-tobacco input:checked + span { background: var(--tobacco); color: var(--night); }
+.picto.tobacco { background: var(--tobacco); }
+.pin.tobacco { background: var(--tobacco); box-shadow: 0 0 0 1px var(--tobacco), 0 2px 8px rgb(0 0 0 / 0.3); }
 .chip input:focus-visible + span { outline: 3px solid var(--ember-hi); outline-offset: 2px; }
 
 /* ---------- 丸ボタン ---------- */

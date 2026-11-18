@@ -24,16 +24,27 @@ import osmium
 BASE = 'https://download.openstreetmap.fr/extracts/asia/japan/'
 REGIONS = ['hokkaido', 'tohoku', 'kanto', 'chubu', 'kansai', 'chugoku', 'shikoku', 'kyushu']
 OUT = Path(__file__).resolve().parent.parent / 'public' / 'data' / 'jp'
-SMOKING_OK = {'yes', 'separated', 'isolated', 'dedicated', 'outside'}
-KEEP = {'name', 'name:ja', 'smoking', 'amenity', 'shop', 'tourism', 'leisure', 'waste', 'covered', 'shelter', 'indoor', 'location', 'smoking_area',
+SMOKING_OK = {'yes', 'separated', 'isolated', 'dedicated', 'outside', 'area', 'only', 'designated', '分煙'}
+NAME_RE = re.compile(r'喫煙(所|室|コーナー|スペース|ルーム|ブース|エリア|場所)|灰皿|スモーキング(エリア|ルーム)')
+KEEP = {'name', 'name:ja', 'smoking', 'smoking:outside', 'amenity', 'shop', 'tourism', 'leisure', 'waste', 'covered', 'shelter', 'indoor', 'location', 'smoking_area',
         'opening_hours', 'fee', 'operator', 'level', 'description', 'note'}
 
 
 def wanted(tags):
     """喫煙所・吸い殻入れ、または喫煙できる場所（店・ホテル・遊技場など。種類のタグは問わない）"""
-    if tags.get('amenity') == 'smoking_area' or 'cigarettes' in tags.get('waste', ''):
+    amenity = tags.get('amenity', '')
+    if 'smoking_area' in amenity or amenity == 'ashtray' or 'cigarettes' in tags.get('waste', ''):
         return True
-    return any(v.strip() in SMOKING_OK for v in tags.get('smoking', '').split(';'))
+    if any(v.strip() in SMOKING_OK for v in tags.get('smoking', '').split(';')):
+        return True
+    if tags.get('smoking:outside') in ('yes', 'separated', 'designated'):
+        return True
+    # たばこ店・加熱式たばこの店（店頭に灰皿があることが多い。アプリでは別の種類として扱う）
+    if tags.get('shop') in ('tobacco', 'e-cigarette'):
+        return True
+    # タグはないが、名前や説明が喫煙所を指しているもの（「禁煙」「喫煙所なし」などは除く）
+    text = ' '.join(tags.get(k, '') for k in ('name', 'name:ja', 'description'))
+    return bool(NAME_RE.search(text)) and not re.search(r'禁煙|禁止|なし|無し|跡|閉鎖', text) and tags.get('smoking') != 'no'
 
 
 def compact(kind, oid, lat, lng, tags):
@@ -46,7 +57,7 @@ def extract(path):
     found = []
     fp = (osmium.FileProcessor(str(path), osmium.osm.NODE | osmium.osm.WAY)
           .with_locations()
-          .with_filter(osmium.filter.KeyFilter('amenity', 'smoking', 'waste')))
+          .with_filter(osmium.filter.KeyFilter('amenity', 'smoking', 'smoking:outside', 'waste', 'shop', 'name', 'description')))
     for o in fp:
         if not wanted(o.tags):
             continue

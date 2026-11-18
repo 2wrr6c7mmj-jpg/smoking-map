@@ -16,6 +16,8 @@ const overpass = {
     { type: 'node', id: 104, lat: 35.6790, lon: 139.7640, tags: { amenity: 'smoking_area', name: '八重洲地下 喫煙室', indoor: 'yes', operator: '八重洲地下街' } },
     { type: 'node', id: 201, lat: 35.6808, lon: 139.7680, tags: { amenity: 'cafe', smoking: 'isolated', name: '喫茶テスト' } },
     { type: 'node', id: 202, lat: 35.6809, lon: 139.7681, tags: { amenity: 'cafe', smoking: 'no', name: '禁煙カフェ' } },
+    { type: 'node', id: 204, lat: 35.6818, lon: 139.7682, tags: { shop: 'tobacco', name: 'たばこ店テスト' } },
+    { type: 'node', id: 205, lat: 35.6800, lon: 139.7662, tags: { name: '駅前喫煙所テスト' } },
     { type: 'node', id: 203, lat: 35.6825, lon: 139.7690, tags: { shop: 'convenience', smoking: 'outside', name: 'コンビニテスト' } },
   ],
 };
@@ -65,11 +67,14 @@ await page.goto(BASE);
 await page.waitForFunction(() => !document.querySelector('#hero').hidden && document.querySelector('#c-area').textContent !== '0', null, { timeout: 15000 });
 assert.equal(await heroName(), '丸の内北口 喫煙所', '現在地から最も近い喫煙所が大きく出る');
 assert.match(await page.textContent('#hero'), /いちばん近い/);
-assert.equal(await count('#c-area'), 5, 'OSM と自治体の重複は1つに数え、施設の喫煙室を足す');
+assert.equal(await count('#c-tobacco'), 1, 'たばこ店は別に数える');
+assert.equal(await count('#c-area'), 6, 'OSM と自治体の重複は1つに数え、施設の喫煙室を足す');
 assert.equal(await count('#c-shop'), 2, '禁煙の店は数えない');
 await page.click('#more');
 let names = await listNames();
-assert.equal(names.length, 4, '初期表示は喫煙所のみ');
+assert.equal(names.length, 5, '初期表示は喫煙所のみ');
+assert.ok(names.includes('駅前喫煙所テスト'), '名前が喫煙所を指す地点を拾う');
+assert.ok(!names.includes('たばこ店テスト'), 'たばこ店は初期表示しない');
 assert.ok(names.includes('ららぽーとテスト 喫煙室'), '施設の喫煙室を表示する');
 assert.ok(names.includes('区設置 公衆喫煙所テスト'), '自治体データを表示する');
 assert.ok(!names.includes('南東の喫煙所'), '自治体と重なる OSM の地点は隠す');
@@ -78,14 +83,20 @@ if (process.env.REAL_TILES) await page.waitForTimeout(2500);
 await page.screenshot({ path: `${SHOTS}/list-dark.png` });
 
 await page.click('label:has(#f-shop)');
-await page.waitForFunction(() => document.querySelectorAll('#list li').length === 6);
+await page.waitForFunction(() => document.querySelectorAll('#list li').length === 7);
 assert.ok((await listNames()).includes('喫茶テスト'), '喫煙可の店を表示できる');
 assert.match(await page.textContent('#list'), /店の外で喫煙可（灰皿） · コンビニ/, 'コンビニの店外灰皿');
 await page.click('label:has(#f-heated)');
-await page.waitForFunction(() => document.querySelectorAll('#list li').length === 5);
+await page.waitForFunction(() => document.querySelectorAll('#list li').length === 6);
 assert.ok(!(await listNames()).includes('加熱式専用ブース'), '加熱式専用を隠せる');
 await page.click('label:has(#f-heated)');
 await page.click('label:has(#f-shop)');
+
+// たばこ店は別の絞り込みで出し、灰皿が確実ではないことを表示する
+await page.click('label:has(#f-tobacco)');
+await page.waitForFunction(() => document.querySelector('#list').textContent.includes('たばこ店テスト'));
+assert.match(await page.textContent('#list'), /店頭に灰皿がある場合があります/);
+await page.click('label:has(#f-tobacco)');
 
 // 詳細と徒歩ルート
 await page.click('#hero [data-open]');

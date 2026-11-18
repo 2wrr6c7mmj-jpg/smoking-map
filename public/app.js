@@ -44,12 +44,13 @@ let meMarker = null;
 let meCircle = null;
 
 // ---------- データの種類 ----------
-const SMOKING_OK = new Set(['yes', 'separated', 'isolated', 'dedicated', 'outside']);
+const SMOKING_OK = new Set(['yes', 'separated', 'isolated', 'dedicated', 'outside', 'area', 'only', 'designated', '分煙']);
+const SMOKING_NAME = /喫煙(所|室|コーナー|スペース|ルーム|ブース|エリア|場所)|灰皿|スモーキング(エリア|ルーム)/;
 const SMOKING_LABEL = {
   yes: '店内で喫煙可', separated: '分煙・喫煙席あり', isolated: '喫煙室あり',
-  dedicated: '喫煙目的の店', outside: '屋外席で喫煙可',
+  dedicated: '喫煙目的の店', outside: '屋外席で喫煙可', only: '喫煙目的の店', 分煙: '分煙・喫煙席あり', designated: '喫煙場所あり', area: '喫煙場所あり',
 };
-const KIND_LABEL = { area: '喫煙所', outdoor: '屋外の喫煙所', indoor: '屋内の喫煙室', shop: '喫煙できる店' };
+const KIND_LABEL = { area: '喫煙所', outdoor: '屋外の喫煙所', indoor: '屋内の喫煙室', shop: '喫煙できる店', tobacco: 'たばこ店' };
 const SHOP_TYPE = { cafe: 'カフェ・喫茶', restaurant: '飲食店', bar: 'バー', pub: '居酒屋・パブ', fast_food: 'ファストフード', karaoke_box: 'カラオケ', nightclub: 'クラブ' };
 const OTHER_TYPE = { convenience: 'コンビニ', hotel: 'ホテル', adult_gaming_centre: 'パチンコ・遊技場', fuel: 'ガソリンスタンド' };
 const placeType = (t) => SHOP_TYPE[t.amenity] || OTHER_TYPE[t.shop] || OTHER_TYPE[t.tourism] || OTHER_TYPE[t.leisure] || OTHER_TYPE[t.amenity];
@@ -64,16 +65,21 @@ function fromOverpass(el) {
   if (lat == null || lng == null) return null;
   const t = el.tags || {};
   // 喫煙所と吸い殻入れは「喫煙所」、それ以外の喫煙できる場所（店・ホテルなど）は「喫煙可の店」
-  const isArea = t.amenity === 'smoking_area' || /cigarettes/.test(t.waste || '');
-  const smoking = (t.smoking || '').split(';').map((v) => v.trim()).find((v) => SMOKING_OK.has(v));
-  if (!isArea && !smoking) return null;
+  const isTobacco = t.shop === 'tobacco' || t.shop === 'e-cigarette';
+  let smoking = (t.smoking || '').split(';').map((v) => v.trim()).find((v) => SMOKING_OK.has(v));
+  if (!smoking && ['yes', 'separated', 'designated'].includes(t['smoking:outside'])) smoking = 'outside';
+  // 喫煙所：専用のタグ、灰皿・吸い殻入れ、店などの種類を持たず名前が喫煙所を指すもの
+  const plain = !t.shop && !t.tourism && !t.leisure && (!t.amenity || /smoking_area|ashtray|waste_basket|shelter/.test(t.amenity));
+  const isArea = /smoking_area/.test(t.amenity || '') || t.amenity === 'ashtray' || /cigarettes/.test(t.waste || '')
+    || (plain && (['area', 'designated'].includes(smoking) || SMOKING_NAME.test(`${t.name || ''} ${t.description || ''}`)));
+  if (!isArea && !smoking && !isTobacco) return null;
   return {
     key: `osm:${el.type}/${el.id}`,
     source: 'osm',
-    group: isArea ? 'area' : 'shop',
-    kind: isArea ? 'area' : 'shop',
+    group: isArea ? 'area' : smoking ? 'shop' : 'tobacco',
+    kind: isArea ? 'area' : smoking ? 'shop' : 'tobacco',
     lat, lng,
-    name: t.name || t['name:ja'] || (/cigarettes/.test(t.waste || '') ? '吸い殻入れ' : ''),
+    name: t.name || t['name:ja'] || (/cigarettes/.test(t.waste || '') || t.amenity === 'ashtray' ? '灰皿・吸い殻入れ' : ''),
     heatedOnly: heatedOnlyFromTags(t),
     tags: t,
   };
@@ -125,9 +131,10 @@ function tagsOf(s) {
   const out = [];
   const t = s.tags || {};
   if (s.source === 'osm') {
+    if (s.kind === 'tobacco') out.push(t.shop === 'e-cigarette' ? '加熱式・電子たばこの店' : 'たばこ店', '店頭に灰皿がある場合があります');
     if (s.kind === 'shop') {
       const sm = (t.smoking || '').split(';').map((v) => v.trim()).find((v) => SMOKING_LABEL[v]);
-      out.push(t.shop === 'convenience' && sm === 'outside' ? '店の外で喫煙可（灰皿）' : SMOKING_LABEL[sm]);
+      out.push(t.shop === 'convenience' && (sm === 'outside' || !sm) ? '店の外で喫煙可（灰皿）' : SMOKING_LABEL[sm] || '屋外席で喫煙可');
       out.push(placeType(t));
     }
     if (t.indoor === 'yes' || t.location === 'indoor' || t.smoking_area === 'room') out.push('屋内');
@@ -187,13 +194,13 @@ function flagOf(s) {
 const displayName = (s) => s.name || (s.kind === 'area' ? `${dirName(s.b ?? 0)}の喫煙所` : KIND_LABEL[s.kind]);
 
 function filters() {
-  return { area: $('f-area').checked, shop: $('f-shop').checked, heated: $('f-heated').checked };
+  return { area: $('f-area').checked, shop: $('f-shop').checked, tobacco: $('f-tobacco').checked, heated: $('f-heated').checked };
 }
 
 // ---------- 描画 ----------
 function picto(s, cls = 'picto') {
-  const c = [cls, s.group === 'shop' ? 'shop' : '', s.source === 'user' ? 'user' : '', flagOf(s) ? 'flagged' : ''].join(' ');
-  return `<span class="${c}">${icon(s.group === 'shop' ? 'cup' : 'cig')}</span>`;
+  const c = [cls, s.group === 'shop' ? 'shop' : s.group === 'tobacco' ? 'shop tobacco' : '', s.source === 'user' ? 'user' : '', flagOf(s) ? 'flagged' : ''].join(' ');
+  return `<span class="${c}">${icon(s.group === 'shop' ? 'cup' : s.group === 'tobacco' ? 'store' : 'cig')}</span>`;
 }
 const bearingBadge = (s) =>
   `<span class="bearing" title="${dirName(s.b)}"><svg aria-hidden="true" style="transform:rotate(${Math.round(s.b)}deg)"><use href="#i-arrow"/></svg></span>`;
@@ -207,6 +214,7 @@ function render() {
     .filter((s) => b.contains([s.lat, s.lng]) && (f.heated || !s.heatedOnly) && !isDuplicate(s));
   $('c-area').textContent = inView.filter((s) => s.group === 'area').length;
   $('c-shop').textContent = inView.filter((s) => s.group === 'shop').length;
+  $('c-tobacco').textContent = inView.filter((s) => s.group === 'tobacco').length;
 
   const spots = inView.filter((s) => f[s.group]);
   for (const s of spots) {
@@ -220,10 +228,10 @@ function render() {
 
   layer.clearLayers();
   for (const s of spots) {
-    const cls = ['pin', s.group === 'shop' ? 'shop' : '', s.source === 'user' ? 'user' : '', flagOf(s) ? 'flagged' : '', s === nearest ? 'nearest' : '', s.key === state.selected ? 'selected' : ''].join(' ');
+    const cls = ['pin', s.group === 'shop' ? 'shop' : s.group === 'tobacco' ? 'shop tobacco' : '', s.source === 'user' ? 'user' : '', flagOf(s) ? 'flagged' : '', s === nearest ? 'nearest' : '', s.key === state.selected ? 'selected' : ''].join(' ');
     const smoke = s === nearest ? '<span class="smoke"><i></i><i></i><i></i></span>' : '';
     const m = L.marker([s.lat, s.lng], {
-      icon: L.divIcon({ className: '', html: `<div class="${cls}">${icon(s.group === 'shop' ? 'cup' : 'cig')}${smoke}</div>`, iconSize: [26, 26], iconAnchor: [13, 13] }),
+      icon: L.divIcon({ className: '', html: `<div class="${cls}">${icon(s.group === 'shop' ? 'cup' : s.group === 'tobacco' ? 'store' : 'cig')}${smoke}</div>`, iconSize: [26, 26], iconAnchor: [13, 13] }),
       title: displayName(s),
       keyboard: true,
       zIndexOffset: s === nearest || s.key === state.selected ? 500 : 0,
@@ -565,7 +573,7 @@ map.on('moveend', () => {
   clearTimeout(moveTimer);
   moveTimer = setTimeout(refresh, 350);
 });
-for (const id of ['f-area', 'f-shop', 'f-heated']) {
+for (const id of ['f-area', 'f-shop', 'f-tobacco', 'f-heated']) {
   const v = store.getPref(id);
   if (typeof v === 'boolean') $(id).checked = v;
   $(id).addEventListener('change', () => { store.setPref(id, $(id).checked); render(); });

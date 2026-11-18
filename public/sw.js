@@ -1,5 +1,5 @@
 // アプリ本体は端末に保存して電波がなくても起動できるようにし、地図タイルは見た分を一定数まで保存する
-const VERSION = 'v5';
+const VERSION = 'v6';
 const SHELL = `kemuri-shell-${VERSION}`;
 const TILES = 'kemuri-tiles';
 const FONTS = 'kemuri-fonts';
