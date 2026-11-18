@@ -1,4 +1,4 @@
-import { json, parseBbox, inJapan, clientHash, cleanText } from '../_lib/util.js';
+import { withSecretCheck, json, parseBbox, inJapan, clientHash, cleanText } from '../_lib/util.js';
 
 // 直近90日に、別々の3人（IP単位）から閉鎖・誤りの報告があった投稿は表示しない
 export const HIDE_AFTER_REPORTERS = 3;
@@ -34,7 +34,9 @@ export async function onRequestGet({ request, env }) {
 }
 
 // POST /api/spots  {lat, lng, name, kind, heated_only, note}
-export async function onRequestPost({ request, env }) {
+export const onRequestPost = (ctx) => withSecretCheck(() => post(ctx));
+
+async function post({ request, env }) {
   let body;
   try {
     body = await request.json();

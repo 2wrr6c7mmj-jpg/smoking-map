@@ -1,11 +1,13 @@
-import { json, inJapan, clientHash } from '../_lib/util.js';
+import { withSecretCheck, json, inJapan, clientHash } from '../_lib/util.js';
 
 const DAILY_REPORT_LIMIT = 30;
 const NEAR_DEG = 0.002; // 投稿の地点と報告の座標のずれの許容（約200m）
 
 // POST /api/reports  {ref: 'osm:node/123' | 'user:45' | 'gov:taito-3', lat, lng, reason: 'closed' | 'wrong'}
 // 同じ人（IP の塩付きハッシュ）から同じ地点への報告は1件として数える（理由を変えたら上書き）
-export async function onRequestPost({ request, env }) {
+export const onRequestPost = (ctx) => withSecretCheck(() => post(ctx));
+
+async function post({ request, env }) {
   let body;
   try {
     body = await request.json();
@@ -42,5 +44,7 @@ export async function onRequestPost({ request, env }) {
   )
     .bind(ref, lat, lng, body.reason, hash)
     .run();
+  // 判定に使う期間（90日）を過ぎた報告は消す（仮名化した値も長く持たない）
+  await env.DB.prepare("DELETE FROM reports WHERE created_at < strftime('%Y-%m-%dT%H:%M:%SZ', 'now', '-90 days')").run();
   return json({ ok: true }, 201);
 }

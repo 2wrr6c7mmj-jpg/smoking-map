@@ -45,7 +45,7 @@ npx wrangler d1 execute kemuri-map --remote --file=schema.sql
 npx wrangler pages deploy
 ```
 
-Pages の環境変数 `HASH_SECRET` に任意の文字列を設定する（IP ハッシュの塩）。
+Pages の環境変数 `HASH_SECRET` に16文字以上のランダムな文字列を設定する（`npx wrangler pages secret put HASH_SECRET`。IP を HMAC で仮名化する鍵）。**未設定だと投稿と報告は 503 で受け付けない**（ローカル開発だけは固定の鍵で動く）。報告は90日で消える。
 
 ## 未対応・注意
 
