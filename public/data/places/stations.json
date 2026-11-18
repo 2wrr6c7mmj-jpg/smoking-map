@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T23:14:08.838Z",
+ "updated": "2026-11-18T23:26:15.188Z",
  "sources": [
   {
    "id": "station-jrc",
@@ -60,6 +60,36 @@
    "publisher": "JR四国",
    "page": "https://www.jr-shikoku.co.jp/01_trainbus/kakueki/matsuyama/kounai_map.html",
    "count": 3
+  },
+  {
+   "id": "station-kintetsu",
+   "type": "facility",
+   "group": "area",
+   "label": "駅構内の喫煙所",
+   "name": "近鉄 駅の喫煙所",
+   "publisher": "近鉄",
+   "page": "https://www.kintetsu.co.jp/soukatsu/kounai/uehonmachi.html",
+   "count": 15
+  },
+  {
+   "id": "station-nishitetsu",
+   "type": "facility",
+   "group": "area",
+   "label": "駅構内の喫煙所",
+   "name": "西鉄 駅の喫煙所",
+   "publisher": "西鉄",
+   "page": "http://www.ensen24.jp/tenjinomuta-line/fukuoka_tenjin.html",
+   "count": 3
+  },
+  {
+   "id": "station-osakametro",
+   "type": "facility",
+   "group": "area",
+   "label": "駅構内の喫煙所",
+   "name": "Osaka Metro 駅の喫煙所",
+   "publisher": "Osaka Metro",
+   "page": "https://www.osakametro.co.jp/news/news/other/20241223_smoking_area.php",
+   "count": 1
   }
  ],
  "spots": [
@@ -1475,8 +1505,8 @@
    }
   ],
   [
-   42.787808,
-   141.680869,
+   42.786787,
+   141.68296,
    "station-jrh-3",
    {
     "name": "新千歳空港駅 喫煙室",
@@ -1658,6 +1688,233 @@
     "io": "indoor",
     "gate": "out",
     "url": "https://www.jr-shikoku.co.jp/01_trainbus/kakueki/kochi/kounai_map.html"
+   }
+  ],
+  [
+   34.665581,
+   135.52015,
+   "station-kintetsu-1",
+   {
+    "name": "大阪上本町駅 地上ホーム喫煙室",
+    "note": "改札内・地上1階ホーム 9番線側\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/uehonmachi.html"
+   }
+  ],
+  [
+   34.646309,
+   135.513916,
+   "station-kintetsu-2",
+   {
+    "name": "大阪阿部野橋駅 ホーム喫煙室",
+    "note": "改札内・6番線ホーム付近\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/abenobashi.html"
+   }
+  ],
+  [
+   34.664115,
+   135.563598,
+   "station-kintetsu-3",
+   {
+    "name": "布施駅 4階ホーム喫煙室",
+    "note": "改札内・4階 奈良線ホーム 奈良寄り\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/fuse.html"
+   }
+  ],
+  [
+   34.693236,
+   135.697921,
+   "station-kintetsu-4",
+   {
+    "name": "生駒駅 西改札内喫煙室(1)",
+    "note": "改札内・2階 西改札内コンコース\n構内図に印2か所\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/ikoma.html"
+   }
+  ],
+  [
+   34.693103,
+   135.698067,
+   "station-kintetsu-5",
+   {
+    "name": "生駒駅 西改札内喫煙室(2)",
+    "note": "改札内・2階 西改札内 階段付近\n構内図に印2か所\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/ikoma.html"
+   }
+  ],
+  [
+   34.697787,
+   135.750711,
+   "station-kintetsu-6",
+   {
+    "name": "学園前駅 喫煙室",
+    "note": "改札内・改札内 2番線側エレベーター横\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/gakuemmae.html"
+   }
+  ],
+  [
+   34.483448,
+   135.793711,
+   "station-kintetsu-7",
+   {
+    "name": "橿原神宮前駅 喫煙室",
+    "note": "改札内・中央改札内コンコース 吉野線ホーム寄り\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/kashihara.html"
+   }
+  ],
+  [
+   34.665977,
+   135.529059,
+   "station-kintetsu-8",
+   {
+    "name": "鶴橋駅 3階喫煙室",
+    "note": "改札内・3階 JRのりかえ口付近\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/tsuruhashi.html"
+   }
+  ],
+  [
+   34.693534,
+   135.783807,
+   "station-kintetsu-9",
+   {
+    "name": "大和西大寺駅 喫煙室",
+    "note": "改札内・改札内 南改札寄りトイレ横\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/saidaiji.html"
+   }
+  ],
+  [
+   34.967038,
+   136.618605,
+   "station-kintetsu-10",
+   {
+    "name": "近鉄四日市駅 ホーム喫煙室",
+    "note": "改札内・3階ホーム\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/yokkaichi.html"
+   }
+  ],
+  [
+   34.986191,
+   135.760063,
+   "station-kintetsu-11",
+   {
+    "name": "近鉄京都駅 喫煙室",
+    "note": "1階 店舗街付近\n改札内外は不明\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/kyoto.html"
+   }
+  ],
+  [
+   34.723189,
+   135.791184,
+   "station-kintetsu-12",
+   {
+    "name": "高の原駅 ホーム喫煙室",
+    "note": "改札内・3・4番線ホーム 京都寄り\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/takanohara.html"
+   }
+  ],
+  [
+   34.938468,
+   135.766383,
+   "station-kintetsu-13",
+   {
+    "name": "近鉄丹波橋駅 ホーム喫煙室",
+    "note": "改札内・1階ホーム 奈良寄り端\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/tambabashi.html"
+   }
+  ],
+  [
+   34.512824,
+   135.792693,
+   "station-kintetsu-14",
+   {
+    "name": "大和八木駅 ホーム喫煙室",
+    "note": "改札内・2階 1・2番線ホーム 名古屋寄り端\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/yagi.html"
+   }
+  ],
+  [
+   34.734108,
+   136.510938,
+   "station-kintetsu-15",
+   {
+    "name": "津駅 近鉄ホーム喫煙室",
+    "note": "改札内・5・6番線ホーム 名古屋寄り端\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/tsu.html"
+   }
+  ],
+  [
+   33.589255,
+   130.399422,
+   "station-nishitetsu-1",
+   {
+    "name": "西鉄天神高速バスターミナル 喫煙所",
+    "note": "改札外・3階 バス乗り場\nバスターミナル内\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "out",
+    "url": "http://www.ensen24.jp/tenjinomuta-line/fukuoka_tenjin.html"
+   }
+  ],
+  [
+   33.165176,
+   130.419232,
+   "station-nishitetsu-2",
+   {
+    "name": "西鉄柳川駅 東口喫煙所",
+    "note": "1階 東口\n東口側1階\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "http://www.ensen24.jp/tenjinomuta-line/yanagawa.html"
+   }
+  ],
+  [
+   33.591588,
+   130.419856,
+   "station-nishitetsu-3",
+   {
+    "name": "博多バスターミナル 8階喫煙所",
+    "note": "改札外・8階 飲食店フロア\nJR博多駅隣のビル\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "out",
+    "url": "https://www.h-bt.jp/floor/"
+   }
+  ],
+  [
+   34.663663,
+   135.501775,
+   "station-osakametro-1",
+   {
+    "name": "なんば駅31号出入口 大阪市指定喫煙所",
+    "note": "改札外・31号出入口(地上)\n市の指定喫煙所\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "24時間",
+    "io": "indoor",
+    "gate": "out",
+    "url": "https://www.osakametro.co.jp/news/news/other/20241223_smoking_area.php"
    }
   ]
  ]

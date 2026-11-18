@@ -14,7 +14,10 @@ export async function landmark(name, city, pref = '') {
   const key = `${pref}|${city}|${name}`;
   if (key in cache) return cache[key];
   let hit = null;
-  for (const q of [`${name} ${city}`, `${name} ${pref}`.trim()]) {
+  // 「大阪市天王寺区」のような市＋区は、検索結果の所在地では「天王寺区, 大阪市」と別々に出るので分けて照合する
+  const parts = city.match(/^(.+?市)(.+区)$/)?.slice(1) || [city];
+  const inCity = (x) => parts.every((p) => x.display_name.includes(p));
+  for (const q of [...new Set([`${name} ${parts.join(' ')}`, `${name} ${parts[0]}`, `${name} ${pref}`.trim()])]) {
     const wait = last + 1100 - Date.now();
     if (wait > 0) await sleep(wait);
     last = Date.now();
@@ -23,8 +26,9 @@ export async function landmark(name, city, pref = '') {
       const res = await fetch(url, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(20_000) });
       if (!res.ok) continue;
       const list = await res.json();
-      const base = city.replace(/(市|区|町|村)$/, '');
-      const ok = list.find((x) => x.display_name.includes(city)) || list.find((x) => (x.name || '').includes(name.replace(/駅$/, '')) && x.display_name.includes(base));
+      const base = parts[0].replace(/(市|区|町|村)$/, '');
+      const ok = list.find(inCity) || list.find((x) => x.display_name.includes(parts[0]))
+        || list.find((x) => (x.name || '').includes(name.replace(/駅$/, '')) && x.display_name.includes(base));
       if (ok) { hit = { lat: Number(ok.lat), lng: Number(ok.lon), title: ok.display_name.split(',').slice(0, 3).join(',') }; break; }
     } catch { /* 次の問い合わせへ */ }
   }

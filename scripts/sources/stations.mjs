@@ -17,8 +17,14 @@ const perStation = new Map();
 const spots = [];
 let skipped = 0;
 for (const r of rows) {
-  const station = r.station.endsWith('駅') ? r.station : `${r.station}駅`;
-  const p = await landmark(station, r.city || '', r.pref || '');
+  // バスターミナルなど駅でない施設には「駅」を付けない
+  const facility = /(ターミナル|バスセンター|空港)$/.test(r.station.replace(/駅$/, ''));
+  const station = facility ? r.station.replace(/駅$/, '') : r.station.endsWith('駅') ? r.station : `${r.station}駅`;
+  // 駅名の表記ゆれ：「西鉄福岡（天神）駅」→「西鉄福岡駅」「天神駅」、「近鉄丹波橋駅」→「丹波橋駅」の順に試す
+  const inner = station.match(/[（(](.+?)[）)]/)?.[1];
+  const names = [...new Set([station, station.replace(/[（(].+?[）)]/, ''), inner && `${inner}駅`, station.replace(/^(近鉄|西鉄|名鉄|京成|京急|京王|阪急|阪神|南海|東武|西武)/, '')].filter(Boolean))];
+  let p = null;
+  for (const n of names) { p = await landmark(n, r.city || '', r.pref || ''); if (p) break; }
   if (!p) { console.warn(`位置不明: ${r.operator} ${station}（${r.city}）`); skipped++; continue; }
   const slug = slugOf(r.operator);
   const src = sources.get(slug) || { id: `station-${slug}`, type: 'facility', group: 'area', label: '駅構内の喫煙所', name: `${r.operator} 駅の喫煙所`, publisher: r.operator, page: r.page, count: 0 };
