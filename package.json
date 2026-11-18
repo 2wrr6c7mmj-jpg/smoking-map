@@ -1,0 +1,16 @@
+{
+  "name": "kemuri-map",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "vendor": "node scripts/vendor.mjs",
+    "db:init": "wrangler d1 execute kemuri-map --local --file=schema.sql",
+    "dev": "wrangler pages dev --port 8788",
+    "db:reset": "wrangler d1 execute kemuri-map --local --command \"DELETE FROM spots; DELETE FROM reports;\"",
+    "test": "npm run db:reset && node tests/e2e.mjs"
+  },
+  "devDependencies": {
+    "leaflet": "1.9.4",
+    "wrangler": "4.164.0"
+  }
+}
