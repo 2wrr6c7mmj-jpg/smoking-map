@@ -15722,5 +15722,14 @@
 "landmark": "佐賀駅バスセンター",
 "memo": "バスセンター東端",
 "page": "https://www.city.saga.lg.jp/kenko-fukushi/kenkozukuri/6/368.html"
+},
+{
+"city": "さいたま市",
+"pref": "埼玉県",
+"name": "東浦和駅周辺指定喫煙場所",
+"landmark": "東浦和駅",
+"kind": "outdoor",
+"memo": "駅前広場パネル囲い",
+"page": "https://www.city.saitama.lg.jp/001/009/014/p045300.html"
 }
 ]

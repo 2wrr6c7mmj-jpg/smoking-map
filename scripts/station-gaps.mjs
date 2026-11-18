@@ -27,7 +27,10 @@ if (process.argv[2]) {
     .map((g) => ({ name: g.name, lat: +(g.lat / g.n).toFixed(5), lng: +(g.lng / g.n).toFixed(5), riders: g.riders, ops: [...g.ops] }))
     .sort((a, b) => b.riders - a.riders);
   writeFileSync(new URL('stations.json', DATA), JSON.stringify(stations));
-  console.log(`駅 ${stations.length}（1日3,000人以上）`);
+  // 目印の位置出し用：乗降客数を問わない全駅（駅名・位置だけ）
+  const allStations = [...groups.values()].map((g) => [g.name, +(g.lat / g.n).toFixed(5), +(g.lng / g.n).toFixed(5)]);
+  writeFileSync(new URL('stations-all.json', DATA), JSON.stringify(allStations));
+  console.log(`駅 ${stations.length}（1日3,000人以上）／全駅 ${allStations.length}`);
 }
 
 const stations = JSON.parse(readFileSync(new URL('stations.json', DATA), 'utf8'));
