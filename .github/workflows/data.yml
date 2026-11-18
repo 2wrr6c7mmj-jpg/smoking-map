@@ -1,0 +1,42 @@
+# 毎週、全国の喫煙所データ（OpenStreetMap・自治体オープンデータ）を取り直し、変わっていればコミットする。
+# 1回あたり約20分（地方別ファイル計約2.7GBのダウンロードと抜き出し）。
+# 非公開リポジトリでは GitHub Actions の月2,000分の枠を使う（週1回で月約80分）。
+name: data
+on:
+  schedule:
+    - cron: '23 18 * * 0'   # 毎週月曜 3:23（日本時間）。openstreetmap.fr の地方別ファイルは毎日0時台に更新される
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: data
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install osmium
+      - name: OpenStreetMap から抜き出す
+        run: python3 scripts/extract-pbf.py
+        env:
+          PBF_TMP: ${{ runner.temp }}
+      - name: 自治体のオープンデータを取る
+        run: node scripts/fetch-opendata.mjs
+      - name: 変更があればコミット
+        run: |
+          # 更新日時（"updated"）の行だけが変わったファイルは変化なしとみなす。新しい区画ファイルも差分に含める
+          git add -N public/data
+          changed=$(git diff --name-only -- public/data | while read f; do
+            if git diff -U0 -- "$f" | grep -E '^[-+][^-+]' | grep -vqE '"updated"'; then echo "$f"; fi
+          done)
+          if [ -z "$changed" ]; then echo "データに変化なし"; exit 0; fi
+          git add public/data
+          git -c user.name="kemuri-map bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -m "全国の喫煙所データを更新 ($(date -u +%Y-%m-%d))"
+          git push
