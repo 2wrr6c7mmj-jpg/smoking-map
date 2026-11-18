@@ -297,9 +297,10 @@ function renderStatus() {
   if (staticIndex) parts.push(`全国 ${staticIndex.total.toLocaleString('ja-JP')}件 · ${staticIndex.updated.slice(0, 10)} 時点`);
   else if (state.loadedAt) parts.push(`${state.loadedAt} 更新`);
   parts.push('データ © OpenStreetMap');
-  const govCities = [...new Set(state.placeSources.filter((x) => x.type === 'gov').map((x) => x.city))];
-  if (govCities.length) parts.push(`自治体データ © ${govCities.join('・')}（CC BY 4.0）`);
-  if (state.placeSources.some((x) => x.type !== 'gov')) parts.push('施設情報は各運営者の公開ページより');
+  const gov = state.placeSources.filter((x) => x.type === 'gov');
+  const ccby = [...new Set(gov.filter((x) => /CC BY/.test(x.license || '')).map((x) => x.city))];
+  if (ccby.length) parts.push(`自治体データ © ${ccby.join('・')}（CC BY 4.0）`);
+  if (gov.some((x) => !/CC BY/.test(x.license || '')) || state.placeSources.some((x) => x.type !== 'gov')) parts.push('ほか各市・各運営者の公開ページより');
   $('status').textContent = parts.join(' · ');
 }
 
@@ -329,7 +330,7 @@ function renderDetail() {
   const note = noteOf(s);
   const src = s.source === 'user'
     ? `みんなの投稿${s.createdAt ? ` · ${s.createdAt.slice(0, 10)}` : ''}`
-    : s.source === 'gov' ? `${s.src.city}のオープンデータ（${s.src.license}）`
+    : s.source === 'gov' ? (/CC BY/.test(s.src.license || '') ? `${s.src.city}のオープンデータ（${s.src.license}）` : `${s.src.city}の公開ページより`)
     : s.source === 'place' ? `${s.src.publisher}の公開情報（${s.src.updated?.slice(0, 10) || ''} 時点）` : 'OpenStreetMap';
   el.innerHTML = `
     <div class="detail-head">
