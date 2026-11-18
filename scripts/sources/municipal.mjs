@@ -2,9 +2,11 @@
 // 緯度経度にして public/data/places/cities.json に書き出す。
 // オープンデータ（CC BY）として出している自治体は fetch-opendata.mjs（gov.json）で扱い、こちらは一覧ページだけの自治体。
 //   node scripts/sources/municipal.mjs
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { geocode, saveGeocodeCache } from '../lib/geocode.mjs';
 import { cleanAddress } from '../lib/places.mjs';
+import { landmark, saveLandmarkCache } from '../lib/landmark.mjs';
+import { get } from '../lib/fetch.mjs';
 
 const SLUG = {
   川崎市: 'kawasaki', 神戸市: 'kobe', 広島市: 'hiroshima', 浜松市: 'hamamatsu', 千葉市: 'chiba', 熊本市: 'kumamoto',
@@ -13,30 +15,72 @@ const SLUG = {
   品川区: 'shinagawa', 墨田区: 'sumida', 大田区: 'ota', 荒川区: 'arakawa', 豊島区: 'toshima', 新宿区: 'shinjuku', 中野区: 'nakano',
   文京区: 'bunkyo', 板橋区: 'itabashi', 武蔵野市: 'musashino', 府中市: 'fuchu', 三鷹市: 'mitaka', 船橋市: 'funabashi',
 };
+// SLUG にない市区には、scripts/data/city-ids.json で英字の ID を割り当てる（一度決めた ID は変えない）
+const IDS_FILE = new URL('../data/city-ids.json', import.meta.url);
+const ids = existsSync(IDS_FILE) ? JSON.parse(readFileSync(IDS_FILE, 'utf8')) : {};
+function slugOf(city) {
+  if (SLUG[city]) return SLUG[city];
+  if (!ids[city]) {
+    let n = Object.keys(ids).length, out = '';
+    do { out = String.fromCharCode(97 + (n % 26)) + out; n = Math.floor(n / 26) - 1; } while (n >= 0);
+    ids[city] = `x${out}`;
+  }
+  return ids[city];
+}
+
 const rows = JSON.parse(readFileSync(new URL('../data/municipal-spots.json', import.meta.url), 'utf8'));
+
+// Google マイマップが情報源の市区：公開の KML 書き出しから点（Point）だけを読む
+const expanded = [];
+for (const r of rows) {
+  if (!r.mymap_mid) { expanded.push(r); continue; }
+  let kml = null;
+  try { kml = await get(`https://www.google.com/maps/d/kml?forcekml=1&mid=${encodeURIComponent(r.mymap_mid)}`, { accept: 'application/xml' }); } catch (e) { console.warn(`マイマップ取得失敗: ${r.city} ${e.message}`); }
+  let n = 0;
+  for (const pm of (kml || '').split('<Placemark>').slice(1)) {
+    const c = pm.match(/<Point>[\s\S]*?<coordinates>\s*([-0-9.]+),([-0-9.]+)/);
+    if (!c) continue;
+    const name = (pm.match(/<name>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/name>/) || [])[1]?.trim() || '';
+    if (/禁止|パトロール|看板/.test(name)) continue;
+    expanded.push({ city: r.city, pref: r.pref, name: name || `${r.city}の喫煙所`, lat: Number(c[2]), lng: Number(c[1]), page: r.page, kind: '' });
+    n++;
+  }
+  console.log(`マイマップ ${r.city}: ${n}点`);
+}
+
 const byCity = new Map();
 const spots = [];
 let skipped = 0;
-for (const r of rows) {
-  const slug = SLUG[r.city] || r.slug;
-  if (!slug) { console.warn(`市の ID がありません: ${r.city}（SLUG に足す）`); skipped++; continue; }
-  let lat = Number(r.lat), lng = Number(r.lng), approx = false;
+for (const r of expanded) {
+  const slug = slugOf(r.city);
+  let lat = Number(r.lat), lng = Number(r.lng), approxNote = '';
   if (!r.lat || !r.lng || !Number.isFinite(lat) || !Number.isFinite(lng)) {
-    const g = r.address && ((await geocode(cleanAddress(r.address))) || (await geocode(r.address)));
-    if (!g) { console.warn(`位置不明: ${r.city} ${r.name}（${r.address}）`); skipped++; continue; }
-    // 住所の番地・街区まで一致しなければ、喫煙所の位置としては粗すぎるので注記する
-    ({ lat, lng } = g);
-    approx = g.level === 'town' || r.address_level === 'town';
+    const addr = r.address && r.address.replace(/^(?!.*[都道府県])/, r.pref || '');
+    // 都道府県・市区だけの住所（番地も町名もない）は位置の手がかりにならないので目印に回す
+    const usable = addr && addr.replace(/^.*?[都道府県]/, '').replace(r.city, '').trim().length >= 2;
+    const g = usable && ((await geocode(cleanAddress(addr))) || (await geocode(addr)));
+    if (g) {
+      ({ lat, lng } = g);
+      // 住所の番地・街区まで一致しなければ、喫煙所の位置としては粗いので注記する
+      if (g.level === 'town' || r.address_level === 'town' || !/\d/.test(addr)) approxNote = '※地図の位置は住所の町名までの目安';
+    } else {
+      const lm = r.landmark && (await landmark(r.landmark, r.city, r.pref || ''));
+      if (!lm) { console.warn(`位置不明: ${r.city} ${r.name}（${r.address || r.landmark || '手がかりなし'}）`); skipped++; continue; }
+      ({ lat, lng } = lm);
+      approxNote = `※地図の位置は「${r.landmark}」の目安`;
+    }
   }
   const c = byCity.get(r.city) || { id: `city-${slug}`, type: 'gov', group: 'area', city: r.city, publisher: r.city, license: '市の公開ページ', page: r.page, count: 0 };
   c.count++;
   byCity.set(r.city, c);
   spots.push([+lat.toFixed(6), +lng.toFixed(6), `city-${slug}-${c.count}`, Object.fromEntries(Object.entries({
     name: r.name, address: r.address, hours: r.hours, io: r.kind, heated: r.heated,
-    note: [r.memo, approx ? '※地図の位置は住所の町名までの目安' : ''].filter(Boolean).join('\n'),
+    note: [r.memo, approxNote].filter(Boolean).join('\n'),
     url: r.page,
   }).filter(([, v]) => v))]);
 }
 saveGeocodeCache();
+saveLandmarkCache();
+writeFileSync(IDS_FILE, JSON.stringify(ids, null, 1));
 writeFileSync(new URL('../../public/data/places/cities.json', import.meta.url), JSON.stringify({ updated: new Date().toISOString(), sources: [...byCity.values()], spots }, null, 1));
 console.log([...byCity.values()].map((c) => `${c.city} ${c.count}`).join(' / '), `（位置不明・除外 ${skipped}）`);
