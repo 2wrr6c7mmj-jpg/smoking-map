@@ -20,7 +20,13 @@
     - `python3 scripts/extract-pbf.py`：openstreetmap.fr の地方別ファイル（8地方・計約2.7GB）を1つずつダウンロードして抜き出す。Overpass が混んでいても確実に取れる。`pip install osmium` が必要
     - `node scripts/fetch-japan.mjs`：Overpass API に区画ごとに問い合わせる。軽いが、混雑時は失敗しやすい
   - 全国データがない配置では、従来どおり端末から Overpass API に直接問い合わせる（格子ごとに IndexedDB に3日保存）
-- **自治体のオープンデータ**：`public/data/gov.json`。`node scripts/fetch-opendata.mjs` で作る。2026-11 時点で喫煙所の位置を公開しているのを確認できたのは江東区（6件）と台東区（27件）で、いずれも CC BY 4.0（e-Gov データポータル・東京都オープンデータカタログ・BODIK を検索）。OSM の喫煙所と 25m 以内で重なるものは自治体データを優先して1つにする。新しい自治体を見つけたらスクリプトの `SOURCES` に足す
+- **公開情報（自治体・施設・チェーン店）**：`public/data/places/*.json`（`index.json` で列挙）。情報源ごとのスクリプトで作り、`node scripts/build-places-index.mjs` で一覧を更新する
+  - 自治体：`scripts/fetch-opendata.mjs` → `gov.json`。江東区・台東区（CC BY 4.0）。OSM の喫煙所と 25m 以内で重なるものは自治体データを優先
+  - 商業施設：`scripts/sources/mitsui.mjs` → `mitsui.json`。ららぽーと・三井アウトレットパーク等の「喫煙室」案内から階と場所
+  - チェーン店：`scripts/sources/cunited.mjs`（ベローチェ・珈琲館・カフェ・ド・クリエ等）、`kaikatsu.mjs`（快活CLUB の加熱式たばこ専用エリア）、`hoshino.mjs`（星乃珈琲店）
+  - 取得は `scripts/lib/fetch.mjs` 経由：身元を名乗る User-Agent、1ホスト1秒以上の間隔、robots.txt の Disallow を守る。アクセスを拒否（403 等）されたサイトは回避せず使わない
+  - 住所しかない店舗は `scripts/lib/geocode.mjs`（国土地理院の住所検索、結果は `scripts/cache/geocode.json` に保存）で緯度経度にする。番地・街区まで一致しなかったものは詳細に「町名までの目安」と表示
+  - 規約で転載・再利用を禁止している運営者は使わない（ドトール・エクセルシオール・タリーズ・コメダ・カラオケ館・鳥貴族・ダイナム・ルノアール・プロント、NEXCO 各社、空港各社など。2026-11 調査）
 - 使わないもの：モットスイタイなどの喫煙所マップサイトは、利用規約上データを取り込めないため使わない。ホットペッパーグルメ API はキーを取得できなかったため外した（2026-11。中継の実装は履歴のコミット 498c929 にある）
 - 投稿・報告：Cloudflare Pages Functions + D1（`functions/`、`schema.sql`）。IP は日ごとの塩付きハッシュでのみ保存し、1端末1日10件まで
 
