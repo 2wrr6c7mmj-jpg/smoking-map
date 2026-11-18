@@ -60,6 +60,10 @@ const dist = (a, b) => {
   const r = Math.PI / 180, x = (b.lng - a.lng) * r * Math.cos(((a.lat + b.lat) / 2) * r), y = (b.lat - a.lat) * r;
   return Math.hypot(x, y) * 6371e3;
 };
+// 1駅ずつ調べた結果（scripts/import-station-checks.py で作る）。駅名と位置（約300m以内）で対応させる
+const checkedFile = new URL('station-checked.json', DATA);
+const checked = existsSync(checkedFile) ? JSON.parse(readFileSync(checkedFile, 'utf8')) : [];
+const checkOf = (st) => checked.find((c) => c.name === st.name && Math.abs(c.lat - st.lat) < 0.004 && Math.abs(c.lng - st.lng) < 0.004);
 const major = stations.filter((s) => s.riders >= MIN_RIDERS);
 const gaps = [];
 let withArea = 0, withAny = 0;
@@ -72,8 +76,17 @@ for (const st of major) {
   }
   if (area) withArea++;
   if (area || shop) withAny++;
-  if (!area) gaps.push({ ...st, shops_nearby: shop });
+  if (!area) {
+    const c = checkOf(st);
+    gaps.push({ ...st, shops_nearby: shop, checked: c ? c.status : '', evidence: c ? c.evidence : '', city: c?.city || '', note: c?.note || '' });
+  }
 }
+// 喫煙所データのない駅を、調査の状況で分ける
+const NONE = ['city_none', 'none_in_list', 'none'];
+const confirmed = gaps.filter((g) => NONE.includes(g.checked) && g.evidence === 'strong');
+const weak = gaps.filter((g) => NONE.includes(g.checked) && g.evidence === 'weak');
+const unchecked = gaps.filter((g) => !NONE.includes(g.checked));
 writeFileSync(new URL('station-gaps.json', DATA), JSON.stringify(gaps, null, 0).replace(/\},\{/g, '},\n{'));
 console.log(`1日${MIN_RIDERS.toLocaleString()}人以上の駅 ${major.length}：${NEAR_M}m以内に喫煙所あり ${withArea}（${Math.round(withArea / major.length * 100)}%）、店も含めると ${withAny}、喫煙所なし ${gaps.length}`);
-console.log('喫煙所データのない駅（乗降客数の多い順）:', gaps.slice(0, 40).map((g) => `${g.name}(${Math.round(g.riders / 10000)}万)`).join(' '));
+console.log(`  喫煙所なしの内訳：調べて「なし」と確認 ${confirmed.length} / 「なし」だが根拠が弱く要再確認 ${weak.length} / 未調査 ${unchecked.length}`);
+console.log('未調査の駅（乗降客数の多い順）:', unchecked.slice(0, 40).map((g) => `${g.name}(${Math.round(g.riders / 10000)}万)`).join(' '));
