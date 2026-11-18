@@ -145,7 +145,7 @@ function tagsOf(s) {
     if (t.opening_hours) out.push(t.opening_hours === '24/7' ? '24時間' : `時間 ${t.opening_hours}`);
     if (t.operator) out.push(t.operator);
   } else if (s.source === 'gov') {
-    out.push(`${s.src.city}の公衆喫煙所`);
+    out.push(s.group === 'shop' ? `${s.src.city}が案内する店内の喫煙所（利用者向け）` : `${s.src.city}の公衆喫煙所`);
     if (s.io) out.push(s.io === 'indoor' ? '屋内' : '屋外');
     if (s.hours) out.push(s.hours);
   } else if (s.source === 'place') {

@@ -22,7 +22,7 @@
   - 全国データがない配置では、従来どおり端末から Overpass API に直接問い合わせる（格子ごとに IndexedDB に3日保存）
 - **公開情報（自治体・施設・チェーン店）**：`public/data/places/*.json`（`index.json` で列挙）。情報源ごとのスクリプトで作り、`node scripts/build-places-index.mjs` で一覧を更新する
   - 自治体：`scripts/fetch-opendata.mjs` → `gov.json`。江東区・台東区（CC BY 4.0）。OSM の喫煙所と 25m 以内で重なるものは自治体データを優先
-  - 市区の公開ページ：`scripts/sources/municipal.mjs` → `cities.json`。東京16区（港・中央・千代田・渋谷・世田谷ほか）と9市（川崎・神戸・熊本ほか）の一覧ページから、名称・住所・利用時間だけを `scripts/data/municipal-spots.json` に記録し、住所を緯度経度に変換（2026-11 調査。約120市区を調べ、住所つきの一覧があったのはこの25市区と武蔵野・府中・三鷹・船橋）。休止・閉鎖中は除く。位置は住所の街区までなので、実際の場所と数十mずれることがある
+  - 市区の公開ページ：`scripts/sources/municipal.mjs` → `cities.json`。約300市区を調べ、喫煙所の案内があった140市区（大阪市516・港区116・横浜市96 ほか）の名称・住所・目印・利用時間だけを `scripts/data/municipal-spots.json` に記録。位置は ①ページや公開の Google マイマップにある座標 ②住所（国土地理院の住所検索）③目印の駅名など（OpenStreetMap の地名検索）の順で出し、②③で粗いものは詳細に「目安」と表示する。休止・閉鎖中は除く。市が案内する店内の喫煙所（利用者向け）は「喫煙可の店」に入れる。区域図の画像から読み取った市（大分・和歌山・四日市など）は位置が概略
   - 商業施設：`scripts/sources/mitsui.mjs` → `mitsui.json`。ららぽーと・三井アウトレットパーク等の「喫煙室」案内から階と場所
   - チェーン店：`scripts/sources/cunited.mjs`（ベローチェ・珈琲館・カフェ・ド・クリエ等）、`kaikatsu.mjs`（快活CLUB の加熱式たばこ専用エリア）、`hoshino.mjs`（星乃珈琲店）、`ueshima.mjs`（上島珈琲店）、`manekineko.mjs`（カラオケまねきねこの喫煙ブース。ブラウザで「もっとみる」を押して一覧を読む）
   - 取得は `scripts/lib/fetch.mjs` 経由：身元を名乗る User-Agent、1ホスト1秒以上の間隔、robots.txt の Disallow を守る。アクセスを拒否（403 等）されたサイトは回避せず使わない
@@ -35,7 +35,7 @@ API がない配置（静的ホスティングだけ）でも動き、その場�
 
 ## 取りこぼしの確認（駅）
 
-`node scripts/station-gaps.mjs` で、1日の乗降客数が2万人以上の駅のうち、300m以内に喫煙所のデータが1件もない駅を乗降客数の多い順に `scripts/data/station-gaps.json` へ書き出す。調査の優先順位と、どこまで拾えたかの物差しに使う（2026-11-19 時点：1,163駅中 327駅＝28% に喫煙所あり）。
+`node scripts/station-gaps.mjs` で、1日の乗降客数が2万人以上の駅のうち、300m以内に喫煙所のデータが1件もない駅を乗降客数の多い順に `scripts/data/station-gaps.json` へ書き出す。調査の優先順位と、どこまで拾えたかの物差しに使う（2026-11-19 時点：1,163駅中 536駅＝46%、10万人以上の224駅では 73% に喫煙所あり）。
 
 駅の位置と乗降客数（`scripts/data/stations.json`）は、国土交通省 国土数値情報「駅別乗降客数データ」（CC BY 4.0）を加工して作成。
 
