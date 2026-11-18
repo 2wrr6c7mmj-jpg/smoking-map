@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T23:26:15.188Z",
+ "updated": "2026-11-18T23:31:55.365Z",
  "sources": [
   {
    "id": "station-jrc",
@@ -90,6 +90,26 @@
    "publisher": "Osaka Metro",
    "page": "https://www.osakametro.co.jp/news/news/other/20241223_smoking_area.php",
    "count": 1
+  },
+  {
+   "id": "station-keyaki",
+   "type": "facility",
+   "group": "area",
+   "label": "施設の喫煙所",
+   "name": "けやきひろば 施設の喫煙所",
+   "publisher": "けやきひろば",
+   "page": "https://media.jreast.co.jp/articles/7",
+   "count": 1
+  },
+  {
+   "id": "station-haneda",
+   "type": "facility",
+   "group": "area",
+   "label": "空港の喫煙所",
+   "name": "日本空港ビルデング 空港の喫煙所",
+   "publisher": "日本空港ビルデング",
+   "page": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html",
+   "count": 15
   }
  ],
  "spots": [
@@ -1510,7 +1530,7 @@
    "station-jrh-3",
    {
     "name": "新千歳空港駅 喫煙室",
-    "note": "改札口付近コンコース\n利用不可の場合あり\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "note": "改札口付近コンコース\n利用不可の場合あり\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
     "io": "indoor",
     "url": "https://www.jrhokkaido.co.jp/network/station/station.html#9040"
    }
@@ -1898,7 +1918,7 @@
    "station-nishitetsu-3",
    {
     "name": "博多バスターミナル 8階喫煙所",
-    "note": "改札外・8階 飲食店フロア\nJR博多駅隣のビル\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "note": "改札外・8階 飲食店フロア\nJR博多駅隣のビル\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
     "io": "indoor",
     "gate": "out",
     "url": "https://www.h-bt.jp/floor/"
@@ -1915,6 +1935,182 @@
     "io": "indoor",
     "gate": "out",
     "url": "https://www.osakametro.co.jp/news/news/other/20241223_smoking_area.php"
+   }
+  ],
+  [
+   35.893225,
+   139.631176,
+   "station-keyaki-1",
+   {
+    "name": "けやきひろば2階 喫煙所",
+    "note": "2階\n西口徒歩約3分\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://media.jreast.co.jp/articles/7"
+   }
+  ],
+  [
+   35.549147,
+   139.784504,
+   "station-haneda-1",
+   {
+    "name": "羽田空港第1ターミナル 1F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・1F一般エリアに2か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.549014,
+   139.78465,
+   "station-haneda-2",
+   {
+    "name": "羽田空港第1ターミナル 2F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・2F一般エリアに2か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.549169,
+   139.7842,
+   "station-haneda-3",
+   {
+    "name": "羽田空港第1ターミナル 2F 喫煙スペース（制限エリア）",
+    "note": "保安検査後のエリア（搭乗者のみ）・2F制限エリアに3か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.549336,
+   139.784801,
+   "station-haneda-4",
+   {
+    "name": "羽田空港第1ターミナル 3F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・3F一般エリアに1か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.548792,
+   139.784429,
+   "station-haneda-5",
+   {
+    "name": "羽田空港第1ターミナル 4F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・4F一般エリアに1か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.549486,
+   139.784245,
+   "station-haneda-6",
+   {
+    "name": "羽田空港第1ターミナル 5F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・5F一般エリアに1か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.549032,
+   139.785015,
+   "station-haneda-7",
+   {
+    "name": "羽田空港第1ターミナル 6F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・6F一般エリアに1か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.550821,
+   139.788266,
+   "station-haneda-8",
+   {
+    "name": "羽田空港第2ターミナル B1F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・B1F一般エリアに1か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.550688,
+   139.788412,
+   "station-haneda-9",
+   {
+    "name": "羽田空港第2ターミナル 1F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・1F一般エリアに2か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.550843,
+   139.787962,
+   "station-haneda-10",
+   {
+    "name": "羽田空港第2ターミナル 2F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・2F一般エリアに1か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.55101,
+   139.788563,
+   "station-haneda-11",
+   {
+    "name": "羽田空港第2ターミナル 2F 喫煙スペース（制限エリア）",
+    "note": "保安検査後のエリア（搭乗者のみ）・2F制限エリアに3か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.550466,
+   139.788191,
+   "station-haneda-12",
+   {
+    "name": "羽田空港第2ターミナル 2F国際線 喫煙スペース（制限エリア）",
+    "note": "保安検査後のエリア（搭乗者のみ）・2F国際線制限エリアに1か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.55116,
+   139.788007,
+   "station-haneda-13",
+   {
+    "name": "羽田空港第2ターミナル 3F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・3F一般エリアに3か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.550706,
+   139.788777,
+   "station-haneda-14",
+   {
+    "name": "羽田空港第2ターミナル 4F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・4F一般エリアに2か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.550601,
+   139.787759,
+   "station-haneda-15",
+   {
+    "name": "羽田空港第2ターミナル 5F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・5F一般エリアに2か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
    }
   ]
  ]

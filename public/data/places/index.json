@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T23:27:30.344Z",
+ "updated": "2026-11-18T23:32:07.885Z",
  "files": [
   "cities.json",
   "cunited.json",
@@ -19,7 +19,7 @@
   "kaikatsu.json": 127,
   "manekineko.json": 265,
   "mitsui.json": 25,
-  "stations.json": 150,
+  "stations.json": 166,
   "ueshima.json": 33
  }
 }

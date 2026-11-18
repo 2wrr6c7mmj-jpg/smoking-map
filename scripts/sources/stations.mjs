@@ -9,6 +9,7 @@ const OPS = {
   近鉄: 'kintetsu', 名鉄: 'meitetsu', 南海: 'nankai', 京阪: 'keihan', 阪急: 'hankyu', 阪神: 'hanshin', 西鉄: 'nishitetsu',
   東武: 'tobu', 西武: 'seibu', 小田急: 'odakyu', 京王: 'keio', 東急: 'tokyu', 京急: 'keikyu', 京成: 'keisei', 相鉄: 'sotetsu',
   東京メトロ: 'metro', 都営地下鉄: 'toei', OsakaMetro: 'osakametro',
+  日本空港ビルデング: 'haneda', けやきひろば: 'keyaki',
 };
 const slugOf = (op) => OPS[op.replace(/\s/g, '')] || OPS[Object.keys(OPS).find((k) => op.includes(k))] || 'other';
 const rows = JSON.parse(readFileSync(new URL('../data/station-spots.json', import.meta.url), 'utf8'));
@@ -18,7 +19,7 @@ const spots = [];
 let skipped = 0;
 for (const r of rows) {
   // バスターミナルなど駅でない施設には「駅」を付けない
-  const facility = /(ターミナル|バスセンター|空港)$/.test(r.station.replace(/駅$/, ''));
+  const facility = r.facility === true || /(ターミナル|バスセンター|空港)$/.test(r.station.replace(/駅$/, ''));
   const station = facility ? r.station.replace(/駅$/, '') : r.station.endsWith('駅') ? r.station : `${r.station}駅`;
   // 駅名の表記ゆれ：「西鉄福岡（天神）駅」→「西鉄福岡駅」「天神駅」、「近鉄丹波橋駅」→「丹波橋駅」の順に試す
   const inner = station.match(/[（(](.+?)[）)]/)?.[1];
@@ -27,7 +28,7 @@ for (const r of rows) {
   for (const n of names) { p = await landmark(n, r.city || '', r.pref || ''); if (p) break; }
   if (!p) { console.warn(`位置不明: ${r.operator} ${station}（${r.city}）`); skipped++; continue; }
   const slug = slugOf(r.operator);
-  const src = sources.get(slug) || { id: `station-${slug}`, type: 'facility', group: 'area', label: '駅構内の喫煙所', name: `${r.operator} 駅の喫煙所`, publisher: r.operator, page: r.page, count: 0 };
+  const src = sources.get(slug) || { id: `station-${slug}`, type: 'facility', group: 'area', label: r.label || '駅構内の喫煙所', name: `${r.operator} ${r.label || '駅の喫煙所'}`, publisher: r.operator, page: r.page, count: 0 };
   src.count++;
   sources.set(slug, src);
   // 同じ駅に複数あるとき、印が重ならないよう駅の周りに約20m ずつずらして置く
@@ -35,11 +36,12 @@ for (const r of rows) {
   const k = perStation.get(key) || 0;
   perStation.set(key, k + 1);
   const ang = k * 2.4, rad = k ? 0.00018 * Math.sqrt(k) : 0;
-  const gate = r.inside_gate === true ? '改札内' : r.inside_gate === false ? '改札外' : '';
+  // 空港などは改札の代わりに gate_label（「保安検査後のエリア」など）を文章で示す
+  const gate = r.gate_label || (r.inside_gate === true ? '改札内' : r.inside_gate === false ? '改札外' : '');
   spots.push([+(p.lat + rad * Math.cos(ang)).toFixed(6), +(p.lng + rad * Math.sin(ang) * 1.2).toFixed(6), `station-${slug}-${src.count}`, Object.fromEntries(Object.entries({
     name: r.name || `${station} 喫煙所`,
-    note: [[gate, r.where].filter(Boolean).join('・'), r.memo, '※地図の位置は駅の目安。構内の場所は上の説明を見てください'].filter(Boolean).join('\n'),
-    hours: r.hours, heated: r.heated, io: 'indoor', gate: r.inside_gate === true ? 'in' : r.inside_gate === false ? 'out' : undefined, url: r.page,
+    note: [[gate, r.where].filter(Boolean).join('・'), r.memo, facility ? '※地図の位置は施設の目安。館内の場所は上の説明を見てください' : '※地図の位置は駅の目安。構内の場所は上の説明を見てください'].filter(Boolean).join('\n'),
+    hours: r.hours, heated: r.heated, io: 'indoor', gate: r.gate_label ? undefined : r.inside_gate === true ? 'in' : r.inside_gate === false ? 'out' : undefined, url: r.page,
   }).filter(([, v]) => v))]);
 }
 saveLandmarkCache();
