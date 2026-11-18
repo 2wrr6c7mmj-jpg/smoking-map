@@ -1,17 +1,19 @@
 {
- "updated": "2026-11-18T16:28:52.036Z",
+ "updated": "2026-11-18T21:59:57.907Z",
  "files": [
   "cunited.json",
   "gov.json",
   "hoshino.json",
   "kaikatsu.json",
-  "mitsui.json"
+  "mitsui.json",
+  "ueshima.json"
  ],
  "counts": {
   "cunited.json": 323,
   "gov.json": 33,
   "hoshino.json": 40,
   "kaikatsu.json": 127,
-  "mitsui.json": 25
+  "mitsui.json": 25,
+  "ueshima.json": 33
  }
 }

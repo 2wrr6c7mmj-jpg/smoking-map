@@ -77,6 +77,11 @@
         <h2>喫煙所を投稿</h2>
         <p>地図を動かして、中央のピンを喫煙所の位置に合わせてください。</p>
       </div>
+      <div class="here" id="here" hidden>
+        <button type="button" id="add-quick" class="btn btn-ember"><svg><use href="#i-locate"/></svg>現在地でそのまま投稿</button>
+        <button type="button" id="add-here" class="btn">ピンを現在地へ</button>
+        <p id="here-note" class="here-note"></p>
+      </div>
       <fieldset class="kinds">
         <legend class="label">種類</legend>
         <label class="kind"><input type="radio" name="kind" value="outdoor" checked><span><svg><use href="#i-cig"/></svg>屋外の<br>喫煙所</span></label>

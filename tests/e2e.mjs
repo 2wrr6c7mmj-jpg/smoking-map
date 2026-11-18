@@ -38,7 +38,7 @@ const browser = await chromium.launch();
 const errors = [];
 
 async function session(colorScheme) {
-  const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, geolocation: ME, permissions: ['geolocation'], locale: 'ja-JP', colorScheme });
+  const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, geolocation: { ...ME, accuracy: 15 }, permissions: ['geolocation'], locale: 'ja-JP', colorScheme });
   ctx.calls = 0;
   await ctx.route(/overpass/, (r) => { ctx.calls++; return r.fulfill({ json: overpass }); });
   await ctx.route(/\/data\/places\/index\.json/, (r) => r.fulfill({ json: { files: ['gov.json', 'mitsui.json'] } }));
@@ -128,13 +128,30 @@ await page.waitForFunction(() => /投稿しました/.test(document.querySelecto
 await page.waitForFunction(() => document.querySelector('#detail').textContent.includes('E2E 投稿の喫煙所'));
 assert.match(await page.textContent('#detail'), /みんなの投稿/);
 
+// 現在地でそのまま投稿（位置の誤差が小さいときだけ使える）
+await page.click('#detail-back');
+await page.click('#btn-add');
+await page.waitForSelector('#add-quick:not([disabled])');
+assert.match(await page.textContent('#here-note'), /誤差は約\d+m/);
+const before2 = await page.evaluate(() => window.__kemuri.state.user.size);
+await page.click('#add-quick');
+await page.waitForFunction((n) => window.__kemuri.state.user.size > n, before2, { timeout: 15000 })
+  .catch(async (e) => { throw new Error(`現在地投稿が終わらない: ${await page.textContent('#add-error')} / size ${await page.evaluate(() => window.__kemuri.state.user.size)} (前 ${before2})`); });
+const quick = await page.evaluate(() => { const s = [...window.__kemuri.state.user.values()].pop(); return [s.lat, s.lng]; });
+assert.ok(Math.abs(quick[0] - 35.6812) < 1e-4 && Math.abs(quick[1] - 139.7671) < 1e-4, '現在地の座標で登録される');
+
 // オフラインで再読み込みしても保存済みのデータで表示できる
 await page.waitForFunction(() => navigator.serviceWorker?.controller, null, { timeout: 15000 }).catch(() => page.reload());
 await page.waitForFunction(() => navigator.serviceWorker?.controller, null, { timeout: 15000 });
+await page.click('#detail-back');
+await page.click('#btn-locate');
+await page.waitForFunction(() => !document.querySelector('#hero').hidden, null, { timeout: 15000 });
+await page.waitForTimeout(600); // 地図の位置が保存されるのを待つ
 const before = ctx.calls;
 await ctx.setOffline(true);
 await page.reload();
-await page.waitForFunction(() => !document.querySelector('#hero').hidden, null, { timeout: 15000 });
+await page.waitForFunction(() => !document.querySelector('#hero').hidden, null, { timeout: 15000 })
+  .catch(async () => { throw new Error('オフラインで表示されない: ' + JSON.stringify(await page.evaluate(() => ({ hint: document.querySelector('#hint').textContent, zoom: window.__kemuri.map.getZoom(), osm: window.__kemuri.state.osm.size, places: window.__kemuri.state.places.length, mode: window.__kemuri.state.mode, c: window.__kemuri.map.getCenter() })))); });
 assert.equal(await page.isVisible('#net'), true, 'オフライン表示');
 assert.equal(ctx.calls, before, 'オフライン時は Overpass に問い合わせない');
 if (process.env.STATIC !== '0') assert.equal(ctx.calls, 0, '全国データがあれば Overpass を使わない');

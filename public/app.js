@@ -583,6 +583,7 @@ function locate(fly) {
         meCircle.setLatLng(ll).setRadius(state.me.acc);
       }
       $('btn-locate').classList.add('active');
+      if (state.mode === 'add') syncHere();
       if (fly) viewVisible(L.latLng(ll), Math.max(map.getZoom(), 16));
       render();
     },
@@ -623,14 +624,34 @@ $('btn-add').addEventListener('click', () => {
   const before = map.getCenter();
   setMode('add');
   $('add-error').hidden = true;
+  syncHere();
   syncSheetHeight();
   viewVisible(before, Math.max(map.getZoom(), 18), { animate: false });
 });
 $('add-cancel').addEventListener('click', () => { setMode('list'); render(); });
-$('add-form').addEventListener('submit', async (e) => {
+// 現在地からの投稿：位置の誤差が大きいとき（屋内・ビル街）は、ずれた場所に登録されるので使わせない
+const QUICK_MAX_ACC = 50;
+function syncHere() {
+  const ok = !!state.me;
+  $('here').hidden = !ok;
+  if (!ok) return;
+  const acc = Math.round(state.me.acc);
+  const precise = acc <= QUICK_MAX_ACC;
+  $('add-quick').disabled = !precise;
+  $('here-note').textContent = precise
+    ? `現在地の誤差は約${acc}m。「そのまま投稿」は種類とメモの入力内容を付けて、いまいる場所に登録します。`
+    : `現在地の誤差が約${acc}mと大きいため、そのまま投稿は使えません。ピンを動かして位置を合わせてください。`;
+}
+$('add-here').addEventListener('click', () => { if (state.me) viewVisible(L.latLng(state.me.lat, state.me.lng), Math.max(map.getZoom(), 18)); });
+$('add-quick').addEventListener('click', () => { if (state.me) submitSpot(state.me); });
+$('add-form').addEventListener('submit', (e) => {
   e.preventDefault();
-  const c = map.containerPointToLatLng(visibleCenter());
-  const fd = new FormData(e.target);
+  submitSpot(map.containerPointToLatLng(visibleCenter()));
+});
+
+async function submitSpot(c) {
+  const form = $('add-form');
+  const fd = new FormData(form);
   const err = $('add-error');
   err.hidden = true;
   try {
@@ -648,7 +669,7 @@ $('add-form').addEventListener('submit', async (e) => {
     const s = fromUser(j.spot);
     state.user.set(s.key, s);
     await store.dropCells('user', [cellOf(s.lat, s.lng)]);
-    e.target.reset();
+    form.reset();
     const hiddenByFilter = !filters()[s.group];
     toast(hiddenByFilter ? '投稿しました（今の絞り込みでは表示されない種類です）' : '投稿しました');
     openDetail(s.key);
@@ -656,7 +677,7 @@ $('add-form').addEventListener('submit', async (e) => {
     err.textContent = navigator.onLine ? ex.message : 'オフラインのため投稿できません。電波のある場所でもう一度送ってください';
     err.hidden = false;
   }
-});
+}
 
 // ---------- オフライン表示と Service Worker ----------
 function syncNet() { $('net').hidden = navigator.onLine; }
