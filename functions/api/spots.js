@@ -1,6 +1,8 @@
 import { json, parseBbox, inJapan, clientHash, cleanText } from '../_lib/util.js';
 
-const HIDE_AFTER_REPORTS = 3; // 閉鎖・誤り報告がこの件数に達した投稿は表示しない
+// 直近90日に、別々の3人（IP単位）から閉鎖・誤りの報告があった投稿は表示しない
+export const HIDE_AFTER_REPORTERS = 3;
+export const REPORT_WINDOW = '-90 days';
 const DAILY_POST_LIMIT = 10;
 
 // GET /api/spots?bbox=south,west,north,east
@@ -14,7 +16,8 @@ export async function onRequestGet({ request, env }) {
       `SELECT s.id, s.lat, s.lng, s.name, s.kind, s.heated_only, s.note, s.created_at
          FROM spots s
         WHERE s.hidden = 0 AND s.lat BETWEEN ?1 AND ?2 AND s.lng BETWEEN ?3 AND ?4
-          AND (SELECT COUNT(*) FROM reports r WHERE r.ref = 'user:' || s.id) < ${HIDE_AFTER_REPORTS}
+          AND (SELECT COUNT(DISTINCT r.client_hash) FROM reports r
+                WHERE r.ref = 'user:' || s.id AND r.created_at >= strftime('%Y-%m-%dT%H:%M:%SZ', 'now', '${REPORT_WINDOW}')) < ${HIDE_AFTER_REPORTERS}
         LIMIT 500`
     ).bind(...args),
     env.DB.prepare(

@@ -1,7 +1,10 @@
 import { json, inJapan, clientHash } from '../_lib/util.js';
 
+const DAILY_REPORT_LIMIT = 30;
+const NEAR_DEG = 0.002; // 投稿の地点と報告の座標のずれの許容（約200m）
+
 // POST /api/reports  {ref: 'osm:node/123' | 'user:45' | 'gov:taito-3', lat, lng, reason: 'closed' | 'wrong'}
-// 同じ端末（日ごとのハッシュ）から同じ地点への報告は1件として数える
+// 同じ人（IP の塩付きハッシュ）から同じ地点への報告は1件として数える（理由を変えたら上書き）
 export async function onRequestPost({ request, env }) {
   let body;
   try {
@@ -19,7 +22,20 @@ export async function onRequestPost({ request, env }) {
   if (!Number.isFinite(lat) || !Number.isFinite(lng) || !inJapan(lat, lng)) {
     return json({ error: '日本国内の地点を指定してください' }, 400);
   }
-  const hash = await clientHash(request, env.HASH_SECRET);
+  // 投稿への報告は、実在する投稿で、座標がその近くのものだけ受け付ける
+  if (ref.startsWith('user:')) {
+    const spot = await env.DB.prepare('SELECT lat, lng FROM spots WHERE id = ? AND hidden = 0').bind(Number(ref.slice(5))).first();
+    if (!spot) return json({ error: '報告する地点が見つかりません' }, 404);
+    if (Math.abs(spot.lat - lat) > NEAR_DEG || Math.abs(spot.lng - lng) > NEAR_DEG) {
+      return json({ error: '報告する地点の位置が合いません' }, 400);
+    }
+  }
+  // 日をまたいでも同じ人（IP）は1人と数える
+  const hash = await clientHash(request, env.HASH_SECRET, { daily: false });
+  const { n } = await env.DB.prepare(
+    "SELECT COUNT(*) AS n FROM reports WHERE client_hash = ? AND created_at >= strftime('%Y-%m-%dT%H:%M:%SZ', 'now', '-1 day')"
+  ).bind(hash).first();
+  if (n >= DAILY_REPORT_LIMIT) return json({ error: '今日の報告上限に達しました。明日また送ってください' }, 429);
   await env.DB.prepare(
     `INSERT INTO reports (ref, lat, lng, reason, client_hash) VALUES (?, ?, ?, ?, ?)
      ON CONFLICT (ref, client_hash) DO UPDATE SET reason = excluded.reason, created_at = strftime('%Y-%m-%dT%H:%M:%SZ', 'now')`

@@ -17,10 +17,11 @@ export function parseBbox(s) {
   return { south, west, north, east };
 }
 
-// IP をそのまま保存しないため、日付ごとの塩でハッシュ化する
-export async function clientHash(request, secret = '') {
+// IP をそのまま保存しないため、塩付きでハッシュ化する。
+// daily=true は日付も混ぜる（投稿の1日上限用）。報告は日をまたいでも同じ人を1人と数えるため daily=false
+export async function clientHash(request, secret = '', { daily = true } = {}) {
   const ip = request.headers.get('cf-connecting-ip') || 'local';
-  const day = new Date().toISOString().slice(0, 10);
+  const day = daily ? new Date().toISOString().slice(0, 10) : 'all';
   const data = new TextEncoder().encode(`${secret}|${day}|${ip}`);
   const buf = await crypto.subtle.digest('SHA-256', data);
   return [...new Uint8Array(buf)].slice(0, 16).map((b) => b.toString(16).padStart(2, '0')).join('');

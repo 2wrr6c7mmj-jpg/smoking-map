@@ -25,10 +25,6 @@ const gov = {
   sources: [{ id: 'taito', city: '台東区', license: 'CC BY 4.0', page: 'https://catalog.data.metro.tokyo.lg.jp/dataset/t131067d0000000110', count: 1 }],
   spots: [[35.67952, 139.76902, 'taito-1', { name: '区設置 公衆喫煙所テスト', hours: '24時間', address: '台東区テスト1-1' }]],
 };
-const hotpepper = {
-  shops: [{ id: 'J000001', name: '喫煙可の居酒屋テスト', lat: 35.6822, lng: 139.7660, smoking: '一部禁煙', genre: '居酒屋', address: '千代田区丸の内', open: '17:00〜', url: 'https://www.hotpepper.jp/strJ000001/' }],
-  credit: 'Powered by ホットペッパーグルメ Webサービス',
-};
 
 const browser = await chromium.launch();
 const errors = [];
@@ -38,7 +34,6 @@ async function session(colorScheme) {
   ctx.calls = 0;
   await ctx.route(/overpass/, (r) => { ctx.calls++; return r.fulfill({ json: overpass }); });
   await ctx.route(/\/data\/gov\.json/, (r) => r.fulfill({ json: gov }));
-  await ctx.route(/\/api\/shops/, (r) => r.fulfill({ json: hotpepper }));
   // 全国データは固定データから作る（STATIC=0 のときは全国データなしの動作を確かめる）
   await ctx.route(/\/data\/jp\//, (r) => {
     if (process.env.STATIC === '0') return r.fulfill({ status: 404, body: 'not found' });
@@ -72,12 +67,10 @@ if (process.env.REAL_TILES) await page.waitForTimeout(2500);
 await page.screenshot({ path: `${SHOTS}/list-dark.png` });
 
 await page.click('label:has(#f-shop)');
-await page.waitForFunction(() => document.querySelectorAll('#list li').length === 5);
-assert.ok((await listNames()).includes('喫茶テスト'), '喫煙可の店を表示できる');
-assert.ok((await listNames()).includes('喫煙可の居酒屋テスト'), 'ホットペッパーの店を表示できる');
-assert.match(await page.textContent('#status'), /Powered by ホットペッパーグルメ Webサービス/);
-await page.click('label:has(#f-heated)');
 await page.waitForFunction(() => document.querySelectorAll('#list li').length === 4);
+assert.ok((await listNames()).includes('喫茶テスト'), '喫煙可の店を表示できる');
+await page.click('label:has(#f-heated)');
+await page.waitForFunction(() => document.querySelectorAll('#list li').length === 3);
 assert.ok(!(await listNames()).includes('加熱式専用ブース'), '加熱式専用を隠せる');
 await page.click('label:has(#f-heated)');
 await page.click('label:has(#f-shop)');
