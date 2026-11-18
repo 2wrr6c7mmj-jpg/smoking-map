@@ -3,73 +3,99 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#1f2a2e">
-  <meta name="description" content="現在地の近くの喫煙所を地図と一覧で探せます。">
+  <meta name="theme-color" content="#12151a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#eef0f2" media="(prefers-color-scheme: light)">
+  <meta name="description" content="現在地からいちばん近い喫煙所を、距離と方角ですぐに探せます。">
   <title>けむりマップ</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="bar">
-    <div class="brand">
-      <img src="icon.svg" alt="" width="28" height="28">
-      <h1>けむりマップ</h1>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-cig" viewBox="0 0 24 24"><rect x="2" y="13" width="15" height="4.4" rx="1" fill="currentColor"/><rect x="17.8" y="13" width="3.2" height="4.4" rx="0.6" fill="currentColor" opacity="0.55"/><path d="M17.5 10.5c0-2 2.2-2 2.2-4s-2.2-2-2.2-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+      <symbol id="i-cup" viewBox="0 0 24 24"><path d="M4 9h12v5.5A4.5 4.5 0 0 1 11.5 19h-3A4.5 4.5 0 0 1 4 14.5z" fill="currentColor"/><path d="M16 10.5h1.6a2.4 2.4 0 0 1 0 4.8H16" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 6.5c0-1.4 1.4-1.4 1.4-2.8M12 6.5c0-1.4 1.4-1.4 1.4-2.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="i-heat" viewBox="0 0 24 24"><rect x="7" y="3" width="8" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.9"/><rect x="9.6" y="6" width="2.8" height="5" rx="1.2" fill="currentColor"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M12 2.5 19 20l-7-4-7 4z" fill="currentColor"/></symbol>
+      <symbol id="i-walk" viewBox="0 0 24 24"><circle cx="13.5" cy="4" r="2.2" fill="currentColor"/><path d="M10 21l2-6 2.5 2.5V21M8 12.5l2-4.5 3.5 1 2 3.5 2.5 1M12 8l-1.2 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-locate" viewBox="0 0 24 24"><path d="M21 3 3 10.5l7.5 3 3 7.5z" fill="currentColor"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </defs>
+  </svg>
+
+  <main id="map" aria-label="地図"></main>
+
+  <header class="top">
+    <div class="capsule">
+      <div class="brand"><img src="icon.svg" alt="" width="26" height="26"><span>けむりマップ</span></div>
       <span id="net" class="net" hidden>オフライン</span>
     </div>
     <div class="filters" role="group" aria-label="表示する種類">
-      <label class="chip"><input type="checkbox" id="f-area" checked><span>喫煙所</span></label>
-      <label class="chip"><input type="checkbox" id="f-shop"><span>喫煙可の店</span></label>
-      <label class="chip"><input type="checkbox" id="f-heated" checked><span>加熱式専用も表示</span></label>
+      <label class="chip"><input type="checkbox" id="f-area" checked><span><svg><use href="#i-cig"/></svg>喫煙所<b id="c-area">0</b></span></label>
+      <label class="chip chip-shop"><input type="checkbox" id="f-shop"><span><svg><use href="#i-cup"/></svg>喫煙可の店<b id="c-shop">0</b></span></label>
+      <label class="chip"><input type="checkbox" id="f-heated" checked><span><svg><use href="#i-heat"/></svg>加熱式専用</span></label>
     </div>
   </header>
 
-  <main id="map" aria-label="地図"></main>
-  <div id="crosshair" class="crosshair" hidden aria-hidden="true"></div>
+  <div id="crosshair" class="crosshair" hidden aria-hidden="true"><div class="crosshair-pin"><svg><use href="#i-cig"/></svg></div><div class="crosshair-shadow"></div></div>
 
   <div class="fabs">
-    <button id="btn-locate" class="fab" type="button" aria-label="現在地へ移動">
-      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="currentColor"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="7.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
-    </button>
-    <button id="btn-add" class="fab fab-accent" type="button" aria-label="喫煙所を投稿">
-      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
-    </button>
+    <button id="btn-locate" class="fab" type="button" aria-label="現在地へ移動"><svg><use href="#i-locate"/></svg></button>
+    <button id="btn-add" class="fab fab-ember" type="button" aria-label="喫煙所を投稿" aria-pressed="false"><svg><use href="#i-plus"/></svg></button>
   </div>
 
   <section id="sheet" class="sheet" aria-label="近くの喫煙所">
-    <button id="sheet-handle" class="handle" type="button" aria-expanded="true" aria-controls="sheet-body">
-      <span class="grip" aria-hidden="true"></span>
-      <span id="summary" class="summary">読み込み中…</span>
-    </button>
-    <div id="sheet-body" class="sheet-body">
-      <p id="hint" class="hint" hidden></p>
-      <ol id="list" class="list"></ol>
+    <div class="progress" id="progress" hidden></div>
 
-      <form id="add-form" class="add-form" hidden novalidate>
-        <h2>喫煙所を投稿</h2>
-        <p class="help">地図を動かして、中央の印を喫煙所の位置に合わせてください。</p>
-        <label class="field">名前（任意）
-          <input id="add-name" name="name" maxlength="60" placeholder="例：駅東口 喫煙ブース" autocomplete="off">
-        </label>
-        <fieldset class="field">
-          <legend>種類</legend>
-          <label class="radio"><input type="radio" name="kind" value="outdoor" checked> 屋外の喫煙所</label>
-          <label class="radio"><input type="radio" name="kind" value="indoor"> 屋内の喫煙室</label>
-          <label class="radio"><input type="radio" name="kind" value="shop"> 喫煙できる店</label>
-        </fieldset>
-        <label class="check"><input type="checkbox" id="add-heated" name="heated_only"> 加熱式たばこ専用</label>
-        <label class="field">メモ（任意）
-          <textarea id="add-note" name="note" maxlength="200" rows="2" placeholder="例：改札を出て右、屋根あり"></textarea>
-        </label>
-        <p id="add-error" class="error" role="alert" hidden></p>
-        <div class="row">
-          <button type="button" id="add-cancel" class="btn">やめる</button>
-          <button type="submit" class="btn btn-accent">この位置で投稿</button>
-        </div>
-      </form>
+    <!-- 一覧：いちばん近い喫煙所を大きく、ほかは下に -->
+    <div id="view-list" class="view">
+      <article id="hero" class="hero" hidden></article>
+      <p id="hint" class="hint" hidden></p>
+      <button id="more" class="more" type="button" aria-expanded="false" aria-controls="list" hidden>
+        <span id="more-label">ほかの候補</span><svg class="chev"><use href="#i-back"/></svg>
+      </button>
+      <ol id="list" class="list" hidden></ol>
+      <p id="status" class="status"></p>
     </div>
+
+    <!-- 地点の詳細 -->
+    <div id="view-detail" class="view" hidden>
+      <button id="detail-back" class="back" type="button"><svg><use href="#i-back"/></svg>一覧へ</button>
+      <article id="detail" class="detail"></article>
+    </div>
+
+    <!-- 投稿 -->
+    <form id="add-form" class="view add-form" hidden novalidate>
+      <div class="add-head">
+        <h2>喫煙所を投稿</h2>
+        <p>地図を動かして、中央のピンを喫煙所の位置に合わせてください。</p>
+      </div>
+      <fieldset class="kinds">
+        <legend class="label">種類</legend>
+        <label class="kind"><input type="radio" name="kind" value="outdoor" checked><span><svg><use href="#i-cig"/></svg>屋外の<br>喫煙所</span></label>
+        <label class="kind"><input type="radio" name="kind" value="indoor"><span><svg><use href="#i-cig"/></svg>屋内の<br>喫煙室</span></label>
+        <label class="kind kind-shop"><input type="radio" name="kind" value="shop"><span><svg><use href="#i-cup"/></svg>喫煙<br>できる店</span></label>
+      </fieldset>
+      <label class="field"><span class="label">名前（任意）</span>
+        <input id="add-name" name="name" maxlength="60" placeholder="例：駅東口 喫煙ブース" autocomplete="off">
+      </label>
+      <label class="field"><span class="label">メモ（任意）</span>
+        <textarea id="add-note" name="note" maxlength="200" rows="2" placeholder="例：改札を出て右、屋根あり"></textarea>
+      </label>
+      <label class="toggle"><input type="checkbox" id="add-heated" name="heated_only"><span class="switch" aria-hidden="true"></span>加熱式たばこ専用</label>
+      <p id="add-error" class="error" role="alert" hidden></p>
+      <div class="row">
+        <button type="button" id="add-cancel" class="btn">やめる</button>
+        <button type="submit" class="btn btn-ember">この位置で投稿</button>
+      </div>
+    </form>
   </section>
 
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>

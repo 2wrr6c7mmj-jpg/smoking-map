@@ -1,7 +1,8 @@
 // アプリ本体は端末に保存して電波がなくても起動できるようにし、地図タイルは見た分を一定数まで保存する
-const VERSION = 'v1';
+const VERSION = 'v2';
 const SHELL = `kemuri-shell-${VERSION}`;
 const TILES = 'kemuri-tiles';
+const FONTS = 'kemuri-fonts';
 const MAX_TILES = 800;
 const SHELL_FILES = ['./', 'index.html', 'style.css', 'app.js', 'cells.js', 'store.js', 'manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png', 'vendor/leaflet/leaflet.js', 'vendor/leaflet/leaflet.css'];
 
@@ -37,6 +38,20 @@ self.addEventListener('fetch', (e) => {
           await c.put(e.request, res.clone());
           trimTiles();
         }
+        return res;
+      })
+    );
+    return;
+  }
+
+  // Google Fonts は一度読んだら端末に保存して使い回す
+  if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') {
+    e.respondWith(
+      caches.open(FONTS).then(async (c) => {
+        const hit = await c.match(e.request);
+        if (hit) return hit;
+        const res = await fetch(e.request);
+        if (res.ok || res.type === 'opaque') await c.put(e.request, res.clone());
         return res;
       })
     );

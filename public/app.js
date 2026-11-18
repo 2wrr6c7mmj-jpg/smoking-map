@@ -12,14 +12,18 @@ const LIST_LIMIT = 30;
 const DEFAULT_VIEW = { lat: 35.6812, lng: 139.7671, zoom: 16 }; // 東京駅
 
 const $ = (id) => document.getElementById(id);
+const icon = (name) => `<svg aria-hidden="true"><use href="#i-${name}"/></svg>`;
 const state = {
   osm: new Map(),       // key -> spot
   user: new Map(),
   reports: new Map(),   // ref -> {closed:{n,last}, wrong:{n,last}}
   me: null,             // {lat,lng,acc}
   apiAvailable: true,
-  adding: false,
+  mode: 'list',         // list | detail | add
+  selected: null,       // 詳細を開いている地点の key
+  listOpen: false,
   loadedAt: null,
+  spots: [],            // 直近の描画で表示した地点（近い順）
 };
 
 // ---------- 地図 ----------
@@ -28,24 +32,23 @@ const map = L.map('map', { zoomControl: false, attributionControl: true }).setVi
   saved ? [saved.lat, saved.lng] : [DEFAULT_VIEW.lat, DEFAULT_VIEW.lng],
   saved ? saved.zoom : DEFAULT_VIEW.zoom
 );
+map.attributionControl.setPrefix(false);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
-  attribution: '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors',
+  attribution: '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>',
 }).addTo(map);
 const layer = L.layerGroup().addTo(map);
 let meMarker = null;
 let meCircle = null;
 
-const CIG = '<svg viewBox="0 0 12 12" aria-hidden="true"><rect x="1" y="6" width="8" height="2.4" rx="0.6" fill="#fff"/><rect x="9.6" y="6" width="1.4" height="2.4" fill="#fff"/><path d="M9 4.6c0-1 1-1 1-2s-1-1-1-2" stroke="#fff" stroke-width="0.9" fill="none" stroke-linecap="round"/></svg>';
-const SHOP = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 5h7v3.2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zM9 5.6h1a1.2 1.2 0 0 1 0 2.4H9" stroke="#fff" stroke-width="1.1" fill="none"/></svg>';
-
 // ---------- データの種類 ----------
 const SMOKING_OK = new Set(['yes', 'separated', 'isolated', 'dedicated', 'outside']);
 const SMOKING_LABEL = {
-  yes: '店内で喫煙可', separated: '分煙（喫煙席あり）', isolated: '喫煙室あり',
+  yes: '店内で喫煙可', separated: '分煙・喫煙席あり', isolated: '喫煙室あり',
   dedicated: '喫煙目的の店', outside: '屋外席で喫煙可',
 };
 const KIND_LABEL = { area: '喫煙所', outdoor: '屋外の喫煙所', indoor: '屋内の喫煙室', shop: '喫煙できる店' };
+const SHOP_TYPE = { cafe: 'カフェ・喫茶', restaurant: '飲食店', bar: 'バー', pub: '居酒屋・パブ', fast_food: 'ファストフード', karaoke_box: 'カラオケ', nightclub: 'クラブ' };
 
 function heatedOnlyFromTags(t) {
   return Object.entries(t).some(([k, v]) => /heated/.test(k) && v === 'only') || t.smoking === 'heated_tobacco';
@@ -64,7 +67,7 @@ function fromOverpass(el) {
     group: isArea ? 'area' : 'shop',
     kind: isArea ? 'area' : 'shop',
     lat, lng,
-    name: t.name || t['name:ja'] || (isArea ? '' : ''),
+    name: t.name || t['name:ja'] || '',
     heatedOnly: heatedOnlyFromTags(t),
     tags: t,
   };
@@ -84,41 +87,30 @@ function fromUser(s) {
   };
 }
 
-function details(s) {
+// 地点の特徴を短い札にする
+function tagsOf(s) {
   const out = [];
   const t = s.tags || {};
   if (s.source === 'osm') {
     if (s.kind === 'shop') {
       out.push(SMOKING_LABEL[t.smoking]);
-      const what = { cafe: 'カフェ・喫茶', restaurant: '飲食店', bar: 'バー', pub: '居酒屋・パブ', fast_food: 'ファストフード', karaoke_box: 'カラオケ' }[t.amenity];
-      if (what) out.push(what);
+      out.push(SHOP_TYPE[t.amenity]);
     }
     if (t.indoor === 'yes' || t.location === 'indoor' || t.smoking_area === 'room') out.push('屋内');
     else if (t.covered === 'yes' || t.shelter === 'yes') out.push('屋根あり');
-    if (t.opening_hours) out.push(`営業・利用時間 ${t.opening_hours}`);
+    else if (s.kind === 'area') out.push('屋外');
     if (t.fee === 'yes') out.push('有料');
-    if (t.operator) out.push(`管理 ${t.operator}`);
     if (t.level) out.push(`${t.level}階`);
-    if (t.description || t.note) out.push(t.description || t.note);
-  } else if (s.note) {
-    out.push(s.note);
+    if (t.opening_hours) out.push(t.opening_hours === '24/7' ? '24時間' : `時間 ${t.opening_hours}`);
+    if (t.operator) out.push(t.operator);
+  } else {
+    out.push(KIND_LABEL[s.kind]);
   }
-  if (s.heatedOnly) out.push('加熱式たばこ専用');
   return out.filter(Boolean);
 }
+const noteOf = (s) => (s.source === 'osm' ? s.tags.description || s.tags.note || '' : s.note || '');
 
-// ---------- 表示 ----------
-function filters() {
-  return { area: $('f-area').checked, shop: $('f-shop').checked, heated: $('f-heated').checked };
-}
-
-function visibleSpots() {
-  const f = filters();
-  const b = map.getBounds().pad(0.15);
-  const all = [...state.osm.values(), ...state.user.values()];
-  return all.filter((s) => f[s.group] && (f.heated || !s.heatedOnly) && b.contains([s.lat, s.lng]));
-}
-
+// ---------- 計算 ----------
 function distance(a, b) {
   const R = 6371e3;
   const rad = Math.PI / 180;
@@ -127,137 +119,238 @@ function distance(a, b) {
   const h = Math.sin(dLat / 2) ** 2 + Math.cos(a.lat * rad) * Math.cos(b.lat * rad) * Math.sin(dLng / 2) ** 2;
   return 2 * R * Math.asin(Math.sqrt(h));
 }
-const fmtDist = (m) => (m < 1000 ? `${Math.round(m / 10) * 10}m` : `${(m / 1000).toFixed(1)}km`);
+function bearing(a, b) {
+  const rad = Math.PI / 180;
+  const y = Math.sin((b.lng - a.lng) * rad) * Math.cos(b.lat * rad);
+  const x = Math.cos(a.lat * rad) * Math.sin(b.lat * rad) - Math.sin(a.lat * rad) * Math.cos(b.lat * rad) * Math.cos((b.lng - a.lng) * rad);
+  return (Math.atan2(y, x) / rad + 360) % 360;
+}
+const DIRS = ['北', '北東', '東', '南東', '南', '南西', '西', '北西'];
+const dirName = (deg) => DIRS[Math.round(deg / 45) % 8];
+// 距離を数字と単位に分ける（数字を大きく、単位を小さく見せるため）
+const distParts = (m) => (m < 1000 ? [String(Math.round(m / 10) * 10), 'm'] : [(m / 1000).toFixed(1), 'km']);
 const walkMin = (m) => Math.max(1, Math.round(m / 80)); // 不動産表示と同じ 80m/分
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+const routeUrl = (s) => `https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lng}&travelmode=walking`;
 
 function flagOf(s) {
   const r = state.reports.get(s.key);
-  if (!r) return null;
-  const closed = r.closed?.n || 0;
-  const wrong = r.wrong?.n || 0;
-  if (!closed && !wrong) return null;
-  return closed ? `閉鎖の報告 ${closed}件` : `情報違いの報告 ${wrong}件`;
+  const closed = r?.closed?.n || 0;
+  const wrong = r?.wrong?.n || 0;
+  if (closed) return `閉鎖の報告 ${closed}件`;
+  if (wrong) return `情報違いの報告 ${wrong}件`;
+  return null;
+}
+const displayName = (s) => s.name || (s.kind === 'area' ? `${dirName(s.b ?? 0)}の喫煙所` : KIND_LABEL[s.kind]);
+
+function filters() {
+  return { area: $('f-area').checked, shop: $('f-shop').checked, heated: $('f-heated').checked };
 }
 
-function displayName(s) {
-  return s.name || KIND_LABEL[s.kind];
+// ---------- 描画 ----------
+function picto(s, cls = 'picto') {
+  const c = [cls, s.group === 'shop' ? 'shop' : '', s.source === 'user' ? 'user' : '', flagOf(s) ? 'flagged' : ''].join(' ');
+  return `<span class="${c}">${icon(s.group === 'shop' ? 'cup' : 'cig')}</span>`;
 }
+const bearingBadge = (s) =>
+  `<span class="bearing" title="${dirName(s.b)}"><svg aria-hidden="true" style="transform:rotate(${Math.round(s.b)}deg)"><use href="#i-arrow"/></svg></span>`;
+const distHtml = (s) => { const [n, u] = distParts(s.d); return `${n}<small>${u}</small>`; };
 
 function render() {
-  layer.clearLayers();
-  const spots = visibleSpots();
+  const f = filters();
+  const b = map.getBounds().pad(0.1);
   const origin = state.me || map.getCenter();
-  for (const s of spots) s.d = distance(origin, s);
-  spots.sort((a, b) => a.d - b.d);
+  const inView = [...state.osm.values(), ...state.user.values()].filter((s) => b.contains([s.lat, s.lng]) && (f.heated || !s.heatedOnly));
+  $('c-area').textContent = inView.filter((s) => s.group === 'area').length;
+  $('c-shop').textContent = inView.filter((s) => s.group === 'shop').length;
 
+  const spots = inView.filter((s) => f[s.group]);
   for (const s of spots) {
-    const flag = flagOf(s);
-    const cls = ['pin', s.group === 'shop' ? 'shop' : '', s.source === 'user' ? 'user' : '', flag ? 'flagged' : ''].join(' ');
-    const icon = L.divIcon({ className: '', html: `<div class="${cls}">${s.group === 'shop' ? SHOP : CIG}</div>`, iconSize: [22, 22], iconAnchor: [11, 11], popupAnchor: [0, -10] });
-    const m = L.marker([s.lat, s.lng], { icon, title: displayName(s), keyboard: true });
-    m.bindPopup(() => popupHtml(s), { maxWidth: 280, autoPanPaddingTopLeft: [10, 120] });
-    m.on('popupopen', (e) => wirePopup(e.popup.getElement(), s));
-    s.marker = m;
+    s.d = distance(origin, s);
+    s.b = bearing(origin, s);
+  }
+  // 閉鎖の報告がある地点は後ろへ
+  spots.sort((a, c) => (!!flagOf(a) - !!flagOf(c)) || a.d - c.d);
+  state.spots = spots;
+  const nearest = spots[0];
+
+  layer.clearLayers();
+  for (const s of spots) {
+    const cls = ['pin', s.group === 'shop' ? 'shop' : '', s.source === 'user' ? 'user' : '', flagOf(s) ? 'flagged' : '', s === nearest ? 'nearest' : '', s.key === state.selected ? 'selected' : ''].join(' ');
+    const smoke = s === nearest ? '<span class="smoke"><i></i><i></i><i></i></span>' : '';
+    const m = L.marker([s.lat, s.lng], {
+      icon: L.divIcon({ className: '', html: `<div class="${cls}">${icon(s.group === 'shop' ? 'cup' : 'cig')}${smoke}</div>`, iconSize: [26, 26], iconAnchor: [13, 13] }),
+      title: displayName(s),
+      keyboard: true,
+      zIndexOffset: s === nearest || s.key === state.selected ? 500 : 0,
+    });
+    m.on('click', () => openDetail(s.key));
     layer.addLayer(m);
   }
 
-  const list = $('list');
-  list.replaceChildren();
-  for (const s of spots.slice(0, LIST_LIMIT)) {
-    const li = document.createElement('li');
-    const flag = flagOf(s);
-    const sub = [s.source === 'user' ? 'みんなの投稿' : s.name ? KIND_LABEL[s.kind] : '', ...details(s).slice(0, 1)].filter(Boolean);
-    li.innerHTML = `<button class="item" type="button">
-        <span class="dot ${s.group === 'shop' ? 'shop' : ''} ${s.source === 'user' ? 'user' : ''}"></span>
-        <span class="name">${esc(displayName(s))}<span class="sub">${esc(sub.join(' · '))}${flag ? ` · <span class="flag">${esc(flag)}</span>` : ''}</span></span>
-        <span class="dist">${fmtDist(s.d)}</span>
-      </button>`;
-    li.firstElementChild.addEventListener('click', () => {
-      map.setView([s.lat, s.lng], Math.max(map.getZoom(), 17));
-      s.marker.openPopup();
-      if (matchMedia('(max-width: 759px)').matches) setCollapsed(true);
-    });
-    list.append(li);
-  }
+  if (state.mode === 'list') renderList(spots);
+  if (state.mode === 'detail') renderDetail();
+  renderStatus();
+}
 
+function renderList(spots) {
   const zoomOk = map.getZoom() >= MIN_ZOOM;
-  const from = state.me ? '現在地から' : '地図の中心から';
-  $('summary').textContent = zoomOk
-    ? `${from}近い順 · この範囲に${spots.length}件${state.loadedAt ? ` · ${state.loadedAt}更新` : ''}`
-    : '地図を拡大すると喫煙所を表示します';
+  const hero = $('hero');
   const hint = $('hint');
-  if (zoomOk && spots.length === 0 && !loading) {
+  const nearest = spots[0];
+  const from = state.me ? '現在地から' : '地図の中心から';
+
+  if (!zoomOk) {
+    hero.hidden = true;
     hint.hidden = false;
+    hint.textContent = '地図を拡大すると、この辺りの喫煙所を表示します。';
+  } else if (!nearest) {
+    hero.hidden = true;
+    hint.hidden = loading;
     hint.textContent = filters().shop
-      ? 'この範囲には登録された喫煙所が見つかりません。地図を動かすか、＋から投稿できます。'
+      ? 'この範囲には登録された喫煙所が見つかりません。地図を動かすか、＋から投稿してください。'
       : 'この範囲には喫煙所が見つかりません。「喫煙可の店」も表示するか、地図を動かしてください。';
   } else {
     hint.hidden = true;
+    hero.hidden = false;
+    const flag = flagOf(nearest);
+    hero.innerHTML = `
+      <span class="label">${from}いちばん近い${nearest.group === 'shop' ? '場所' : '喫煙所'}</span>
+      <h2>${esc(displayName(nearest))}</h2>
+      <div class="metric">
+        <div class="big">${distHtml(nearest)}</div>
+        <div class="walk">${icon('walk')}<b>${walkMin(nearest.d)}</b>分 ${bearingBadge(nearest)}</div>
+      </div>
+      <div class="sub">${esc([dirName(nearest.b) + '方向', ...tagsOf(nearest).slice(0, 2)].join(' · '))}${flag ? ` · <span class="flag">${esc(flag)}</span>` : ''}</div>
+      <div class="acts">
+        <a class="btn btn-ember" href="${routeUrl(nearest)}" target="_blank" rel="noopener">${icon('walk')}徒歩ルートを開く</a>
+        <button class="btn" type="button" data-open="${esc(nearest.key)}">詳細</button>
+      </div>`;
+    hero.querySelector('[data-open]').addEventListener('click', () => openDetail(nearest.key));
+  }
+
+  const rest = zoomOk ? spots.slice(1, LIST_LIMIT) : [];
+  $('more').hidden = rest.length === 0;
+  $('more-label').textContent = `ほかの候補 ${rest.length}件`;
+  $('more').setAttribute('aria-expanded', String(state.listOpen));
+  const list = $('list');
+  list.hidden = !state.listOpen || rest.length === 0;
+  list.replaceChildren();
+  for (const s of rest) {
+    const li = document.createElement('li');
+    const flag = flagOf(s);
+    const sub = [s.source === 'user' ? 'みんなの投稿' : '', ...tagsOf(s).slice(0, 2)].filter(Boolean);
+    li.innerHTML = `<button class="item" type="button">
+        ${picto(s)}
+        <span class="name">${esc(displayName(s))}<span class="sub">${esc(sub.join(' · '))}${flag ? ` · <span class="flag">${esc(flag)}</span>` : ''}</span></span>
+        <span class="dist">${bearingBadge(s)}<span>${distHtml(s)}</span></span>
+      </button>`;
+    li.firstElementChild.addEventListener('click', () => openDetail(s.key));
+    list.append(li);
   }
 }
 
-function popupHtml(s) {
-  const ds = details(s);
-  const flag = flagOf(s);
-  const r = state.reports.get(s.key);
-  const lastReport = r && (r.closed?.last || r.wrong?.last);
-  const route = `https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lng}&travelmode=walking`;
-  const meta = [
-    s.source === 'user' ? `みんなの投稿${s.createdAt ? `（${s.createdAt.slice(0, 10)}）` : ''}` : 'OpenStreetMap',
-    s.d != null ? `${fmtDist(s.d)}・徒歩約${walkMin(s.d)}分` : '',
-  ].filter(Boolean).join(' · ');
-  const osmLink = s.source === 'osm' ? `<a href="https://www.openstreetmap.org/${s.key.slice(4)}" target="_blank" rel="noopener">OSMで見る</a>` : '';
-  return `<div class="pop">
-      <h3>${esc(displayName(s))}</h3>
-      <p class="meta">${esc(meta)}</p>
-      ${flag ? `<p class="warn">${esc(flag)}${lastReport ? `（最終 ${esc(lastReport.slice(0, 10))}）` : ''}</p>` : ''}
-      ${ds.length ? `<ul>${ds.map((d) => `<li>${esc(d)}</li>`).join('')}</ul>` : ''}
-      <div class="acts">
-        <a class="go" href="${route}" target="_blank" rel="noopener">徒歩ルート</a>
-        ${osmLink}
-        ${state.apiAvailable ? '<button type="button" data-report="closed">閉鎖を報告</button><button type="button" data-report="wrong">情報が違う</button>' : ''}
-      </div>
-    </div>`;
+function renderStatus() {
+  const parts = [];
+  if (state.loadedAt) parts.push(`${state.loadedAt} 更新`);
+  parts.push('データ © OpenStreetMap');
+  $('status').textContent = parts.join(' · ');
 }
 
-function wirePopup(el, s) {
-  el.querySelectorAll('[data-report]').forEach((b) =>
-    b.addEventListener('click', async () => {
-      b.disabled = true;
-      try {
-        const res = await fetch('api/reports', {
-          method: 'POST',
-          headers: { 'content-type': 'application/json' },
-          body: JSON.stringify({ ref: s.key, lat: s.lat, lng: s.lng, reason: b.dataset.report }),
-        });
-        if (!res.ok) throw new Error((await res.json().catch(() => ({}))).error || `送信できませんでした（${res.status}）`);
-        toast('報告を受け付けました。ありがとうございます');
-        // 自分の報告をすぐ反映するため、この地点の範囲の投稿データを取り直す
-        await store.dropCells('user', [cellOf(s.lat, s.lng)]);
-        map.closePopup();
-        refresh();
-      } catch (e) {
-        toast(navigator.onLine ? e.message : 'オフラインのため送信できません');
-        b.disabled = false;
-      }
-    })
-  );
+function findSpot(key) {
+  return state.osm.get(key) || state.user.get(key);
+}
+
+function openDetail(key) {
+  state.selected = key;
+  setMode('detail');
+  const s = findSpot(key);
+  if (s) map.panTo([s.lat, s.lng], { animate: true });
+  render();
+}
+
+function renderDetail() {
+  const s = findSpot(state.selected);
+  const el = $('detail');
+  if (!s) { setMode('list'); renderList(state.spots); return; }
+  const origin = state.me || map.getCenter();
+  s.d = distance(origin, s);
+  s.b = bearing(origin, s);
+  const flag = flagOf(s);
+  const r = state.reports.get(s.key);
+  const last = r && (r.closed?.last || r.wrong?.last);
+  const tags = tagsOf(s);
+  const note = noteOf(s);
+  const src = s.source === 'user'
+    ? `みんなの投稿${s.createdAt ? ` · ${s.createdAt.slice(0, 10)}` : ''}`
+    : 'OpenStreetMap';
+  el.innerHTML = `
+    <div class="detail-head">
+      ${picto(s)}
+      <div><h2>${esc(displayName(s))}</h2><div class="src">${esc(src)}</div></div>
+      <div class="metric" style="text-align:right"><div class="big" style="font-size:40px">${distHtml(s)}</div>
+        <div class="walk">${icon('walk')}<b>${walkMin(s.d)}</b>分 ${bearingBadge(s)}</div></div>
+    </div>
+    ${flag ? `<p class="flag" style="margin:0;font-size:13px;font-weight:700">${esc(flag)}${last ? `（最終 ${esc(last.slice(0, 10))}）` : ''}</p>` : ''}
+    <ul class="tags">${tags.map((t) => `<li>${esc(t)}</li>`).join('')}${s.heatedOnly ? '<li class="heat">加熱式たばこ専用</li>' : ''}</ul>
+    ${note ? `<p class="note">${esc(note)}</p>` : ''}
+    <div class="acts">
+      <a class="btn btn-ember" href="${routeUrl(s)}" target="_blank" rel="noopener">${icon('walk')}徒歩ルートを開く</a>
+    </div>
+    <div class="report">
+      ${state.apiAvailable ? 'この情報について<button type="button" data-report="closed">閉鎖を報告</button><button type="button" data-report="wrong">情報が違う</button>' : ''}
+      ${s.source === 'osm' ? `<a href="https://www.openstreetmap.org/${s.key.slice(4)}" target="_blank" rel="noopener">OSMで見る</a>` : ''}
+    </div>`;
+  el.querySelectorAll('[data-report]').forEach((b) => b.addEventListener('click', () => report(s, b)));
+}
+
+async function report(s, b) {
+  b.disabled = true;
+  try {
+    const res = await fetch('api/reports', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ ref: s.key, lat: s.lat, lng: s.lng, reason: b.dataset.report }),
+    });
+    if (!res.ok) throw new Error((await res.json().catch(() => ({}))).error || `送信できませんでした（${res.status}）`);
+    toast('報告を受け付けました。ありがとうございます');
+    // 自分の報告をすぐ反映するため、この地点の範囲の投稿データを取り直す
+    await store.dropCells('user', [cellOf(s.lat, s.lng)]);
+    refresh();
+  } catch (e) {
+    toast(navigator.onLine ? e.message : 'オフラインのため送信できません');
+    b.disabled = false;
+  }
 }
 
 let toastTimer;
 function toast(msg) {
   const t = $('toast');
+  t.hidden = true;
+  void t.offsetWidth; // アニメーションをやり直す
   t.textContent = msg;
   t.hidden = false;
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => (t.hidden = true), 3200);
 }
 
+// ---------- 画面の切り替え ----------
+function setMode(mode) {
+  state.mode = mode;
+  $('view-list').hidden = mode !== 'list';
+  $('view-detail').hidden = mode !== 'detail';
+  $('add-form').hidden = mode !== 'add';
+  $('crosshair').hidden = mode !== 'add';
+  $('btn-add').setAttribute('aria-pressed', String(mode === 'add'));
+  if (mode !== 'detail') state.selected = null;
+}
+$('detail-back').addEventListener('click', () => { setMode('list'); render(); });
+$('more').addEventListener('click', () => { state.listOpen = !state.listOpen; render(); });
+
 // ---------- 取得（地図の範囲を格子に分け、端末に保存する） ----------
 async function fetchOverpass(b) {
   const bbox = `${b.south},${b.west},${b.north},${b.east}`;
-  const q = `[out:json][timeout:25];(nwr["amenity"="smoking_area"](${bbox});nwr["smoking"~"^(yes|separated|isolated|dedicated|outside)$"]["amenity"!="smoking_area"](${bbox}););out center tags;`;
+  const q = `[out:json][timeout:25];(nwr["amenity"="smoking_area"](${bbox});nwr["smoking"~"^(yes|separated|isolated|dedicated|outside)$"]["amenity"]["amenity"!="smoking_area"](${bbox}););out center tags;`;
   let last;
   for (const url of OVERPASS) {
     try {
@@ -294,6 +387,7 @@ async function loadLayer(name, cells, ttl, fetcher) {
   const cached = await store.getCells(name, cells);
   const now = Date.now();
   const stale = cells.filter((c) => !cached[c] || now - cached[c].t > ttl);
+  const fresh = cells.filter((c) => !stale.includes(c));
   let items = cells.flatMap((c) => cached[c]?.items || []);
   let error = null;
   if (stale.length && navigator.onLine) {
@@ -302,7 +396,7 @@ async function loadLayer(name, cells, ttl, fetcher) {
       const byCell = Object.fromEntries(stale.map((c) => [c, []]));
       for (const it of fetched) byCell[cellOf(it.lat, it.lng)]?.push(it);
       await store.putCells(name, byCell, now);
-      items = [...cells.filter((c) => !stale.includes(c)).flatMap((c) => cached[c]?.items || []), ...Object.values(byCell).flat()];
+      items = [...fresh.flatMap((c) => cached[c]?.items || []), ...Object.values(byCell).flat()];
     } catch (e) {
       error = e;
     }
@@ -317,6 +411,7 @@ async function refresh() {
   if (map.getZoom() < MIN_ZOOM) return;
   if (loading) { pending = true; return; }
   loading = true;
+  $('progress').hidden = false;
   try {
     const cells = cellsFor(map.getBounds(), MAX_CELLS);
     const [osm, user] = await Promise.all([
@@ -338,6 +433,7 @@ async function refresh() {
     if (!osm.error) state.loadedAt = new Date().toLocaleTimeString('ja-JP', { hour: '2-digit', minute: '2-digit' });
   } finally {
     loading = false;
+    $('progress').hidden = true;
     render();
     if (pending) { pending = false; refresh(); }
   }
@@ -351,8 +447,8 @@ map.on('moveend', () => {
   moveTimer = setTimeout(refresh, 350);
 });
 for (const id of ['f-area', 'f-shop', 'f-heated']) {
-  const saved = store.getPref(id);
-  if (typeof saved === 'boolean') $(id).checked = saved;
+  const v = store.getPref(id);
+  if (typeof v === 'boolean') $(id).checked = v;
   $(id).addEventListener('change', () => { store.setPref(id, $(id).checked); render(); });
 }
 
@@ -364,12 +460,13 @@ function locate(fly) {
       state.me = { lat: p.coords.latitude, lng: p.coords.longitude, acc: p.coords.accuracy };
       const ll = [state.me.lat, state.me.lng];
       if (!meMarker) {
-        meMarker = L.marker(ll, { icon: L.divIcon({ className: '', html: '<div class="me"></div>', iconSize: [16, 16], iconAnchor: [8, 8] }), interactive: false, zIndexOffset: 1000 }).addTo(map);
-        meCircle = L.circle(ll, { radius: state.me.acc, weight: 0, fillOpacity: 0.08, interactive: false }).addTo(map);
+        meMarker = L.marker(ll, { icon: L.divIcon({ className: '', html: '<div class="me"></div>', iconSize: [18, 18], iconAnchor: [9, 9] }), interactive: false, zIndexOffset: 1000 }).addTo(map);
+        meCircle = L.circle(ll, { radius: state.me.acc, weight: 0, color: '#3b8cff', fillOpacity: 0.08, interactive: false }).addTo(map);
       } else {
         meMarker.setLatLng(ll);
         meCircle.setLatLng(ll).setRadius(state.me.acc);
       }
+      $('btn-locate').classList.add('active');
       if (fly) map.setView(ll, Math.max(map.getZoom(), 16));
       render();
     },
@@ -381,41 +478,38 @@ function locate(fly) {
 }
 $('btn-locate').addEventListener('click', () => locate(true));
 
-// ---------- 一覧の開閉 ----------
-function setCollapsed(c) {
-  $('sheet').classList.toggle('collapsed', c);
-  $('sheet-handle').setAttribute('aria-expanded', String(!c));
-  syncSheetHeight();
+// シートの高さに合わせて丸ボタンと出典表示を持ち上げる
+function visibleCenter() {
+  const r = $('sheet').getBoundingClientRect();
+  const top = document.querySelector('.top').getBoundingClientRect().bottom;
+  const wide = r.top > 0 && r.right < innerWidth * 0.6 && r.height < innerHeight * 0.95 && innerWidth >= 760;
+  return wide ? L.point((r.right + innerWidth) / 2, innerHeight / 2) : L.point(innerWidth / 2, (top + r.top) / 2 + 24);
 }
 function syncSheetHeight() {
-  document.documentElement.style.setProperty('--sheet-h', `${$('sheet').offsetHeight}px`);
+  const root = document.documentElement.style;
+  root.setProperty('--sheet-h', `${$('sheet').offsetHeight}px`);
+  const c = visibleCenter();
+  root.setProperty('--pin-x', `${c.x}px`);
+  root.setProperty('--pin-y', `${c.y}px`);
 }
-$('sheet-handle').addEventListener('click', () => setCollapsed(!$('sheet').classList.contains('collapsed')));
 new ResizeObserver(syncSheetHeight).observe($('sheet'));
 
 // ---------- 投稿 ----------
-function setAdding(on) {
-  state.adding = on;
-  $('add-form').hidden = !on;
-  $('list').hidden = on;
-  $('crosshair').hidden = !on;
-  $('sheet').classList.toggle('adding', on);
-  $('btn-add').setAttribute('aria-pressed', String(on));
+$('btn-add').addEventListener('click', () => {
+  if (state.mode === 'add') { setMode('list'); render(); return; }
+  // 今見ている中心がピンの位置に来るように地図をずらす
+  const before = map.getCenter();
+  setMode('add');
   $('add-error').hidden = true;
-  if (on) {
-    setCollapsed(false);
-    map.closePopup();
-    if (map.getZoom() < 17) map.setZoom(18);
-    $('summary').textContent = '投稿する位置を選んでいます';
-  } else {
-    render();
-  }
-}
-$('btn-add').addEventListener('click', () => setAdding(!state.adding));
-$('add-cancel').addEventListener('click', () => setAdding(false));
+  syncSheetHeight();
+  const zoom = Math.max(map.getZoom(), 18);
+  const shift = map.getSize().divideBy(2).subtract(visibleCenter());
+  map.setView(map.unproject(map.project(before, zoom).add(shift), zoom), zoom, { animate: false });
+});
+$('add-cancel').addEventListener('click', () => { setMode('list'); render(); });
 $('add-form').addEventListener('submit', async (e) => {
   e.preventDefault();
-  const c = map.getCenter();
+  const c = map.containerPointToLatLng(visibleCenter());
   const fd = new FormData(e.target);
   const err = $('add-error');
   err.hidden = true;
@@ -435,11 +529,9 @@ $('add-form').addEventListener('submit', async (e) => {
     state.user.set(s.key, s);
     await store.dropCells('user', [cellOf(s.lat, s.lng)]);
     e.target.reset();
-    setAdding(false);
-    toast('投稿しました');
-    if ((s.group === 'shop' && !$('f-shop').checked) || (s.group === 'area' && !$('f-area').checked)) {
-      toast('投稿しました（今の絞り込みでは表示されない種類です）');
-    }
+    const hiddenByFilter = !filters()[s.group];
+    toast(hiddenByFilter ? '投稿しました（今の絞り込みでは表示されない種類です）' : '投稿しました');
+    openDetail(s.key);
   } catch (ex) {
     err.textContent = navigator.onLine ? ex.message : 'オフラインのため投稿できません。電波のある場所でもう一度送ってください';
     err.hidden = false;
@@ -456,10 +548,10 @@ if ('serviceWorker' in navigator && location.protocol !== 'file:') {
 }
 
 // 起動
+setMode('list');
 syncSheetHeight();
 refresh();
-if (!saved) locate(true);
-else locate(false);
+locate(!saved);
 
 // テストから状態を確認できるようにする
 window.__kemuri = { state, map, refresh, CELL };
