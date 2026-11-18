@@ -25,15 +25,15 @@ BASE = 'https://download.openstreetmap.fr/extracts/asia/japan/'
 REGIONS = ['hokkaido', 'tohoku', 'kanto', 'chubu', 'kansai', 'chugoku', 'shikoku', 'kyushu']
 OUT = Path(__file__).resolve().parent.parent / 'public' / 'data' / 'jp'
 SMOKING_OK = {'yes', 'separated', 'isolated', 'dedicated', 'outside'}
-KEEP = {'name', 'name:ja', 'smoking', 'amenity', 'covered', 'shelter', 'indoor', 'location', 'smoking_area',
+KEEP = {'name', 'name:ja', 'smoking', 'amenity', 'shop', 'tourism', 'leisure', 'waste', 'covered', 'shelter', 'indoor', 'location', 'smoking_area',
         'opening_hours', 'fee', 'operator', 'level', 'description', 'note'}
 
 
 def wanted(tags):
-    amenity = tags.get('amenity')
-    if amenity == 'smoking_area':
+    """喫煙所・吸い殻入れ、または喫煙できる場所（店・ホテル・遊技場など。種類のタグは問わない）"""
+    if tags.get('amenity') == 'smoking_area' or 'cigarettes' in tags.get('waste', ''):
         return True
-    return bool(amenity) and tags.get('smoking') in SMOKING_OK
+    return any(v.strip() in SMOKING_OK for v in tags.get('smoking', '').split(';'))
 
 
 def compact(kind, oid, lat, lng, tags):
@@ -46,7 +46,7 @@ def extract(path):
     found = []
     fp = (osmium.FileProcessor(str(path), osmium.osm.NODE | osmium.osm.WAY)
           .with_locations()
-          .with_filter(osmium.filter.KeyFilter('amenity')))
+          .with_filter(osmium.filter.KeyFilter('amenity', 'smoking', 'waste')))
     for o in fp:
         if not wanted(o.tags):
             continue

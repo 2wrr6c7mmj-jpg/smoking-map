@@ -15,7 +15,7 @@ const RANGES = [
 ];
 
 const SMOKING_OK = 'yes|separated|isolated|dedicated|outside';
-const KEEP = ['name', 'name:ja', 'smoking', 'amenity', 'covered', 'shelter', 'indoor', 'location', 'smoking_area', 'opening_hours', 'fee', 'operator', 'level', 'description', 'note'];
+const KEEP = ['name', 'name:ja', 'smoking', 'amenity', 'shop', 'tourism', 'leisure', 'waste', 'covered', 'shelter', 'indoor', 'location', 'smoking_area', 'opening_hours', 'fee', 'operator', 'level', 'description', 'note'];
 
 // 問い合わせ範囲に入る近隣国（韓国・北朝鮮・ロシア）を座標で除く。日本の島はこの線の内側に入らない
 function inJapan(lat, lng) {
@@ -33,7 +33,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 async function query(b) {
   const bbox = `${b.s},${b.w},${b.n},${b.e}`;
   // 国境での絞り込み（area）は重く時間切れになりやすいので、範囲だけで問い合わせて inJapan() で除く
-  const q = `[out:json][timeout:170];(nwr["amenity"="smoking_area"](${bbox});nwr["smoking"~"^(${SMOKING_OK})$"]["amenity"]["amenity"!="smoking_area"](${bbox}););out center tags;`;
+  const q = `[out:json][timeout:170];(nwr["amenity"="smoking_area"](${bbox});nwr["waste"~"cigarettes"](${bbox});nwr["smoking"~"(^|;)(${SMOKING_OK})(;|$)"]["amenity"!="smoking_area"](${bbox}););out center tags;`;
   for (let attempt = 0; attempt < 6; attempt++) {
     const url = ENDPOINTS[attempt % ENDPOINTS.length];
     try {

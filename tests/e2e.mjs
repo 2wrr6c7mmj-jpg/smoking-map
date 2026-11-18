@@ -16,6 +16,7 @@ const overpass = {
     { type: 'node', id: 104, lat: 35.6790, lon: 139.7640, tags: { amenity: 'smoking_area', name: '八重洲地下 喫煙室', indoor: 'yes', operator: '八重洲地下街' } },
     { type: 'node', id: 201, lat: 35.6808, lon: 139.7680, tags: { amenity: 'cafe', smoking: 'isolated', name: '喫茶テスト' } },
     { type: 'node', id: 202, lat: 35.6809, lon: 139.7681, tags: { amenity: 'cafe', smoking: 'no', name: '禁煙カフェ' } },
+    { type: 'node', id: 203, lat: 35.6825, lon: 139.7690, tags: { shop: 'convenience', smoking: 'outside', name: 'コンビニテスト' } },
   ],
 };
 
@@ -56,7 +57,7 @@ await page.waitForFunction(() => !document.querySelector('#hero').hidden && docu
 assert.equal(await heroName(), '丸の内北口 喫煙所', '現在地から最も近い喫煙所が大きく出る');
 assert.match(await page.textContent('#hero'), /いちばん近い/);
 assert.equal(await count('#c-area'), 4, 'OSM と自治体の重複は1つに数える');
-assert.equal(await count('#c-shop'), 1, '禁煙の店は数えない');
+assert.equal(await count('#c-shop'), 2, '禁煙の店は数えない');
 await page.click('#more');
 let names = await listNames();
 assert.equal(names.length, 3, '初期表示は喫煙所のみ');
@@ -67,10 +68,11 @@ if (process.env.REAL_TILES) await page.waitForTimeout(2500);
 await page.screenshot({ path: `${SHOTS}/list-dark.png` });
 
 await page.click('label:has(#f-shop)');
-await page.waitForFunction(() => document.querySelectorAll('#list li').length === 4);
+await page.waitForFunction(() => document.querySelectorAll('#list li').length === 5);
 assert.ok((await listNames()).includes('喫茶テスト'), '喫煙可の店を表示できる');
+assert.match(await page.textContent('#list'), /店の外で喫煙可（灰皿） · コンビニ/, 'コンビニの店外灰皿');
 await page.click('label:has(#f-heated)');
-await page.waitForFunction(() => document.querySelectorAll('#list li').length === 3);
+await page.waitForFunction(() => document.querySelectorAll('#list li').length === 4);
 assert.ok(!(await listNames()).includes('加熱式専用ブース'), '加熱式専用を隠せる');
 await page.click('label:has(#f-heated)');
 await page.click('label:has(#f-shop)');

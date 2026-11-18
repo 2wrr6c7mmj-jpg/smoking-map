@@ -51,6 +51,8 @@ const SMOKING_LABEL = {
 };
 const KIND_LABEL = { area: '喫煙所', outdoor: '屋外の喫煙所', indoor: '屋内の喫煙室', shop: '喫煙できる店' };
 const SHOP_TYPE = { cafe: 'カフェ・喫茶', restaurant: '飲食店', bar: 'バー', pub: '居酒屋・パブ', fast_food: 'ファストフード', karaoke_box: 'カラオケ', nightclub: 'クラブ' };
+const OTHER_TYPE = { convenience: 'コンビニ', hotel: 'ホテル', adult_gaming_centre: 'パチンコ・遊技場', fuel: 'ガソリンスタンド' };
+const placeType = (t) => SHOP_TYPE[t.amenity] || OTHER_TYPE[t.shop] || OTHER_TYPE[t.tourism] || OTHER_TYPE[t.leisure] || OTHER_TYPE[t.amenity];
 
 function heatedOnlyFromTags(t) {
   return Object.entries(t).some(([k, v]) => /heated/.test(k) && v === 'only') || t.smoking === 'heated_tobacco';
@@ -61,15 +63,17 @@ function fromOverpass(el) {
   const lng = el.lon ?? el.center?.lon;
   if (lat == null || lng == null) return null;
   const t = el.tags || {};
-  const isArea = t.amenity === 'smoking_area';
-  if (!isArea && !SMOKING_OK.has(t.smoking)) return null;
+  // 喫煙所と吸い殻入れは「喫煙所」、それ以外の喫煙できる場所（店・ホテルなど）は「喫煙可の店」
+  const isArea = t.amenity === 'smoking_area' || /cigarettes/.test(t.waste || '');
+  const smoking = (t.smoking || '').split(';').map((v) => v.trim()).find((v) => SMOKING_OK.has(v));
+  if (!isArea && !smoking) return null;
   return {
     key: `osm:${el.type}/${el.id}`,
     source: 'osm',
     group: isArea ? 'area' : 'shop',
     kind: isArea ? 'area' : 'shop',
     lat, lng,
-    name: t.name || t['name:ja'] || '',
+    name: t.name || t['name:ja'] || (/cigarettes/.test(t.waste || '') ? '吸い殻入れ' : ''),
     heatedOnly: heatedOnlyFromTags(t),
     tags: t,
   };
@@ -118,8 +122,9 @@ function tagsOf(s) {
   const t = s.tags || {};
   if (s.source === 'osm') {
     if (s.kind === 'shop') {
-      out.push(SMOKING_LABEL[t.smoking]);
-      out.push(SHOP_TYPE[t.amenity]);
+      const sm = (t.smoking || '').split(';').map((v) => v.trim()).find((v) => SMOKING_LABEL[v]);
+      out.push(t.shop === 'convenience' && sm === 'outside' ? '店の外で喫煙可（灰皿）' : SMOKING_LABEL[sm]);
+      out.push(placeType(t));
     }
     if (t.indoor === 'yes' || t.location === 'indoor' || t.smoking_area === 'room') out.push('屋内');
     else if (t.covered === 'yes' || t.shelter === 'yes') out.push('屋根あり');
