@@ -5,4 +5,4 @@ compatibility_date = "2026-10-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "kemuri-map"
-database_id = "00000000-0000-0000-0000-000000000000" # 本番作成後に置き換える
+database_id = "05b414c2-1755-430d-93cb-482cfb1b2c7c"
