@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T23:42:22.192Z",
+ "updated": "2026-11-19T00:41:20.899Z",
  "sources": [
   {
    "id": "city-xbs",
@@ -1409,6 +1409,136 @@
    "publisher": "佐賀市",
    "license": "市の公開ページ",
    "page": "https://www.city.saga.lg.jp/kenko-fukushi/kenkozukuri/6/368.html",
+   "count": 1
+  },
+  {
+   "id": "city-xdj",
+   "type": "gov",
+   "group": "area",
+   "city": "蓮田市",
+   "publisher": "蓮田市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.hasuda.saitama.jp/kanzai/tokuteiokugaikitsuenjyo.html",
+   "count": 1
+  },
+  {
+   "id": "city-xdk",
+   "type": "gov",
+   "group": "area",
+   "city": "河内長野市",
+   "publisher": "河内長野市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.kawachinagano.lg.jp/uploaded/attachment/25157.pdf",
+   "count": 3
+  },
+  {
+   "id": "city-xdl",
+   "type": "gov",
+   "group": "area",
+   "city": "長岡京市",
+   "publisher": "長岡京市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.nagaokakyo.lg.jp/0000015668.html",
+   "count": 1
+  },
+  {
+   "id": "city-xdm",
+   "type": "gov",
+   "group": "area",
+   "city": "守山市",
+   "publisher": "守山市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.moriyama.lg.jp/machikankyobousai/kankyo/1001807/1001825.html",
+   "count": 1
+  },
+  {
+   "id": "city-xdn",
+   "type": "gov",
+   "group": "area",
+   "city": "桑名市",
+   "publisher": "桑名市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.kuwana.lg.jp/images/1013/rojyokitsuenkinshi.jpg",
+   "count": 2
+  },
+  {
+   "id": "city-xdo",
+   "type": "gov",
+   "group": "area",
+   "city": "名取市",
+   "publisher": "名取市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.natori.miyagi.jp/page/27129.html",
+   "count": 1
+  },
+  {
+   "id": "city-xdp",
+   "type": "gov",
+   "group": "area",
+   "city": "野洲市",
+   "publisher": "野洲市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.yasu.lg.jp/soshiki/kouhouhisho/goiken/reiwa6/7077.html",
+   "count": 1
+  },
+  {
+   "id": "city-xdq",
+   "type": "gov",
+   "group": "area",
+   "city": "泉大津市",
+   "publisher": "泉大津市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.izumiotsu.lg.jp/kakuka/shiminseikatu/kankyouka/ibento/14519.html",
+   "count": 1
+  },
+  {
+   "id": "city-xdr",
+   "type": "gov",
+   "group": "area",
+   "city": "江南市",
+   "publisher": "江南市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.konan.lg.jp/shisei/jourei/1011903.html",
+   "count": 2
+  },
+  {
+   "id": "city-xds",
+   "type": "gov",
+   "group": "area",
+   "city": "高石市",
+   "publisher": "高石市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html",
+   "count": 10
+  },
+  {
+   "id": "city-xdt",
+   "type": "gov",
+   "group": "area",
+   "city": "岩倉市",
+   "publisher": "岩倉市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.iwakura.aichi.jp/0000005196.html",
+   "count": 2
+  },
+  {
+   "id": "city-xdu",
+   "type": "gov",
+   "group": "area",
+   "city": "東海市",
+   "publisher": "東海市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.tokai.aichi.jp/_res/projects/default_project/_page_/001/003/571/actionplan.pdf",
+   "count": 1
+  },
+  {
+   "id": "city-xdv",
+   "type": "gov",
+   "group": "area",
+   "city": "宮古市",
+   "publisher": "宮古市",
+   "license": "市の公開ページ",
+   "page": "https://www.city.miyako.iwate.jp/gyosei/kurashi_tetsuzuki/doro_kotsuu/3/6397.html",
    "count": 1
   }
  ],
@@ -20395,6 +20525,305 @@
     "io": "outdoor",
     "note": "駅前広場パネル囲い\n※地図の位置は「東浦和駅」の目安",
     "url": "https://www.city.saitama.lg.jp/001/009/014/p045300.html"
+   }
+  ],
+  [
+   35.992477,
+   139.662354,
+   "city-xdj-1",
+   {
+    "name": "蓮田市役所 特定屋外喫煙場所",
+    "address": "埼玉県蓮田市大字黒浜2799-1",
+    "io": "outdoor",
+    "note": "庁舎敷地内の区画",
+    "url": "https://www.city.hasuda.saitama.jp/kanzai/tokuteiokugaikitsuenjyo.html"
+   }
+  ],
+  [
+   34.4511,
+   135.57315,
+   "city-xdk-1",
+   {
+    "name": "河内長野駅 指定喫煙所",
+    "io": "outdoor",
+    "note": "西側広場の歩道橋下\n※地図の位置は「河内長野駅」の目安",
+    "url": "https://www.city.kawachinagano.lg.jp/uploaded/attachment/25157.pdf"
+   }
+  ],
+  [
+   34.469,
+   135.56633,
+   "city-xdk-2",
+   {
+    "name": "千代田駅 指定喫煙所",
+    "io": "outdoor",
+    "note": "西側駅前広場の南寄り\n※地図の位置は「千代田駅」の目安",
+    "url": "https://www.city.kawachinagano.lg.jp/uploaded/attachment/25159.pdf"
+   }
+  ],
+  [
+   34.43666,
+   135.57134,
+   "city-xdk-3",
+   {
+    "name": "三日市町駅 指定喫煙所",
+    "io": "outdoor",
+    "note": "西側駅前広場の北端\n※地図の位置は「三日市町駅」の目安",
+    "url": "https://www.city.kawachinagano.lg.jp/uploaded/attachment/25160.pdf"
+   }
+  ],
+  [
+   34.9235,
+   135.7009,
+   "city-xdl-1",
+   {
+    "name": "JR長岡京駅東口賑わい広場 喫煙ボックス",
+    "hours": "24時間",
+    "io": "indoor",
+    "note": "東口交番の隣\n※地図の位置は「長岡京駅」の目安",
+    "url": "https://www.city.nagaokakyo.lg.jp/0000015668.html"
+   }
+  ],
+  [
+   35.05094,
+   135.99646,
+   "city-xdm-1",
+   {
+    "name": "守山駅東口 指定喫煙場所",
+    "io": "outdoor",
+    "note": "東出口そば\n※地図の位置は「守山駅」の目安",
+    "url": "https://www.city.moriyama.lg.jp/machikankyobousai/kankyo/1001807/1001825.html"
+   }
+  ],
+  [
+   35.06687,
+   136.6835,
+   "city-xdn-1",
+   {
+    "name": "桑名駅東口 喫煙所",
+    "io": "outdoor",
+    "note": "駅北駐輪場の脇\n※地図の位置は「桑名駅」の目安",
+    "url": "https://www.city.kuwana.lg.jp/images/1013/rojyokitsuenkinshi.jpg"
+   }
+  ],
+  [
+   35.06687,
+   136.6835,
+   "city-xdn-2",
+   {
+    "name": "桑名駅西口 喫煙所",
+    "io": "outdoor",
+    "note": "駅西広場の南側\n※地図の位置は「桑名駅」の目安",
+    "url": "https://www.city.kuwana.lg.jp/images/1013/rojyokitsuenkinshi.jpg"
+   }
+  ],
+  [
+   38.1731,
+   140.88275,
+   "city-xdo-1",
+   {
+    "name": "名取駅西口駅前広場分煙施設",
+    "hours": "24時間",
+    "io": "indoor",
+    "note": "西口広場の北側\n※地図の位置は「名取駅」の目安",
+    "url": "https://www.city.natori.miyagi.jp/page/27129.html"
+   }
+  ],
+  [
+   35.06844,
+   136.02239,
+   "city-xdp-1",
+   {
+    "name": "野洲駅北口 喫煙所",
+    "io": "outdoor",
+    "note": "北口区域外の市有地\n※地図の位置は「野洲駅」の目安",
+    "url": "https://www.city.yasu.lg.jp/soshiki/kouhouhisho/goiken/reiwa6/7077.html"
+   }
+  ],
+  [
+   34.501904,
+   135.406371,
+   "city-xdq-1",
+   {
+    "name": "アルザ泉大津 屋内喫煙ブース",
+    "hours": "施設の開館時間内",
+    "io": "indoor",
+    "note": "1階入口付近\n※地図の位置は「アルザ泉大津」の目安",
+    "url": "https://www.city.izumiotsu.lg.jp/kakuka/shiminseikatu/kankyouka/ibento/14519.html"
+   }
+  ],
+  [
+   35.334955,
+   136.871949,
+   "city-xdr-1",
+   {
+    "name": "江南駅 指定喫煙所",
+    "io": "outdoor",
+    "note": "駅前広場南西・交番横\n※地図の位置は「江南駅前交番」の目安",
+    "url": "https://www.city.konan.lg.jp/shisei/jourei/1011903.html"
+   }
+  ],
+  [
+   35.31706,
+   136.87293,
+   "city-xdr-2",
+   {
+    "name": "布袋駅 指定喫煙場所",
+    "io": "outdoor",
+    "note": "東口広場の北側\n※地図の位置は「布袋駅」の目安",
+    "url": "https://www.city.konan.lg.jp/shisei/jourei/1011903.html"
+   }
+  ],
+  [
+   34.52148,
+   135.43282,
+   "city-xds-1",
+   {
+    "name": "高石駅西側 屋外喫煙場所",
+    "io": "outdoor",
+    "note": "駅舎西側\n※地図の位置は「高石駅」の目安",
+    "url": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html"
+   }
+  ],
+  [
+   34.52148,
+   135.43282,
+   "city-xds-2",
+   {
+    "name": "高石駅南東 屋外喫煙場所",
+    "io": "outdoor",
+    "note": "東側南の駐輪場付近\n※地図の位置は「高石駅」の目安",
+    "url": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html"
+   }
+  ],
+  [
+   34.52148,
+   135.43282,
+   "city-xds-3",
+   {
+    "name": "高石駅北西 市指定屋外喫煙場所",
+    "io": "outdoor",
+    "note": "線路西側・駅の北\n※地図の位置は「高石駅」の目安",
+    "url": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html"
+   }
+  ],
+  [
+   34.52124,
+   135.434071,
+   "city-xds-4",
+   {
+    "name": "高石駅北東 市指定屋外喫煙場所",
+    "io": "outdoor",
+    "note": "アプラ北側の道路沿い\n※地図の位置は「アプラたかいし」の目安",
+    "url": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html"
+   }
+  ],
+  [
+   34.535,
+   135.4428,
+   "city-xds-5",
+   {
+    "name": "東羽衣駅北側 屋外喫煙場所",
+    "io": "outdoor",
+    "note": "駅舎の北側\n※地図の位置は「東羽衣駅」の目安",
+    "url": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html"
+   }
+  ],
+  [
+   34.53431,
+   135.44172,
+   "city-xds-6",
+   {
+    "name": "羽衣駅南東 屋外喫煙場所",
+    "io": "outdoor",
+    "note": "駅の南東・区域南端\n※地図の位置は「羽衣駅」の目安",
+    "url": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html"
+   }
+  ],
+  [
+   34.53431,
+   135.44172,
+   "city-xds-7",
+   {
+    "name": "羽衣駅北西 市指定屋外喫煙場所",
+    "io": "outdoor",
+    "note": "北西の薬局付近\n※地図の位置は「羽衣駅」の目安",
+    "url": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html"
+   }
+  ],
+  [
+   34.52252,
+   135.45122,
+   "city-xds-8",
+   {
+    "name": "富木駅西側 屋外喫煙場所",
+    "io": "outdoor",
+    "note": "西側の駐輪場・交番付近\n※地図の位置は「富木駅」の目安",
+    "url": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html"
+   }
+  ],
+  [
+   34.52252,
+   135.45122,
+   "city-xds-9",
+   {
+    "name": "富木駅東側 市指定屋外喫煙場所",
+    "io": "outdoor",
+    "note": "東側コンビニ・郵便局付近\n※地図の位置は「富木駅」の目安",
+    "url": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html"
+   }
+  ],
+  [
+   34.520723,
+   135.442412,
+   "city-xds-10",
+   {
+    "name": "庁舎自動車駐車場 分煙場所",
+    "note": "市の分煙施設一覧に掲載\n※地図の位置は「高石市役所」の目安",
+    "url": "https://www.city.takaishi.lg.jp/material/files/group/8/tyousakekka.pdf"
+   }
+  ],
+  [
+   35.27797,
+   136.87357,
+   "city-xdt-1",
+   {
+    "name": "岩倉駅東 喫煙所",
+    "io": "outdoor",
+    "note": "駅東トイレの南側\n※地図の位置は「岩倉駅」の目安",
+    "url": "https://www.city.iwakura.aichi.jp/0000005196.html"
+   }
+  ],
+  [
+   35.27797,
+   136.87357,
+   "city-xdt-2",
+   {
+    "name": "岩倉駅西 喫煙所",
+    "io": "outdoor",
+    "note": "駅西エレベーター北側\n※地図の位置は「岩倉駅」の目安",
+    "url": "https://www.city.iwakura.aichi.jp/0000005196.html"
+   }
+  ],
+  [
+   35.0203,
+   136.89257,
+   "city-xdu-1",
+   {
+    "name": "太田川駅高架下 喫煙所",
+    "note": "高架下トイレ併設\n※地図の位置は「太田川駅」の目安",
+    "url": "https://www.city.tokai.aichi.jp/_res/projects/default_project/_page_/001/003/571/actionplan.pdf"
+   }
+  ],
+  [
+   39.63989,
+   141.94736,
+   "city-xdv-1",
+   {
+    "name": "宮古駅前広場 喫煙所",
+    "io": "outdoor",
+    "note": "駅前広場の東端\n※地図の位置は「宮古駅」の目安",
+    "url": "https://www.city.miyako.iwate.jp/gyosei/kurashi_tetsuzuki/doro_kotsuu/3/6397.html"
    }
   ]
  ]

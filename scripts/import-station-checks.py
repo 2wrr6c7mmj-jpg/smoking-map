@@ -9,6 +9,7 @@ status の意味：
   none_in_list  市区の一覧は取り込み済みで、この駅の近くには載っていない
   none          未調査だった市区を調べたが、喫煙所の案内がなかった
   blocked       公式サイトが自動アクセスを拒否した（未確認のまま）
+  nearby        徒歩5分（約500m）以内に喫煙所はあるが、集計の基準（300m）より遠い
 evidence（根拠の強さ）：strong＝市の方針や公式ページで確認 / weak＝検索結果の要約だけで判断（公式ページは開いていない）
 """
 import json
@@ -36,6 +37,20 @@ for gaps_file, status_file in PAIRS.items():
             'city': s.get('city', ''), 'status': s['status'], 'evidence': 'strong' if strong else 'weak',
             'page': s.get('page', ''), 'note': s.get('note', ''),
         })
+# 根拠が弱かった駅を、公式ページを開いて確かめ直した結果（weak_status.json）で上書きする
+#   none_confirmed → 根拠 strong / found → status "nearby"（徒歩5分・約500m以内に喫煙所はあるが、集計の300mより遠い）
+recheck = src / 'weak_status.json'
+if recheck.exists():
+    by = {w['station'].removesuffix('駅'): w for w in json.loads(recheck.read_text())}
+    for x in out:
+        w = by.get(x['name'])
+        if not w or x['evidence'] != 'weak':
+            continue
+        x.update(evidence='strong', page=w.get('page', ''), note=w.get('note', ''), city=w.get('city', x['city']))
+        if w['status'] == 'found':
+            x['status'] = 'nearby'
+        elif w['status'] != 'none_confirmed':
+            x['evidence'] = 'weak'
 out.sort(key=lambda x: -x['riders'])
 dest = Path(__file__).resolve().parent / 'data' / 'station-checked.json'
 dest.write_text('[\n' + ',\n'.join(json.dumps(x, ensure_ascii=False) for x in out) + '\n]\n')

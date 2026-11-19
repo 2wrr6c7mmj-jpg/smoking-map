@@ -15731,5 +15731,339 @@
 "kind": "outdoor",
 "memo": "駅前広場パネル囲い",
 "page": "https://www.city.saitama.lg.jp/001/009/014/p045300.html"
+},
+{
+"city": "蓮田市",
+"pref": "埼玉県",
+"name": "蓮田市役所 特定屋外喫煙場所",
+"address": "埼玉県蓮田市大字黒浜2799-1",
+"address_level": "banchi",
+"landmark": "蓮田市役所",
+"kind": "outdoor",
+"memo": "庁舎敷地内の区画",
+"page": "https://www.city.hasuda.saitama.jp/kanzai/tokuteiokugaikitsuenjyo.html"
+},
+{
+"city": "河内長野市",
+"pref": "大阪府",
+"name": "河内長野駅 指定喫煙所",
+"landmark": "河内長野駅",
+"kind": "outdoor",
+"memo": "西側広場の歩道橋下",
+"page": "https://www.city.kawachinagano.lg.jp/uploaded/attachment/25157.pdf"
+},
+{
+"city": "河内長野市",
+"pref": "大阪府",
+"name": "千代田駅 指定喫煙所",
+"landmark": "千代田駅",
+"kind": "outdoor",
+"memo": "西側駅前広場の南寄り",
+"page": "https://www.city.kawachinagano.lg.jp/uploaded/attachment/25159.pdf"
+},
+{
+"city": "河内長野市",
+"pref": "大阪府",
+"name": "三日市町駅 指定喫煙所",
+"landmark": "三日市町駅",
+"kind": "outdoor",
+"memo": "西側駅前広場の北端",
+"page": "https://www.city.kawachinagano.lg.jp/uploaded/attachment/25160.pdf"
+},
+{
+"city": "長岡京市",
+"pref": "京都府",
+"name": "JR長岡京駅東口賑わい広場 喫煙ボックス",
+"landmark": "長岡京駅",
+"hours": "24時間",
+"kind": "indoor",
+"memo": "東口交番の隣",
+"page": "https://www.city.nagaokakyo.lg.jp/0000015668.html"
+},
+{
+"city": "守山市",
+"pref": "滋賀県",
+"name": "守山駅東口 指定喫煙場所",
+"landmark": "守山駅",
+"kind": "outdoor",
+"memo": "東出口そば",
+"page": "https://www.city.moriyama.lg.jp/machikankyobousai/kankyo/1001807/1001825.html"
+},
+{
+"city": "桑名市",
+"pref": "三重県",
+"name": "桑名駅東口 喫煙所",
+"landmark": "桑名駅",
+"kind": "outdoor",
+"memo": "駅北駐輪場の脇",
+"page": "https://www.city.kuwana.lg.jp/images/1013/rojyokitsuenkinshi.jpg"
+},
+{
+"city": "桑名市",
+"pref": "三重県",
+"name": "桑名駅西口 喫煙所",
+"landmark": "桑名駅",
+"kind": "outdoor",
+"memo": "駅西広場の南側",
+"page": "https://www.city.kuwana.lg.jp/images/1013/rojyokitsuenkinshi.jpg"
+},
+{
+"city": "名取市",
+"pref": "宮城県",
+"name": "名取駅西口駅前広場分煙施設",
+"landmark": "名取駅",
+"hours": "24時間",
+"kind": "indoor",
+"memo": "西口広場の北側",
+"page": "https://www.city.natori.miyagi.jp/page/27129.html"
+},
+{
+"city": "野洲市",
+"pref": "滋賀県",
+"name": "野洲駅北口 喫煙所",
+"landmark": "野洲駅",
+"kind": "outdoor",
+"memo": "北口区域外の市有地",
+"page": "https://www.city.yasu.lg.jp/soshiki/kouhouhisho/goiken/reiwa6/7077.html"
+},
+{
+"city": "泉大津市",
+"pref": "大阪府",
+"name": "アルザ泉大津 屋内喫煙ブース",
+"landmark": "アルザ泉大津",
+"hours": "施設の開館時間内",
+"kind": "indoor",
+"memo": "1階入口付近",
+"page": "https://www.city.izumiotsu.lg.jp/kakuka/shiminseikatu/kankyouka/ibento/14519.html"
+},
+{
+"city": "江南市",
+"pref": "愛知県",
+"name": "江南駅 指定喫煙所",
+"landmark": "江南駅前交番",
+"kind": "outdoor",
+"memo": "駅前広場南西・交番横",
+"page": "https://www.city.konan.lg.jp/shisei/jourei/1011903.html"
+},
+{
+"city": "江南市",
+"pref": "愛知県",
+"name": "布袋駅 指定喫煙場所",
+"landmark": "布袋駅",
+"kind": "outdoor",
+"memo": "東口広場の北側",
+"page": "https://www.city.konan.lg.jp/shisei/jourei/1011903.html"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "高石駅西側 屋外喫煙場所",
+"landmark": "高石駅",
+"kind": "outdoor",
+"memo": "駅舎西側",
+"page": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "高石駅南東 屋外喫煙場所",
+"landmark": "高石駅",
+"kind": "outdoor",
+"memo": "東側南の駐輪場付近",
+"page": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "高石駅北西 市指定屋外喫煙場所",
+"landmark": "高石駅",
+"kind": "outdoor",
+"memo": "線路西側・駅の北",
+"page": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "高石駅北東 市指定屋外喫煙場所",
+"landmark": "アプラたかいし",
+"kind": "outdoor",
+"memo": "アプラ北側の道路沿い",
+"page": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "東羽衣駅北側 屋外喫煙場所",
+"landmark": "東羽衣駅",
+"kind": "outdoor",
+"memo": "駅舎の北側",
+"page": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "羽衣駅南東 屋外喫煙場所",
+"landmark": "羽衣駅",
+"kind": "outdoor",
+"memo": "駅の南東・区域南端",
+"page": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "羽衣駅北西 市指定屋外喫煙場所",
+"landmark": "羽衣駅",
+"kind": "outdoor",
+"memo": "北西の薬局付近",
+"page": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "富木駅西側 屋外喫煙場所",
+"landmark": "富木駅",
+"kind": "outdoor",
+"memo": "西側の駐輪場・交番付近",
+"page": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "富木駅東側 市指定屋外喫煙場所",
+"landmark": "富木駅",
+"kind": "outdoor",
+"memo": "東側コンビニ・郵便局付近",
+"page": "https://www.city.takaishi.lg.jp/kakuka/doboku/seikatu_kankyou_ka/kougai/1584417397902.html"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "コミュニティセンター 分煙場所",
+"landmark": "高石市 コミュニティセンター",
+"memo": "市の分煙施設一覧に掲載",
+"page": "https://www.city.takaishi.lg.jp/material/files/group/8/tyousakekka.pdf"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "複合コミュニティセンター 分煙場所",
+"landmark": "高石市 複合コミュニティセンター",
+"memo": "市の分煙施設一覧に掲載",
+"page": "https://www.city.takaishi.lg.jp/material/files/group/8/tyousakekka.pdf"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "老人福祉センター瑞松苑 分煙場所",
+"landmark": "高石市 老人福祉センター瑞松苑",
+"memo": "市の分煙施設一覧に掲載",
+"page": "https://www.city.takaishi.lg.jp/material/files/group/8/tyousakekka.pdf"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "老人福祉センター菊寿苑 分煙場所",
+"landmark": "高石市 老人福祉センター菊寿苑",
+"memo": "市の分煙施設一覧に掲載",
+"page": "https://www.city.takaishi.lg.jp/material/files/group/8/tyousakekka.pdf"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "老人福祉センター慶翠苑 分煙場所",
+"landmark": "高石市 老人福祉センター慶翠苑",
+"memo": "市の分煙施設一覧に掲載",
+"page": "https://www.city.takaishi.lg.jp/material/files/group/8/tyousakekka.pdf"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "庁舎自動車駐車場 分煙場所",
+"landmark": "高石市役所",
+"memo": "市の分煙施設一覧に掲載",
+"page": "https://www.city.takaishi.lg.jp/material/files/group/8/tyousakekka.pdf"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "鴨広場 分煙場所",
+"landmark": "高石市 鴨広場",
+"memo": "市の分煙施設一覧に掲載",
+"page": "https://www.city.takaishi.lg.jp/material/files/group/8/tyousakekka.pdf"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "新公園 分煙場所",
+"landmark": "高石市 新公園",
+"memo": "市の分煙施設一覧に掲載",
+"page": "https://www.city.takaishi.lg.jp/material/files/group/8/tyousakekka.pdf"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "高砂公園 分煙場所",
+"landmark": "高石市 高砂公園",
+"memo": "市の分煙施設一覧に掲載",
+"page": "https://www.city.takaishi.lg.jp/material/files/group/8/tyousakekka.pdf"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "高師浜運動場 分煙場所",
+"landmark": "高石市 高師浜運動場",
+"memo": "市の分煙施設一覧に掲載",
+"page": "https://www.city.takaishi.lg.jp/material/files/group/8/tyousakekka.pdf"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "高師浜野球場 分煙場所",
+"landmark": "高石市 高師浜野球場",
+"memo": "市の分煙施設一覧に掲載",
+"page": "https://www.city.takaishi.lg.jp/material/files/group/8/tyousakekka.pdf"
+},
+{
+"city": "高石市",
+"pref": "大阪府",
+"name": "千代田らくだ公園 分煙場所",
+"landmark": "高石市 千代田らくだ公園",
+"memo": "市の分煙施設一覧に掲載",
+"page": "https://www.city.takaishi.lg.jp/material/files/group/8/tyousakekka.pdf"
+},
+{
+"city": "岩倉市",
+"pref": "愛知県",
+"name": "岩倉駅東 喫煙所",
+"landmark": "岩倉駅",
+"kind": "outdoor",
+"memo": "駅東トイレの南側",
+"page": "https://www.city.iwakura.aichi.jp/0000005196.html"
+},
+{
+"city": "岩倉市",
+"pref": "愛知県",
+"name": "岩倉駅西 喫煙所",
+"landmark": "岩倉駅",
+"kind": "outdoor",
+"memo": "駅西エレベーター北側",
+"page": "https://www.city.iwakura.aichi.jp/0000005196.html"
+},
+{
+"city": "東海市",
+"pref": "愛知県",
+"name": "太田川駅高架下 喫煙所",
+"landmark": "太田川駅",
+"memo": "高架下トイレ併設",
+"page": "https://www.city.tokai.aichi.jp/_res/projects/default_project/_page_/001/003/571/actionplan.pdf"
+},
+{
+"city": "宮古市",
+"pref": "岩手県",
+"name": "宮古駅前広場 喫煙所",
+"landmark": "宮古駅",
+"kind": "outdoor",
+"memo": "駅前広場の東端",
+"page": "https://www.city.miyako.iwate.jp/gyosei/kurashi_tetsuzuki/doro_kotsuu/3/6397.html"
 }
 ]
