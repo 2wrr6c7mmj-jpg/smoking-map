@@ -69,13 +69,23 @@ STATIC=0 npm test  # 全国データがない配置の動作を確認
 
 ## 公開（Cloudflare Pages）
 
-```sh
-npx wrangler d1 create kemuri-map          # 出力された database_id を wrangler.toml に書く
-npx wrangler d1 execute kemuri-map --remote --file=schema.sql
-npx wrangler pages deploy
-```
+main に入ると、GitHub Actions（`.github/workflows/ci.yml`）がテストのあと自動で公開する。週1回のデータ更新のあとも公開し直す。公開の処理は `scripts/deploy.mjs` で、次を行う（済んでいれば何もしない）。
 
-Pages の環境変数 `HASH_SECRET` に16文字以上のランダムな文字列を設定する（`npx wrangler pages secret put HASH_SECRET`。IP を HMAC で仮名化する鍵）。**未設定だと投稿と報告は 503 で受け付けない**（ローカル開発だけは固定の鍵で動く）。報告は90日で消える。
+1. Pages のプロジェクト `kemuri-map` がなければ作る
+2. D1 に表を作る（`schema.sql`）。接続先のデータベースは `wrangler.toml` の `database_id`
+3. IP を HMAC で仮名化する鍵 `HASH_SECRET` が未設定なら、ランダムな値を生成して設定する（値はどこにも表示・保存しない）
+4. `public/` と `functions/` を公開する
+
+必要なのは、リポジトリの Secrets（Settings → Secrets and variables → Actions）に次の2つを登録することだけ。
+
+| Secret | 中身 |
+| --- | --- |
+| `CLOUDFLARE_API_TOKEN` | Cloudflare の API トークン。権限は「Cloudflare Pages：編集」と「D1：編集」（どちらもアカウントの権限） |
+| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare のアカウント ID（ダッシュボードの URL の `dash.cloudflare.com/` の直後にある32文字） |
+
+未登録のあいだは、テストだけ行って公開は飛ばす（実行結果に注意が出る）。PR では公開しない。
+
+`HASH_SECRET` が未設定だと、投稿と報告は 503 で受け付けない（ローカル開発だけは固定の鍵で動く）。報告は90日で消える。
 
 ## 未対応・注意
 
