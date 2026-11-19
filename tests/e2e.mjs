@@ -43,12 +43,16 @@ async function session(colorScheme) {
   const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, geolocation: { ...ME, accuracy: 15 }, permissions: ['geolocation'], locale: 'ja-JP', colorScheme });
   ctx.calls = 0;
   await ctx.route(/overpass/, (r) => { ctx.calls++; return r.fulfill({ json: overpass }); });
-  await ctx.route(/\/data\/places\/index\.json/, (r) => r.fulfill({ json: { files: ['gov.json', 'mitsui.json'] } }));
+  // データは2系統（全国データと公開情報）を別々に読み込むので、どちらが先に届いても通ることを確かめる。
+  // SLOW_JP / SLOW_PLACES（ミリ秒）で片方の応答を遅らせる
+  const wait = (ms) => new Promise((done) => setTimeout(done, Number(ms) || 0));
+  await ctx.route(/\/data\/places\/index\.json/, async (r) => { await wait(process.env.SLOW_PLACES); return r.fulfill({ json: { files: ['gov.json', 'mitsui.json'] } }); });
   await ctx.route(/\/data\/places\/gov\.json/, (r) => r.fulfill({ json: gov }));
   await ctx.route(/\/data\/places\/mitsui\.json/, (r) => r.fulfill({ json: mitsui }));
   // 全国データは固定データから作る（STATIC=0 のときは全国データなしの動作を確かめる）
-  await ctx.route(/\/data\/jp\//, (r) => {
+  await ctx.route(/\/data\/jp\//, async (r) => {
     if (process.env.STATIC === '0') return r.fulfill({ status: 404, body: 'not found' });
+    await wait(process.env.SLOW_JP);
     if (r.request().url().endsWith('index.json')) return r.fulfill({ json: { updated: '2026-11-18T00:00:00Z', total: overpass.elements.length, cells: { '35_139': overpass.elements.length } } });
     return r.fulfill({ json: overpass.elements.map((e) => [e.lat ?? e.center.lat, e.lon ?? e.center.lon, `${e.type[0]}${e.id}`, e.tags]) });
   });
@@ -64,7 +68,9 @@ const listNames = () => page.$$eval('#list .name', (els) => els.map((e) => e.fir
 const count = (id) => page.textContent(id).then(Number);
 
 await page.goto(BASE);
-await page.waitForFunction(() => !document.querySelector('#hero').hidden && document.querySelector('#c-area').textContent !== '0', null, { timeout: 15000 });
+// 全国データと公開情報は別々に届く。片方だけ届いた時点では件数も「いちばん近い喫煙所」も途中の状態なので、
+// 両方がそろったときの件数（6件）になるまで待ってから確かめる
+await page.waitForFunction(() => !document.querySelector('#hero').hidden && document.querySelector('#c-area').textContent === '6', null, { timeout: 20000 });
 assert.equal(await heroName(), '丸の内北口 喫煙所', '現在地から最も近い喫煙所が大きく出る');
 assert.match(await page.textContent('#hero'), /いちばん近い/);
 assert.equal(await count('#c-tobacco'), 1, 'たばこ店は別に数える');

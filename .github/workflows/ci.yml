@@ -36,3 +36,10 @@ jobs:
       - run: STATIC=0 npm test
         env:
           WRANGLER_SEND_METRICS: 'false'
+      # 全国データと公開情報の届く順を入れ替えても通ること
+      - run: SLOW_JP=1500 npm test
+        env:
+          WRANGLER_SEND_METRICS: 'false'
+      - run: SLOW_PLACES=1500 npm test
+        env:
+          WRANGLER_SEND_METRICS: 'false'

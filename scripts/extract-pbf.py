@@ -25,6 +25,7 @@ BASE = 'https://download.openstreetmap.fr/extracts/asia/japan/'
 REGIONS = ['hokkaido', 'tohoku', 'kanto', 'chubu', 'kansai', 'chugoku', 'shikoku', 'kyushu']
 OUT = Path(__file__).resolve().parent.parent / 'public' / 'data' / 'jp'
 SMOKING_OK = {'yes', 'separated', 'isolated', 'dedicated', 'outside', 'area', 'only', 'designated', '分煙'}
+EMAIL_RE = re.compile(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}')  # 説明欄に書かれた連絡先は持ち込まない
 NAME_RE = re.compile(r'喫煙(所|室|コーナー|スペース|ルーム|ブース|エリア|場所)|灰皿|スモーキング(エリア|ルーム)')
 KEEP = {'name', 'name:ja', 'smoking', 'smoking:outside', 'amenity', 'shop', 'tourism', 'leisure', 'waste', 'covered', 'shelter', 'indoor', 'location', 'smoking_area',
         'opening_hours', 'fee', 'operator', 'level', 'description', 'note'}
@@ -48,7 +49,7 @@ def wanted(tags):
 
 
 def compact(kind, oid, lat, lng, tags):
-    t = {k: v for k, v in tags if k in KEEP or 'heated' in k}
+    t = {k: EMAIL_RE.sub('', v).strip() for k, v in tags if k in KEEP or 'heated' in k}
     return [round(lat, 6), round(lng, 6), f'{kind}{oid}', t]
 
 
