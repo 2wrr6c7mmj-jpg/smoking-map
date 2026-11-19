@@ -1,0 +1,2117 @@
+{
+ "updated": "2026-11-18T23:42:01.950Z",
+ "sources": [
+  {
+   "id": "station-jrc",
+   "type": "facility",
+   "group": "area",
+   "label": "駅構内の喫煙所",
+   "name": "JR東海 駅の喫煙所",
+   "publisher": "JR東海",
+   "page": "https://jr-central.co.jp/000044880.pdf",
+   "count": 27
+  },
+  {
+   "id": "station-jrw",
+   "type": "facility",
+   "group": "area",
+   "label": "駅構内の喫煙所",
+   "name": "JR西日本 駅の喫煙所",
+   "publisher": "JR西日本",
+   "page": "https://eki.jr-odekake.net/premises?id=0610156",
+   "count": 52
+  },
+  {
+   "id": "station-jrk",
+   "type": "facility",
+   "group": "area",
+   "label": "駅構内の喫煙所",
+   "name": "JR九州 駅の喫煙所",
+   "publisher": "JR九州",
+   "page": "https://www.jrkyushu.co.jp/railway/facility/nosmoking/",
+   "count": 3
+  },
+  {
+   "id": "station-jre",
+   "type": "facility",
+   "group": "area",
+   "label": "駅構内の喫煙所",
+   "name": "JR東日本 駅の喫煙所",
+   "publisher": "JR東日本",
+   "page": "https://media.jreast.co.jp/articles/652",
+   "count": 31
+  },
+  {
+   "id": "station-jrh",
+   "type": "facility",
+   "group": "area",
+   "label": "駅構内の喫煙所",
+   "name": "JR北海道 駅の喫煙所",
+   "publisher": "JR北海道",
+   "page": "https://www.jrhokkaido.co.jp/faq/qa0168.html",
+   "count": 15
+  },
+  {
+   "id": "station-jrs",
+   "type": "facility",
+   "group": "area",
+   "label": "駅構内の喫煙所",
+   "name": "JR四国 駅の喫煙所",
+   "publisher": "JR四国",
+   "page": "https://www.jr-shikoku.co.jp/01_trainbus/kakueki/matsuyama/kounai_map.html",
+   "count": 3
+  },
+  {
+   "id": "station-kintetsu",
+   "type": "facility",
+   "group": "area",
+   "label": "駅構内の喫煙所",
+   "name": "近鉄 駅の喫煙所",
+   "publisher": "近鉄",
+   "page": "https://www.kintetsu.co.jp/soukatsu/kounai/uehonmachi.html",
+   "count": 15
+  },
+  {
+   "id": "station-nishitetsu",
+   "type": "facility",
+   "group": "area",
+   "label": "駅構内の喫煙所",
+   "name": "西鉄 駅の喫煙所",
+   "publisher": "西鉄",
+   "page": "http://www.ensen24.jp/tenjinomuta-line/fukuoka_tenjin.html",
+   "count": 3
+  },
+  {
+   "id": "station-osakametro",
+   "type": "facility",
+   "group": "area",
+   "label": "駅構内の喫煙所",
+   "name": "Osaka Metro 駅の喫煙所",
+   "publisher": "Osaka Metro",
+   "page": "https://www.osakametro.co.jp/news/news/other/20241223_smoking_area.php",
+   "count": 1
+  },
+  {
+   "id": "station-keyaki",
+   "type": "facility",
+   "group": "area",
+   "label": "施設の喫煙所",
+   "name": "けやきひろば 施設の喫煙所",
+   "publisher": "けやきひろば",
+   "page": "https://media.jreast.co.jp/articles/7",
+   "count": 1
+  },
+  {
+   "id": "station-haneda",
+   "type": "facility",
+   "group": "area",
+   "label": "空港の喫煙所",
+   "name": "日本空港ビルデング 空港の喫煙所",
+   "publisher": "日本空港ビルデング",
+   "page": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html",
+   "count": 15
+  }
+ ],
+ "spots": [
+  [
+   35.68128,
+   139.76675,
+   "station-jrc-1",
+   {
+    "name": "東京駅 新幹線ホーム喫煙ルーム",
+    "note": "改札内・新幹線14・15番線ホーム\n10号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   35.681147,
+   139.766896,
+   "station-jrc-2",
+   {
+    "name": "東京駅 新幹線ホーム喫煙ルーム",
+    "note": "改札内・新幹線14・15番線ホーム\n11号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   35.681302,
+   139.766446,
+   "station-jrc-3",
+   {
+    "name": "東京駅 新幹線ホーム喫煙ルーム",
+    "note": "改札内・新幹線16・17番線ホーム\n13号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   35.68147,
+   139.767047,
+   "station-jrc-4",
+   {
+    "name": "東京駅 新幹線ホーム喫煙ルーム",
+    "note": "改札内・新幹線16・17番線ホーム\n15・16号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   35.680926,
+   139.766675,
+   "station-jrc-5",
+   {
+    "name": "東京駅 新幹線ホーム喫煙ルーム",
+    "note": "改札内・新幹線18・19番線ホーム\n13号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   35.68162,
+   139.766491,
+   "station-jrc-6",
+   {
+    "name": "東京駅 新幹線ホーム喫煙ルーム",
+    "note": "改札内・新幹線18・19番線ホーム\n15・16号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   35.62851,
+   139.73896,
+   "station-jrc-7",
+   {
+    "name": "品川駅 新幹線喫煙ルーム(南)",
+    "note": "改札内・新幹線改札内 南コンコース\n南乗換口の近く\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   35.628377,
+   139.739106,
+   "station-jrc-8",
+   {
+    "name": "品川駅 新幹線喫煙ルーム(北)",
+    "note": "改札内・新幹線改札内 北コンコース\nトイレの隣\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   35.50814,
+   139.61728,
+   "station-jrc-9",
+   {
+    "name": "新横浜駅 新幹線喫煙ルーム(東)",
+    "note": "改札内・新幹線改札内 東コンコース\n東乗換口寄り\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   35.508007,
+   139.617426,
+   "station-jrc-10",
+   {
+    "name": "新横浜駅 新幹線喫煙ルーム(西)",
+    "note": "改札内・新幹線改札内 西コンコース\n新幹線西口の近く\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   35.25629,
+   139.15558,
+   "station-jrc-11",
+   {
+    "name": "小田原駅 新幹線喫煙ルーム",
+    "note": "改札内・新幹線改札内コンコース\n改札口入って右手\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   35.10389,
+   139.07799,
+   "station-jrc-12",
+   {
+    "name": "熱海駅 新幹線喫煙ルーム",
+    "note": "改札内・新幹線改札内コンコース\nコンコース端\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   35.1263,
+   138.91017,
+   "station-jrc-13",
+   {
+    "name": "三島駅 新幹線ホーム喫煙ルーム",
+    "note": "改札内・新幹線5・6番線ホーム\n15号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   35.14207,
+   138.66301,
+   "station-jrc-14",
+   {
+    "name": "新富士駅 新幹線喫煙ルーム",
+    "note": "改札内・新幹線改札内コンコース\n改札口の近く\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   34.97176,
+   138.3893,
+   "station-jrc-15",
+   {
+    "name": "静岡駅 新幹線5番線喫煙ルーム",
+    "note": "改札内・新幹線5番線ホーム\n16号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   34.971627,
+   138.389446,
+   "station-jrc-16",
+   {
+    "name": "静岡駅 新幹線6番線喫煙ルーム",
+    "note": "改札内・新幹線6番線ホーム\n16号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   34.76935,
+   138.01503,
+   "station-jrc-17",
+   {
+    "name": "掛川駅 新幹線喫煙ルーム",
+    "note": "改札内・新幹線改札内コンコース\nトイレと待合室の間\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   34.70391,
+   137.73525,
+   "station-jrc-18",
+   {
+    "name": "浜松駅 新幹線5番線喫煙ルーム",
+    "note": "改札内・新幹線5番線ホーム\n16号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   34.703777,
+   137.735396,
+   "station-jrc-19",
+   {
+    "name": "浜松駅 新幹線6番線喫煙ルーム",
+    "note": "改札内・新幹線6番線ホーム\n16号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   34.76227,
+   137.38229,
+   "station-jrc-20",
+   {
+    "name": "豊橋駅 新幹線喫煙ルーム",
+    "note": "改札内・新幹線改札内コンコース\n乗換口寄りの端\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   34.96975,
+   137.06063,
+   "station-jrc-21",
+   {
+    "name": "三河安城駅 新幹線喫煙ルーム",
+    "note": "改札内・新幹線改札内コンコース\n待合室の隣\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   35.17092,
+   136.88195,
+   "station-jrc-22",
+   {
+    "name": "名古屋駅 新幹線ホーム喫煙ルーム(14・15番線)",
+    "note": "改札内・新幹線14・15番線ホーム\n9・10号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   35.170787,
+   136.882096,
+   "station-jrc-23",
+   {
+    "name": "名古屋駅 新幹線ホーム喫煙ルーム(16・17番線)",
+    "note": "改札内・新幹線16・17番線ホーム\n16号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   35.31574,
+   136.68576,
+   "station-jrc-24",
+   {
+    "name": "岐阜羽島駅 新幹線喫煙ルーム",
+    "note": "改札内・新幹線改札内コンコース\nコンコース端\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   35.3144,
+   136.28987,
+   "station-jrc-25",
+   {
+    "name": "米原駅 新幹線喫煙ルーム",
+    "note": "改札内・新幹線改札内コンコース\n乗換口の近く\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   34.98544,
+   135.7588,
+   "station-jrc-26",
+   {
+    "name": "京都駅 新幹線喫煙ルーム",
+    "note": "改札内・新幹線改札内コンコース2階\n東乗換口寄り待合室隣\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   34.73362,
+   135.5005,
+   "station-jrc-27",
+   {
+    "name": "新大阪駅 新幹線喫煙ルーム",
+    "note": "改札内・新幹線改札内コンコース\n中央口寄り\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "改札営業時間中",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://jr-central.co.jp/000044880.pdf"
+   }
+  ],
+  [
+   34.70556,
+   135.19612,
+   "station-jrw-1",
+   {
+    "name": "新神戸駅 新幹線ホーム喫煙ルーム(1番)",
+    "note": "改札内・新幹線1番のりば\n新大阪寄り\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0610156"
+   }
+  ],
+  [
+   34.705427,
+   135.196266,
+   "station-jrw-2",
+   {
+    "name": "新神戸駅 新幹線ホーム喫煙ルーム(2番)",
+    "note": "改札内・新幹線2番のりば\n新大阪寄り\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0610156"
+   }
+  ],
+  [
+   34.66645,
+   134.96038,
+   "station-jrw-3",
+   {
+    "name": "西明石駅 新幹線喫煙ルーム",
+    "note": "改札内・新幹線コンコース(改札内)\n乗換口入って奥\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0610609"
+   }
+  ],
+  [
+   34.82705,
+   134.69069,
+   "station-jrw-4",
+   {
+    "name": "姫路駅 新幹線ホーム喫煙ルーム①",
+    "note": "改札内・新幹線ホーム(3階)\n東京寄り 2か所の1\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0610619"
+   }
+  ],
+  [
+   34.826917,
+   134.690836,
+   "station-jrw-5",
+   {
+    "name": "姫路駅 新幹線ホーム喫煙ルーム②",
+    "note": "改札内・新幹線ホーム(3階)\n東京寄り 2か所の2\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0610619"
+   }
+  ],
+  [
+   34.81809,
+   134.47376,
+   "station-jrw-6",
+   {
+    "name": "相生駅 新幹線喫煙ルーム",
+    "note": "改札内・新幹線コンコース(改札内)\n待合スペース横\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0610623"
+   }
+  ],
+  [
+   34.66669,
+   133.91798,
+   "station-jrw-7",
+   {
+    "name": "岡山駅 新幹線ホーム喫煙ルーム(21・22番)",
+    "note": "改札内・新幹線21・22番のりば\n新大阪寄り\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0650608"
+   }
+  ],
+  [
+   34.666557,
+   133.918126,
+   "station-jrw-8",
+   {
+    "name": "岡山駅 新幹線ホーム喫煙ルーム(23・24番)",
+    "note": "改札内・新幹線23・24番のりば\n新大阪寄り\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0650608"
+   }
+  ],
+  [
+   34.666712,
+   133.917676,
+   "station-jrw-9",
+   {
+    "name": "岡山駅 在来線ホーム喫煙ルーム",
+    "note": "改札内・在来線5番のりば付近\nホーム姫路寄り端\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0650608"
+   }
+  ],
+  [
+   34.48926,
+   133.36133,
+   "station-jrw-10",
+   {
+    "name": "福山駅 新幹線ホーム喫煙ルーム①",
+    "note": "改札内・新幹線ホーム(3階)\n東京寄り 2か所の1\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0650620"
+   }
+  ],
+  [
+   34.489127,
+   133.361476,
+   "station-jrw-11",
+   {
+    "name": "福山駅 新幹線ホーム喫煙ルーム②",
+    "note": "改札内・新幹線ホーム(3階)\n東京寄り 2か所の2\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0650620"
+   }
+  ],
+  [
+   34.39757,
+   132.47569,
+   "station-jrw-12",
+   {
+    "name": "広島駅 新幹線ホーム喫煙ルーム(11・12番)",
+    "note": "改札内・新幹線11・12番のりば\n新大阪寄り\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0800613"
+   }
+  ],
+  [
+   34.397437,
+   132.475836,
+   "station-jrw-13",
+   {
+    "name": "広島駅 新幹線ホーム喫煙ルーム(13・14番)",
+    "note": "改札内・新幹線13・14番のりば\n新大阪寄り\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0800613"
+   }
+  ],
+  [
+   34.09381,
+   131.39646,
+   "station-jrw-14",
+   {
+    "name": "新山口駅 新幹線ホーム喫煙ルーム①",
+    "note": "改札内・新幹線ホーム\n広島寄り 2か所の1\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0800646"
+   }
+  ],
+  [
+   34.093677,
+   131.396606,
+   "station-jrw-15",
+   {
+    "name": "新山口駅 新幹線ホーム喫煙ルーム②",
+    "note": "改札内・新幹線ホーム\n広島寄り 2か所の2\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0800646"
+   }
+  ],
+  [
+   33.88679,
+   130.8829,
+   "station-jrw-16",
+   {
+    "name": "小倉駅 新幹線ホーム喫煙ルーム(11・12番)",
+    "note": "改札内・新幹線11・12番のりば\n東京寄り\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0910106"
+   }
+  ],
+  [
+   33.886657,
+   130.883046,
+   "station-jrw-17",
+   {
+    "name": "小倉駅 新幹線ホーム喫煙ルーム(13・14番)",
+    "note": "改札内・新幹線13・14番のりば\n東京寄り\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0910106"
+   }
+  ],
+  [
+   33.58975,
+   130.42055,
+   "station-jrw-18",
+   {
+    "name": "博多駅 新幹線ホーム喫煙ルーム(11・12番)",
+    "note": "改札内・新幹線11・12番のりば\n東京寄り\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0910127"
+   }
+  ],
+  [
+   33.589617,
+   130.420696,
+   "station-jrw-19",
+   {
+    "name": "博多駅 新幹線ホーム喫煙ルーム(13・14番)",
+    "note": "改札内・新幹線13・14番のりば\n東京寄り\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0910127"
+   }
+  ],
+  [
+   33.589772,
+   130.420246,
+   "station-jrw-20",
+   {
+    "name": "博多駅 新幹線ホーム喫煙ルーム(15・16番)",
+    "note": "改札内・新幹線15・16番のりば\n東京寄り\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0910127"
+   }
+  ],
+  [
+   34.56499,
+   133.67859,
+   "station-jrw-21",
+   {
+    "name": "新倉敷駅 新幹線喫煙ルーム",
+    "note": "改札内・新幹線コンコース(改札内)\nホーム階段下付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0650614"
+   }
+  ],
+  [
+   34.43008,
+   133.19022,
+   "station-jrw-22",
+   {
+    "name": "新尾道駅 新幹線喫煙ルーム",
+    "note": "改札内・2階改札内コンコース\n改札入って奥\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0650650"
+   }
+  ],
+  [
+   34.40067,
+   133.08285,
+   "station-jrw-23",
+   {
+    "name": "三原駅 新幹線喫煙ルーム",
+    "note": "改札内・新幹線コンコース(改札内)\nコンコース西側\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0800601"
+   }
+  ],
+  [
+   34.38919,
+   132.75946,
+   "station-jrw-24",
+   {
+    "name": "東広島駅 新幹線喫煙ルーム",
+    "note": "改札内・1階改札内コンコース\n1番のりば階段横\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0800666"
+   }
+  ],
+  [
+   34.16485,
+   132.1497,
+   "station-jrw-25",
+   {
+    "name": "新岩国駅 新幹線喫煙ルーム",
+    "note": "改札内・1階改札内コンコース\n改札入って奥\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0800665"
+   }
+  ],
+  [
+   34.0512,
+   131.80232,
+   "station-jrw-26",
+   {
+    "name": "徳山駅 新幹線喫煙ルーム",
+    "note": "改札内・新幹線コンコース(改札内)\n2階 博多寄り\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0800638"
+   }
+  ],
+  [
+   34.05348,
+   131.1603,
+   "station-jrw-27",
+   {
+    "name": "厚狭駅 新幹線喫煙ルーム",
+    "note": "新幹線改札口付近(2階)\n改札横トイレ隣\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://eki.jr-odekake.net/premises?id=0800652"
+   }
+  ],
+  [
+   34.00651,
+   130.94866,
+   "station-jrw-28",
+   {
+    "name": "新下関駅 新幹線喫煙ルーム",
+    "note": "改札内・新幹線コンコース(改札内)\nエスカレーター横\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0800656"
+   }
+  ],
+  [
+   35.6447,
+   136.07647,
+   "station-jrw-29",
+   {
+    "name": "敦賀駅 新幹線ホーム喫煙ルーム(11・12番)",
+    "note": "改札内・新幹線11・12番のりば\nホーム西端\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0541413"
+   }
+  ],
+  [
+   35.644567,
+   136.076616,
+   "station-jrw-30",
+   {
+    "name": "敦賀駅 新幹線ホーム喫煙ルーム(13・14番)",
+    "note": "改札内・新幹線13・14番のりば\nホーム西端\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0541413"
+   }
+  ],
+  [
+   35.895882,
+   136.199064,
+   "station-jrw-31",
+   {
+    "name": "越前たけふ駅 新幹線ホーム喫煙ルーム(1番)",
+    "note": "改札内・新幹線1番のりば\nエスカレーター横\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0540203"
+   }
+  ],
+  [
+   35.895749,
+   136.19921,
+   "station-jrw-32",
+   {
+    "name": "越前たけふ駅 新幹線ホーム喫煙ルーム(2番)",
+    "note": "改札内・新幹線2番のりば\nエスカレーター横\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0540203"
+   }
+  ],
+  [
+   36.06175,
+   136.22347,
+   "station-jrw-33",
+   {
+    "name": "福井駅 新幹線ホーム喫煙ルーム",
+    "note": "改札内・新幹線ホーム(2階)\nエスカレーター横\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0541430"
+   }
+  ],
+  [
+   36.21541,
+   136.2352,
+   "station-jrw-34",
+   {
+    "name": "芦原温泉駅 新幹線ホーム喫煙ルーム(11番)",
+    "note": "改札内・新幹線11番のりば\nエスカレーター横\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0541434"
+   }
+  ],
+  [
+   36.215277,
+   136.235346,
+   "station-jrw-35",
+   {
+    "name": "芦原温泉駅 新幹線ホーム喫煙ルーム(12番)",
+    "note": "改札内・新幹線12番のりば\nエスカレーター横\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0541434"
+   }
+  ],
+  [
+   36.32057,
+   136.35037,
+   "station-jrw-36",
+   {
+    "name": "加賀温泉駅 新幹線ホーム喫煙ルーム(11番)",
+    "note": "改札内・新幹線11番のりば\nエスカレーター横\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0541439"
+   }
+  ],
+  [
+   36.320437,
+   136.350516,
+   "station-jrw-37",
+   {
+    "name": "加賀温泉駅 新幹線ホーム喫煙ルーム(12番)",
+    "note": "改札内・新幹線12番のりば\nエスカレーター横\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0541439"
+   }
+  ],
+  [
+   36.40269,
+   136.45294,
+   "station-jrw-38",
+   {
+    "name": "小松駅 新幹線ホーム喫煙ルーム(11番)",
+    "note": "改札内・新幹線11番のりば\nエスカレーター横\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0541442"
+   }
+  ],
+  [
+   36.402557,
+   136.453086,
+   "station-jrw-39",
+   {
+    "name": "小松駅 新幹線ホーム喫煙ルーム(12番)",
+    "note": "改札内・新幹線12番のりば\nエスカレーター横\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0541442"
+   }
+  ],
+  [
+   36.57815,
+   136.64789,
+   "station-jrw-40",
+   {
+    "name": "金沢駅 新幹線ホーム喫煙ルーム(11・12番)",
+    "note": "改札内・新幹線11・12番のりば\n福井寄り\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0541449"
+   }
+  ],
+  [
+   36.578017,
+   136.648036,
+   "station-jrw-41",
+   {
+    "name": "金沢駅 新幹線ホーム喫煙ルーム(13・14番)",
+    "note": "改札内・新幹線13・14番のりば\n福井寄り\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0541449"
+   }
+  ],
+  [
+   36.578172,
+   136.647586,
+   "station-jrw-42",
+   {
+    "name": "金沢駅 中2階喫煙ルーム",
+    "note": "改札内・中2階コンコース(改札内)\n金沢港口側の端\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0541449"
+   }
+  ],
+  [
+   36.57834,
+   136.648187,
+   "station-jrw-43",
+   {
+    "name": "金沢駅 兼六園口喫煙所",
+    "note": "改札外・1階 兼六園口側(改札外)\n駅前交番の近く\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "out",
+    "url": "https://eki.jr-odekake.net/premises?id=0541449"
+   }
+  ],
+  [
+   36.72675,
+   137.01111,
+   "station-jrw-44",
+   {
+    "name": "新高岡駅 新幹線ホーム喫煙ルーム①",
+    "note": "改札内・新幹線ホーム(2階)\n待合室付近 2か所の1\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0540202"
+   }
+  ],
+  [
+   36.726617,
+   137.011256,
+   "station-jrw-45",
+   {
+    "name": "新高岡駅 新幹線ホーム喫煙ルーム②",
+    "note": "改札内・新幹線ホーム(2階)\n待合室付近 2か所の2\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0540202"
+   }
+  ],
+  [
+   36.70161,
+   137.21324,
+   "station-jrw-46",
+   {
+    "name": "富山駅 新幹線ホーム喫煙ルーム(11・12番)",
+    "note": "改札内・新幹線11・12番のりば\n待合室の隣\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0541465"
+   }
+  ],
+  [
+   36.701477,
+   137.213386,
+   "station-jrw-47",
+   {
+    "name": "富山駅 新幹線ホーム喫煙ルーム(13・14番)",
+    "note": "改札内・新幹線13・14番のりば\n待合室の隣\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0541465"
+   }
+  ],
+  [
+   36.87406,
+   137.48113,
+   "station-jrw-48",
+   {
+    "name": "黒部宇奈月温泉駅 新幹線ホーム喫煙ルーム①",
+    "note": "改札内・新幹線ホーム\nエスカレーター横 2か所の1\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0540201"
+   }
+  ],
+  [
+   36.873927,
+   137.481276,
+   "station-jrw-49",
+   {
+    "name": "黒部宇奈月温泉駅 新幹線ホーム喫煙ルーム②",
+    "note": "改札内・新幹線ホーム\nエスカレーター横 2か所の2\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0540201"
+   }
+  ],
+  [
+   37.04357,
+   137.86215,
+   "station-jrw-50",
+   {
+    "name": "糸魚川駅 新幹線ホーム喫煙ルーム(11番)",
+    "note": "改札内・新幹線11番のりば\n待合室の隣\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0541482"
+   }
+  ],
+  [
+   37.043437,
+   137.862296,
+   "station-jrw-51",
+   {
+    "name": "糸魚川駅 新幹線ホーム喫煙ルーム(12番)",
+    "note": "改札内・新幹線12番のりば\n待合室の隣\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0541482"
+   }
+  ],
+  [
+   34.985307,
+   135.758946,
+   "station-jrw-52",
+   {
+    "name": "京都駅 0番のりば喫煙ルーム",
+    "note": "改札内・在来線0番のりば\nホーム西側トイレ隣\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://eki.jr-odekake.net/premises?id=0610116"
+   }
+  ],
+  [
+   32.78972,
+   130.68867,
+   "station-jrk-1",
+   {
+    "name": "熊本駅 新幹線ホーム喫煙ルーム",
+    "note": "改札内・新幹線ホーム\n構内図に位置記載なし\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.jrkyushu.co.jp/railway/facility/nosmoking/"
+   }
+  ],
+  [
+   31.58418,
+   130.54172,
+   "station-jrk-2",
+   {
+    "name": "鹿児島中央駅 新幹線改札内喫煙コーナー",
+    "note": "改札内・新幹線改札内コンコース\n待合スペースの隣\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.jrkyushu.co.jp/railway/station/1191491_1601.html"
+   }
+  ],
+  [
+   32.75243,
+   129.86889,
+   "station-jrk-3",
+   {
+    "name": "長崎駅 新幹線改札内喫煙室",
+    "note": "改札内・新幹線改札内コンコース\nかもめ口側の奥\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.jrkyushu.co.jp/railway/station/1191726_1601.html"
+   }
+  ],
+  [
+   35.681165,
+   139.767261,
+   "station-jre-1",
+   {
+    "name": "東京駅 JR東日本新幹線ホーム喫煙所",
+    "note": "改札内・新幹線20・21番線ホーム\n1号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/652"
+   }
+  ],
+  [
+   35.681061,
+   139.766243,
+   "station-jre-2",
+   {
+    "name": "東京駅 JR東日本新幹線ホーム喫煙所",
+    "note": "改札内・新幹線20・21番線ホーム\n14号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/652"
+   }
+  ],
+  [
+   35.681758,
+   139.76696,
+   "station-jre-3",
+   {
+    "name": "東京駅 JR東日本新幹線ホーム喫煙所",
+    "note": "改札内・新幹線22・23番線ホーム\n11号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/652"
+   }
+  ],
+  [
+   35.680781,
+   139.766997,
+   "station-jre-4",
+   {
+    "name": "東京駅 JR東日本新幹線ホーム喫煙所",
+    "note": "改札内・新幹線22・23番線ホーム\n13号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/652"
+   }
+  ],
+  [
+   35.681521,
+   139.766131,
+   "station-jre-5",
+   {
+    "name": "東京駅 グランスタ八重洲喫煙所",
+    "note": "改札外・グランスタ八重洲 地下1階\n天喜代付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "out",
+    "url": "https://media.jreast.co.jp/articles/652"
+   }
+  ],
+  [
+   35.681458,
+   139.767434,
+   "station-jre-6",
+   {
+    "name": "東京駅 東京駅一番街1階喫煙所(ラーメンストリート前)",
+    "note": "改札外・東京駅一番街 1階\nラーメンストリート前\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "out",
+    "url": "https://media.jreast.co.jp/articles/652"
+   }
+  ],
+  [
+   35.680741,
+   139.766375,
+   "station-jre-7",
+   {
+    "name": "東京駅 東京駅一番街1階喫煙所(北通り)",
+    "note": "改札外・東京駅一番街 1階 北通り\n黒塀横丁付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "out",
+    "url": "https://media.jreast.co.jp/articles/652"
+   }
+  ],
+  [
+   35.681914,
+   139.766583,
+   "station-jre-8",
+   {
+    "name": "東京駅 東京駅一番街2階喫煙所",
+    "note": "改札外・東京駅一番街 2階\n東京グルメゾン前\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "out",
+    "url": "https://media.jreast.co.jp/articles/652"
+   }
+  ],
+  [
+   35.71305,
+   139.77666,
+   "station-jre-9",
+   {
+    "name": "上野駅 16・17番線ホーム喫煙所",
+    "note": "改札内・在来線16・17番線ホーム\n在来線はここのみ\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/693"
+   }
+  ],
+  [
+   35.712917,
+   139.776806,
+   "station-jre-10",
+   {
+    "name": "上野駅 新幹線コンコース喫煙所",
+    "note": "改札内・新幹線改札内コンコース 地下3階\n19・20番線EV付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/693"
+   }
+  ],
+  [
+   38.26013,
+   140.88192,
+   "station-jre-11",
+   {
+    "name": "仙台駅 新幹線ホーム喫煙所",
+    "note": "改札内・新幹線11・12番線ホーム\n5号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/6455"
+   }
+  ],
+  [
+   38.259997,
+   140.882066,
+   "station-jre-12",
+   {
+    "name": "仙台駅 新幹線ホーム喫煙所",
+    "note": "改札内・新幹線11・12番線ホーム\n14号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/6455"
+   }
+  ],
+  [
+   38.260152,
+   140.881616,
+   "station-jre-13",
+   {
+    "name": "仙台駅 新幹線ホーム喫煙所",
+    "note": "改札内・新幹線13・14番線ホーム\n5号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/6455"
+   }
+  ],
+  [
+   38.26032,
+   140.882217,
+   "station-jre-14",
+   {
+    "name": "仙台駅 新幹線ホーム喫煙所",
+    "note": "改札内・新幹線13・14番線ホーム\n14号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/6455"
+   }
+  ],
+  [
+   38.259776,
+   140.881845,
+   "station-jre-15",
+   {
+    "name": "仙台駅 在来線ホーム喫煙所",
+    "note": "改札内・在来線2・4番線ホーム\nホーム北側\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "初電～終電",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/6455"
+   }
+  ],
+  [
+   38.26047,
+   140.881661,
+   "station-jre-16",
+   {
+    "name": "仙台駅 エスパル仙台東館3F喫煙所",
+    "note": "改札外・エスパル仙台 東館3階\n杜のダイニング奥EV脇\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "11:00～22:00",
+    "io": "indoor",
+    "gate": "out",
+    "url": "https://media.jreast.co.jp/articles/6455"
+   }
+  ],
+  [
+   38.260015,
+   140.882431,
+   "station-jre-17",
+   {
+    "name": "仙台駅 エスパル仙台東館1F喫煙所",
+    "note": "改札外・エスパル仙台 東館1階\nエスカレーター裏\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "11:00～23:00",
+    "io": "indoor",
+    "gate": "out",
+    "url": "https://media.jreast.co.jp/articles/6455"
+   }
+  ],
+  [
+   39.70131,
+   141.13643,
+   "station-jre-18",
+   {
+    "name": "盛岡駅 新幹線ホーム喫煙所",
+    "note": "改札内・新幹線11・12番線ホーム\n3号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/5709"
+   }
+  ],
+  [
+   39.701177,
+   141.136576,
+   "station-jre-19",
+   {
+    "name": "盛岡駅 新幹線ホーム喫煙所",
+    "note": "改札内・新幹線11・12番線ホーム\n13号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/5709"
+   }
+  ],
+  [
+   39.701332,
+   141.136126,
+   "station-jre-20",
+   {
+    "name": "盛岡駅 新幹線ホーム喫煙所",
+    "note": "改札内・新幹線13・14番線ホーム\n3号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/5709"
+   }
+  ],
+  [
+   39.7015,
+   141.136727,
+   "station-jre-21",
+   {
+    "name": "盛岡駅 新幹線ホーム喫煙所",
+    "note": "改札内・新幹線13・14番線ホーム\n13号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/5709"
+   }
+  ],
+  [
+   39.700956,
+   141.136355,
+   "station-jre-22",
+   {
+    "name": "盛岡駅 在来線ホーム喫煙所(2・3番線)",
+    "note": "改札内・在来線2・3番線ホーム\n屋外型\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/5709"
+   }
+  ],
+  [
+   39.70165,
+   141.136171,
+   "station-jre-23",
+   {
+    "name": "盛岡駅 在来線ホーム喫煙所(4・5番線)",
+    "note": "改札内・在来線4・5番線ホーム\n屋外型\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/5709"
+   }
+  ],
+  [
+   39.701195,
+   141.136941,
+   "station-jre-24",
+   {
+    "name": "盛岡駅 在来線ホーム喫煙所(6・7番線)",
+    "note": "改札内・在来線6・7番線ホーム\n屋外型\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/5709"
+   }
+  ],
+  [
+   39.701091,
+   141.135923,
+   "station-jre-25",
+   {
+    "name": "盛岡駅 フェザン本館B1喫煙所",
+    "note": "改札外・駅ビル フェザン本館 地下1階\n駅ビル内\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "out",
+    "url": "https://media.jreast.co.jp/articles/5709"
+   }
+  ],
+  [
+   39.71738,
+   140.12958,
+   "station-jre-26",
+   {
+    "name": "秋田駅 新幹線ホーム喫煙所",
+    "note": "改札内・新幹線11・12番線ホーム\n16号車付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/623"
+   }
+  ],
+  [
+   39.717247,
+   140.129726,
+   "station-jre-27",
+   {
+    "name": "秋田駅 在来線ホーム喫煙所(3・4番線)",
+    "note": "改札内・在来線3・4番線ホーム\nホーム端\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/623"
+   }
+  ],
+  [
+   39.717402,
+   140.129276,
+   "station-jre-28",
+   {
+    "name": "秋田駅 在来線ホーム喫煙所(5・6番線)",
+    "note": "改札内・在来線5・6番線ホーム\nホーム端\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://media.jreast.co.jp/articles/623"
+   }
+  ],
+  [
+   35.61275,
+   140.1136,
+   "station-jre-29",
+   {
+    "name": "千葉駅 ペリエ千葉5階喫煙所",
+    "note": "改札外・駅ビル ペリエ千葉 5階\n改札外・駅ビル内\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "平日土10-21 日祝10-20:30",
+    "io": "indoor",
+    "gate": "out",
+    "url": "https://media.jreast.co.jp/articles/4448"
+   }
+  ],
+  [
+   35.612617,
+   140.113746,
+   "station-jre-30",
+   {
+    "name": "千葉駅 ペリエ千葉6階喫煙所",
+    "note": "改札外・駅ビル ペリエ千葉 6階\n改札外・駅ビル内\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "平日土10-21 日祝10-20:30",
+    "io": "indoor",
+    "gate": "out",
+    "url": "https://media.jreast.co.jp/articles/4448"
+   }
+  ],
+  [
+   35.612772,
+   140.113296,
+   "station-jre-31",
+   {
+    "name": "千葉駅 ペリエ千葉地下1階喫煙所",
+    "note": "改札外・駅ビル ペリエ千葉 地下1階\n改札外・駅ビル内\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "平日土10-21 日祝10-20:30",
+    "io": "indoor",
+    "gate": "out",
+    "url": "https://media.jreast.co.jp/articles/4448"
+   }
+  ],
+  [
+   43.06837,
+   141.34999,
+   "station-jrh-1",
+   {
+    "name": "札幌駅 喫煙室",
+    "note": "駅構内\n位置未掲載・一部廃止予定\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://www.jrhokkaido.co.jp/faq/qa0168.html"
+   }
+  ],
+  [
+   42.80821,
+   141.67521,
+   "station-jrh-2",
+   {
+    "name": "南千歳駅 喫煙室",
+    "note": "改札内・2階改札内コンコース\nトイレの隣\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.jrhokkaido.co.jp/network/station/station.html#4284"
+   }
+  ],
+  [
+   42.787797,
+   141.680769,
+   "station-jrh-3",
+   {
+    "name": "新千歳空港駅 喫煙室",
+    "note": "改札口付近コンコース\n利用不可の場合あり\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://www.jrhokkaido.co.jp/network/station/station.html#9040"
+   }
+  ],
+  [
+   42.91807,
+   143.20211,
+   "station-jrh-4",
+   {
+    "name": "帯広駅 喫煙室",
+    "note": "駅構内\n構内図に位置記載なし\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://www.jrhokkaido.co.jp/faq/qa0168.html"
+   }
+  ],
+  [
+   42.99057,
+   144.38204,
+   "station-jrh-5",
+   {
+    "name": "釧路駅 喫煙室",
+    "note": "駅構内\n構内図に位置記載なし\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://www.jrhokkaido.co.jp/faq/qa0168.html"
+   }
+  ],
+  [
+   43.76306,
+   142.35802,
+   "station-jrh-6",
+   {
+    "name": "旭川駅 喫煙室",
+    "note": "駅構内\n構内図に位置記載なし\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://www.jrhokkaido.co.jp/faq/qa0168.html"
+   }
+  ],
+  [
+   41.774,
+   140.72641,
+   "station-jrh-7",
+   {
+    "name": "函館駅 喫煙室",
+    "note": "改札内・改札内 ホーム手前\n7・8番線側の奥\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.jrhokkaido.co.jp/network/station/station.html#104"
+   }
+  ],
+  [
+   41.14494,
+   140.51561,
+   "station-jrh-8",
+   {
+    "name": "奥津軽いまべつ駅 新幹線ホーム喫煙室①",
+    "note": "改札内・新幹線ホーム(新青森方面)\nエレベーター横\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.jrhokkaido.co.jp/network/station/station.html#4234"
+   }
+  ],
+  [
+   41.144807,
+   140.515756,
+   "station-jrh-9",
+   {
+    "name": "奥津軽いまべつ駅 新幹線ホーム喫煙室②",
+    "note": "改札内・新幹線ホーム(新函館北斗方面)\nエレベーター横\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.jrhokkaido.co.jp/network/station/station.html#4234"
+   }
+  ],
+  [
+   41.67789,
+   140.43399,
+   "station-jrh-10",
+   {
+    "name": "木古内駅 新幹線11番ホーム喫煙室",
+    "note": "改札内・新幹線11番ホーム\nホーム中ほど\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.jrhokkaido.co.jp/network/station/station.html#103"
+   }
+  ],
+  [
+   41.677757,
+   140.434136,
+   "station-jrh-11",
+   {
+    "name": "木古内駅 新幹線12番ホーム喫煙室",
+    "note": "改札内・新幹線12番ホーム\nホーム中ほど\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.jrhokkaido.co.jp/network/station/station.html#103"
+   }
+  ],
+  [
+   41.90473,
+   140.64878,
+   "station-jrh-12",
+   {
+    "name": "新函館北斗駅 2階喫煙室",
+    "note": "2階コンコース\n店舗エリア西側\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://www.jrhokkaido.co.jp/network/station/station.html#9643"
+   }
+  ],
+  [
+   41.904597,
+   140.648926,
+   "station-jrh-13",
+   {
+    "name": "新函館北斗駅 1階喫煙室",
+    "note": "1階 南口側\nコインロッカー付近\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://www.jrhokkaido.co.jp/network/station/station.html#9643"
+   }
+  ],
+  [
+   41.904752,
+   140.648476,
+   "station-jrh-14",
+   {
+    "name": "新函館北斗駅 新幹線ホーム喫煙室",
+    "note": "改札内・新幹線ホーム(11番線側)\nエレベーター横\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.jrhokkaido.co.jp/network/station/station.html#9643"
+   }
+  ],
+  [
+   41.90492,
+   140.649077,
+   "station-jrh-15",
+   {
+    "name": "新函館北斗駅 在来線ホーム喫煙室",
+    "note": "改札内・在来線1・2番線ホーム付近\nエレベーター横\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.jrhokkaido.co.jp/network/station/station.html#9643"
+   }
+  ],
+  [
+   33.83988,
+   132.75099,
+   "station-jrs-1",
+   {
+    "name": "松山駅 1階喫煙所",
+    "note": "改札外・1階 改札外 南改札の南側\nトイレの隣\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "out",
+    "url": "https://www.jr-shikoku.co.jp/01_trainbus/kakueki/matsuyama/kounai_map.html"
+   }
+  ],
+  [
+   33.839747,
+   132.751136,
+   "station-jrs-2",
+   {
+    "name": "松山駅 2階改札内喫煙所",
+    "note": "改札内・2階 改札内コンコース\n3・4のりば階段側\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.jr-shikoku.co.jp/01_trainbus/kakueki/matsuyama/kounai_map.html"
+   }
+  ],
+  [
+   33.56692,
+   133.54326,
+   "station-jrs-3",
+   {
+    "name": "高知駅 喫煙所",
+    "note": "改札外・1階 改札外 土産物店棟\n駅レンタカーの隣\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "out",
+    "url": "https://www.jr-shikoku.co.jp/01_trainbus/kakueki/kochi/kounai_map.html"
+   }
+  ],
+  [
+   34.66589,
+   135.51999,
+   "station-kintetsu-1",
+   {
+    "name": "大阪上本町駅 地上ホーム喫煙室",
+    "note": "改札内・地上1階ホーム 9番線側\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/uehonmachi.html"
+   }
+  ],
+  [
+   34.64563,
+   135.51451,
+   "station-kintetsu-2",
+   {
+    "name": "大阪阿部野橋駅 ホーム喫煙室",
+    "note": "改札内・6番線ホーム付近\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/abenobashi.html"
+   }
+  ],
+  [
+   34.66409,
+   135.56357,
+   "station-kintetsu-3",
+   {
+    "name": "布施駅 4階ホーム喫煙室",
+    "note": "改札内・4階 奈良線ホーム 奈良寄り\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/fuse.html"
+   }
+  ],
+  [
+   34.69308,
+   135.69811,
+   "station-kintetsu-4",
+   {
+    "name": "生駒駅 西改札内喫煙室(1)",
+    "note": "改札内・2階 西改札内コンコース\n構内図に印2か所\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/ikoma.html"
+   }
+  ],
+  [
+   34.692947,
+   135.698256,
+   "station-kintetsu-5",
+   {
+    "name": "生駒駅 西改札内喫煙室(2)",
+    "note": "改札内・2階 西改札内 階段付近\n構内図に印2か所\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/ikoma.html"
+   }
+  ],
+  [
+   34.69701,
+   135.74981,
+   "station-kintetsu-6",
+   {
+    "name": "学園前駅 喫煙室",
+    "note": "改札内・改札内 2番線側エレベーター横\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/gakuemmae.html"
+   }
+  ],
+  [
+   34.48386,
+   135.79391,
+   "station-kintetsu-7",
+   {
+    "name": "橿原神宮前駅 喫煙室",
+    "note": "改札内・中央改札内コンコース 吉野線ホーム寄り\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/kashihara.html"
+   }
+  ],
+  [
+   34.66555,
+   135.53,
+   "station-kintetsu-8",
+   {
+    "name": "鶴橋駅 3階喫煙室",
+    "note": "改札内・3階 JRのりかえ口付近\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/tsuruhashi.html"
+   }
+  ],
+  [
+   34.69365,
+   135.78307,
+   "station-kintetsu-9",
+   {
+    "name": "大和西大寺駅 喫煙室",
+    "note": "改札内・改札内 南改札寄りトイレ横\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/saidaiji.html"
+   }
+  ],
+  [
+   34.967038,
+   136.618605,
+   "station-kintetsu-10",
+   {
+    "name": "近鉄四日市駅 ホーム喫煙室",
+    "note": "改札内・3階ホーム\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/yokkaichi.html"
+   }
+  ],
+  [
+   34.98544,
+   135.7588,
+   "station-kintetsu-11",
+   {
+    "name": "近鉄京都駅 喫煙室",
+    "note": "1階 店舗街付近\n改札内外は不明\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/kyoto.html"
+   }
+  ],
+  [
+   34.72371,
+   135.79186,
+   "station-kintetsu-12",
+   {
+    "name": "高の原駅 ホーム喫煙室",
+    "note": "改札内・3・4番線ホーム 京都寄り\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/takanohara.html"
+   }
+  ],
+  [
+   34.93892,
+   135.76542,
+   "station-kintetsu-13",
+   {
+    "name": "近鉄丹波橋駅 ホーム喫煙室",
+    "note": "改札内・1階ホーム 奈良寄り端\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/tambabashi.html"
+   }
+  ],
+  [
+   34.51312,
+   135.79169,
+   "station-kintetsu-14",
+   {
+    "name": "大和八木駅 ホーム喫煙室",
+    "note": "改札内・2階 1・2番線ホーム 名古屋寄り端\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/yagi.html"
+   }
+  ],
+  [
+   34.73439,
+   136.51056,
+   "station-kintetsu-15",
+   {
+    "name": "津駅 近鉄ホーム喫煙室",
+    "note": "改札内・5・6番線ホーム 名古屋寄り端\n構内図に喫煙室の印\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "in",
+    "url": "https://www.kintetsu.co.jp/soukatsu/kounai/tsu.html"
+   }
+  ],
+  [
+   33.58952,
+   130.39938,
+   "station-nishitetsu-1",
+   {
+    "name": "西鉄天神高速バスターミナル 喫煙所",
+    "note": "改札外・3階 バス乗り場\nバスターミナル内\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "out",
+    "url": "http://www.ensen24.jp/tenjinomuta-line/fukuoka_tenjin.html"
+   }
+  ],
+  [
+   33.16511,
+   130.41924,
+   "station-nishitetsu-2",
+   {
+    "name": "西鉄柳川駅 東口喫煙所",
+    "note": "1階 東口\n東口側1階\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "http://www.ensen24.jp/tenjinomuta-line/yanagawa.html"
+   }
+  ],
+  [
+   33.591588,
+   130.419856,
+   "station-nishitetsu-3",
+   {
+    "name": "博多バスターミナル 8階喫煙所",
+    "note": "改札外・8階 飲食店フロア\nJR博多駅隣のビル\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "gate": "out",
+    "url": "https://www.h-bt.jp/floor/"
+   }
+  ],
+  [
+   34.663663,
+   135.501775,
+   "station-osakametro-1",
+   {
+    "name": "なんば駅31号出入口 大阪市指定喫煙所",
+    "note": "改札外・31号出入口(地上)\n市の指定喫煙所\n※地図の位置は駅の目安。構内の場所は上の説明を見てください",
+    "hours": "24時間",
+    "io": "indoor",
+    "gate": "out",
+    "url": "https://www.osakametro.co.jp/news/news/other/20241223_smoking_area.php"
+   }
+  ],
+  [
+   35.893225,
+   139.631176,
+   "station-keyaki-1",
+   {
+    "name": "けやきひろば2階 喫煙所",
+    "note": "2階\n西口徒歩約3分\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://media.jreast.co.jp/articles/7"
+   }
+  ],
+  [
+   35.549186,
+   139.78459,
+   "station-haneda-1",
+   {
+    "name": "羽田空港第1ターミナル 1F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・1F一般エリアに2か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.549053,
+   139.784735,
+   "station-haneda-2",
+   {
+    "name": "羽田空港第1ターミナル 2F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・2F一般エリアに2か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.549208,
+   139.784285,
+   "station-haneda-3",
+   {
+    "name": "羽田空港第1ターミナル 2F 喫煙スペース（制限エリア）",
+    "note": "保安検査後のエリア（搭乗者のみ）・2F制限エリアに3か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.549375,
+   139.784886,
+   "station-haneda-4",
+   {
+    "name": "羽田空港第1ターミナル 3F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・3F一般エリアに1か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.548831,
+   139.784514,
+   "station-haneda-5",
+   {
+    "name": "羽田空港第1ターミナル 4F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・4F一般エリアに1か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.549525,
+   139.78433,
+   "station-haneda-6",
+   {
+    "name": "羽田空港第1ターミナル 5F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・5F一般エリアに1か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.549071,
+   139.7851,
+   "station-haneda-7",
+   {
+    "name": "羽田空港第1ターミナル 6F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・6F一般エリアに1か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.550821,
+   139.788266,
+   "station-haneda-8",
+   {
+    "name": "羽田空港第2ターミナル B1F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・B1F一般エリアに1か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.550688,
+   139.788412,
+   "station-haneda-9",
+   {
+    "name": "羽田空港第2ターミナル 1F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・1F一般エリアに2か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.550843,
+   139.787962,
+   "station-haneda-10",
+   {
+    "name": "羽田空港第2ターミナル 2F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・2F一般エリアに1か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.55101,
+   139.788563,
+   "station-haneda-11",
+   {
+    "name": "羽田空港第2ターミナル 2F 喫煙スペース（制限エリア）",
+    "note": "保安検査後のエリア（搭乗者のみ）・2F制限エリアに3か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.550466,
+   139.788191,
+   "station-haneda-12",
+   {
+    "name": "羽田空港第2ターミナル 2F国際線 喫煙スペース（制限エリア）",
+    "note": "保安検査後のエリア（搭乗者のみ）・2F国際線制限エリアに1か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.55116,
+   139.788007,
+   "station-haneda-13",
+   {
+    "name": "羽田空港第2ターミナル 3F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・3F一般エリアに3か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.550706,
+   139.788777,
+   "station-haneda-14",
+   {
+    "name": "羽田空港第2ターミナル 4F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・4F一般エリアに2か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ],
+  [
+   35.550601,
+   139.787759,
+   "station-haneda-15",
+   {
+    "name": "羽田空港第2ターミナル 5F 喫煙スペース（一般エリア）",
+    "note": "一般エリア（誰でも利用可）・5F一般エリアに2か所\n※地図の位置は施設の目安。館内の場所は上の説明を見てください",
+    "io": "indoor",
+    "url": "https://tokyo-haneda.com/text/service/facilities/smoking_place.html"
+   }
+  ]
+ ]
+}

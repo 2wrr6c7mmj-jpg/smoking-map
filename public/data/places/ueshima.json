@@ -1,0 +1,393 @@
+{
+ "updated": "2026-11-18T21:54:43.111Z",
+ "sources": [
+  {
+   "id": "ueshima",
+   "type": "chain",
+   "group": "shop",
+   "label": "喫茶店（喫煙ブース等あり）",
+   "name": "上島珈琲店 店舗検索",
+   "publisher": "ユーシーシーフードサービスシステムズ",
+   "page": "https://shop.ufs.co.jp/ufs/spot/list?category=01",
+   "count": 33
+  }
+ ],
+ "spots": [
+  [
+   34.663142,
+   135.508742,
+   "ueshima-1101",
+   {
+    "name": "上島珈琲店 黒門市場前店",
+    "note": "喫煙ブースあり・加熱式たばこ専用席あり",
+    "address": "大阪府大阪市中央区日本橋1-18-3日本橋旭ビル別館1・2F",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=1101"
+   }
+  ],
+  [
+   34.688161,
+   135.510035,
+   "ueshima-3615",
+   {
+    "name": "上島珈琲店 大阪証券取引所店",
+    "note": "喫煙ブースあり",
+    "address": "大阪府大阪市中央区北浜1-8-16大阪証券取引所ビル1F",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3615"
+   }
+  ],
+  [
+   34.67447,
+   135.504408,
+   "ueshima-3621",
+   {
+    "name": "上島珈琲店 心斎橋店",
+    "note": "喫煙ブースあり・加熱式たばこ専用席あり",
+    "address": "大阪府大阪市中央区南船場3-8-13",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3621"
+   }
+  ],
+  [
+   35.653415,
+   139.757489,
+   "ueshima-3623",
+   {
+    "name": "上島珈琲店 大門店",
+    "note": "加熱式たばこ専用席あり",
+    "address": "東京都港区芝大門2-4-1イズミビル1F",
+    "heated": "only",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3623"
+   }
+  ],
+  [
+   35.702289,
+   139.652482,
+   "ueshima-3625",
+   {
+    "name": "上島珈琲店 高円寺北口店",
+    "note": "加熱式たばこ専用席あり",
+    "address": "東京都杉並区高円寺北3-22-19利研ビル1F",
+    "heated": "only",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3625"
+   }
+  ],
+  [
+   35.001663,
+   135.764111,
+   "ueshima-3627",
+   {
+    "name": "上島珈琲店 京都四条烏丸店",
+    "note": "喫煙ブースあり・加熱式たばこ専用席あり",
+    "address": "京都府京都市中京区東洞院通錦小路下ル阪東屋町653-4",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3627"
+   }
+  ],
+  [
+   35.002773,
+   135.772228,
+   "ueshima-3629",
+   {
+    "name": "上島珈琲店 河原町店",
+    "note": "喫煙ブースあり・加熱式たばこ専用席あり",
+    "address": "京都府京都市中京区河原町通蛸薬師下ル奈良屋町302",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3629"
+   }
+  ],
+  [
+   35.615498,
+   139.708399,
+   "ueshima-3630",
+   {
+    "name": "上島珈琲店 武蔵小山店",
+    "note": "喫煙ブースあり・加熱式たばこ専用席あり",
+    "address": "東京都品川区小山3-23-2",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3630"
+   }
+  ],
+  [
+   35.641997,
+   139.700634,
+   "ueshima-3631",
+   {
+    "name": "上島珈琲店 中目黒店",
+    "note": "加熱式たばこ専用席あり",
+    "address": "東京都目黒区上目黒3-1-1",
+    "heated": "only",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3631"
+   }
+  ],
+  [
+   35.610956,
+   139.383253,
+   "ueshima-3634",
+   {
+    "name": "上島珈琲店 南大沢店",
+    "note": "喫煙ブースあり・加熱式たばこ専用席あり",
+    "address": "東京都八王子市南大沢2-1-6 フレンテ南大沢2F",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3634"
+   }
+  ],
+  [
+   35.351064,
+   139.536796,
+   "ueshima-3637",
+   {
+    "name": "上島珈琲店 大船店",
+    "note": "喫煙ブースあり",
+    "address": "神奈川県鎌倉市大船1-26-5 相鉄フレッサイン鎌倉大船笠間口 1F",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3637"
+   }
+  ],
+  [
+   35.006821,
+   135.770266,
+   "ueshima-3638",
+   {
+    "name": "上島珈琲店 京都寺町店",
+    "note": "喫煙ブースあり・加熱式たばこ専用席あり",
+    "address": "京都府京都市中京区下本能寺前町519",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3638"
+   }
+  ],
+  [
+   35.46288,
+   139.621631,
+   "ueshima-3646",
+   {
+    "name": "上島珈琲店 横浜北幸店",
+    "note": "喫煙ブースあり",
+    "address": "神奈川県横浜市西区北幸1-9-2NTT-Com横浜西ビル1F",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3646"
+   }
+  ],
+  [
+   35.708307,
+   139.781106,
+   "ueshima-3649",
+   {
+    "name": "上島珈琲店 東上野店",
+    "note": "喫煙ブースあり・加熱式たばこ専用席あり",
+    "address": "東京都台東区東上野3-19-6",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3649"
+   }
+  ],
+  [
+   35.639541,
+   139.674014,
+   "ueshima-3650",
+   {
+    "name": "上島珈琲店 三軒茶屋店",
+    "note": "加熱式たばこ専用席あり",
+    "address": "東京都世田谷区三軒茶屋1-37-13オアシス三軒茶屋ビル1F",
+    "heated": "only",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3650"
+   }
+  ],
+  [
+   35.561967,
+   139.652832,
+   "ueshima-3651",
+   {
+    "name": "上島珈琲店 元住吉店",
+    "note": "喫煙ブースあり・加熱式たばこ専用席あり",
+    "address": "神奈川県川崎市中原区木月3-14-1小川ビル1F",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3651"
+   }
+  ],
+  [
+   35.652192,
+   139.739725,
+   "ueshima-3653",
+   {
+    "name": "上島珈琲店 麻布十番店",
+    "note": "喫煙ブースあり・加熱式たばこ専用席あり",
+    "address": "東京都港区麻布十番2-1-8麻布十番グランドメゾン1F",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3653"
+   }
+  ],
+  [
+   35.564652,
+   139.556878,
+   "ueshima-3656",
+   {
+    "name": "上島珈琲店 あざみ野店",
+    "note": "喫煙ブースあり・加熱式たばこ専用席あり",
+    "address": "神奈川県横浜市青葉区あざみ野2-2-20横浜市営地下鉄あざみ野駅改札前",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3656"
+   }
+  ],
+  [
+   35.636634,
+   139.602563,
+   "ueshima-3658",
+   {
+    "name": "上島珈琲店 成城店",
+    "note": "喫煙ブースあり・加熱式たばこ専用席あり",
+    "address": "東京都世田谷区成城2-39-7すみれビル",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3658"
+   }
+  ],
+  [
+   35.647288,
+   139.725198,
+   "ueshima-3662",
+   {
+    "name": "上島珈琲店 広尾店",
+    "note": "加熱式たばこ専用席あり",
+    "address": "東京都渋谷区広尾5-5-1田中ビル1・2F",
+    "heated": "only",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3662"
+   }
+  ],
+  [
+   34.690106,
+   135.53433,
+   "ueshima-3663",
+   {
+    "name": "上島珈琲店 ＯＢＰ店",
+    "note": "加熱式たばこ専用席あり",
+    "address": "大阪府大阪市中央区城見2-1-61ツイン21 1F",
+    "heated": "only",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3663"
+   }
+  ],
+  [
+   35.699673,
+   139.640046,
+   "ueshima-3664",
+   {
+    "name": "上島珈琲店 阿佐ヶ谷店",
+    "note": "加熱式たばこ専用席あり",
+    "address": "東京都杉並区阿佐谷南1-36-11阿佐ヶ谷Sビル1F",
+    "heated": "only",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3664"
+   }
+  ],
+  [
+   35.698128,
+   139.743937,
+   "ueshima-3673",
+   {
+    "name": "上島珈琲店 神楽坂店",
+    "note": "喫煙ブースあり・加熱式たばこ専用席あり",
+    "address": "東京都新宿区神楽坂3-2木村屋ビル1・2F",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3673"
+   }
+  ],
+  [
+   35.685382,
+   139.769389,
+   "ueshima-3691",
+   {
+    "name": "上島珈琲店 大手町フィナンシャルシティ店",
+    "note": "加熱式たばこ専用席あり",
+    "address": "東京都千代田区大手町1-9-5大手町フィナンシャルシティノースタワー1F",
+    "heated": "only",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3691"
+   }
+  ],
+  [
+   35.66794,
+   139.738753,
+   "ueshima-3692",
+   {
+    "name": "上島珈琲店 相鉄フレッサイン東京赤坂店",
+    "note": "加熱式たばこ専用席あり",
+    "address": "東京都港区赤坂6-3-17相鉄フレッサイン東京赤坂店1F",
+    "heated": "only",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3692"
+   }
+  ],
+  [
+   35.740289,
+   139.609965,
+   "ueshima-3702",
+   {
+    "name": "上島珈琲店 エミオ石神井公園店",
+    "note": "加熱式たばこ専用席あり",
+    "address": "東京都練馬区石神井町4-1-17エミオ石神井公園1F",
+    "heated": "only",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3702"
+   }
+  ],
+  [
+   35.663218,
+   139.716446,
+   "ueshima-3717",
+   {
+    "name": "上島珈琲店 青山店",
+    "note": "喫煙ブースあり",
+    "address": "東京都港区北青山3-5-14青山鈴木硝子ビル1F",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3717"
+   }
+  ],
+  [
+   35.659777,
+   139.749014,
+   "ueshima-3735",
+   {
+    "name": "上島珈琲店 神谷町駅前店",
+    "note": "喫煙ブースあり",
+    "address": "東京都港区虎ノ門3-18-16虎ノ門菅井ビル1F",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3735"
+   }
+  ],
+  [
+   35.512442,
+   139.42448,
+   "ueshima-3745",
+   {
+    "name": "上島珈琲店 ペアナードオダサガ店",
+    "note": "加熱式たばこ専用席あり",
+    "address": "神奈川県相模原市南区南台5-11-19ペアナードオダサガ208",
+    "heated": "only",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=3745"
+   }
+  ],
+  [
+   35.674351,
+   139.774136,
+   "ueshima-4012",
+   {
+    "name": "上島珈琲店 京橋２丁目店",
+    "note": "喫煙ブースあり",
+    "address": "東京都中央区京橋2-8-1八重洲中央ビル1F",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=4012"
+   }
+  ],
+  [
+   35.53266,
+   139.634704,
+   "ueshima-4013",
+   {
+    "name": "上島珈琲店 綱島店",
+    "note": "加熱式たばこ専用席あり",
+    "address": "神奈川県横浜市港北区綱島西2-11-32ニックハイム綱島第6ビル1F",
+    "heated": "only",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=4013"
+   }
+  ],
+  [
+   35.371774,
+   139.580765,
+   "ueshima-4014",
+   {
+    "name": "上島珈琲店 港南台バーズ店",
+    "note": "加熱式たばこ専用席あり",
+    "address": "神奈川県横浜市港南区港南台3-1-3港南台バーズ１階",
+    "heated": "only",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=4014"
+   }
+  ],
+  [
+   34.73238,
+   135.497356,
+   "ueshima-4033",
+   {
+    "name": "上島珈琲店 新大阪店",
+    "note": "喫煙ブースあり・加熱式たばこ専用席あり",
+    "address": "大阪府大阪市淀川区宮原4-3-12新大阪明幸ビル1F",
+    "url": "https://shop.ufs.co.jp/ufs/spot/detail?code=4033"
+   }
+  ]
+ ]
+}

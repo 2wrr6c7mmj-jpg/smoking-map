@@ -1,0 +1,3063 @@
+{
+ "updated": "2026-11-18T22:01:16.336Z",
+ "sources": [
+  {
+   "id": "manekineko",
+   "type": "chain",
+   "group": "shop",
+   "label": "カラオケ（喫煙ブースあり）",
+   "name": "カラオケまねきねこ 店舗検索",
+   "publisher": "コシダカ",
+   "page": "https://www.karaokemanekineko.jp/locations/",
+   "count": 265
+  }
+ ],
+ "spots": [
+  [
+   37.034563,
+   140.890859,
+   "manekineko-fukushima-iwaki-iwaki-kamiarakawa-store",
+   {
+    "name": "カラオケまねきねこ いわき上荒川店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "福島県いわき市平上荒川字長尾28",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/fukushima/iwaki/iwaki-kamiarakawa-store/"
+   }
+  ],
+  [
+   36.921938,
+   140.798443,
+   "manekineko-fukushima-iwaki-iwaki-ueda-store",
+   {
+    "name": "カラオケまねきねこ いわき植田店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "福島県いわき市植田町中央3-3-1",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/fukushima/iwaki/iwaki-ueda-store/"
+   }
+  ],
+  [
+   36.988126,
+   140.867669,
+   "manekineko-fukushima-iwaki-iwaki-yumoto-store",
+   {
+    "name": "カラオケまねきねこ いわき湯本店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "福島県いわき市常盤下船尾町字古内114",
+    "url": "https://www.karaokemanekineko.jp/locations/fukushima/iwaki/iwaki-yumoto-store/"
+   }
+  ],
+  [
+   37.056332,
+   140.892198,
+   "manekineko-fukushima-iwaki-iwaki-ekimae-2nd-store",
+   {
+    "name": "カラオケまねきねこ いわき駅前２号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "福島県いわき市いわき市平3丁目29番ベルツリー3F5F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/fukushima/iwaki/iwaki-ekimae-2nd-store/"
+   }
+  ],
+  [
+   37.057914,
+   140.894498,
+   "manekineko-fukushima-iwaki-iwaki-ekimae-store",
+   {
+    "name": "カラオケまねきねこ いわき駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "福島県いわき市平白銀町９−１ベルフジビルＢ１Ｆ",
+    "url": "https://www.karaokemanekineko.jp/locations/fukushima/iwaki/iwaki-ekimae-store/"
+   }
+  ],
+  [
+   34.693566,
+   135.192705,
+   "manekineko-hyogo-kobe-shi-sankitadori-1st-store",
+   {
+    "name": "カラオケまねきねこ サンキタ通り1号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "兵庫県神戸市中央区北長狭通１丁目３−６光陽ビル３Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/hyogo/kobe-shi/sankitadori-1st-store/"
+   }
+  ],
+  [
+   34.692761,
+   135.191711,
+   "manekineko-hyogo-kobe-shi-sankitadori-2nd-store",
+   {
+    "name": "カラオケまねきねこ サンキタ通り2号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "兵庫県神戸市中央区北長狭通１丁目９−３レインボープラザビル2～4F",
+    "url": "https://www.karaokemanekineko.jp/locations/hyogo/kobe-shi/sankitadori-2nd-store/"
+   }
+  ],
+  [
+   36.073578,
+   140.116617,
+   "manekineko-ibaraki-tsukuba-shi-tsukuba-store",
+   {
+    "name": "カラオケまねきねこ つくば店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "茨城県つくば市東新井３７−１2F",
+    "url": "https://www.karaokemanekineko.jp/locations/ibaraki/tsukuba-shi/tsukuba-store/"
+   }
+  ],
+  [
+   35.710434,
+   139.808258,
+   "manekineko-tokyo-sumida-ku-tokyo-skytree-ekimae-store",
+   {
+    "name": "カラオケまねきねこ とうきょうスカイツリー駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都墨田区向島１丁目３３−９",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/sumida-ku/tokyo-skytree-ekimae-store/"
+   }
+  ],
+  [
+   36.395035,
+   140.539172,
+   "manekineko-ibaraki-hitachinaka-shi-hitachinaka-store",
+   {
+    "name": "カラオケまねきねこ ひたちなか店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "茨城県ひたちなか市笹野町1-16-1",
+    "url": "https://www.karaokemanekineko.jp/locations/ibaraki/hitachinaka-shi/hitachinaka-store/"
+   }
+  ],
+  [
+   38.936824,
+   141.118058,
+   "manekineko-iwate-ichinoseki-ichinoseki-store",
+   {
+    "name": "カラオケまねきねこ 一関店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "岩手県一関市山目大槻５１",
+    "url": "https://www.karaokemanekineko.jp/locations/iwate/ichinoseki/ichinoseki-store/"
+   }
+  ],
+  [
+   40.672864,
+   141.366091,
+   "manekineko-aomori-misawa-shi-misawa-store",
+   {
+    "name": "カラオケまねきねこ 三沢店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "青森県三沢市栄町2-31-2426",
+    "url": "https://www.karaokemanekineko.jp/locations/aomori/misawa-shi/misawa-store/"
+   }
+  ],
+  [
+   35.642345,
+   139.668792,
+   "manekineko-tokyo-setagaya-ku-sangenjaya-store",
+   {
+    "name": "カラオケまねきねこ 三軒茶屋店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都世田谷区三軒茶屋2-10-13アールシティビル2F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/setagaya-ku/sangenjaya-store/"
+   }
+  ],
+  [
+   35.408509,
+   139.594448,
+   "manekineko-kanagawa-yokohama-kamiooka-store",
+   {
+    "name": "カラオケまねきねこ 上大岡店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県横浜市港南区上大岡西1-19-5",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/yokohama/kamiooka-store/"
+   }
+  ],
+  [
+   35.709203,
+   139.772948,
+   "manekineko-tokyo-taito-ueno-chuodori-2nd-store",
+   {
+    "name": "カラオケまねきねこ 上野中央通り2号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都台東区上野2-7-12鈴本ビル4～5F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/taito/ueno-chuodori-2nd-store/"
+   }
+  ],
+  [
+   35.70971,
+   139.773861,
+   "manekineko-tokyo-taito-ueno-chuodori-store",
+   {
+    "name": "カラオケまねきねこ 上野中央通り店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都台東区上野４丁目８−６プラザＵ4・5F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/taito/ueno-chuodori-store/"
+   }
+  ],
+  [
+   35.708318,
+   139.772547,
+   "manekineko-tokyo-taito-ueno-hirokoji-store",
+   {
+    "name": "カラオケまねきねこ 上野広小路店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都台東区上野２丁目１−３",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/taito/ueno-hirokoji-store/"
+   }
+  ],
+  [
+   35.662908,
+   139.668088,
+   "manekineko-tokyo-setagaya-ku-shimokitazawa-store",
+   {
+    "name": "カラオケまねきねこ 下北沢店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都世田谷区北沢２丁目３１−１０",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/setagaya-ku/shimokitazawa-store/"
+   }
+  ],
+  [
+   35.714748,
+   139.943644,
+   "manekineko-chiba-funabashi-shi-shimousa-nakayama-store",
+   {
+    "name": "カラオケまねきねこ 下総中山店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県船橋市本中山２丁目１６−１プラザなかやま２階",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/funabashi-shi/shimousa-nakayama-store/"
+   }
+  ],
+  [
+   36.295547,
+   139.942037,
+   "manekineko-ibaraki-chikusei-shimodate-store",
+   {
+    "name": "カラオケまねきねこ 下館店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "茨城県筑西市玉戸1006-5",
+    "url": "https://www.karaokemanekineko.jp/locations/ibaraki/chikusei/shimodate-store/"
+   }
+  ],
+  [
+   35.698101,
+   139.826221,
+   "manekineko-tokyo-koto-ku-kameido-kitaguchi-store",
+   {
+    "name": "カラオケまねきねこ 亀戸北口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都江東区亀戸５丁目１−２LIV亀戸２ビル６Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/koto-ku/kameido-kitaguchi-store/"
+   }
+  ],
+  [
+   35.767009,
+   139.846875,
+   "manekineko-tokyo-katsushika-kameari-kitaguchi-store",
+   {
+    "name": "カラオケまねきねこ 亀有北口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都葛飾区亀有5-32-2星野亀有ビル1～3F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/katsushika/kameari-kitaguchi-store/"
+   }
+  ],
+  [
+   35.765767,
+   139.847309,
+   "manekineko-tokyo-katsushika-kameari-minamiguchi-store",
+   {
+    "name": "カラオケまねきねこ 亀有南口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都葛飾区亀有3-7-7サンセリテ鞠子2F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/katsushika/kameari-minamiguchi-store/"
+   }
+  ],
+  [
+   37.575686,
+   140.421894,
+   "manekineko-fukushima-nihonmatsu-nihonmatsu-store",
+   {
+    "name": "カラオケまねきねこ 二本松店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "福島県二本松市槻木１１０−２",
+    "url": "https://www.karaokemanekineko.jp/locations/fukushima/nihonmatsu/nihonmatsu-store/"
+   }
+  ],
+  [
+   35.626515,
+   139.724803,
+   "manekineko-tokyo-shinagawa-ku-gotanda-higashiguchi-store",
+   {
+    "name": "カラオケまねきねこ 五反田東口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都品川区東五反田1-13-3デュロス五反田6F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/shinagawa-ku/gotanda-higashiguchi-store/"
+   }
+  ],
+  [
+   35.797334,
+   139.965466,
+   "manekineko-chiba-matsudo-goko-store",
+   {
+    "name": "カラオケまねきねこ 五香店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県松戸市常盤平５丁目１１−１２五香駅西口第3ビル3・4F",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/matsudo/goko-store/"
+   }
+  ],
+  [
+   34.698806,
+   135.534608,
+   "manekineko-osaka-osaka-shi-kyobashi-store",
+   {
+    "name": "カラオケまねきねこ 京橋店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府大阪市都島区東野田町3-12-1京橋ダブルスタービル3Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/osaka-shi/kyobashi-store/"
+   }
+  ],
+  [
+   34.697265,
+   135.534446,
+   "manekineko-osaka-osaka-shi-kyobashi-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 京橋駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府大阪市都島区東野田町３丁目２−９",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/osaka-shi/kyobashi-ekimae-store/"
+   }
+  ],
+  [
+   34.73509,
+   135.563443,
+   "manekineko-osaka-moriguchi-shi-keihan-moriguchi-store",
+   {
+    "name": "カラオケまねきねこ 京阪守口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府守口市本町1-6-19",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/moriguchi-shi/keihan-moriguchi-store/"
+   }
+  ],
+  [
+   36.738941,
+   139.707797,
+   "manekineko-tochigi-nikko-imaichi-mall-store",
+   {
+    "name": "カラオケまねきねこ 今市モール店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "栃木県日光市芹沼字石神殿1470-1ベイシア今市モール内",
+    "url": "https://www.karaokemanekineko.jp/locations/tochigi/nikko/imaichi-mall-store/"
+   }
+  ],
+  [
+   38.261922,
+   140.871337,
+   "manekineko-miyagi-sendai-shi-sendai-ichibancho-vrandome-2nd-store",
+   {
+    "name": "カラオケまねきねこ 仙台一番町ぶらんどーむ２号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "宮城県仙台市青葉区一番町３丁目１０−２２４・５Ｆ",
+    "url": "https://www.karaokemanekineko.jp/locations/miyagi/sendai-shi/sendai-ichibancho-vrandome-2nd-store/"
+   }
+  ],
+  [
+   38.261815,
+   140.871333,
+   "manekineko-miyagi-sendai-shi-sendai-ichibancho-vlandome-store",
+   {
+    "name": "カラオケまねきねこ 仙台一番町ぶらんどーむ店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "宮城県仙台市青葉区一番町3-10-23",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/miyagi/sendai-shi/sendai-ichibancho-vlandome-store/"
+   }
+  ],
+  [
+   38.263931,
+   140.870801,
+   "manekineko-miyagi-sendai-shi-sendai-ichibancho-store",
+   {
+    "name": "カラオケまねきねこ 仙台一番町店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "宮城県仙台市青葉区一番町4-4-33トレンドビル４Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/miyagi/sendai-shi/sendai-ichibancho-store/"
+   }
+  ],
+  [
+   38.261804,
+   140.87981,
+   "manekineko-miyagi-sendai-shi-sendai-nakakecho-store",
+   {
+    "name": "カラオケまねきねこ 仙台名掛丁店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "宮城県仙台市青葉区中央１丁目８−２６ラ・サーミビル4F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/miyagi/sendai-shi/sendai-nakakecho-store/"
+   }
+  ],
+  [
+   38.320646,
+   140.896554,
+   "manekineko-miyagi-sendai-shi-sendai-ichinazaka-store",
+   {
+    "name": "カラオケまねきねこ 仙台市名坂店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "宮城県仙台市泉区市名坂窪田２０−１",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/miyagi/sendai-shi/sendai-ichinazaka-store/"
+   }
+  ],
+  [
+   38.259186,
+   140.884869,
+   "manekineko-miyagi-sendai-shi-sendai-higashiguchi-store",
+   {
+    "name": "カラオケまねきねこ 仙台東口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "宮城県仙台市宮城野区榴岡1-2-13ヨドバシ仙台第二ビルB1",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/miyagi/sendai-shi/sendai-higashiguchi-store/"
+   }
+  ],
+  [
+   38.261228,
+   140.880736,
+   "manekineko-miyagi-sendai-shi-sendai-nishiguchi-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 仙台西口駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "宮城県仙台市青葉区中央1-9-1新東北ビル5F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/miyagi/sendai-shi/sendai-nishiguchi-ekimae-store/"
+   }
+  ],
+  [
+   38.259728,
+   140.87897,
+   "manekineko-miyagi-sendai-shi-sendai-ekimae-2nd-store",
+   {
+    "name": "カラオケまねきねこ 仙台駅前２号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "宮城県仙台市青葉区中央３丁目６−１２仙台南町通ビル５Ｆ",
+    "url": "https://www.karaokemanekineko.jp/locations/miyagi/sendai-shi/sendai-ekimae-2nd-store/"
+   }
+  ],
+  [
+   38.259729,
+   140.878843,
+   "manekineko-miyagi-sendai-shi-sendai-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 仙台駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "宮城県仙台市青葉区中央３丁目６−１",
+    "url": "https://www.karaokemanekineko.jp/locations/miyagi/sendai-shi/sendai-ekimae-store/"
+   }
+  ],
+  [
+   35.443625,
+   139.631976,
+   "manekineko-kanagawa-yokohama-isezaki-mall-store",
+   {
+    "name": "カラオケまねきねこ 伊勢佐木モール店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県横浜市中区伊勢佐木町2-66満利屋ビル3F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/yokohama/isezaki-mall-store/"
+   }
+  ],
+  [
+   34.608414,
+   135.472747,
+   "manekineko-osaka-osaka-shi-suminoekoen-store",
+   {
+    "name": "カラオケまねきねこ 住之江公園店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府大阪市住之江区新北島1-1-7ビッグドッグプラザ2F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/osaka-shi/suminoekoen-store/"
+   }
+  ],
+  [
+   34.581946,
+   133.770541,
+   "manekineko-okayama-kurashiki-kurashiki-sasaoki-store",
+   {
+    "name": "カラオケまねきねこ 倉敷笹沖店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "岡山県倉敷市笹沖1365十合第1ビル1・2F",
+    "url": "https://www.karaokemanekineko.jp/locations/okayama/kurashiki/kurashiki-sasaoki-store/"
+   }
+  ],
+  [
+   33.969164,
+   131.926934,
+   "manekineko-yamaguchi-hikari-hikari-store",
+   {
+    "name": "カラオケまねきねこ 光店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "山口県光市浅江４丁目１−７−１",
+    "url": "https://www.karaokemanekineko.jp/locations/yamaguchi/hikari/hikari-store/"
+   }
+  ],
+  [
+   35.700565,
+   140.090123,
+   "manekineko-chiba-yachiyo-yachiyodai-higashiguchi-store",
+   {
+    "name": "カラオケまねきねこ 八千代台東口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県八千代市八千代台南１丁目１−４曽根ビル４Ｆ～５Ｆ",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/yachiyo/yachiyodai-higashiguchi-store/"
+   }
+  ],
+  [
+   35.723967,
+   140.076522,
+   "manekineko-chiba-yachiyo-yachiyo-midorigaoka-store",
+   {
+    "name": "カラオケまねきねこ 八千代緑が丘店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県八千代市大和田新田９６１−２",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/yachiyo/yachiyo-midorigaoka-store/"
+   }
+  ],
+  [
+   34.665044,
+   135.588144,
+   "manekineko-osaka-higashiosaka-yaenosato-store",
+   {
+    "name": "カラオケまねきねこ 八戸ノ里店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府東大阪市御厨南1-1-26",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/higashiosaka/yaenosato-store/"
+   }
+  ],
+  [
+   40.519242,
+   141.483505,
+   "manekineko-aomori-hachinohe-hachinohe-shiroshita-store",
+   {
+    "name": "カラオケまねきねこ 八戸城下店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "青森県八戸市城下2-11イオンタウン八戸城下内",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/aomori/hachinohe/hachinohe-shiroshita-store/"
+   }
+  ],
+  [
+   40.508651,
+   141.49319,
+   "manekineko-aomori-hachinohe-hachinohe-nagayokocho-store",
+   {
+    "name": "カラオケまねきねこ 八戸長横町店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "青森県八戸市長横町４−１１～２F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/aomori/hachinohe/hachinohe-nagayokocho-store/"
+   }
+  ],
+  [
+   35.684186,
+   140.31251,
+   "manekineko-chiba-yachimata-yachimata-store",
+   {
+    "name": "カラオケまねきねこ 八街店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県八街市文違３０１−１９４",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/yachimata/yachimata-store/"
+   }
+  ],
+  [
+   35.662703,
+   139.732272,
+   "manekineko-tokyo-minato-roppongi-store",
+   {
+    "name": "カラオケまねきねこ 六本木店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都港区六本木6-1-3六門ビル4F～5F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/minato/roppongi-store/"
+   }
+  ],
+  [
+   35.368156,
+   132.760994,
+   "manekineko-shimane-izumo-shi-izumo-store",
+   {
+    "name": "カラオケまねきねこ 出雲店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "島根県出雲市今市町北本町4-1-13",
+    "url": "https://www.karaokemanekineko.jp/locations/shimane/izumo-shi/izumo-store/"
+   }
+  ],
+  [
+   35.750921,
+   139.802865,
+   "manekineko-tokyo-adachi-ku-kitasenju-nishiguchi-2nd-store",
+   {
+    "name": "カラオケまねきねこ 北千住西口２号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都足立区千住3-35-2こべに屋千住第一ビル３・４Ｆ",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/adachi-ku/kitasenju-nishiguchi-2nd-store/"
+   }
+  ],
+  [
+   35.750249,
+   139.80247,
+   "manekineko-tokyo-adachi-ku-kitasenju-nishiguchi-store",
+   {
+    "name": "カラオケまねきねこ 北千住西口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都足立区千住２丁目２５−１やよいビル4F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/adachi-ku/kitasenju-nishiguchi-store/"
+   }
+  ],
+  [
+   34.695007,
+   135.193075,
+   "manekineko-hyogo-kobe-shi-kitanozaka-store",
+   {
+    "name": "カラオケまねきねこ 北野坂店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "兵庫県神戸市中央区加納町４丁目５−２北野坂スクウェアビル1～3F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/hyogo/kobe-shi/kitanozaka-store/"
+   }
+  ],
+  [
+   34.667733,
+   135.503247,
+   "manekineko-osaka-osaka-shi-sennichimae-store",
+   {
+    "name": "カラオケまねきねこ 千日前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府大阪市中央区千日前１丁目８−１３",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/osaka-shi/sennichimae-store/"
+   }
+  ],
+  [
+   42.825604,
+   141.648142,
+   "manekineko-hokkaido-chitose-shi-chitose-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 千歳駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "北海道千歳市千代田町７丁目JR高架下",
+    "url": "https://www.karaokemanekineko.jp/locations/hokkaido/chitose-shi/chitose-ekimae-store/"
+   }
+  ],
+  [
+   35.610042,
+   140.118675,
+   "manekineko-chiba-chiba-chiba-chuo-store",
+   {
+    "name": "カラオケまねきねこ 千葉中央店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県千葉市中央区富士見２丁目８−１４エキニア千葉Ｂ１Ｆ",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/chiba/chiba-chuo-store/"
+   }
+  ],
+  [
+   35.610648,
+   140.116622,
+   "manekineko-chiba-chiba-chiba-ekimae-2nd-store",
+   {
+    "name": "カラオケまねきねこ 千葉駅前２号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県千葉市中央区富士見２丁目５−１富士見江澤ビル４Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/chiba/chiba-ekimae-2nd-store/"
+   }
+  ],
+  [
+   35.609854,
+   140.117253,
+   "manekineko-chiba-chiba-chiba-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 千葉駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県千葉市中央区富士見2-14-1ＥＸビル５Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/chiba/chiba-ekimae-store/"
+   }
+  ],
+  [
+   35.614657,
+   139.380309,
+   "manekineko-tokyo-hachioji-minamiosawa-store",
+   {
+    "name": "カラオケまねきねこ 南大沢店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都八王子市南大沢2-3fab南大沢2F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/hachioji/minamiosawa-store/"
+   }
+  ],
+  [
+   35.84473,
+   139.953793,
+   "manekineko-chiba-kashiwa-minamikashiwa-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 南柏駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県柏市南柏1-2-1飯塚ビル5～6F",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/kashiwa/minamikashiwa-ekimae-store/"
+   }
+  ],
+  [
+   35.728472,
+   139.713756,
+   "manekineko-tokyo-toshima-minami-ikebukuro-store",
+   {
+    "name": "カラオケまねきねこ 南池袋店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都豊島区南池袋2ｰ27ｰ72-4F",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/toshima/minami-ikebukuro-store/"
+   }
+  ],
+  [
+   34.66535,
+   135.502529,
+   "manekineko-osaka-osaka-shi-nankaidori-2nd-store",
+   {
+    "name": "カラオケまねきねこ 南海通り2号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府大阪市中央区難波3-1-16赤垣屋南海通りビル1F～3F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/osaka-shi/nankaidori-2nd-store/"
+   }
+  ],
+  [
+   34.664933,
+   135.50273,
+   "manekineko-osaka-osaka-shi-nankaidori-store",
+   {
+    "name": "カラオケまねきねこ 南海通り店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府大阪市中央区難波千日前12-35SWINGヨシモト3F",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/osaka-shi/nankaidori-store/"
+   }
+  ],
+  [
+   35.894578,
+   140.06353,
+   "manekineko-ibaraki-toride-shi-torideeki-higashiguchi-2nd-store",
+   {
+    "name": "カラオケまねきねこ 取手駅東口２号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "茨城県取手市取手2-3-4小堀ビル2F",
+    "url": "https://www.karaokemanekineko.jp/locations/ibaraki/toride-shi/torideeki-higashiguchi-2nd-store/"
+   }
+  ],
+  [
+   35.89486,
+   140.063765,
+   "manekineko-ibaraki-toride-shi-torideeki-higashiguchi-store",
+   {
+    "name": "カラオケまねきねこ 取手駅東口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "茨城県取手市取手２丁目３−１０玉貴ビル３Ｆ",
+    "url": "https://www.karaokemanekineko.jp/locations/ibaraki/toride-shi/torideeki-higashiguchi-store/"
+   }
+  ],
+  [
+   38.574541,
+   140.96174,
+   "manekineko-miyagi-osaki-shi-furukawa-daimachi-store",
+   {
+    "name": "カラオケまねきねこ 古川台町店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "宮城県大崎市古川台町3-461～2F",
+    "url": "https://www.karaokemanekineko.jp/locations/miyagi/osaki-shi/furukawa-daimachi-store/"
+   }
+  ],
+  [
+   34.739329,
+   135.59229,
+   "manekineko-osaka-kadoma-furukawabashi-store",
+   {
+    "name": "カラオケまねきねこ 古川橋店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府門真市末広町8-1三福ビル2F",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/kadoma/furukawabashi-store/"
+   }
+  ],
+  [
+   36.160783,
+   139.716513,
+   "manekineko-ibaraki-koga-koga-sakuragaoka-store",
+   {
+    "name": "カラオケまねきねこ 古河さくらヶ丘店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "茨城県古河市茶屋新田480",
+    "url": "https://www.karaokemanekineko.jp/locations/ibaraki/koga/koga-sakuragaoka-store/"
+   }
+  ],
+  [
+   35.40251,
+   136.935839,
+   "manekineko-gifu-kagamigahara-kagamigahara-store",
+   {
+    "name": "カラオケまねきねこ 各務原店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "岐阜県各務原市鵜沼西町3-242-1",
+    "url": "https://www.karaokemanekineko.jp/locations/gifu/kagamigahara/kagamigahara-store/"
+   }
+  ],
+  [
+   35.172555,
+   136.885342,
+   "manekineko-aichi-nagoya-shi-meieki-3chome-store",
+   {
+    "name": "カラオケまねきねこ 名駅三丁目店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "愛知県名古屋市中村区名駅三丁目26番25号さのなおしビル1～6F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/aichi/nagoya-shi/meieki-3chome-store/"
+   }
+  ],
+  [
+   34.24623,
+   132.566365,
+   "manekineko-hiroshima-kure-kure-nakadori-store",
+   {
+    "name": "カラオケまねきねこ 呉中通店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "広島県呉市中通４丁目１２−１８",
+    "url": "https://www.karaokemanekineko.jp/locations/hiroshima/kure/kure-nakadori-store/"
+   }
+  ],
+  [
+   34.233528,
+   135.175538,
+   "manekineko-wakayama-wakayama-wakayama-burakuricho-store",
+   {
+    "name": "カラオケまねきねこ 和歌山ぶらくり丁店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "和歌山県和歌山市米屋町３番地ぶらくり丁BLISSビルディング２階",
+    "url": "https://www.karaokemanekineko.jp/locations/wakayama/wakayama/wakayama-burakuricho-store/"
+   }
+  ],
+  [
+   35.004209,
+   135.748748,
+   "manekineko-kyoto-kyoto-shijo-omiya-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 四条大宮駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "京都府京都市中京区錦大宮町116プラネシア阪急大宮ビル4～5F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/kyoto/kyoto/shijo-omiya-ekimae-store/"
+   }
+  ],
+  [
+   35.663681,
+   140.164836,
+   "manekineko-chiba-yotsukaido-shi-yotsukaido-store",
+   {
+    "name": "カラオケまねきねこ 四街道店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県四街道市四街道1-6-1フェイスビル1F",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/yotsukaido-shi/yotsukaido-store/"
+   }
+  ],
+  [
+   35.686487,
+   139.729077,
+   "manekineko-tokyo-shinjuku-ku-yotsuya-shinmichidori-store",
+   {
+    "name": "カラオケまねきねこ 四谷しんみち通り店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都新宿区四谷1-4綿半野原ビルB1F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/shinjuku-ku/yotsuya-shinmichidori-store/"
+   }
+  ],
+  [
+   35.687206,
+   139.720049,
+   "manekineko-tokyo-shinjuku-ku-yotsuya-3chome-store",
+   {
+    "name": "カラオケまねきねこ 四谷三丁目店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都新宿区左門町3-1左門イレブンビル2F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/shinjuku-ku/yotsuya-3chome-store/"
+   }
+  ],
+  [
+   36.08652,
+   140.212493,
+   "manekineko-ibaraki-tsuchiura-tsuchiura-kohoku-store",
+   {
+    "name": "カラオケまねきねこ 土浦湖北店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "茨城県土浦市湖北1-1-2",
+    "url": "https://www.karaokemanekineko.jp/locations/ibaraki/tsuchiura/tsuchiura-kohoku-store/"
+   }
+  ],
+  [
+   38.284048,
+   140.996061,
+   "manekineko-miyagi-tagajo-shi-tagajo-store",
+   {
+    "name": "カラオケまねきねこ 多賀城店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "宮城県多賀城市町前1-2-1町前タウンビル1～3F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/miyagi/tagajo-shi/tagajo-store/"
+   }
+  ],
+  [
+   35.587451,
+   139.728803,
+   "manekineko-tokyo-ota-ku-omori-higashiguchi-store",
+   {
+    "name": "カラオケまねきねこ 大森東口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都大田区大森北1-3-8地研ブリューエンビル3・4・5F",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/ota-ku/omori-higashiguchi-store/"
+   }
+  ],
+  [
+   36.862556,
+   140.010582,
+   "manekineko-tochigi-otawara-otawara-store",
+   {
+    "name": "カラオケまねきねこ 大田原店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "栃木県大田原市美原１丁目３５３４",
+    "url": "https://www.karaokemanekineko.jp/locations/tochigi/otawara/otawara-store/"
+   }
+  ],
+  [
+   35.353705,
+   139.53036,
+   "manekineko-kanagawa-kamakura-ofuna-kasamaguchi-store",
+   {
+    "name": "カラオケまねきねこ 大船笠間口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県鎌倉市大船一丁目6番6号大船駅前ビル4階～5階",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/kamakura/ofuna-kasamaguchi-store/"
+   }
+  ],
+  [
+   34.697974,
+   135.485814,
+   "manekineko-osaka-osaka-shi-osaka-fukushima-store",
+   {
+    "name": "カラオケまねきねこ 大阪福島店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府大阪市福島区福島７丁目９−２９",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/osaka-shi/osaka-fukushima-store/"
+   }
+  ],
+  [
+   35.551936,
+   139.741044,
+   "manekineko-tokyo-ota-ku-otorii-store",
+   {
+    "name": "カラオケまねきねこ 大鳥居店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都大田区羽田１丁目１−３大鳥居京急第一ビル2F",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/ota-ku/otorii-store/"
+   }
+  ],
+  [
+   34.682179,
+   135.821578,
+   "manekineko-nara-nara-shi-nara-sanjodori-store",
+   {
+    "name": "カラオケまねきねこ 奈良三条通り店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "奈良県奈良市油阪地方町4-1ミキビル",
+    "url": "https://www.karaokemanekineko.jp/locations/nara/nara-shi/nara-sanjodori-store/"
+   }
+  ],
+  [
+   35.629446,
+   139.685181,
+   "manekineko-tokyo-meguro-ku-gakugei-daigaku-nishiguchi-store",
+   {
+    "name": "カラオケまねきねこ 学芸大学西口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都目黒区鷹番3-8-9第三福田ビル1階～3階",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/meguro-ku/gakugei-daigaku-nishiguchi-store/"
+   }
+  ],
+  [
+   33.956511,
+   131.257991,
+   "manekineko-yamaguchi-ube-shi-ube-store",
+   {
+    "name": "カラオケまねきねこ 宇部店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "山口県宇部市北琴芝2-11-40-12F",
+    "url": "https://www.karaokemanekineko.jp/locations/yamaguchi/ube-shi/ube-store/"
+   }
+  ],
+  [
+   36.591203,
+   139.86242,
+   "manekineko-tochigi-utsunomiya-shi-utsunomiya-kamitomatsuri-store",
+   {
+    "name": "カラオケまねきねこ 宇都宮上戸祭店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "栃木県宇都宮市上戸祭３丁目１−１０",
+    "url": "https://www.karaokemanekineko.jp/locations/tochigi/utsunomiya-shi/utsunomiya-kamitomatsuri-store/"
+   }
+  ],
+  [
+   36.561334,
+   139.883327,
+   "manekineko-tochigi-utsunomiya-shi-utsunomiya-odori-store",
+   {
+    "name": "カラオケまねきねこ 宇都宮大通り店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "栃木県宇都宮市池上町1-33F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tochigi/utsunomiya-shi/utsunomiya-odori-store/"
+   }
+  ],
+  [
+   36.599261,
+   139.947861,
+   "manekineko-tochigi-utsunomiya-shi-utsunomiya-okamoto-store",
+   {
+    "name": "カラオケまねきねこ 宇都宮岡本店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "栃木県宇都宮市下岡本町４３０１",
+    "url": "https://www.karaokemanekineko.jp/locations/tochigi/utsunomiya-shi/utsunomiya-okamoto-store/"
+   }
+  ],
+  [
+   36.541466,
+   139.902969,
+   "manekineko-tochigi-utsunomiya-shi-utsunomiya-yanase-store",
+   {
+    "name": "カラオケまねきねこ 宇都宮簗瀬店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "栃木県宇都宮市東簗瀬1-37-10",
+    "url": "https://www.karaokemanekineko.jp/locations/tochigi/utsunomiya-shi/utsunomiya-yanase-store/"
+   }
+  ],
+  [
+   36.504852,
+   139.874868,
+   "manekineko-tochigi-utsunomiya-shi-utsunomiya-suzumenomiya-store",
+   {
+    "name": "カラオケまねきねこ 宇都宮雀宮店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "栃木県宇都宮市宮の内2-806-4",
+    "url": "https://www.karaokemanekineko.jp/locations/tochigi/utsunomiya-shi/utsunomiya-suzumenomiya-store/"
+   }
+  ],
+  [
+   36.558066,
+   139.902638,
+   "manekineko-tochigi-utsunomiya-shi-utsunomiyaeki-higashiguchi-store",
+   {
+    "name": "カラオケまねきねこ 宇都宮駅東口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "栃木県宇都宮市東宿郷２丁目５−１６",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tochigi/utsunomiya-shi/utsunomiyaeki-higashiguchi-store/"
+   }
+  ],
+  [
+   35.584782,
+   139.583247,
+   "manekineko-kanagawa-kawasaki-miyamaedaira-store",
+   {
+    "name": "カラオケまねきねこ 宮前平店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県川崎市宮前区宮前平１丁目１０−１９パストラルハイツＶ1階",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/kawasaki/miyamaedaira-store/"
+   }
+  ],
+  [
+   35.162155,
+   138.692989,
+   "manekineko-shizuoka-fuji-city-fuji-honyoshiwara-store",
+   {
+    "name": "カラオケまねきねこ 富士本吉原店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "静岡県富士市今泉１丁目１７−４１",
+    "url": "https://www.karaokemanekineko.jp/locations/shizuoka/fuji-city/fuji-honyoshiwara-store/"
+   }
+  ],
+  [
+   35.152156,
+   138.650116,
+   "manekineko-shizuoka-fuji-city-fuji-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 富士駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "静岡県富士市本町5-7富士駅前ビル2～3F",
+    "url": "https://www.karaokemanekineko.jp/locations/shizuoka/fuji-city/fuji-ekimae-store/"
+   }
+  ],
+  [
+   36.686686,
+   137.251652,
+   "manekineko-toyama-toyama-shi-toyama-tenshoji-store",
+   {
+    "name": "カラオケまねきねこ 富山天正寺店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "富山県富山市天正寺1019-1",
+    "url": "https://www.karaokemanekineko.jp/locations/toyama/toyama-shi/toyama-tenshoji-store/"
+   }
+  ],
+  [
+   36.699089,
+   137.212483,
+   "manekineko-toyama-toyama-shi-toyama-ekimae-2nd-store",
+   {
+    "name": "カラオケまねきねこ 富山駅前2号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "富山県富山市桜町2-1-1",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/toyama/toyama-shi/toyama-ekimae-2nd-store/"
+   }
+  ],
+  [
+   36.698257,
+   137.212934,
+   "manekineko-toyama-toyama-shi-toyama-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 富山駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "富山県富山市桜町2-2-15",
+    "url": "https://www.karaokemanekineko.jp/locations/toyama/toyama-shi/toyama-ekimae-store/"
+   }
+  ],
+  [
+   35.745101,
+   140.313865,
+   "manekineko-chiba-tomisato-tomisato-store",
+   {
+    "name": "カラオケまねきねこ 富里店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県富里市七栄550-10",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/tomisato/tomisato-store/"
+   }
+  ],
+  [
+   34.64861,
+   135.523538,
+   "manekineko-osaka-osaka-shi-teradacho-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 寺田町駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府大阪市天王寺区大道4-10-12中村ビル2･3F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/osaka-shi/teradacho-ekimae-store/"
+   }
+  ],
+  [
+   36.958345,
+   140.904141,
+   "manekineko-fukushima-iwaki-onahama-store",
+   {
+    "name": "カラオケまねきねこ 小名浜店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "福島県いわき市小名浜岡小名字高田１０－１",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/fukushima/iwaki/onahama-store/"
+   }
+  ],
+  [
+   36.31898,
+   139.814653,
+   "manekineko-tochigi-oyama-oyama-johoku-store",
+   {
+    "name": "カラオケまねきねこ 小山城北店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "栃木県小山市城北６丁目４−６",
+    "url": "https://www.karaokemanekineko.jp/locations/tochigi/oyama/oyama-johoku-store/"
+   }
+  ],
+  [
+   36.290281,
+   139.805975,
+   "manekineko-tochigi-oyama-oyama-jonan-store",
+   {
+    "name": "カラオケまねきねこ 小山城南店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "栃木県小山市西城南６丁目５−８",
+    "url": "https://www.karaokemanekineko.jp/locations/tochigi/oyama/oyama-jonan-store/"
+   }
+  ],
+  [
+   35.292547,
+   136.933752,
+   "manekineko-aichi-komaki-shi-komaki-futaebori-store",
+   {
+    "name": "カラオケまねきねこ 小牧二重堀店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "愛知県小牧市大字二重堀字中西浦797-1ナフコ２Ｆ",
+    "url": "https://www.karaokemanekineko.jp/locations/aichi/komaki-shi/komaki-futaebori-store/"
+   }
+  ],
+  [
+   38.254223,
+   140.339525,
+   "manekineko-yamagata-yamagata-shi-yamagata-nanokamachi-store",
+   {
+    "name": "カラオケまねきねこ 山形七日町店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "山形県山形市旅篭町2-2-25カメリアコート2F",
+    "url": "https://www.karaokemanekineko.jp/locations/yamagata/yamagata-shi/yamagata-nanokamachi-store/"
+   }
+  ],
+  [
+   34.652721,
+   133.887555,
+   "manekineko-okayama-okayama-shi-okayama-kitanagase-store",
+   {
+    "name": "カラオケまねきねこ 岡山北長瀬店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "岡山県岡山市北区北長瀬表町2-17-80BRANCH北長瀬2F",
+    "url": "https://www.karaokemanekineko.jp/locations/okayama/okayama-shi/okayama-kitanagase-store/"
+   }
+  ],
+  [
+   34.644027,
+   133.92471,
+   "manekineko-okayama-okayama-shi-okayama-okuda-store",
+   {
+    "name": "カラオケまねきねこ 岡山奥田店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "岡山県岡山市北区奥田1-9-12",
+    "url": "https://www.karaokemanekineko.jp/locations/okayama/okayama-shi/okayama-okuda-store/"
+   }
+  ],
+  [
+   34.658046,
+   133.998387,
+   "manekineko-okayama-okayama-shi-okayama-masuno-store",
+   {
+    "name": "カラオケまねきねこ 岡山益野店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "岡山県岡山市東区益野町246-1",
+    "url": "https://www.karaokemanekineko.jp/locations/okayama/okayama-shi/okayama-masuno-store/"
+   }
+  ],
+  [
+   36.038127,
+   139.900698,
+   "manekineko-ibaraki-bando-shi-iwai-store",
+   {
+    "name": "カラオケまねきねこ 岩井店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "茨城県坂東市辺田１００４",
+    "url": "https://www.karaokemanekineko.jp/locations/ibaraki/bando-shi/iwai-store/"
+   }
+  ],
+  [
+   34.170989,
+   132.224092,
+   "manekineko-yamaguchi-iwakuni-iwakuni-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 岩国駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "山口県岩国市麻里布町2-4-24",
+    "url": "https://www.karaokemanekineko.jp/locations/yamaguchi/iwakuni/iwakuni-ekimae-store/"
+   }
+  ],
+  [
+   35.729794,
+   139.907237,
+   "manekineko-chiba-ichikawa-shi-ichikawa-kitaguchi-store",
+   {
+    "name": "カラオケまねきねこ 市川北口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県市川市市川1-8-2日日商事ビル２・３・４Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/ichikawa-shi/ichikawa-kitaguchi-store/"
+   }
+  ],
+  [
+   34.664101,
+   135.561286,
+   "manekineko-osaka-higashiosaka-fuse-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 布施駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府東大阪市足代新町1-48あじロード2F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/higashiosaka/fuse-ekimae-store/"
+   }
+  ],
+  [
+   35.802958,
+   139.950119,
+   "manekineko-chiba-matsudo-tokiwadaira-store",
+   {
+    "name": "カラオケまねきねこ 常盤平店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県松戸市常盤平2-8第一石川ビル2F",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/matsudo/tokiwadaira-store/"
+   }
+  ],
+  [
+   36.539808,
+   140.412971,
+   "manekineko-ibaraki-hitachi-omiya-hitachiomiya-store",
+   {
+    "name": "カラオケまねきねこ 常陸大宮店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "茨城県常陸大宮市石沢１８４４−１",
+    "url": "https://www.karaokemanekineko.jp/locations/ibaraki/hitachi-omiya/hitachiomiya-store/"
+   }
+  ],
+  [
+   35.67777,
+   139.677526,
+   "manekineko-tokyo-shibuya-ku-hatagaya-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 幡ヶ谷駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都渋谷区幡ヶ谷2-7-2幡ヶ谷ニューセンタービル４Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/shibuya-ku/hatagaya-ekimae-store/"
+   }
+  ],
+  [
+   35.705587,
+   139.844394,
+   "manekineko-tokyo-edogawa-ku-hirai-minamiguchi-store",
+   {
+    "name": "カラオケまねきねこ 平井南口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都江戸川区平井4-8-7平井イニシャルハウス4・5F",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/edogawa-ku/hirai-minamiguchi-store/"
+   }
+  ],
+  [
+   34.408082,
+   132.713319,
+   "manekineko-hiroshima-higashihiroshima-hirodai-mae-store",
+   {
+    "name": "カラオケまねきねこ 広大前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "広島県東広島市西条下見6-3-43",
+    "url": "https://www.karaokemanekineko.jp/locations/hiroshima/higashihiroshima/hirodai-mae-store/"
+   }
+  ],
+  [
+   34.38758,
+   132.493733,
+   "manekineko-hiroshima-hiroshima-shi-hiroshima-ozu-store",
+   {
+    "name": "カラオケまねきねこ 広島大州店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "広島県広島市南区大州3-7-10",
+    "url": "https://www.karaokemanekineko.jp/locations/hiroshima/hiroshima-shi/hiroshima-ozu-store/"
+   }
+  ],
+  [
+   34.409938,
+   132.452542,
+   "manekineko-hiroshima-hiroshima-shi-hiroshima-yokogawa-store",
+   {
+    "name": "カラオケまねきねこ 広島横川店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "広島県広島市西区横川町3-4-1",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/hiroshima/hiroshima-shi/hiroshima-yokogawa-store/"
+   }
+  ],
+  [
+   35.671346,
+   139.478741,
+   "manekineko-tokyo-fuchu-shi-fucyu-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 府中駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都府中市宮西町1丁目5-1フラココ第8ビル3階",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/fuchu-shi/fucyu-ekimae-store/"
+   }
+  ],
+  [
+   40.598215,
+   140.482329,
+   "manekineko-aomori-hirosaki-shi-hirosaki-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 弘前駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "青森県弘前市大字駅前町7-5",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/aomori/hirosaki-shi/hirosaki-ekimae-store/"
+   }
+  ],
+  [
+   35.301631,
+   138.922779,
+   "manekineko-shizuoka-gotemba-shi-gotemba-store",
+   {
+    "name": "カラオケまねきねこ 御殿場店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "静岡県御殿場市川島田838-1",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/shizuoka/gotemba-shi/gotemba-store/"
+   }
+  ],
+  [
+   34.051149,
+   131.808093,
+   "manekineko-yamaguchi-shunan-tokuyama-heiwadori-store",
+   {
+    "name": "カラオケまねきねこ 徳山平和通り店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "山口県周南市平和通り１丁目３０",
+    "url": "https://www.karaokemanekineko.jp/locations/yamaguchi/shunan/tokuyama-heiwadori-store/"
+   }
+  ],
+  [
+   34.050315,
+   131.805626,
+   "manekineko-yamaguchi-shunan-tokuyama-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 徳山駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "山口県周南市銀座2-18銀座毎日興業ビル２F",
+    "url": "https://www.karaokemanekineko.jp/locations/yamaguchi/shunan/tokuyama-ekimae-store/"
+   }
+  ],
+  [
+   34.67444,
+   135.502472,
+   "manekineko-osaka-osaka-shi-shinsaibashi-2nd-store",
+   {
+    "name": "カラオケまねきねこ 心斎橋2号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府大阪市中央区東心斎橋1-19-11鰻谷スクエア2F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/osaka-shi/shinsaibashi-2nd-store/"
+   }
+  ],
+  [
+   34.674278,
+   135.504167,
+   "manekineko-osaka-osaka-shi-shinsaibashi-1st-store",
+   {
+    "name": "カラオケまねきねこ 心斎橋店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府大阪市中央区心斎橋筋1-4-13OSAKA心斎橋BUILDING5F・6F",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/osaka-shi/shinsaibashi-1st-store/"
+   }
+  ],
+  [
+   35.646939,
+   139.710823,
+   "manekineko-tokyo-shibuya-ku-ebisu-higashiguchi-store",
+   {
+    "name": "カラオケまねきねこ 恵比寿東口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都渋谷区恵比寿１丁目１０−７T.I.Bビル４Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/shibuya-ku/ebisu-higashiguchi-store/"
+   }
+  ],
+  [
+   35.647514,
+   139.708011,
+   "manekineko-tokyo-shibuya-ku-ebisu-nishiguchi-store",
+   {
+    "name": "カラオケまねきねこ 恵比寿西口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都渋谷区恵比寿西1－13－2サンキビル地下1階",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/shibuya-ku/ebisu-nishiguchi-store/"
+   }
+  ],
+  [
+   35.793018,
+   140.322365,
+   "manekineko-chiba-narita-shi-narita-tsuchiya-store",
+   {
+    "name": "カラオケまねきねこ 成田土屋店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県成田市ウイング土屋８０ヒューマックスパビリオン",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/narita-shi/narita-tsuchiya-store/"
+   }
+  ],
+  [
+   35.400132,
+   139.536683,
+   "manekineko-kanagawa-yokohama-totsuka-higashiguchi-store",
+   {
+    "name": "カラオケまねきねこ 戸塚東口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県横浜市戸塚区吉田町１１７−１戸塚OCビル3F",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/yokohama/totsuka-higashiguchi-store/"
+   }
+  ],
+  [
+   35.398835,
+   139.531935,
+   "manekineko-kanagawa-yokohama-totsuka-nishiguchi-store",
+   {
+    "name": "カラオケまねきねこ 戸塚西口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県横浜市戸塚区戸塚町116アイエスビル2F・3F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/yokohama/totsuka-nishiguchi-store/"
+   }
+  ],
+  [
+   35.615243,
+   139.717688,
+   "manekineko-tokyo-shinagawa-ku-togoshiginza-store",
+   {
+    "name": "カラオケまねきねこ 戸越銀座店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都品川区戸越1-15-14パルピア3F",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/shinagawa-ku/togoshiginza-store/"
+   }
+  ],
+  [
+   34.684777,
+   135.811464,
+   "manekineko-nara-nara-shi-shinomiya-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 新大宮駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "奈良県奈良市大宮町6-1-9",
+    "url": "https://www.karaokemanekineko.jp/locations/nara/nara-shi/shinomiya-ekimae-store/"
+   }
+  ],
+  [
+   35.716234,
+   139.858089,
+   "manekineko-tokyo-katsushika-shinkoiwa-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 新小岩駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都葛飾区新小岩1-44-4ＶＯＲＴ新小岩７Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/katsushika/shinkoiwa-ekimae-store/"
+   }
+  ],
+  [
+   34.680453,
+   135.641789,
+   "manekineko-osaka-higashiosaka-shinishikiri-store",
+   {
+    "name": "カラオケまねきねこ 新石切店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府東大阪市西石切町3-3-10新石切中野ビル3F",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/higashiosaka/shinishikiri-store/"
+   }
+  ],
+  [
+   34.655459,
+   135.144723,
+   "manekineko-hyogo-kobe-shi-shinnagata-store",
+   {
+    "name": "カラオケまねきねこ 新長田店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "兵庫県神戸市長田区若松6-1-13F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/hyogo/kobe-shi/shinnagata-store/"
+   }
+  ],
+  [
+   35.445833,
+   139.627698,
+   "manekineko-kanagawa-yokohama-hinodecho-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 日ノ出町駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県横浜市中区日ノ出町１丁目１８−１オーツービル３・４・５Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/yokohama/hinodecho-ekimae-store/"
+   }
+  ],
+  [
+   35.728384,
+   139.771258,
+   "manekineko-tokyo-arakawa-ku-nippori-store",
+   {
+    "name": "カラオケまねきねこ 日暮里店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都荒川区西日暮里2-19-4日暮里ニュートーキョービル3F～4F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/arakawa-ku/nippori-store/"
+   }
+  ],
+  [
+   36.626404,
+   140.670285,
+   "manekineko-ibaraki-hitachi-hitachi-store",
+   {
+    "name": "カラオケまねきねこ 日立店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "茨城県日立市田尻町3-26-4",
+    "url": "https://www.karaokemanekineko.jp/locations/ibaraki/hitachi/hitachi-store/"
+   }
+  ],
+  [
+   36.620576,
+   140.677639,
+   "manekineko-ibaraki-hitachi-hitachi-namekawa-store",
+   {
+    "name": "カラオケまねきねこ 日立滑川店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "茨城県日立市東滑川町4-12-302F",
+    "url": "https://www.karaokemanekineko.jp/locations/ibaraki/hitachi/hitachi-namekawa-store/"
+   }
+  ],
+  [
+   35.723267,
+   140.634554,
+   "manekineko-chiba-asahi-asahi-store",
+   {
+    "name": "カラオケまねきねこ 旭店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県旭市二5246",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/asahi/asahi-store/"
+   }
+  ],
+  [
+   35.386792,
+   139.939854,
+   "manekineko-chiba-kisarazu-shi-kisarazu-store",
+   {
+    "name": "カラオケまねきねこ 木更津店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県木更津市長須賀２５３３−１",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/kisarazu-shi/kisarazu-store/"
+   }
+  ],
+  [
+   35.381542,
+   139.927602,
+   "manekineko-chiba-kisarazu-shi-kisarazu-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 木更津駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県木更津市東中央1-2-8木更津東口駅前ＮＫビル1~2F",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/kisarazu-shi/kisarazu-ekimae-store/"
+   }
+  ],
+  [
+   35.721837,
+   139.92806,
+   "manekineko-chiba-ichikawa-shi-motoyawata-kitaguchi-store",
+   {
+    "name": "カラオケまねきねこ 本八幡北口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県市川市八幡2-6-7ファイブビル1・2F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/ichikawa-shi/motoyawata-kitaguchi-store/"
+   }
+  ],
+  [
+   43.034995,
+   141.369431,
+   "manekineko-hokkaido-sapporo-sapporo-hiragishi-store",
+   {
+    "name": "カラオケまねきねこ 札幌平岸店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "北海道札幌市豊平区平岸3条7-1-27平岸スクエアビル3F",
+    "url": "https://www.karaokemanekineko.jp/locations/hokkaido/sapporo/sapporo-hiragishi-store/"
+   }
+  ],
+  [
+   38.413824,
+   140.379887,
+   "manekineko-yamagata-higashine-higashine-store",
+   {
+    "name": "カラオケまねきねこ 東根店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "山形県東根市神町北１丁目２−９",
+    "url": "https://www.karaokemanekineko.jp/locations/yamagata/higashine/higashine-store/"
+   }
+  ],
+  [
+   35.563293,
+   140.373936,
+   "manekineko-chiba-togane-togane-store",
+   {
+    "name": "カラオケまねきねこ 東金店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県東金市田間1-12-14",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/togane/togane-store/"
+   }
+  ],
+  [
+   35.669932,
+   139.81928,
+   "manekineko-tokyo-koto-ku-toyocho-store",
+   {
+    "name": "カラオケまねきねこ 東陽町店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都江東区東陽4-6-1三共商会ビル3F～5F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/koto-ku/toyocho-store/"
+   }
+  ],
+  [
+   35.784552,
+   139.901622,
+   "manekineko-chiba-matsudo-matsudo-higashiguchi-2nd-store",
+   {
+    "name": "カラオケまねきねこ 松戸東口２号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県松戸市松戸1173-1RGMATSUDOBLD2F",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/matsudo/matsudo-higashiguchi-2nd-store/"
+   }
+  ],
+  [
+   35.783804,
+   139.901357,
+   "manekineko-chiba-matsudo-matsudo-higashiguchi-store",
+   {
+    "name": "カラオケまねきねこ 松戸東口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県松戸市松戸１２２８−１松戸ステーションビル７Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/matsudo/matsudo-higashiguchi-store/"
+   }
+  ],
+  [
+   35.786147,
+   139.899137,
+   "manekineko-chiba-matsudo-matsudo-nishiguchi-store",
+   {
+    "name": "カラオケまねきねこ 松戸西口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県松戸市本町23-5",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/matsudo/matsudo-nishiguchi-store/"
+   }
+  ],
+  [
+   35.458923,
+   133.070387,
+   "manekineko-shimane-matsue-matsue-nishitsuda-store",
+   {
+    "name": "カラオケまねきねこ 松江西津田店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "島根県松江市西津田5-1-5",
+    "url": "https://www.karaokemanekineko.jp/locations/shimane/matsue/matsue-nishitsuda-store/"
+   }
+  ],
+  [
+   35.861392,
+   139.972123,
+   "manekineko-chiba-kashiwa-kashiwa-higashiguchi-store",
+   {
+    "name": "カラオケまねきねこ 柏東口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県柏市柏１丁目４−２７柏第一ビル２～４Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/kashiwa/kashiwa-higashiguchi-store/"
+   }
+  ],
+  [
+   35.862556,
+   139.969484,
+   "manekineko-chiba-kashiwa-kashiwa-nishiguchi-store",
+   {
+    "name": "カラオケまねきねこ 柏西口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県柏市旭町１丁目１−１９ヤブキビル４～７Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/kashiwa/kashiwa-nishiguchi-store/"
+   }
+  ],
+  [
+   35.860824,
+   139.970757,
+   "manekineko-chiba-kashiwa-kashiwa-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 柏駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県柏市柏1-2-8システムランドビル５Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/kashiwa/kashiwa-ekimae-store/"
+   }
+  ],
+  [
+   35.449346,
+   139.630556,
+   "manekineko-kanagawa-yokohama-sakuragicho-store",
+   {
+    "name": "カラオケまねきねこ 桜木町店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県横浜市中区花咲町１丁目３６フルーレ花咲3F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/yokohama/sakuragicho-store/"
+   }
+  ],
+  [
+   34.705559,
+   135.496207,
+   "manekineko-osaka-osaka-shi-umeda-shibata-store",
+   {
+    "name": "カラオケまねきねこ 梅田芝田店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府大阪市北区芝田2-2-5芝田二丁目ビル3～5F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/osaka-shi/umeda-shibata-store/"
+   }
+  ],
+  [
+   35.596837,
+   139.344703,
+   "manekineko-kanagawa-sagamihara-hashimoto-kitaguchi-2nd-store",
+   {
+    "name": "カラオケまねきねこ 橋本北口2号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県相模原市緑区橋本６丁目９−６",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/sagamihara/hashimoto-kitaguchi-2nd-store/"
+   }
+  ],
+  [
+   35.59676,
+   139.34614,
+   "manekineko-kanagawa-sagamihara-hashimoto-kitaguchi-store",
+   {
+    "name": "カラオケまねきねこ 橋本北口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県相模原市緑区橋本３丁目３０",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/sagamihara/hashimoto-kitaguchi-store/"
+   }
+  ],
+  [
+   36.687392,
+   139.954995,
+   "manekineko-tochigi-sakura-shi-ujiie-store",
+   {
+    "name": "カラオケまねきねこ 氏家店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "栃木県さくら市北草川2-13-3",
+    "url": "https://www.karaokemanekineko.jp/locations/tochigi/sakura-shi/ujiie-store/"
+   }
+  ],
+  [
+   36.35035,
+   140.443718,
+   "manekineko-ibaraki-mito-shi-mito-bypass-store",
+   {
+    "name": "カラオケまねきねこ 水戸バイパス店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "茨城県水戸市千波町2018-5",
+    "url": "https://www.karaokemanekineko.jp/locations/ibaraki/mito-shi/mito-bypass-store/"
+   }
+  ],
+  [
+   36.371651,
+   140.474981,
+   "manekineko-ibaraki-mito-shi-mito-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 水戸北口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "茨城県水戸市宮町1-3-38中村ビルＢ１Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/ibaraki/mito-shi/mito-ekimae-store/"
+   }
+  ],
+  [
+   35.701506,
+   139.752569,
+   "manekineko-tokyo-chiyoda-ku-suidobashi-2nd-store",
+   {
+    "name": "カラオケまねきねこ 水道橋2号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都千代田区神田三崎町２丁目１９−４",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/chiyoda-ku/suidobashi-2nd-store/"
+   }
+  ],
+  [
+   35.700639,
+   139.754928,
+   "manekineko-tokyo-chiyoda-ku-suidobashi-store",
+   {
+    "name": "カラオケまねきねこ 水道橋店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都千代田区神田三崎町２丁目８−７庄や第1ビル3～5F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/chiyoda-ku/suidobashi-store/"
+   }
+  ],
+  [
+   34.758373,
+   135.497538,
+   "manekineko-osaka-suita-shi-esaka-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 江坂駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府吹田市江坂町1-23-37西浦江坂ビル５Ｆ",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/suita-shi/esaka-ekimae-store/"
+   }
+  ],
+  [
+   35.729682,
+   139.716041,
+   "manekineko-tokyo-toshima-ikebukuro-sunshine-dori-2nd-store",
+   {
+    "name": "カラオケまねきねこ 池袋サンシャイン通り2号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都豊島区東池袋1-22-14六花ビル4～6F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/toshima/ikebukuro-sunshine-dori-2nd-store/"
+   }
+  ],
+  [
+   35.006543,
+   135.769482,
+   "manekineko-kyoto-kyoto-kawaramachi-store",
+   {
+    "name": "カラオケまねきねこ 河原町店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "京都府京都市中京区河原町通蛸薬師上る奈良屋町291DECKByCOASTビル2F～4F",
+    "url": "https://www.karaokemanekineko.jp/locations/kyoto/kyoto/kawaramachi-store/"
+   }
+  ],
+  [
+   35.00574,
+   135.768769,
+   "manekineko-kyoto-kyoto-kawaramachi-takoyakushi-store",
+   {
+    "name": "カラオケまねきねこ 河原町蛸薬師店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "京都府京都市中京区蛸薬師通り河原町西入塩屋町320番地OKADAビル1F～2F",
+    "url": "https://www.karaokemanekineko.jp/locations/kyoto/kyoto/kawaramachi-takoyakushi-store/"
+   }
+  ],
+  [
+   35.120408,
+   138.873644,
+   "manekineko-shizuoka-numazu-shi-numazu-bypass-store",
+   {
+    "name": "カラオケまねきねこ 沼津バイパス店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "静岡県沼津市緑ケ丘３−３２F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/shizuoka/numazu-shi/numazu-bypass-store/"
+   }
+  ],
+  [
+   35.104681,
+   138.858541,
+   "manekineko-shizuoka-numazu-shi-numazu-kitaguchi-store",
+   {
+    "name": "カラオケまねきねこ 沼津北口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "静岡県沼津市高島町3-1B1F",
+    "url": "https://www.karaokemanekineko.jp/locations/shizuoka/numazu-shi/numazu-kitaguchi-store/"
+   }
+  ],
+  [
+   36.64415,
+   139.049753,
+   "manekineko-gunma-numata-numata-zaimokucho-store",
+   {
+    "name": "カラオケまねきねこ 沼田材木町店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "群馬県沼田市材木町13-2ミロクビル21F",
+    "url": "https://www.karaokemanekineko.jp/locations/gunma/numata/numata-zaimokucho-store/"
+   }
+  ],
+  [
+   35.692774,
+   140.02069,
+   "manekineko-chiba-funabashi-shi-tsudanuma-kitaguchi-2nd-store",
+   {
+    "name": "カラオケまねきねこ 津田沼北口２号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県船橋市前原西２丁目１５−１６SAKAIビル3階",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/funabashi-shi/tsudanuma-kitaguchi-2nd-store/"
+   }
+  ],
+  [
+   35.691453,
+   140.021828,
+   "manekineko-chiba-narashino-tsudanuma-kitaguchi-store",
+   {
+    "name": "カラオケまねきねこ 津田沼北口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県習志野市津田沼１丁目１１−４JPT津田沼ビル４Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/narashino/tsudanuma-kitaguchi-store/"
+   }
+  ],
+  [
+   35.714439,
+   139.793547,
+   "manekineko-tokyo-taito-asakusa-store",
+   {
+    "name": "カラオケまねきねこ 浅草店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都台東区浅草２丁目６−１１平和ストアビル6～9F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/taito/asakusa-store/"
+   }
+  ],
+  [
+   35.697658,
+   139.786127,
+   "manekineko-tokyo-taito-asakusabashi-higashiguchi-store",
+   {
+    "name": "カラオケまねきねこ 浅草橋東口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都台東区浅草橋1-18-10オンダ浅草橋ビル７・８Ｆ",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/taito/asakusabashi-higashiguchi-store/"
+   }
+  ],
+  [
+   34.699072,
+   137.6925,
+   "manekineko-shizuoka-hamamatsu-shi-hamamatsu-irino-store",
+   {
+    "name": "カラオケまねきねこ 浜松入野店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "静岡県浜松市中央区入野町6106",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/shizuoka/hamamatsu-shi/hamamatsu-irino-store/"
+   }
+  ],
+  [
+   34.707111,
+   137.731032,
+   "manekineko-shizuoka-hamamatsu-shi-hamamatsu-tamachi-store",
+   {
+    "name": "カラオケまねきねこ 浜松田町店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "静岡県浜松市中央区田町324-14ニュー田町ビル2～5F",
+    "url": "https://www.karaokemanekineko.jp/locations/shizuoka/hamamatsu-shi/hamamatsu-tamachi-store/"
+   }
+  ],
+  [
+   35.666301,
+   139.892999,
+   "manekineko-chiba-urayasu-shi-urayasu-kitaguchi-store",
+   {
+    "name": "カラオケまねきねこ 浦安北口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県浦安市北栄1-13-11ニイクラビル2F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/urayasu-shi/urayasu-kitaguchi-store/"
+   }
+  ],
+  [
+   35.661183,
+   139.697036,
+   "manekineko-tokyo-shibuya-ku-shibuya-centergai-annex-store",
+   {
+    "name": "カラオケまねきねこ 渋谷センター街ANNEX店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都渋谷区宇田川町32－8YYUDAGAWABLD.1～2F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/shibuya-ku/shibuya-centergai-annex-store/"
+   }
+  ],
+  [
+   35.66068,
+   139.698404,
+   "manekineko-tokyo-shibuya-ku-shibuya-centergai-store",
+   {
+    "name": "カラオケまねきねこ 渋谷センター街店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都渋谷区宇田川町29‐4ゼンモール渋谷ビル4・5・6F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/shibuya-ku/shibuya-centergai-store/"
+   }
+  ],
+  [
+   35.661122,
+   139.698547,
+   "manekineko-tokyo-shibuya-ku-shibuya-chitosekaikan-store",
+   {
+    "name": "カラオケまねきねこ 渋谷ちとせ会館店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都渋谷区宇田川町13-8渋谷ちとせ会館5F",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/shibuya-ku/shibuya-chitosekaikan-store/"
+   }
+  ],
+  [
+   35.659504,
+   139.698281,
+   "manekineko-tokyo-shibuya-ku-shibuya-honten-store",
+   {
+    "name": "カラオケまねきねこ 渋谷本店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都渋谷区道玄坂2-29-5渋谷プライム4F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/shibuya-ku/shibuya-honten-store/"
+   }
+  ],
+  [
+   35.658982,
+   139.698682,
+   "manekineko-tokyo-shibuya-ku-shibuya-dogenzaka-store",
+   {
+    "name": "カラオケまねきねこ 渋谷道玄坂店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都渋谷区道玄坂２丁目６−１６井門道玄坂ビル6F",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/shibuya-ku/shibuya-dogenzaka-store/"
+   }
+  ],
+  [
+   35.599768,
+   139.612213,
+   "manekineko-kanagawa-kawasaki-mizonokuchi-store",
+   {
+    "name": "カラオケまねきねこ 溝の口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県川崎市高津区溝口１丁目９−６",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/kawasaki/mizonokuchi-store/"
+   }
+  ],
+  [
+   35.943648,
+   140.54765,
+   "manekineko-ibaraki-itako-itako-store",
+   {
+    "name": "カラオケまねきねこ 潮来店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "茨城県潮来市潮来７１１２−１",
+    "url": "https://www.karaokemanekineko.jp/locations/ibaraki/itako/itako-store/"
+   }
+  ],
+  [
+   34.883268,
+   138.306315,
+   "manekineko-shizuoka-yaizu-yaizu-store",
+   {
+    "name": "カラオケまねきねこ 焼津店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "静岡県焼津市八楠1-8-3",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/shizuoka/yaizu/yaizu-store/"
+   }
+  ],
+  [
+   34.492764,
+   133.948466,
+   "manekineko-okayama-tamano-tamano-store",
+   {
+    "name": "カラオケまねきねこ 玉野店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "岡山県玉野市宇野１丁目１１−１",
+    "url": "https://www.karaokemanekineko.jp/locations/okayama/tamano/tamano-store/"
+   }
+  ],
+  [
+   35.755016,
+   139.737441,
+   "manekineko-tokyo-kita-ku-oji-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 王子駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都北区王子１丁目１６−６王子ビル4～6F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/kita-ku/oji-ekimae-store/"
+   }
+  ],
+  [
+   34.6625,
+   135.640253,
+   "manekineko-osaka-higashiosaka-hyotanyama-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 瓢箪山駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府東大阪市本町１５−１２",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/higashiosaka/hyotanyama-ekimae-store/"
+   }
+  ],
+  [
+   35.620204,
+   139.570545,
+   "manekineko-kanagawa-kawasaki-noborito-store",
+   {
+    "name": "カラオケまねきねこ 登戸店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県川崎市多摩区登戸３４６６−１",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/kawasaki/noborito-store/"
+   }
+  ],
+  [
+   39.731817,
+   141.124297,
+   "manekineko-iwate-morioka-morioka-bypass-store",
+   {
+    "name": "カラオケまねきねこ 盛岡バイパス店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "岩手県盛岡市上堂4-3-8",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/iwate/morioka/morioka-bypass-store/"
+   }
+  ],
+  [
+   39.703029,
+   141.147928,
+   "manekineko-iwate-morioka-morioka-odori-2nd-store",
+   {
+    "name": "カラオケまねきねこ 盛岡大通り2号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "岩手県盛岡市大通一丁目9番5号サンシャインビル地下1階",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/iwate/morioka/morioka-odori-2nd-store/"
+   }
+  ],
+  [
+   39.703291,
+   141.143944,
+   "manekineko-iwate-morioka-morioka-odori-store",
+   {
+    "name": "カラオケまねきねこ 盛岡大通り店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "岩手県盛岡市大通３丁目１クリエイトビル1・2F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/iwate/morioka/morioka-odori-store/"
+   }
+  ],
+  [
+   35.598244,
+   139.337553,
+   "manekineko-kanagawa-sagamihara-sagamihara-nishihashimoto-store",
+   {
+    "name": "カラオケまねきねこ 相模原西橋本店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県相模原市緑区橋本８丁目２−１ラ・フロール橋本レストランモール2F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/sagamihara/sagamihara-nishihashimoto-store/"
+   }
+  ],
+  [
+   35.532872,
+   139.43691,
+   "manekineko-kanagawa-sagamihara-sagamiono-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 相模大野駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県相模原市南区相模大野3丁目10-1B1F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/sagamihara/sagamiono-ekimae-store/"
+   }
+  ],
+  [
+   36.439094,
+   139.987282,
+   "manekineko-tochigi-moka-mooka-store",
+   {
+    "name": "カラオケまねきねこ 真岡店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "栃木県真岡市上高間木3-3-3",
+    "url": "https://www.karaokemanekineko.jp/locations/tochigi/moka/mooka-store/"
+   }
+  ],
+  [
+   38.441882,
+   141.309566,
+   "manekineko-miyagi-ishinomaki-ishinomaki-motokura-store",
+   {
+    "name": "カラオケまねきねこ 石巻元倉店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "宮城県石巻市元倉２丁目４−７",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/miyagi/ishinomaki/ishinomaki-motokura-store/"
+   }
+  ],
+  [
+   34.807379,
+   135.446093,
+   "manekineko-osaka-ikeda-ishibashi-store",
+   {
+    "name": "カラオケまねきねこ 石橋店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府池田市石橋2-17-12",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/ikeda/ishibashi-store/"
+   }
+  ],
+  [
+   36.082999,
+   140.083655,
+   "manekineko-ibaraki-tsukuba-shi-kenkyu-gakuen-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 研究学園駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "茨城県つくば市研究学園5-13-113F",
+    "url": "https://www.karaokemanekineko.jp/locations/ibaraki/tsukuba-shi/kenkyu-gakuen-ekimae-store/"
+   }
+  ],
+  [
+   35.700825,
+   139.740892,
+   "manekineko-tokyo-shinjuku-ku-kagurazaka-store",
+   {
+    "name": "カラオケまねきねこ 神楽坂店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都新宿区神楽坂３丁目５神楽坂センタービル3～5F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/shinjuku-ku/kagurazaka-store/"
+   }
+  ],
+  [
+   37.757986,
+   140.43139,
+   "manekineko-fukushima-fukushima-fukushima-nishichuo-store",
+   {
+    "name": "カラオケまねきねこ 福島西中央店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "福島県福島市西中央５丁目３３−１",
+    "url": "https://www.karaokemanekineko.jp/locations/fukushima/fukushima/fukushima-nishichuo-store/"
+   }
+  ],
+  [
+   37.754245,
+   140.46232,
+   "manekineko-fukushima-fukushima-fukushima-ekimae-2nd-store",
+   {
+    "name": "カラオケまねきねこ 福島駅前２号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "福島県福島市栄町７−１駅前清水ビル1・2F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/fukushima/fukushima/fukushima-ekimae-2nd-store/"
+   }
+  ],
+  [
+   37.75409,
+   140.463385,
+   "manekineko-fukushima-fukushima-fukushima-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 福島駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "福島県福島市栄町１１−２５AXCビル",
+    "url": "https://www.karaokemanekineko.jp/locations/fukushima/fukushima/fukushima-ekimae-store/"
+   }
+  ],
+  [
+   39.714752,
+   140.115714,
+   "manekineko-akita-akita-shi-akita-omachi-store",
+   {
+    "name": "カラオケまねきねこ 秋田大町店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "秋田県秋田市大町5-2-43ブルックリンストライク2F",
+    "url": "https://www.karaokemanekineko.jp/locations/akita/akita-shi/akita-omachi-store/"
+   }
+  ],
+  [
+   39.717275,
+   140.127698,
+   "manekineko-akita-akita-shi-akita-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 秋田駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "秋田県秋田市中通２丁目７−６緑屋ビル３Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/akita/akita-shi/akita-ekimae-store/"
+   }
+  ],
+  [
+   35.701568,
+   139.771193,
+   "manekineko-tokyo-chiyoda-ku-akihabara-store",
+   {
+    "name": "カラオケまねきねこ 秋葉原店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都千代田区外神田３丁目１５−１アキバプレイス6F",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/chiyoda-ku/akihabara-store/"
+   }
+  ],
+  [
+   35.697762,
+   139.775189,
+   "manekineko-tokyo-chiyoda-ku-akihabara-showadoriguchi-store",
+   {
+    "name": "カラオケまねきねこ 秋葉原昭和通り口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都千代田区神田佐久間町１丁目２１",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/chiyoda-ku/akihabara-showadoriguchi-store/"
+   }
+  ],
+  [
+   35.697709,
+   139.771427,
+   "manekineko-tokyo-chiyoda-ku-akihabara-denkigaiguchi-store",
+   {
+    "name": "カラオケまねきねこ 秋葉原電気街口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都千代田区外神田１丁目１５−１半田ビル3～7F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/chiyoda-ku/akihabara-denkigaiguchi-store/"
+   }
+  ],
+  [
+   35.628256,
+   140.071697,
+   "manekineko-chiba-chiba-inagekaigan-store",
+   {
+    "name": "カラオケまねきねこ 稲毛海岸店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県千葉市美浜区高洲３丁目１０−１サンフラワービレッジ稲毛海岸2F",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/chiba/inagekaigan-store/"
+   }
+  ],
+  [
+   35.657083,
+   140.117756,
+   "manekineko-chiba-chiba-inage-naganuma-store",
+   {
+    "name": "カラオケまねきねこ 稲毛長沼店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県千葉市稲毛区長沼町330-50ワンズモール2F",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/chiba/inage-naganuma-store/"
+   }
+  ],
+  [
+   35.633849,
+   139.534919,
+   "manekineko-kanagawa-kawasaki-inadazutsumi-store",
+   {
+    "name": "カラオケまねきねこ 稲田堤店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県川崎市多摩区菅稲田堤1-17-2よこはたビル2F",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/kawasaki/inadazutsumi-store/"
+   }
+  ],
+  [
+   35.698785,
+   139.411625,
+   "manekineko-tokyo-tachikawa-tatikawa-kitaguchi-store",
+   {
+    "name": "カラオケまねきねこ 立川北口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都立川市曙町2-3-2高柳ビル2～3F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/tachikawa/tatikawa-kitaguchi-store/"
+   }
+  ],
+  [
+   35.674242,
+   139.667744,
+   "manekineko-tokyo-shibuya-ku-sasazuka-terrace-store",
+   {
+    "name": "カラオケまねきねこ 笹塚テラス店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都渋谷区笹塚１丁目５６笹塚テラスB2F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/shibuya-ku/sasazuka-terrace-store/"
+   }
+  ],
+  [
+   35.706207,
+   139.903295,
+   "manekineko-tokyo-edogawa-ku-shinozaki-store",
+   {
+    "name": "カラオケまねきねこ 篠崎店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都江戸川区篠崎町７丁目２９−３９",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/edogawa-ku/shinozaki-store/"
+   }
+  ],
+  [
+   37.931828,
+   140.116953,
+   "manekineko-yamagata-yonezawa-shi-yonezawa-store",
+   {
+    "name": "カラオケまねきねこ 米沢店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "山形県米沢市春日４丁目２−８６",
+    "url": "https://www.karaokemanekineko.jp/locations/yamagata/yonezawa-shi/yonezawa-store/"
+   }
+  ],
+  [
+   35.649261,
+   139.636669,
+   "manekineko-tokyo-setagaya-ku-kyodo-nodaidori-store",
+   {
+    "name": "カラオケまねきねこ 経堂農大通り店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都世田谷区経堂1-11-9マークビル2・3F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/setagaya-ku/kyodo-nodaidori-store/"
+   }
+  ],
+  [
+   35.761918,
+   139.826648,
+   "manekineko-tokyo-katsushika-ayase-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 綾瀬駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都葛飾区小菅４丁目１２−１第二星ビル３Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/katsushika/ayase-ekimae-store/"
+   }
+  ],
+  [
+   35.683095,
+   139.865063,
+   "manekineko-tokyo-edogawa-ku-funabori-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 船堀駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都江戸川区船堀３丁目７−２２イリップス船堀２Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/edogawa-ku/funabori-ekimae-store/"
+   }
+  ],
+  [
+   35.758522,
+   140.016439,
+   "manekineko-chiba-funabashi-shi-funabashi-sakigaoka-store",
+   {
+    "name": "カラオケまねきねこ 船橋咲が丘店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県船橋市咲が丘１丁目２５−１０",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/funabashi-shi/funabashi-sakigaoka-store/"
+   }
+  ],
+  [
+   35.699984,
+   139.986507,
+   "manekineko-chiba-funabashi-shi-funabashi-honten-store",
+   {
+    "name": "カラオケまねきねこ 船橋本店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県船橋市本町４丁目４４−３５JMFビル船橋017～９F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/funabashi-shi/funabashi-honten-store/"
+   }
+  ],
+  [
+   35.701096,
+   139.987182,
+   "manekineko-chiba-funabashi-shi-funabashi-ekimae-2nd-store",
+   {
+    "name": "カラオケまねきねこ 船橋駅前2号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県船橋市本町４丁目５−２５カムズビル１～４Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/funabashi-shi/funabashi-ekimae-2nd-store/"
+   }
+  ],
+  [
+   35.422686,
+   140.301702,
+   "manekineko-chiba-mobara-shi-mobara-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 茂原駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県茂原市八千代３丁目９−１１",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/mobara-shi/mobara-ekimae-store/"
+   }
+  ],
+  [
+   34.813835,
+   135.591128,
+   "manekineko-osaka-ibaraki-shi-ibaraki-sonoda-store",
+   {
+    "name": "カラオケまねきねこ 茨木園田店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府茨木市園田町2-4",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/ibaraki-shi/ibaraki-sonoda-store/"
+   }
+  ],
+  [
+   34.706226,
+   135.498956,
+   "manekineko-osaka-osaka-shi-chayamachi-store",
+   {
+    "name": "カラオケまねきねこ 茶屋町店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府大阪市北区茶屋町3-2チロル茶屋町6F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/osaka-shi/chayamachi-store/"
+   }
+  ],
+  [
+   35.562845,
+   139.714651,
+   "manekineko-tokyo-ota-ku-kamata-nishiguchi-store",
+   {
+    "name": "カラオケまねきねこ 蒲田西口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都大田区西蒲田７丁目４６−８蒲田ライトビル７Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/ota-ku/kamata-nishiguchi-store/"
+   }
+  ],
+  [
+   35.338275,
+   139.486769,
+   "manekineko-kanagawa-fujisawa-fujisawa-minamiguchi-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 藤沢南口駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県藤沢市南藤沢22-1神中第2ビル2階",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/fujisawa/fujisawa-minamiguchi-ekimae-store/"
+   }
+  ],
+  [
+   35.581444,
+   140.132168,
+   "manekineko-chiba-chiba-soga-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 蘇我駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県千葉市中央区南町2-10-17ＳＴＣビル２Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/chiba/soga-ekimae-store/"
+   }
+  ],
+  [
+   35.683665,
+   139.914409,
+   "manekineko-chiba-ichikawa-shi-gyotoku-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 行徳駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県市川市行徳駅前１丁目２２−１１",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/ichikawa-shi/gyotoku-ekimae-store/"
+   }
+  ],
+  [
+   34.744472,
+   137.909107,
+   "manekineko-shizuoka-fukuroi-fukuroi-store",
+   {
+    "name": "カラオケまねきねこ 袋井店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "静岡県袋井市川井1014-4",
+    "url": "https://www.karaokemanekineko.jp/locations/shizuoka/fukuroi/fukuroi-store/"
+   }
+  ],
+  [
+   35.815331,
+   139.705284,
+   "manekineko-saitama-kawaguchi-nishikawaguchi-higashiguchi-store",
+   {
+    "name": "カラオケまねきねこ 西川口東口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "埼玉県川口市並木2-21-1第6福原ビル2F",
+    "url": "https://www.karaokemanekineko.jp/locations/saitama/kawaguchi/nishikawaguchi-higashiguchi-store/"
+   }
+  ],
+  [
+   34.415237,
+   132.736957,
+   "manekineko-hiroshima-higashihiroshima-saijo-chuo-store",
+   {
+    "name": "カラオケまねきねこ 西条中央店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "広島県東広島市西条中央6-31-33",
+    "url": "https://www.karaokemanekineko.jp/locations/hiroshima/higashihiroshima/saijo-chuo-store/"
+   }
+  ],
+  [
+   34.42663,
+   132.740818,
+   "manekineko-hiroshima-higashihiroshima-saijo-okamachi-store",
+   {
+    "name": "カラオケまねきねこ 西条岡町店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "広島県東広島市西条岡町10-23",
+    "url": "https://www.karaokemanekineko.jp/locations/hiroshima/higashihiroshima/saijo-okamachi-store/"
+   }
+  ],
+  [
+   35.66496,
+   139.858633,
+   "manekineko-tokyo-edogawa-ku-nishikasai-store",
+   {
+    "name": "カラオケまねきねこ 西葛西店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都江戸川区西葛西３丁目１５−１２臼井第一ビル4F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/edogawa-ku/nishikasai-store/"
+   }
+  ],
+  [
+   37.981084,
+   140.779813,
+   "manekineko-miyagi-kakuda-shi-kakuda-store",
+   {
+    "name": "カラオケまねきねこ 角田店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "宮城県角田市錦町３４",
+    "url": "https://www.karaokemanekineko.jp/locations/miyagi/kakuda-shi/kakuda-store/"
+   }
+  ],
+  [
+   34.430611,
+   135.363922,
+   "manekineko-osaka-kaizuka-kaizuka-store",
+   {
+    "name": "カラオケまねきねこ 貝塚店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府貝塚市石才３５６−１",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/kaizuka/kaizuka-store/"
+   }
+  ],
+  [
+   35.674442,
+   139.736143,
+   "manekineko-tokyo-minato-akasaka-store",
+   {
+    "name": "カラオケまねきねこ 赤坂店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都港区赤坂4-3-6A-FLAG赤坂4F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/minato/akasaka-store/"
+   }
+  ],
+  [
+   35.778,
+   139.721643,
+   "manekineko-tokyo-kita-ku-akabane-minamiguchi-store",
+   {
+    "name": "カラオケまねきねこ 赤羽南口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都北区赤羽1-2-1赤羽南大野ビル2・3F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/kita-ku/akabane-minamiguchi-store/"
+   }
+  ],
+  [
+   34.630946,
+   135.602798,
+   "manekineko-osaka-yao-shi-kintetsuyao-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 近鉄八尾駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府八尾市北本町2-15-1アロービル３Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/yao-shi/kintetsuyao-ekimae-store/"
+   }
+  ],
+  [
+   34.668428,
+   135.502469,
+   "manekineko-osaka-osaka-shi-dotonbori-store",
+   {
+    "name": "カラオケまねきねこ 道頓堀店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府大阪市中央区道頓堀1-7-21中座くいだおれビル4F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/osaka-shi/dotonbori-store/"
+   }
+  ],
+  [
+   37.399207,
+   140.366804,
+   "manekineko-fukushima-koriyama-koriyama-sakuradori-store",
+   {
+    "name": "カラオケまねきねこ 郡山さくら通り店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "福島県郡山市長者1-6-20",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/fukushima/koriyama/koriyama-sakuradori-store/"
+   }
+  ],
+  [
+   37.37209,
+   140.354383,
+   "manekineko-fukushima-koriyama-koriyama-asaka-store",
+   {
+    "name": "カラオケまねきねこ 郡山安積店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "福島県郡山市安積北井1－19",
+    "url": "https://www.karaokemanekineko.jp/locations/fukushima/koriyama/koriyama-asaka-store/"
+   }
+  ],
+  [
+   37.397873,
+   140.384675,
+   "manekineko-fukushima-koriyama-koriyama-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 郡山駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "福島県郡山市中町11-5スクエアーコオリヤマ２Ｆ",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/fukushima/koriyama/koriyama-ekimae-store/"
+   }
+  ],
+  [
+   35.637911,
+   140.161828,
+   "manekineko-chiba-chiba-tsuga-store",
+   {
+    "name": "カラオケまねきねこ 都賀店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "千葉県千葉市若葉区桜木北３丁目２０−３９",
+    "url": "https://www.karaokemanekineko.jp/locations/chiba/chiba/tsuga-store/"
+   }
+  ],
+  [
+   35.770548,
+   139.871326,
+   "manekineko-tokyo-katsushika-kanamachi-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 金町駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都葛飾区東金町1-42-5豊勢金町ビル1～2F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/katsushika/kanamachi-ekimae-store/"
+   }
+  ],
+  [
+   35.695996,
+   139.813043,
+   "manekineko-tokyo-sumida-ku-kinshicho-minamiguchi-2nd-store",
+   {
+    "name": "カラオケまねきねこ 錦糸町南口2号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都墨田区江東橋3-11-5東洲ビル4～6F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/sumida-ku/kinshicho-minamiguchi-2nd-store/"
+   }
+  ],
+  [
+   35.695041,
+   139.814849,
+   "manekineko-tokyo-sumida-ku-kinshicho-minamiguchi-store",
+   {
+    "name": "カラオケまねきねこ 錦糸町南口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都墨田区江東橋3-8-12KINSIAANNEX6～9F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/sumida-ku/kinshicho-minamiguchi-store/"
+   }
+  ],
+  [
+   32.751267,
+   129.872475,
+   "manekineko-nagasaki-nagasaki-shi-nagasaki-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 長崎駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "長崎県長崎市大黒町11-22M.BALANCE長崎駅前1～5F（1棟）",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/nagasaki/nagasaki-shi/nagasaki-ekimae-store/"
+   }
+  ],
+  [
+   36.642829,
+   138.220509,
+   "manekineko-nagano-nagano-shi-nagano-takada-store",
+   {
+    "name": "カラオケまねきねこ 長野高田店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "長野県長野市大字高田1889-12階",
+    "url": "https://www.karaokemanekineko.jp/locations/nagano/nagano-shi/nagano-takada-store/"
+   }
+  ],
+  [
+   35.445161,
+   139.636004,
+   "manekineko-kanagawa-yokohama-kannai-store",
+   {
+    "name": "カラオケまねきねこ 関内店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県横浜市中区真砂町3-31アクティオーレ関内4F～6F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/yokohama/kannai-store/"
+   }
+  ],
+  [
+   34.702977,
+   135.503022,
+   "manekineko-osaka-osaka-shi-hankyuhigashidori-2nd-store",
+   {
+    "name": "カラオケまねきねこ 阪急東通り2号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府大阪市北区堂山町6‐5ペンギンスクエアビル2～3F",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/osaka-shi/hankyuhigashidori-2nd-store/"
+   }
+  ],
+  [
+   34.702833,
+   135.502269,
+   "manekineko-osaka-osaka-shi-hankyu-higashidori-store",
+   {
+    "name": "カラオケまねきねこ 阪急東通り店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府大阪市北区堂山町５−４",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/osaka-shi/hankyu-higashidori-store/"
+   }
+  ],
+  [
+   36.039881,
+   140.212252,
+   "manekineko-ibaraki-ami-ami-store",
+   {
+    "name": "カラオケまねきねこ 阿見店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "茨城県稲敷郡阿見町中郷2-23-3マイアミビル2・3F",
+    "url": "https://www.karaokemanekineko.jp/locations/ibaraki/ami/ami-store/"
+   }
+  ],
+  [
+   40.827585,
+   140.737346,
+   "manekineko-aomori-aomori-shi-aomori-shinmachidori-store",
+   {
+    "name": "カラオケまねきねこ 青森新町通り店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "青森県青森市新町１丁目９−２０",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/aomori/aomori-shi/aomori-shinmachidori-store/"
+   }
+  ],
+  [
+   35.543612,
+   139.514925,
+   "manekineko-kanagawa-yokohama-aobadai-store",
+   {
+    "name": "カラオケまねきねこ 青葉台店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県横浜市青葉区青葉台2-8-20パルテ青葉台3F",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/yokohama/aobadai-store/"
+   }
+  ],
+  [
+   34.966846,
+   138.400441,
+   "manekineko-shizuoka-shizuoka-shizuoka-yahata-store",
+   {
+    "name": "カラオケまねきねこ 静岡八幡店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "静岡県静岡市駿河区八幡5-10-20",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/shizuoka/shizuoka/shizuoka-yahata-store/"
+   }
+  ],
+  [
+   35.702455,
+   139.743808,
+   "manekineko-tokyo-shinjuku-ku-iidabashi-higashiguchi-2nd-store",
+   {
+    "name": "カラオケまねきねこ 飯田橋東口2号店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都新宿区揚場町1-11飯田橋中央ビル6～7F",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/shinjuku-ku/iidabashi-higashiguchi-2nd-store/"
+   }
+  ],
+  [
+   35.701109,
+   139.746328,
+   "manekineko-tokyo-chiyoda-ku-iidabashi-higashiguchi-store",
+   {
+    "name": "カラオケまねきねこ 飯田橋東口店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都千代田区飯田橋4-7-88F",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/chiyoda-ku/iidabashi-higashiguchi-store/"
+   }
+  ],
+  [
+   34.784699,
+   135.629373,
+   "manekineko-osaka-neyagawa-korien-store",
+   {
+    "name": "カラオケまねきねこ 香里園店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府寝屋川市香里新町8-3",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/neyagawa/korien-store/"
+   }
+  ],
+  [
+   36.738495,
+   137.013492,
+   "manekineko-toyama-takaoka-takaoka-ekinan-store",
+   {
+    "name": "カラオケまねきねこ 高岡駅南店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "富山県高岡市駅南4-10-25あらぽｰとビル2F",
+    "url": "https://www.karaokemanekineko.jp/locations/toyama/takaoka/takaoka-ekinan-store/"
+   }
+  ],
+  [
+   35.66159,
+   139.41259,
+   "manekineko-tokyo-hino-takahatafudo-ekimae-store",
+   {
+    "name": "カラオケまねきねこ 高幡不動駅前店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "東京都日野市高幡17-3オカベビルⅢ1階、2階",
+    "url": "https://www.karaokemanekineko.jp/locations/tokyo/hino/takahatafudo-ekimae-store/"
+   }
+  ],
+  [
+   34.665962,
+   135.531333,
+   "manekineko-osaka-osaka-shi-tsuruhashi-store",
+   {
+    "name": "カラオケまねきねこ 鶴橋店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "大阪府大阪市東成区東小橋3-16-3D⁺鶴橋Ⅱビル3F～5F（受付4F）",
+    "hours": "24時間",
+    "url": "https://www.karaokemanekineko.jp/locations/osaka/osaka-shi/tsuruhashi-store/"
+   }
+  ],
+  [
+   35.55114,
+   139.676817,
+   "manekineko-kanagawa-kawasaki-kashimada-store",
+   {
+    "name": "カラオケまねきねこ 鹿島田店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "神奈川県川崎市幸区下平間144-48ラフェスタビル4・5F",
+    "url": "https://www.karaokemanekineko.jp/locations/kanagawa/kawasaki/kashimada-store/"
+   }
+  ],
+  [
+   36.559043,
+   139.783897,
+   "manekineko-tochigi-kanuma-shi-kanuma-sendo-store",
+   {
+    "name": "カラオケまねきねこ 鹿沼千渡店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "栃木県鹿沼市千渡１６０５−６０",
+    "url": "https://www.karaokemanekineko.jp/locations/tochigi/kanuma-shi/kanuma-sendo-store/"
+   }
+  ],
+  [
+   35.906166,
+   140.196557,
+   "manekineko-ibaraki-ryugasaki-ryugasaki-store",
+   {
+    "name": "カラオケまねきねこ 龍ヶ崎店",
+    "note": "喫煙ブースあり（店内・利用者向け）",
+    "address": "茨城県龍ケ崎市光順田１７１３城南ショッピングセンター内",
+    "url": "https://www.karaokemanekineko.jp/locations/ibaraki/ryugasaki/ryugasaki-store/"
+   }
+  ]
+ ]
+}

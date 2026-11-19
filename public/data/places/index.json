@@ -1,0 +1,25 @@
+{
+ "updated": "2026-11-19T00:41:20.954Z",
+ "files": [
+  "cities.json",
+  "cunited.json",
+  "gov.json",
+  "hoshino.json",
+  "kaikatsu.json",
+  "manekineko.json",
+  "mitsui.json",
+  "stations.json",
+  "ueshima.json"
+ ],
+ "counts": {
+  "cities.json": 1610,
+  "cunited.json": 323,
+  "gov.json": 33,
+  "hoshino.json": 40,
+  "kaikatsu.json": 127,
+  "manekineko.json": 265,
+  "mitsui.json": 25,
+  "stations.json": 166,
+  "ueshima.json": 33
+ }
+}

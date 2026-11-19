@@ -1,0 +1,45 @@
+# push・PR ごとに、ローカルの Pages 実行環境で画面の動作確認（tests/e2e.mjs）を行う
+name: ci
+on:
+  push:
+    paths-ignore: ['public/data/**', '**.md']
+  pull_request:
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run vendor
+      - run: npm run db:init
+        env:
+          WRANGLER_SEND_METRICS: 'false'
+      - name: ローカルの Pages を起動
+        run: |
+          npm run dev > dev.log 2>&1 &
+          for i in $(seq 1 60); do curl -sf -o /dev/null http://localhost:8788/ && exit 0; sleep 1; done
+          cat dev.log; exit 1
+        env:
+          WRANGLER_SEND_METRICS: 'false'
+      - run: npm test
+        env:
+          WRANGLER_SEND_METRICS: 'false'
+      - run: STATIC=0 npm test
+        env:
+          WRANGLER_SEND_METRICS: 'false'
+      # 全国データと公開情報の届く順を入れ替えても通ること
+      - run: SLOW_JP=1500 npm test
+        env:
+          WRANGLER_SEND_METRICS: 'false'
+      - run: SLOW_PLACES=1500 npm test
+        env:
+          WRANGLER_SEND_METRICS: 'false'
