@@ -65,7 +65,12 @@ const dist = (a, b) => {
 };
 // 1駅ずつ調べた結果（scripts/import-station-checks.py で作る）。駅名と位置（約300m以内）で対応させる
 const checkedFile = new URL('station-checked.json', DATA);
-const checked = existsSync(checkedFile) ? JSON.parse(readFileSync(checkedFile, 'utf8')) : [];
+// station-checked-auto.json：駅ごとには調べず、所在市区の調査結果から決めたもの（scripts/station-cities.mjs の結果を使う）
+const autoFile = new URL('station-checked-auto.json', DATA);
+const checked = [
+  ...(existsSync(checkedFile) ? JSON.parse(readFileSync(checkedFile, 'utf8')) : []),
+  ...(existsSync(autoFile) ? JSON.parse(readFileSync(autoFile, 'utf8')) : []),
+];
 const checkOf = (st) => checked.find((c) => c.name === st.name && Math.abs(c.lat - st.lat) < 0.004 && Math.abs(c.lng - st.lng) < 0.004);
 const major = stations.filter((s) => s.riders >= MIN_RIDERS);
 const gaps = [];
@@ -88,8 +93,9 @@ for (const st of major) {
 const NONE = ['city_none', 'none_in_list', 'none'];
 const confirmed = gaps.filter((g) => NONE.includes(g.checked) && g.evidence === 'strong');
 const weak = gaps.filter((g) => NONE.includes(g.checked) && g.evidence === 'weak');
+const byList = gaps.filter((g) => NONE.includes(g.checked) && g.evidence === 'list');
 const unchecked = gaps.filter((g) => !NONE.includes(g.checked));
 writeFileSync(new URL('station-gaps.json', DATA), JSON.stringify(gaps, null, 0).replace(/\},\{/g, '},\n{'));
 console.log(`1日${MIN_RIDERS.toLocaleString()}人以上の駅 ${major.length}：${NEAR_M}m以内に喫煙所あり ${withArea}（${Math.round(withArea / major.length * 100)}%）、店も含めると ${withAny}、喫煙所なし ${gaps.length}`);
-console.log(`  喫煙所なしの内訳：調べて「なし」と確認 ${confirmed.length} / 「なし」だが根拠が弱く要再確認 ${weak.length} / 未調査 ${unchecked.length}`);
+console.log(`  喫煙所なしの内訳：調べて「なし」と確認 ${confirmed.length} / 市区の一覧に載っていない（駅ごとの確認なし） ${byList.length} / 「なし」だが根拠が弱く要再確認 ${weak.length} / 未調査 ${unchecked.length}`);
 console.log('未調査の駅（乗降客数の多い順）:', unchecked.slice(0, 40).map((g) => `${g.name}(${Math.round(g.riders / 10000)}万)`).join(' '));

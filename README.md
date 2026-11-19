@@ -38,7 +38,7 @@ API がない配置（静的ホスティングだけ）でも動き、その場�
 
 `node scripts/station-gaps.mjs` で、1日の乗降客数が2万人以上の駅のうち、300m以内に喫煙所のデータが1件もない駅を乗降客数の多い順に `scripts/data/station-gaps.json` へ書き出す。調査の優先順位と、どこまで拾えたかの物差しに使う（2026-11-19 時点：2万人以上の1,163駅中 575駅＝49%、10万人以上の224駅では 175駅＝78% に喫煙所あり。10万人以上の残り49駅はすべて調査済みで、26駅は「なし」と確認、23駅は根拠が弱く要再確認）。
 
-喫煙所データのない駅は、1駅ずつ調べた結果を `scripts/data/station-checked.json` に記録する（`python3 scripts/import-station-checks.py 調査フォルダ` で取り込み）。`station-gaps.mjs` は、喫煙所のない駅を「調べて『なし』と確認」「『なし』だが根拠が弱く要再確認（検索結果の要約だけで判断）」「未調査」に分けて出す。駅前を全面禁煙にして喫煙所を置かない市があるため、「データがない」と「喫煙所がない」を区別する。
+喫煙所データのない駅は、1駅ずつ調べた結果を `scripts/data/station-checked.json` に記録する（`python3 scripts/import-station-checks.py 調査フォルダ` で取り込み）。`station-gaps.mjs` は、喫煙所のない駅を「調べて『なし』と確認」「『なし』だが根拠が弱く要再確認（検索結果の要約だけで判断）」「未調査」に分けて出す。駅前を全面禁煙にして喫煙所を置かない市があるため、「データがない」と「喫煙所がない」を区別する。駅ごとに調べていない駅は、`node scripts/station-cities.mjs` で所在市区を出し（`scripts/data/unchecked-cities.json`）、その市区の調査結果から状況を決めて `scripts/data/station-checked-auto.json` に記録する（「市区の一覧に載っていない」は駅ごとの確認ではないので、区別して出す）。
 
 駅の位置と乗降客数（`scripts/data/stations.json`、目印用の全駅 `stations-all.json`）は、国土交通省 国土数値情報「駅別乗降客数データ」（CC BY 4.0）を加工して作成。
 
